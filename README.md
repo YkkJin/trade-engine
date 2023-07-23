@@ -1,0 +1,73 @@
+# 交易引擎开发Repo说明
+
+## 协同编辑 👨‍💻
+---
+IDE: [Lightly - 轻量且功能强大的集成开发工具](https://lightly.teamcode.com) 
+- [Lightly 文档](https://lightly.teamcode.com/docs/introduction)
+- [关联Git账号](https://lightly.teamcode.com/docs/version-control/git-relate)
+注册Lightly账号后，点击以下链接自动添加至Lightly项目中：
+https://lightly.teamcode.com/project/join?projectId=482192464371331072&code=296a464e
+
+
+## 开发环境配置 📚
+---
+目前华鑫奇点的API只支持Python>3.7.4+，所以选择使用的Python版本为3.7.12
+```
+# 查看Python版本
+~ python --version 
+Python 3.7.12
+``` 
+相应的Django版本为3.2.0
+```
+# 查看Django版本
+~ python -m django --version 
+3.2.0
+```
+
+## 项目结构🌳
+```.
+trade_engine_dev-py37
+├── Pipfile 依赖管理
+├── Pipfile.lock
+├── README.md
+├── main.py
+├── tora_api Tora API文件
+│   ├── __pycache__
+│   │   └── traderapi.cpython-37.pyc
+│   ├── _traderapi.cpython-37m-x86_64-linux-gnu.so
+│   ├── document.html
+│   ├── test.py
+│   └── traderapi.py
+└── trade_engine_app Django文件 （由 Django-admin startproject生成）
+    ├── db.sqlite3
+    ├── manage.py
+    └── trade_engine_app
+        ├── __init__.py
+        ├── asgi.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
+```
+
+
+
+## Workflow 💻
+
+
+
+目前依赖管理使用[Pipenv](https://pipenv.pypa.io/en/latest)
+```
+#激活virtual env
+pipenv shell
+```
+
+
+
+
+TODO
+ 
+- [ ] 需不需要创建dev分支，在dev上开发完了再merge到master？
+- [ ] 需要考虑下dev和production环境怎么做区分
+
+
+
