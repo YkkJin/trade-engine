@@ -53,8 +53,6 @@ trade_engine_dev-py37
 
 ## Workflow 💻
 
-
-
 目前依赖管理使用[Pipenv](https://pipenv.pypa.io/en/latest)
 ```
 #激活virtual env
@@ -68,6 +66,6 @@ TODO
  
 - [ ] 需不需要创建dev分支，在dev上开发完了再merge到master？
 - [ ] 需要考虑下dev和production环境怎么做区分
-
-
+- [ ] 到底是用django还是fastapi？fastapi可能不支持当前python版本 3.7.12
+- [ ] 前端可用Next.js解决 （基于React）
 
