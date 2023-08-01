@@ -1,9 +1,8 @@
-
 from typing import Dict,Tuple,Any,List
-import traderapi 
+from ..src.tora_stock import traderapi as traderapi
 from time import sleep
 from datetime import datetime
-from traderapi import (
+from ..src.tora_stock.traderapi import (
     TORA_TSTP_D_Buy,
     TORA_TSTP_D_Sell,
     TORA_TSTP_EXD_SSE,
@@ -44,16 +43,20 @@ from traderapi import (
     CTORATstpInputOrderField,
     CTORATstpInputOrderActionField,
     CTORATstpRspUserLoginField,
+    CTORATstpUserLogoutField,
+    
     #CTORATstpSpecificSecurityField,
     CTORATstpRspInfoField,
     #CTORATstpMarketDataField,
     CTORATstpOrderField,
+    CTORATstpConditionOrderField,
     CTORATstpTradeField,
     CTORATstpSecurityField,
     CTORATstpTradingAccountField,
     CTORATstpShareholderAccountField,
     CTORATstpInvestorField,
     CTORATstpPositionField,
+    
 )
 
 
@@ -67,7 +70,7 @@ LEVEL2: str = "Level2"
 
 
 class Trader(traderapi.CTORATstpTraderSpi):
-    """"""
+    
 
     def __init__(self) -> None:
         """构造函数"""
@@ -137,7 +140,11 @@ class Trader(traderapi.CTORATstpTraderSpi):
         """委托撤单失败回报"""
         error_id: int = error.ErrorID
         if error_id:
+            raise ValueError("交易撤单失败")
             print("交易撤单失败", error)
+        print("交易撤单成功")
+        print(f"order_id: {data.FrontID}_{data.SessionID}_{data.OrderRef}")
+        
 
     def OnRtnOrder(self, data: CTORATstpOrderField) -> None:
         """委托更新推送"""
@@ -146,6 +153,9 @@ class Trader(traderapi.CTORATstpTraderSpi):
         if not type:
             return
         '''
+        if not data:
+            print("无委托")
+            return
         symbol: str = data.SecurityID
         #exchange: Exchange = EXCHANGE_TORA2VT[data.ExchangeID]
         exchange: str = data.ExchangeID
@@ -158,7 +168,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         #dt: datetime = datetime.strptime(timestamp, "%Y%m%d %H:%M:%S")
         #dt: datetime = dt.replace(tzinfo=CHINA_TZ)
         print("委托更新推送")
-        print(f"symbol: {symbol}, exchange: {exchange}")
+        print(f"symbol: {symbol}, exchange: {exchange}, order_id: {order_id}")
         '''
         order: OrderData = OrderData(
             symbol=symbol,
@@ -334,8 +344,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         self.gateway.on_position(position_data)
         '''
         print("持仓查询")
-        print(f"symbol: {data.SecurityID},exchange: {data.ExchangeID},name: {data.SecurityName} ,volume: {volume}, price: {price}")
-
+        print(f"symbol: {data.SecurityID},exchange: {data.ExchangeID},name: {data.SecurityName} ,volume: {volume}, price: {price}, 股份可用: {data.AvailablePosition}")
     def OnErrRtnOrderInsert(self, data: CTORATstpInputOrderField, error: CTORATstpRspInfoField, reason: int) -> None:
         """委托下单失败回报"""
         '''
@@ -368,9 +377,8 @@ class Trader(traderapi.CTORATstpTraderSpi):
             f"错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg}"
         )
         '''
-        print("委托下单失败回报")
-        print(f"拒单({order_id}):",
-            f"错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg}")
+        print (f"委托下单失败回报: 拒单({order_id}): 错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg} , symbol:{data.SecurityID},volume:{data.VolumeTotalOriginal}")
+        
 
     def connect(
         self,
@@ -396,9 +404,8 @@ class Trader(traderapi.CTORATstpTraderSpi):
                 self.api.RegisterFront(address)
             else:
                 self.api.RegisterNameServer(address)
-
             self.api.SubscribePrivateTopic(TORA_TERT_QUICK)
-            self.api.SubscribePublicTopic(TORA_TERT_RESTART)
+            self.api.SubscribePublicTopic(TORA_TERT_QUICK)
             self.api.Init()
             self.connect_status = True
 
@@ -420,7 +427,9 @@ class Trader(traderapi.CTORATstpTraderSpi):
         self.api.ReqUserLogin(login_req, self.reqid)
     def logout(self):
         self.reqid += 1 
-        self.api.ReqUserLogout(self.reqid,self.userid)
+        req = CTORATstpUserLogoutField()
+        req.UserID = self.userid
+        self.api.ReqUserLogout(req,self.reqid)
 
     def query_contracts(self) -> None:
         """查询合约"""
@@ -504,6 +513,10 @@ class Trader(traderapi.CTORATstpTraderSpi):
         '''
 
         return f"{order_id}"
+    
+    def send_cond_order(self,req:CTORATstpConditionOrderField) -> None: 
+        """委托条件单 """
+        pass
 
     def cancel_order(self, req: CTORATstpInputOrderActionField) -> None:
         """委托撤单"""
@@ -521,67 +534,45 @@ class Trader(traderapi.CTORATstpTraderSpi):
         info.ActionFlag = TORA_TSTP_AF_Delete
         info.OrderActionRef = self.order_ref
     '''
+        req.ActionFlag = TORA_TSTP_AF_Delete
+        req.OrderActionRef = self.order_ref
         self.api.ReqOrderAction(req, self.reqid)
     def release(self):
         self.api.Release()
 
 
 if __name__ == "__main__":
+    from config.config import UserID,Password,FrontAddress
+    from tora_stock.test_order import (
+        LimitPriceOrderReq,
+        LimitPriceOrderReqSell,
+        FiveLevelPriceToCancelOrderReq,
+        FiveLevelPriceToCancelOrderReqSell,
+        FiveLevelPriceToLimitOrderReq,
+        FiveLevelPriceToLimitOrderReqSell,
+        HomeBestPriceOrderReq,
+        HomeBestPriceOrderReqSell,
+        BestPriceOrderReq,
+        BestPriceOrderReqSell
+    )
     trader = Trader()
-
-    #操作员账户
-    UserID = "00032129";	   #同客户号保持一致即可
-
-    #资金账户 
-    AccountID = "00030557";		#以Req(TradingAccount)查询的为准
-
-    #登陆密码
-    Password = "19359120";		#N视界注册模拟账号的交易密码，不是登录密码
-
-    #DepartmentID = "0001";		#生产环境默认客户号的前4位
-
-    SSE_ShareHolderID='*'   #不同账号的股东代码需要接口 ReqQryShareholderAccount去查询
-    SZ_ShareHolderID='*'    #不同账号的股东代码需要接口 ReqQryShareholderAccount去查询
-    TD_TCP_FrontAddress="tcp://210.14.72.16:9500"
-
-    trader.connect(UserID,Password,TD_TCP_FrontAddress,ACCOUNT_USERID,ADDRESS_FRONT)
-
-    sleep(2)
+    trader.connect(UserID,Password,FrontAddress['level1_trade'],ACCOUNT_USERID,ADDRESS_FRONT)
+    sleep(1)
     trader.query_accounts()
-    sleep(2)
+    sleep(1)
     trader.query_orders()
-    sleep(2)
+    sleep(1)
     trader.query_positions()
-    sleep(2)
+    sleep(1)
+    LimitPriceReqOrderID = trader.send_order(LimitPriceOrderReq)
+    FiveLevelPriceToCancelOrderReqOrderID = trader.send_order(FiveLevelPriceToCancelOrderReq)
+    FiveLevelPriceToLimitOrderReqOrderID = trader.send_order(FiveLevelPriceToLimitOrderReq)
+    HomeBestPriceOrderReqOrderID = trader.send_order(HomeBestPriceOrderReq)
+    bestPriceOrderReqOrderID = trader.send_order(BestPriceOrderReq)
 
-    order_req = CTORATstpInputOrderField()
 
 
-
-    """
-    info.ShareholderID = self.shareholder_ids[req.exchange]
-    info.SecurityID = req.symbol
-    info.ExchangeID = EXCHANGE_VT2TORA[req.exchange]
-    info.OrderRef = self.order_ref
-    info.OrderPriceType = opt
-    info.Direction = DIRECTION_VT2TORA[req.direction]
-    info.LimitPrice = req.price
-    info.VolumeTotalOriginal = int(req.volume)
-    info.TimeCondition = tc
-    info.VolumeCondition = vc
-    """
-
-    order_req.SecurityID = '600000'
-    order_req.ExchangeID  = TORA_TSTP_EXD_SSE
-    order_req.ShareholderID = "A00032129"
-    order_req.Direction = TORA_TSTP_D_Buy
-    order_req.VolumeTotalOriginal = 200
-    order_req.LimitPrice = 7.60
-    order_req.OrderPriceType = TORA_TSTP_OPT_LimitPrice
-    order_req.TimeCondition = TORA_TSTP_TC_GFD
-    order_req.VolumeCondition = TORA_TSTP_VC_AV
-
-    #trader.send_order(order_req)
+   
 
 
     input() 

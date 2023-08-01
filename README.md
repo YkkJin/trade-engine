@@ -30,24 +30,28 @@ Python 3.7.12
 
 
 ## 项目结构🌳
-```.
-trade_engine_dev-py37
-├── Pipfile 依赖管理
+```
+.
+├── Pipfile
 ├── Pipfile.lock
 ├── README.md
-├── main.py
-├── tora_api Tora API文件
-│   ├── __pycache__
-│   │   └── traderapi.cpython-37.pyc
-│   ├── _traderapi.cpython-37m-x86_64-linux-gnu.so
+├── cli.py
+├── tora_api
+│   ├── config
+│   │   └── config.py
 │   ├── document.html
-│   ├── test.py
-│   └── traderapi.py
-└── trade_engine_app Django文件 （由 Django-admin startproject生成）
+│   ├── run_test.py
+│   ├── src
+│   │   ├── tora_stock
+│   │   │   ├── _traderapi.cpython-37m-x86_64-linux-gnu.so
+│   │   │   └── traderapi.py
+│   │   └── trade.py
+│   └── test
+│       └── test_order.py
+└── trade_engine_app
     ├── db.sqlite3
     ├── manage.py
     └── trade_engine_app
-        ├── __init__.py
         ├── asgi.py
         ├── settings.py
         ├── urls.py
@@ -89,5 +93,7 @@ TODO
 - 行情前置地址：tcp://210.14.72.16:9402
 - 交易前置地址：tcp://210.14.72.15:4400
 
+## demo使用说明
+```cli.py 为一个简单的命令行版交易交互实现，支持持仓查询和下单交易
 
 
