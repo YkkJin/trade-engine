@@ -24,6 +24,11 @@ Python 3.7.12
 3.2.0
 ```
 
+## 参考项目
+
+- [vnpy华鑫柜台接口](https://github.com/vnpy/vnpy_tora) 主要可参考 ``` vnpy_tora/gateway/tora_stock_gateway.py``` 中的 ```ToraTdApi```类
+
+
 ## 项目结构🌳
 ```.
 trade_engine_dev-py37
@@ -62,10 +67,27 @@ pipenv shell
 
 
 
+
+
 TODO
  
 - [ ] 需不需要创建dev分支，在dev上开发完了再merge到master？
 - [ ] 需要考虑下dev和production环境怎么做区分
 - [ ] 到底是用django还是fastapi？fastapi可能不支持当前python版本 3.7.12
 - [ ] 前端可用Next.js解决 （基于React）
+
+## API 接口配置 
+
+
+仿真账户：00032129 
+交易密码：19359120
+产品标识：HX5ZJ0C1PV
+仿真测试环境
+- 行情前置地址：tcp://210.14.72.21:4402
+- 交易前置地址：tcp://210.14.72.21:4400
+7x24环境
+- 行情前置地址：tcp://210.14.72.16:9402
+- 交易前置地址：tcp://210.14.72.15:4400
+
+
 

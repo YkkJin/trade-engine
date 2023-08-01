@@ -1,23 +1,29 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
 import traderapi
+''' 注意: 如果提示找不到_tradeapi 且与已发布的库文件不一致时,可自行重命名为_tradeapi.so (windows下为_tradeapi.pyd)'''
 
-# 登录用户
-UserID = '00032129'
-# 登陆密码
-Password = '19359120'
-# 投资者账户 
-InvestorID = '11160150'
-# 经济公司部门代码
-DepartmentID = '3202'
-# 资金账户 
-AccountID = '168'
-# 沪市股东账号
-SSE_ShareHolderID = 'A729598425'
-# 深市股东账号
-SZSE_ShareHolderID = '0155597516'
+#投资者账户 
+InvestorID = "00030557";   
+'''
+该默认账号为共用连通测试使用,自有测试账号请到n-sight.com.cn注册并从个人中心获取交易编码,不是网站登录密码,不是手机号
+实盘交易时，取客户号，请注意不是资金账号或咨询技术支持
+'''
 
+#操作员账户
+UserID = "00030557";	   #同客户号保持一致即可
+
+#资金账户 
+AccountID = "00030557";		#以Req(TradingAccount)查询的为准
+
+#登陆密码
+Password = "17522830";		#N视界注册模拟账号的交易密码，不是登录密码
+
+DepartmentID = "0001";		#生产环境默认客户号的前4位
+
+SSE_ShareHolderID='A00030557'   #不同账号的股东代码需要接口ReqQryShareholderAccount去查询
+SZ_ShareHolderID='700030557'    #不同账号的股东代码需要接口ReqQryShareholderAccount去查询
 
 
 class TraderSpi(traderapi.CTORATstpTraderSpi):
@@ -84,7 +90,7 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
 		    # UserProductInfo填写终端名称
             login_req.UserProductInfo = 'pyapidemo'
 		    # 按照监管要求填写终端信息
-            login_req.TerminalInfo = 'PC;IIP=123.112.154.118;IPORT=50361;LIP=192.168.118.107;MAC=54EE750B1713FCF8AE5CBD58;HD=TF655AY91GHRVL'
+            login_req.TerminalInfo = 'PC;IIP=000.000.000.000;IPORT=00000;LIP=x.xx.xxx.xxx;MAC=123ABC456DEF;HD=XXXXXXXXXX'
 		    # 以下内外网IP地址若不填则柜台系统自动采集，若填写则以终端填值为准报送
             #login_req.MacAddress = '5C-87-9C-96-F3-E3'
             #login_req.InnerIPAddress = '10.0.1.102'
@@ -99,7 +105,7 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
             print('GetConnectionInfo fail, [%d] [%d] [%s]!!!' % (nRequestID, pRspInfoField.ErrorID, pRspInfoField.ErrorMsg))
 
 
-    def OnRspUserLogin(self, pRspUserLoginField: "CTORATstpRspUserLoginField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
+    def OnRspUserLogin(self, pRspUserLoginField: "traderapi.CTORATstpRspUserLoginField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         if pRspInfoField.ErrorID == 0:
             print('Login success! [%d]' % nRequestID)
 
@@ -132,10 +138,8 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqQrySecurity(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqQrySecurity fail, ret[%d]' % ret)
-                return
 
-
-            if 0:
+            if 1:
                 # 查询投资者
                 req_field = traderapi.CTORATstpQryInvestorField()
 
@@ -146,10 +150,8 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqQryInvestor(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqQryInvestor fail, ret[%d]' % ret)
-                return
 
-
-            if 0:
+            if 1:
                 # 查询股东账号
                 req_field = traderapi.CTORATstpQryShareholderAccountField()
 
@@ -160,7 +162,6 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqQryShareholderAccount(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqQryShareholderAccount fail, ret[%d]' % ret)
-                return
 
 
             if 0:
@@ -194,7 +195,6 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqQryOrder(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqQryOrder fail, ret[%d]' % ret)
-                return
 
 
             if 0:
@@ -208,10 +208,9 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqQryPosition(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqQryPosition fail, ret[%d]' % ret)
-                return
 
 
-            if 0:
+            if 1:
                 # 请求报单
                 req_field = traderapi.CTORATstpInputOrderField()
 
@@ -223,11 +222,11 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
 
                 '''
                 上交所支持限价指令和最优五档剩撤、最优五档剩转限两种市价指令，对于科创板额外支持本方最优和对手方最优两种市价指令和盘后固定价格申报指令
-			    深交所支持限价指令和立即成交剩余撤销、全额成交或撤销、本方最优、对手方最优和最优五档剩撤五种市价指令
-			    限价指令和上交所科创板盘后固定价格申报指令需填写报单价格，其它市价指令无需填写报单价格
-			    以下以上交所限价指令为例，其它指令参考开发指南相关说明填写OrderPriceType、TimeCondition和VolumeCondition三个字段:
+                深交所支持限价指令和立即成交剩余撤销、全额成交或撤销、本方最优、对手方最优和最优五档剩撤五种市价指令
+                限价指令和上交所科创板盘后固定价格申报指令需填写报单价格，其它市价指令无需填写报单价格
+                以下以上交所限价指令为例，其它指令参考开发指南相关说明填写OrderPriceType、TimeCondition和VolumeCondition三个字段:
                 '''
-                req_field.LimitPrice = 80.02
+                req_field.LimitPrice = 7.29
                 req_field.OrderPriceType = traderapi.TORA_TSTP_OPT_LimitPrice
                 req_field.TimeCondition = traderapi.TORA_TSTP_TC_GFD
                 req_field.VolumeCondition = traderapi.TORA_TSTP_VC_AV
@@ -235,8 +234,8 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
 
                 '''
                 OrderRef为报单引用，类型为整型，该字段报单时为选填
-			    若不填写，则系统会为每笔报单自动分配一个报单引用
-			    若填写，则需保证同一个TCP会话下报单引用严格单调递增，不要求连续递增，至少需从1开始编号
+                若不填写，则系统会为每笔报单自动分配一个报单引用
+                若填写，则需保证同一个TCP会话下报单引用严格单调递增，不要求连续递增，至少需从1开始编号
                 '''
                 #req_field.OrderRef = 1
 
@@ -256,7 +255,6 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqOrderInsert(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqOrderInsert fail, ret[%d]' % ret)
-                return
 
             
             if 0:
@@ -293,7 +291,6 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqOrderAction(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqOrderAction fail, ret[%d]' % ret)
-                return
 
 
             if 0:
@@ -308,7 +305,6 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqInquiryJZFund(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqInquiryJZFund fail, ret[%d]' % ret)
-                return
 
 
             if 0:
@@ -322,11 +318,11 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
 
                 '''
                 转移方向：
-			    TORA_TSTP_TRNSD_MoveIn表示资金从集中交易柜台调拨至快速交易柜台
-			    TORA_TSTP_TRNSD_MoveOut表示资金从快速交易柜台调拨至集中交易柜台
-			    TORA_TSTP_TRNSD_StockToBank表示证券快速交易系统资金转入银行，即出金
-			    TORA_TSTP_TRNSD_BankToStock表示银行资金转入证券快速交易系统，即入金
-			    以下说明各场景下字段填值：
+                TORA_TSTP_TRNSD_MoveIn表示资金从集中交易柜台调拨至快速交易柜台
+                TORA_TSTP_TRNSD_MoveOut表示资金从快速交易柜台调拨至集中交易柜台
+                TORA_TSTP_TRNSD_StockToBank表示证券快速交易系统资金转入银行，即出金
+                TORA_TSTP_TRNSD_BankToStock表示银行资金转入证券快速交易系统，即入金
+                以下说明各场景下字段填值：
                 '''
                 # （1）资金从集中交易柜台调拨至快速交易柜台
                 req_field.TransferDirection = traderapi.TORA_TSTP_TRNSD_MoveIn
@@ -343,8 +339,8 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
 
                 '''
                 申请流水号ApplySerial字段为选填字段
-			    若不填写则柜台系统会自动生成一个申请流水号
-			    若填写则需保证同一个TCP会话下申请流水号不重复
+                若不填写则柜台系统会自动生成一个申请流水号
+                若填写则需保证同一个TCP会话下申请流水号不重复
                 '''
                 #req_field.ApplySerial = 1
 
@@ -352,13 +348,11 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqTransferFund(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqTransferFund fail, ret[%d]', ret)
-                return
-
 
             if 0:
                 '''登出,目前登出成功连接会立即被柜台系统断开，终端不会收到OnRspUserLogout应答
-			    连接断开后接口内部会触发重新连接，为不使连接成功后又触发重新登录，需终端做好逻辑控制
-			    一般情况下若希望登出，直接调用Release接口即可，释放成功连接将被终端强制关闭，Release接口调用注意事项见下文说明
+                连接断开后接口内部会触发重新连接，为不使连接成功后又触发重新登录，需终端做好逻辑控制
+                一般情况下若希望登出，直接调用Release接口即可，释放成功连接将被终端强制关闭，Release接口调用注意事项见下文说明
                 '''
                 req_field = traderapi.CTORATstpUserLogoutField()
 
@@ -366,12 +360,10 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 ret = self.__api.ReqUserLogout(req_field, self.__req_id)
                 if ret != 0:
                     print('ReqUserLogout fail, ret[%d]' % ret)
-                return
-        
         else:
             print('Login fail!!! [%d] [%d] [%s]'
                 % (nRequestID, pRspInfoField.ErrorID, pRspInfoField.ErrorMsg))
-
+        return
 
     def OnRspUserPasswordUpdate(self, pUserPasswordUpdateField: "CTORATstpUserPasswordUpdateField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         if pRspInfoField.ErrorID == 0:
@@ -423,7 +415,7 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
     def OnRtnTrade(self, pTradeField: "CTORATstpTradeField") -> "void":
         print('OnRtnTrade: TradeID[%s] InvestorID[%s] SecurityID[%s] OrderRef[%d] OrderLocalID[%s] Price[%.2f] Volume[%d]'
             % (pTradeField.TradeID, pTradeField.InvestorID, pTradeField.SecurityID,
-               pTradeField.OrderRef, pTradeField.OrderLocalID, pTradeField.Price, pTradeField.Volume))
+            pTradeField.OrderRef, pTradeField.OrderLocalID, pTradeField.Price, pTradeField.Volume))
 
 
     def OnRtnMarketStatus(self, pMarketStatusField: "CTORATstpMarketStatusField") -> "void":
@@ -443,8 +435,8 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
 
     def OnRspQryInvestor(self, pInvestorField: "CTORATstpInvestorField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         if bIsLast != 1:
-            print('OnRspQryInvestor[%d]: InvestorID[%s] InvestorName[%s] Operways[%s]'
-                %(nRequestID, pInvestorField.InvestorID, pInvestorField.InvestorName, 
+            print('OnRspQryInvestor[%d]: InvestorID[%s]  Operways[%s]'
+                %(nRequestID, pInvestorField.InvestorID, 
                 pInvestorField.Operways))
         else:
             print('查询投资者结束[%d] ErrorID[%d] ErrorMsg[%s]'
@@ -477,7 +469,7 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 pOrderField.VolumeTraded, pOrderField.OrderStatus, pOrderField.OrderSubmitStatus, pOrderField.StatusMsg))
         else:
             print('查询报单结束[%d] ErrorID[%d] ErrorMsg[%s]'
-                 % (nRequestID, pRspInfoField.ErrorID, pRspInfoField.ErrorMsg))
+                % (nRequestID, pRspInfoField.ErrorID, pRspInfoField.ErrorMsg))
 
     def OnRspQryPosition(self, pPositionField: "CTORATstpPositionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         if bIsLast != 1:
@@ -486,11 +478,11 @@ class TraderSpi(traderapi.CTORATstpTraderSpi):
                 pPositionField.TodayBSPos, pPositionField.TodayPRPos))
         else:
             print('查询持仓结束[%d] ErrorID[%d] ErrorMsg[%s]'
-                 % (nRequestID, pRspInfoField.ErrorID, pRspInfoField.ErrorMsg))
+                % (nRequestID, pRspInfoField.ErrorID, pRspInfoField.ErrorMsg))
 
-def main():
+if __name__ == '__main__':
     # 打印接口版本号
-    print(traderapi.CTORATstpTraderApi_GetApiVersion())
+    print("TradeAPI Version:::"+traderapi.CTORATstpTraderApi_GetApiVersion())
 
     # 创建接口对象
     # pszFlowPath为私有流和公有流文件存储路径，若订阅私有流和公有流且创建多个接口实例，每个接口实例应配置不同的路径
@@ -503,19 +495,41 @@ def main():
     # 注册回调接口
     api.RegisterSpi(spi)
 
-    # 注册单个交易前置服务地址
-    api.RegisterFront('tcp://10.0.1.101:6500')
-    # 注册多个交易前置服务地址，用逗号隔开
-    #api.RegisterFront('tcp://10.0.1.101:6500,tcp://10.0.1.101:26500')
-    # 注册名字服务器地址，支持多服务地址逗号隔开
-    #api.RegisterNameServer('tcp://10.0.1.101:52370')
-    #api.RegisterNameServer('tcp://10.0.1.101:52370,tcp://10.0.1.101:62370')
+
+    if 1:   #模拟环境，TCP 直连Front方式
+        # 注册单个交易前置服务地址
+        TD_TCP_FrontAddress="tcp://210.14.72.21:4400" #仿真交易环境
+        # TD_TCP_FrontAddress="tcp://210.14.72.15:4400" #24小时环境A套
+        # TD_TCP_FrontAddress="tcp://210.14.72.16:9500" #24小时环境B套
+        api.RegisterFront(TD_TCP_FrontAddress)
+        # 注册多个交易前置服务地址，用逗号隔开 形如: api.RegisterFront("tcp://10.0.1.101:6500,tcp://10.0.1.101:26500")
+        print("TD_TCP_FensAddress[sim or 24H]::%s\n"%TD_TCP_FrontAddress)
+
+    else:	#模拟环境，FENS名字服务器方式
+        TD_TCP_FensAddress ="tcp://210.14.72.21:42370"; #模拟环境通用fens地址
+        '''********************************************************************************
+        * 注册 fens 地址前还需注册 fens 用户信息，包括环境编号、节点编号、Fens 用户代码等信息
+        * 使用名字服务器的好处是当券商系统部署方式发生调整时外围终端无需做任何前置地址修改
+        * *****************************************************************************'''
+        fens_user_info_field = traderapi.CTORATstpFensUserInfoField()
+        fens_user_info_field.FensEnvID="stock" #必填项，暂时固定为“stock”表示普通现货柜台
+        fens_user_info_field.FensNodeID="sim"  #必填项，生产环境需按实际填写,仿真环境为sim
+        fens_user_info_field.FensNodeID,="24a" #必填项，生产环境需按实际填写,24小时A套环境为24a
+        # fens_user_info_field.FensNodeID="24b" #必填项，生产环境需按实际填写,24小时B套环境为24b
+        api.RegisterFensUserInfo(fens_user_info_field)
+        api.RegisterNameServer(TD_TCP_FensAddress)
+        # 注册名字服务器地址，支持多服务地址逗号隔开 形如:api.RegisterNameServer('tcp://10.0.1.101:52370,tcp://10.0.1.101:62370')
+        print("TD_TCP_FensAddress[%s]::%s\n"%(fens_user_info_field.FensNodeID,TD_TCP_FensAddress))
 
     #订阅私有流
     api.SubscribePrivateTopic(traderapi.TORA_TERT_QUICK)
     #订阅公有流
     api.SubscribePublicTopic(traderapi.TORA_TERT_QUICK)
-
+    '''**********************************
+	*	TORA_TERT_RESTART, 从日初开始
+	*	TORA_TERT_RESUME, 从断开时候开始
+	*	TORA_TERT_QUICK, 从最新时刻开始
+	*************************************'''
     # 启动接口
     api.Init()
 
@@ -524,7 +538,3 @@ def main():
 
     # 释放接口对象
     api.Release()
-
-
-if __name__ == '__main__':
-    main()
