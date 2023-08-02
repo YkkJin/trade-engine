@@ -1,8 +1,8 @@
-from src.trade import Trader 
-from tora_stock.traderapi import CTORATstpInputOrderActionField
+from tora_api.src.trade import Trader
+from tora_api.src.tora_stock.traderapi import CTORATstpInputOrderActionField
 from time import sleep
-from config.config import *
-from test.test_order import (        
+from tora_api.config.config import *
+from tora_api.test.test_order import (        
         LimitPriceOrderReq,
         LimitPriceOrderReqSell,
         FiveLevelPriceToCancelOrderReq,
@@ -22,7 +22,7 @@ order_reqs = [LimitPriceOrderReq,
                 FiveLevelPriceToCancelOrderReq,
                 HomeBestPriceOrderReq,
                 BestPriceOrderReq]
-order_reqs_sell = [LimitPriceOrderReqSell,]
+order_reqs_sell = [LimitPriceOrderReqSell]
 
 cancel_order_reqs = [LimitPriceOrderReqCancel]
 
@@ -63,7 +63,7 @@ def test_cancel_order(trader: Trader) -> bool:
 
 if __name__ == "__main__":
     trader = Trader()
-    trader.connect(UserID,Password,FrontAddress['level1_trade_24A'],ACCOUNT_USERID,ADDRESS_FRONT)
+    trader.connect(UserID,Password,FrontAddress['level1_trade'],ACCOUNT_USERID,ADDRESS_FRONT)
     sleep(1)
     trader.query_accounts()
     sleep(1)
@@ -71,12 +71,10 @@ if __name__ == "__main__":
     sleep(1)
     trader.query_positions()
     sleep(1)
-
-   # test_sell_order(trader)
+    test_sell_order(trader)
 
     sleep(5)
-    trader.query_orders()
-    trader.query_orders()
+    trader.query_positions()
     input() 
 
     trader.logout()

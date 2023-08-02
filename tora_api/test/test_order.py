@@ -1,4 +1,4 @@
-from tora_stock.traderapi import (
+from ..src.tora_stock.traderapi import (
     TORA_TSTP_D_Buy,
     TORA_TSTP_D_Sell,
     TORA_TSTP_EXD_SSE,
@@ -50,7 +50,7 @@ LimitPriceOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 LimitPriceOrderReq.ShareholderID = "A00032129"
 LimitPriceOrderReq.Direction = TORA_TSTP_D_Buy
 LimitPriceOrderReq.VolumeTotalOriginal = 200
-LimitPriceOrderReq.LimitPrice = 7.60 
+LimitPriceOrderReq.LimitPrice = 7.60
 LimitPriceOrderReq.OrderPriceType = TORA_TSTP_OPT_LimitPrice
 LimitPriceOrderReq.TimeCondition = TORA_TSTP_TC_GFD
 LimitPriceOrderReq.VolumeCondition = TORA_TSTP_VC_AV
@@ -124,8 +124,8 @@ LimitPriceOrderReqSell.SecurityID = '600000'
 LimitPriceOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 LimitPriceOrderReqSell.ShareholderID = "A00032129"
 LimitPriceOrderReqSell.Direction = TORA_TSTP_D_Sell
-LimitPriceOrderReqSell.VolumeTotalOriginal = 100
-LimitPriceOrderReqSell.LimitPrice = 7.60
+LimitPriceOrderReqSell.VolumeTotalOriginal = 1000
+LimitPriceOrderReqSell.LimitPrice = 7.53
 LimitPriceOrderReqSell.OrderPriceType = TORA_TSTP_OPT_LimitPrice
 LimitPriceOrderReqSell.TimeCondition = TORA_TSTP_TC_GFD
 LimitPriceOrderReqSell.VolumeCondition = TORA_TSTP_VC_AV 
