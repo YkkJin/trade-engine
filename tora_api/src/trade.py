@@ -1,5 +1,6 @@
 from typing import Dict,Tuple,Any,List
 from ..src.tora_stock import traderapi as traderapi
+from ..config.config import *
 from time import sleep
 from datetime import datetime
 from ..src.tora_stock.traderapi import (
@@ -59,16 +60,6 @@ from ..src.tora_stock.traderapi import (
     
 )
 
-
-ACCOUNT_USERID: str = "用户代码"
-ACCOUNT_ACCOUNTID: str = "资金账号"
-ADDRESS_FRONT: str = "前置地址"
-ADDRESS_FENS: str = "FENS地址"
-LEVEL1: str = "Level1"
-LEVEL2: str = "Level2"
-
-
-
 class Trader(traderapi.CTORATstpTraderSpi):
     
 
@@ -105,6 +96,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
     def OnFrontDisconnected(self, reason: int) -> None:
         """服务器连接断开回报"""
         self.login_status = False
+        print("交易服务器链接断开:{reason}")
        #self.gateway.write_log(f"交易服务器连接断开，原因{reason}")
 
     def OnRspUserLogin(
@@ -130,6 +122,22 @@ class Trader(traderapi.CTORATstpTraderSpi):
             #self.gateway.write_error("交易服务器登录失败", error)
 
             print("交易服务器登录失败",error)
+        
+    def OnRspUserLogout(
+        self,
+        data: CTORATstpUserLogoutField,
+        error: CTORATstpRspInfoField,
+        req: int
+    ) -> None:
+        if not data:
+            return 
+        if error.ErrorID == -1:
+            print(error.ErrorMsg)
+        print(error.ErrorID)
+        print(error.ErrorMsg)
+        print("User {data.UserID} logout successfully")
+        
+        
 
     def OnRspOrderAction(
         self,
@@ -187,6 +195,24 @@ class Trader(traderapi.CTORATstpTraderSpi):
         '''
 
         self.sysid_orderid_map[data.OrderSysID] = order_id
+    
+    def OnRspQryOrder(self, data: CTORATstpOrderField, error: CTORATstpRspInfoField, reqid: int, last: bool) -> None: 
+        if not data:
+            return 
+        
+        order_id = data.OrderLocalID
+        front_id = data.FrontID
+        session_id = data.SessionID 
+        price_type = data.OrderPriceType
+        ref = data.OrderRef
+        security = data.SecurityID 
+        direction = data.Direction
+        insert_date = data.InsertDate
+        insert_time = data.InsertTime
+
+        print(f"date:{insert_date}, time: {insert_time}, order_id: {front_id}_{session_id}_{ref}, security: {security}, direction: {direction}, price_type: {price_type}")
+
+
 
     def OnRtnTrade(self, data: CTORATstpTradeField) -> None:
         """成交数据推送"""
@@ -245,7 +271,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         )
         self.gateway.on_contract(contract_data)
         '''
-        #print(f"name: {data.SecurityName}, size: {data.VolumeMultiple}, pricetick: {data.PriceTick}")
+        print(f"name: {data.SecurityName}, size: {data.VolumeMultiple}, pricetick: {data.PriceTick}")
 
 
 
@@ -431,9 +457,10 @@ class Trader(traderapi.CTORATstpTraderSpi):
         req.UserID = self.userid
         self.api.ReqUserLogout(req,self.reqid)
 
-    def query_contracts(self) -> None:
+    def query_contracts(self,security_id:str = "600000") -> None:
         """查询合约"""
         req: CTORATstpQrySecurityField = CTORATstpQrySecurityField()
+        req.SecurityID = security_id
         self.reqid += 1
         self.api.ReqQrySecurity(req, self.reqid)
 
