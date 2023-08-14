@@ -9,3 +9,5 @@ dist
 dist-ssr
 *.local
 core.*
+*.cpython-37.pyc
+__pycache__
