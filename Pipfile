@@ -8,6 +8,9 @@ django = "*"
 wmi = "*"
 streamlit = "*"
 click = "*"
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
 
 [dev-packages]
 
