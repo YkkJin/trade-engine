@@ -210,11 +210,13 @@ class Trader(traderapi.CTORATstpTraderSpi):
         insert_date = data.InsertDate
         insert_time = data.InsertTime
 
-        print(f"date:{insert_date}, time: {insert_time}, order_id: {front_id}_{session_id}_{ref}, security: {security}, direction: {direction}, price_type: {price_type}")
+        print(f"date:{insert_date}, time: {insert_time}, order_id: {front_id}_{session_id}_{ref}, security: {security}, direction: {direction}, price_type: {price_type},  price: {data.LimitPrice}, OrderStatus: {data.OrderStatus}, StatusMsg: {data.StatusMsg}, VolumeTraded: {data.VolumeTraded}, VolumeCanceled: {data.VolumeCanceled}")
 
 
 
     def OnRtnTrade(self, data: CTORATstpTradeField) -> None:
+        if not data:
+            return
         """成交数据推送"""
         symbol: str = data.SecurityID
 

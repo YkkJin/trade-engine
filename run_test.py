@@ -22,7 +22,10 @@ order_reqs = [LimitPriceOrderReq,
                 FiveLevelPriceToCancelOrderReq,
                 HomeBestPriceOrderReq,
                 BestPriceOrderReq]
-order_reqs_sell = [LimitPriceOrderReqSell]
+order_reqs_sell = [LimitPriceOrderReqSell,
+                    LimitPriceOrderReqSell,
+                    LimitPriceOrderReqSell,
+                    LimitPriceOrderReqSell]
 
 cancel_order_reqs = [LimitPriceOrderReqCancel]
 
@@ -69,11 +72,13 @@ if __name__ == "__main__":
     sleep(1)
     trader.query_positions()
     sleep(1)
-    #test_sell_order(trader)
-    trader.query_contracts('000001')
-    trader.query_contracts('000300')
-    #sleep(5)
-    #trader.query_positions()
+    test_buy_order(trader)
+    sleep(2)
+    test_sell_order(trader)
+    sleep(2)
+    test_cancel_order(trader)
+    sleep(2)
+    trader.query_positions()
     trader.query_orders()
     input()
     trader.logout()

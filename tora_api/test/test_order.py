@@ -36,6 +36,9 @@ from ..src.tora_stock.traderapi import (
 
 )
 
+VolumeTotalOriginal = 100
+
+
 '''
 买入指令测试
 
@@ -49,7 +52,7 @@ LimitPriceOrderReq.SecurityID = '600000'
 LimitPriceOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 LimitPriceOrderReq.ShareholderID = "A00032129"
 LimitPriceOrderReq.Direction = TORA_TSTP_D_Buy
-LimitPriceOrderReq.VolumeTotalOriginal = 200
+LimitPriceOrderReq.VolumeTotalOriginal = VolumeTotalOriginal
 LimitPriceOrderReq.LimitPrice = 7.60
 LimitPriceOrderReq.OrderPriceType = TORA_TSTP_OPT_LimitPrice
 LimitPriceOrderReq.TimeCondition = TORA_TSTP_TC_GFD
@@ -63,7 +66,7 @@ FiveLevelPriceToCancelOrderReq.SecurityID = '600000'
 FiveLevelPriceToCancelOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 FiveLevelPriceToCancelOrderReq.ShareholderID = "A00032129"
 FiveLevelPriceToCancelOrderReq.Direction = TORA_TSTP_D_Buy
-FiveLevelPriceToCancelOrderReq.VolumeTotalOriginal = 200
+FiveLevelPriceToCancelOrderReq.VolumeTotalOriginal = VolumeTotalOriginal
 FiveLevelPriceToCancelOrderReq.LimitPrice = 7.60    #报单交易所为上交所时，需申明保护限价
 FiveLevelPriceToCancelOrderReq.OrderPriceType = TORA_TSTP_OPT_FiveLevelPrice
 FiveLevelPriceToCancelOrderReq.TimeCondition = TORA_TSTP_TC_IOC
@@ -77,7 +80,7 @@ FiveLevelPriceToLimitOrderReq.SecurityID = '600000'
 FiveLevelPriceToLimitOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 FiveLevelPriceToLimitOrderReq.ShareholderID = "A00032129"
 FiveLevelPriceToLimitOrderReq.Direction = TORA_TSTP_D_Buy
-FiveLevelPriceToLimitOrderReq.VolumeTotalOriginal = 200
+FiveLevelPriceToLimitOrderReq.VolumeTotalOriginal = VolumeTotalOriginal
 FiveLevelPriceToLimitOrderReq.LimitPrice = 7.60
 FiveLevelPriceToLimitOrderReq.OrderPriceType = TORA_TSTP_OPT_FiveLevelPrice
 FiveLevelPriceToLimitOrderReq.TimeCondition = TORA_TSTP_TC_GFD
@@ -91,7 +94,7 @@ HomeBestPriceOrderReq.SecurityID = '600000'
 HomeBestPriceOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 HomeBestPriceOrderReq.ShareholderID = "A00032129"
 HomeBestPriceOrderReq.Direction = TORA_TSTP_D_Buy
-HomeBestPriceOrderReq.VolumeTotalOriginal = 200
+HomeBestPriceOrderReq.VolumeTotalOriginal = VolumeTotalOriginal
 HomeBestPriceOrderReq.LimitPrice = 7.60
 HomeBestPriceOrderReq.OrderPriceType = TORA_TSTP_OPT_HomeBestPrice
 HomeBestPriceOrderReq.TimeCondition = TORA_TSTP_TC_GFD
@@ -105,7 +108,7 @@ BestPriceOrderReq.SecurityID = '600000'
 BestPriceOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 BestPriceOrderReq.ShareholderID = "A00032129"
 BestPriceOrderReq.Direction = TORA_TSTP_D_Buy
-BestPriceOrderReq.VolumeTotalOriginal = 200
+BestPriceOrderReq.VolumeTotalOriginal = VolumeTotalOriginal
 BestPriceOrderReq.LimitPrice = 7.60
 BestPriceOrderReq.OrderPriceType = TORA_TSTP_OPT_BestPrice
 BestPriceOrderReq.TimeCondition = TORA_TSTP_TC_GFD
@@ -124,7 +127,7 @@ LimitPriceOrderReqSell.SecurityID = '600000'
 LimitPriceOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 LimitPriceOrderReqSell.ShareholderID = "A00032129"
 LimitPriceOrderReqSell.Direction = TORA_TSTP_D_Sell
-LimitPriceOrderReqSell.VolumeTotalOriginal = 1000
+LimitPriceOrderReqSell.VolumeTotalOriginal = VolumeTotalOriginal
 LimitPriceOrderReqSell.LimitPrice = 7.53
 LimitPriceOrderReqSell.OrderPriceType = TORA_TSTP_OPT_LimitPrice
 LimitPriceOrderReqSell.TimeCondition = TORA_TSTP_TC_GFD
@@ -138,7 +141,7 @@ FiveLevelPriceToCancelOrderReqSell.SecurityID = '600000'
 FiveLevelPriceToCancelOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 FiveLevelPriceToCancelOrderReqSell.ShareholderID = "A00032129"
 FiveLevelPriceToCancelOrderReqSell.Direction = TORA_TSTP_D_Sell
-FiveLevelPriceToCancelOrderReqSell.VolumeTotalOriginal = 200
+FiveLevelPriceToCancelOrderReqSell.VolumeTotalOriginal = VolumeTotalOriginal
 FiveLevelPriceToCancelOrderReqSell.LimitPrice = 7.60 
 FiveLevelPriceToCancelOrderReqSell.OrderPriceType = TORA_TSTP_OPT_FiveLevelPrice
 FiveLevelPriceToCancelOrderReqSell.TimeCondition = TORA_TSTP_TC_IOC
@@ -152,7 +155,7 @@ FiveLevelPriceToLimitOrderReqSell.SecurityID = '600000'
 FiveLevelPriceToLimitOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 FiveLevelPriceToLimitOrderReqSell.ShareholderID = "A00032129"
 FiveLevelPriceToLimitOrderReqSell.Direction = TORA_TSTP_D_Sell
-FiveLevelPriceToLimitOrderReqSell.VolumeTotalOriginal = 200
+FiveLevelPriceToLimitOrderReqSell.VolumeTotalOriginal = VolumeTotalOriginal
 FiveLevelPriceToLimitOrderReqSell.LimitPrice = 7.60
 FiveLevelPriceToLimitOrderReqSell.OrderPriceType = TORA_TSTP_OPT_FiveLevelPrice
 FiveLevelPriceToLimitOrderReqSell.TimeCondition = TORA_TSTP_TC_GFD
@@ -166,7 +169,7 @@ HomeBestPriceOrderReqSell.SecurityID = '600000'
 HomeBestPriceOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 HomeBestPriceOrderReqSell.ShareholderID = "A00032129"
 HomeBestPriceOrderReqSell.Direction = TORA_TSTP_D_Sell
-HomeBestPriceOrderReqSell.VolumeTotalOriginal = 200
+HomeBestPriceOrderReqSell.VolumeTotalOriginal = VolumeTotalOriginal
 HomeBestPriceOrderReqSell.LimitPrice = 7.60
 HomeBestPriceOrderReqSell.OrderPriceType = TORA_TSTP_OPT_HomeBestPrice
 HomeBestPriceOrderReqSell.TimeCondition = TORA_TSTP_TC_GFD
@@ -180,7 +183,7 @@ BestPriceOrderReqSell.SecurityID = '600000'
 BestPriceOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 BestPriceOrderReqSell.ShareholderID = "A00032129"
 BestPriceOrderReqSell.Direction = TORA_TSTP_D_Sell
-BestPriceOrderReqSell.VolumeTotalOriginal = 200
+BestPriceOrderReqSell.VolumeTotalOriginal = VolumeTotalOriginal
 BestPriceOrderReqSell.LimitPrice = 7.60
 BestPriceOrderReqSell.OrderPriceType = TORA_TSTP_OPT_BestPrice
 BestPriceOrderReqSell.TimeCondition = TORA_TSTP_TC_GFD
@@ -188,7 +191,10 @@ BestPriceOrderReqSell.VolumeCondition = TORA_TSTP_VC_AV
 
 
 '''
-***** 撤单测试 
+撤单指令测试 
+'''
+'''
+限价单
 '''
 
 LimitPriceOrderReqCancel = CTORATstpInputOrderField()
@@ -196,8 +202,8 @@ LimitPriceOrderReqCancel.SecurityID = '600000'
 LimitPriceOrderReqCancel.ExchangeID  = TORA_TSTP_EXD_SSE
 LimitPriceOrderReqCancel.ShareholderID = "A00032129"
 LimitPriceOrderReqCancel.Direction = TORA_TSTP_D_Buy
-LimitPriceOrderReqCancel.VolumeTotalOriginal = 200
-LimitPriceOrderReqCancel.LimitPrice = 7.90
+LimitPriceOrderReqCancel.VolumeTotalOriginal = VolumeTotalOriginal
+LimitPriceOrderReqCancel.LimitPrice = 7.45
 LimitPriceOrderReqCancel.OrderPriceType = TORA_TSTP_OPT_LimitPrice
 LimitPriceOrderReqCancel.TimeCondition = TORA_TSTP_TC_GFD
 LimitPriceOrderReqCancel.VolumeCondition = TORA_TSTP_VC_AV
