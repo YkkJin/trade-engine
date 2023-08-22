@@ -1,5 +1,9 @@
-from tora_api.src.trade import Trader
-from tora_api.src.tora_stock.traderapi import CTORATstpInputOrderActionField
+from tora_api.src.trade import Trader,Quoter
+from tora_api.src.strategies.strategy import Strategy
+from tora_api.src.event.bus import EventBus
+from tora_api.src.event.engine import EventEngine
+from tora_api.src.models.model import SubscribeRequest
+from tora_api.src.tora_stock.traderapi import (CTORATstpInputOrderActionField,TORA_TSTP_EXD_SSE)
 from time import sleep
 from tora_api.config.config import *
 from tora_api.test.test_order import (        
@@ -65,24 +69,22 @@ def test_cancel_order(trader: Trader) -> bool:
 
 
 if __name__ == "__main__":
-    trader = Trader()
-    trader.connect(UserID,Password,FrontAddress['level1_trade'],ACCOUNT_USERID,ADDRESS_FRONT)
+    bus = EventBus()
+    qter = Quoter(bus)
+    qter.connect(UserID,Password,FrontAddress['level1_xmd_24A'],ACCOUNT_USERID,ADDRESS_FRONT)
+
     sleep(1)
-    trader.query_accounts()
-    sleep(1)
-    trader.query_positions()
-    sleep(1)
-    test_buy_order(trader)
-    sleep(2)
-    test_sell_order(trader)
-    sleep(2)
-    test_cancel_order(trader)
-    sleep(2)
-    trader.query_positions()
-    trader.query_orders()
-    input()
-    trader.logout()
-    trader.release()
+    req = SubscribeRequest(
+        SecurityID = '600000',
+        ExchangeID = TORA_TSTP_EXD_SSE
+    )
+    qter.subscribe(req)
+
+    strat = Strategy() 
+
+    e = EventEngine(bus,strategy = strat)
+    e.run()
+    
 
     
         

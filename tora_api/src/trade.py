@@ -1,8 +1,14 @@
 from typing import Dict,Tuple,Any,List
-from .tora_stock import traderapi as traderapi
-from ..config.config import *
 from time import sleep
 from datetime import datetime
+
+
+from ..config.config import *
+from .models.model import TickModel,SubscribeRequest
+from .event.bus import EventBus
+from .event.event import Event 
+from .event.type import EventType
+from .tora_stock import (traderapi,xmdapi)
 from .tora_stock import (
     traderapi,
     xmdapi
@@ -68,13 +74,14 @@ from .tora_stock.xmdapi import (
     CTORATstpSpecificSecurityField
 )
 
-class Quoter():
-    def __init__(self) -> None:
+class Quoter(xmdapi.CTORATstpXMdSpi):
+    def __init__(self, bus: EventBus) -> None:
         """构造函数"""
         super().__init__()
 
         #self.gateway: ToraStockGateway = gateway
         #self.gateway_name: str = gateway.gateway_name
+        self.bus = bus
 
         self.reqid: int = 0
         self.api: xmdapi.CTORATstpXMdApi_CreateTstpXMdApi = None
@@ -110,6 +117,7 @@ class Quoter():
             self.login_status = True
             #self.gateway.write_log("行情服务器登录成功")
         else:
+            print("login failed")
             #self.gateway.write_error("行情服务器登录失败", error)
 
     def OnRspSubMarketData(
@@ -125,55 +133,56 @@ class Quoter():
 
     def OnRtnMarketData(self, data: CTORATstpMarketDataField) -> None:
         """行情数据推送"""
+        if not data:
+            return
         current_date: str = data.TradingDay
         current_time: str = data.UpdateTime
-        dt: datetime = datetime.strptime(
-            f'{current_date}-{current_time}', "%Y%m%d-%H:%M:%S"
-        )
-        dt: datetime = dt.replace(tzinfo=CHINA_TZ)
-        tick: TickData = TickData(
-            symbol=data.SecurityID,
-            exchange=EXCHANGE_TORA2VT[data.ExchangeID],
-            datetime=dt,
-            name=data.SecurityName,
-            turnover=data.Turnover,
-            open_interest=data.OpenInterest,
-            last_price=data.LastPrice,
-            last_volume=data.Volume,
-            limit_up=data.UpperLimitPrice,
-            limit_down=data.LowerLimitPrice,
-            open_price=data.OpenPrice,
-            high_price=data.HighestPrice,
-            low_price=data.LowestPrice,
-            pre_close=data.PreClosePrice,
-            bid_price_1=data.BidPrice1,
-            ask_price_1=data.AskPrice1,
-            bid_volume_1=data.BidVolume1,
-            ask_volume_1=data.AskVolume1,
-            gateway_name=self.gateway_name
+        #dt: datetime = datetime.strptime(
+            #f'{current_date}-{current_time}', "%Y%m%d-%H:%M:%S"
+        #)
+        #dt: datetime = dt.replace(tzinfo=CHINA_TZ)
+        tick = TickModel(
+            SecurityID  =data.SecurityID,
+            ExchangeID  =data.ExchangeID,
+            #datetime = dt,
+            SecurityName    =data.SecurityName,
+            Turnover =data.Turnover,
+            OpenInterest=data.OpenInterest,
+            LastPrice=data.LastPrice,
+            Volume=data.Volume,
+            UpperLimitPrice=data.UpperLimitPrice,
+            LowerLimitPrice=data.LowerLimitPrice,
+            OpenPrice = data.OpenPrice,
+            HighestPrice=data.HighestPrice,
+            LowestPrice=data.LowestPrice,
+            PreClosePrice=data.PreClosePrice,
+            BidPrice1=data.BidPrice1,
+            AskPrice1=data.AskPrice1,
+            BidVolume1=data.BidVolume1,
+            AskVolume1=data.AskVolume1,
         )
 
         if data.BidVolume2 or data.AskVolume2:
-            tick.bid_price_2 = data.BidPrice2
-            tick.bid_price_3 = data.BidPrice3
-            tick.bid_price_4 = data.BidPrice4
-            tick.bid_price_5 = data.BidPrice5
-            tick.ask_price_2 = data.AskPrice2
-            tick.ask_price_3 = data.AskPrice3
-            tick.ask_price_4 = data.AskPrice4
-            tick.ask_price_5 = data.AskPrice5
+            tick.BidPrice2 = data.BidPrice2
+            tick.BidPrice3 = data.BidPrice3
+            tick.BidPrice4 = data.BidPrice4
+            tick.BidPrice5 = data.BidPrice5
+            tick.AskPrice2 = data.AskPrice2
+            tick.AskPrice3 = data.AskPrice3
+            tick.AskPrice4 = data.AskPrice4
+            tick.AskPrice5 = data.AskPrice5
 
-            tick.bid_volume_2 = data.BidVolume2
-            tick.bid_volume_3 = data.BidVolume3
-            tick.bid_volume_4 = data.BidVolume4
-            tick.bid_volume_5 = data.BidVolume5
+            tick.BidVolume2 = data.BidVolume2
+            tick.BidVolume3 = data.BidVolume3
+            tick.BidVolume4 = data.BidVolume4
+            tick.BidVolume5 = data.BidVolume5
 
-            tick.ask_volume_2 = data.AskVolume2
-            tick.ask_volume_3 = data.AskVolume3
-            tick.ask_volume_4 = data.AskVolume4
-            tick.ask_volume_5 = data.AskVolume5
+            tick.AskVolume2 = data.AskVolume2
+            tick.AskVolume3 = data.AskVolume3
+            tick.AskVolume4 = data.AskVolume4
+            tick.AskVolume5 = data.AskVolume5
 
-        self.gateway.on_tick(tick)
+        self.bus.put(Event(EventType.TICK,tick))
 
     def connect(
         self,
@@ -216,8 +225,8 @@ class Quoter():
     def subscribe(self, req: SubscribeRequest) -> None:
         """订阅行情"""
         if self.login_status:
-            exchange: Exchange = EXCHANGE_VT2TORA[req.exchange]
-            self.api.SubscribeMarketData([str.encode(req.symbol)], exchange)
+            #exchange: Exchange = EXCHANGE_VT2TORA[req.exchange]
+            self.api.SubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)
 
     def close(self) -> None:
         """关闭连接"""
