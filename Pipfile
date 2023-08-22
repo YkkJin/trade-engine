@@ -11,6 +11,7 @@ click = "*"
 fastapi = "*"
 uvicorn = "*"
 pydantic = "*"
+pipfile = "*"
 
 [dev-packages]
 
