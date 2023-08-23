@@ -4,10 +4,6 @@ verify_ssl = false
 name = "pip_conf_index_global"
 
 [packages]
-django = "*"
-wmi = "*"
-streamlit = "*"
-click = "*"
 fastapi = "*"
 uvicorn = "*"
 pydantic = "*"

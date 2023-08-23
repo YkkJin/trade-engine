@@ -17,11 +17,11 @@ https://lightly.teamcode.com/project/join?projectId=482192464371331072&code=296a
 ~ python --version 
 Python 3.7.12
 ``` 
-相应的Django版本为3.2.0
+相应的Django版本为3.2.20
 ```
 # 查看Django版本
 ~ python -m django --version 
-3.2.0
+3.2.20
 ```
 
 ## 参考项目
@@ -94,6 +94,6 @@ TODO
 - 交易前置地址：tcp://210.14.72.15:4400
 
 ## demo使用说明
-```cli.py 为一个简单的命令行版交易交互实现，支持持仓查询和下单交易
+```cli.py```  为一个简单的命令行版交易交互实现，支持持仓查询和下单交易
 
 
