@@ -3,7 +3,7 @@ from time import sleep
 from datetime import datetime
 
 from ..config.config import *
-from .models.model import TickModel, TradeModel
+from .models.model import TickModel, TradeModel, OrderModel
 from .models.request import OrderRequest, CancelRequest, SubscribeRequest
 from .event.bus import EventBus
 from .event.event import Event
@@ -66,7 +66,7 @@ from .tora_stock.traderapi import (
     CTORATstpTradingAccountField,
     CTORATstpShareholderAccountField,
     CTORATstpInvestorField,
-    CTORATstpPositionField,
+    CTORATstpPositionField, TORA_TSTP_EXD_COMM,
 
 )
 from .tora_stock.xmdapi import (
@@ -74,6 +74,12 @@ from .tora_stock.xmdapi import (
     CTORATstpSpecificSecurityField
 )
 
+EXCHANGE_MAP = {
+    '0': TORA_TSTP_EXD_COMM,
+    '1': TORA_TSTP_EXD_SSE,
+    '2': TORA_TSTP_EXD_SZSE,
+    '4': TORA_TSTP_EXD_BSE
+}
 
 class Quoter(xmdapi.CTORATstpXMdSpi):
     def __init__(self, bus: EventBus) -> None:
@@ -381,18 +387,23 @@ class Trader(traderapi.CTORATstpTraderSpi):
         if not data:
             return
 
-        order_id = data.OrderLocalID
-        front_id = data.FrontID
-        session_id = data.SessionID
-        price_type = data.OrderPriceType
-        ref = data.OrderRef
-        security = data.SecurityID
-        direction = data.Direction
-        insert_date = data.InsertDate
-        insert_time = data.InsertTime
-
-        print(
-            f"date:{insert_date}, time: {insert_time}, order_id: {front_id}_{session_id}_{ref}, security: {security}, direction: {direction}, price_type: {price_type},  price: {data.LimitPrice}, OrderStatus: {data.OrderStatus}, StatusMsg: {data.StatusMsg}, VolumeTraded: {data.VolumeTraded}, VolumeCanceled: {data.VolumeCanceled}")
+        order = OrderModel(
+            ExchangeID = data.ExchangeID,
+            SecurityID = data.SecurityID,
+            Direction = data.Direction,
+            OrderPriceType = data.OrderPriceType,
+            TimeCondition = data.TimeCondition,
+            VolumeCondition = data.VolumeCondition,
+            LimitPrice = data.LimitPrice,
+            VolumeTotalOriginal = data.VolumeTotalOriginal,
+            RequestID = data.RequestID,
+            FrontID = data.FrontID,
+            SessionID = data.SessionID,
+            OrderRef = data.OrderRef,
+            OrderID = data.OrderID,
+            OrderStatus = data.OrderStatus
+        )
+        self.bus.put(Event(event_type=EventType.ORDER,payload = order))
 
     def OnRtnTrade(self, data: CTORATstpTradeField) -> None:
         if not data:
@@ -689,9 +700,9 @@ class Trader(traderapi.CTORATstpTraderSpi):
         req.ShareholderID = self.shareholder_ids[req.ExchangeID]
         req.OrderRef = self.order_ref
 
-        tora_req = CTORATstpInputOrderField()
+        tora_req: CTORATstpInputOrderField = CTORATstpInputOrderField()
         tora_req.ShareholderID = req.ShareholderID
-        tora_req.ExchangeID = req.ExchangeID
+        tora_req.ExchangeID = EXCHANGE_MAP[req.ExchangeID]
         tora_req.SecurityID = req.SecurityID
         tora_req.OrderPriceType = req.OrderPriceType
         tora_req.Direction = req.Direction

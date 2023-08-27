@@ -81,7 +81,7 @@ if __name__ == "__main__":
         ExchangeID=TORA_TSTP_EXD_SSE
     )
 
-    strategy = Strategy(trader=trader,quoter=quoter,limit_volume=1000,cancel_volume=500,position=1000)
+    strategy = Strategy(trader=trader, quoter=quoter, limit_volume=1000, cancel_volume=500, position=1000)
     strategy.subscribe(req)
 
     e = EventEngine(bus, strategy=strategy)

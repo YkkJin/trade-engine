@@ -58,6 +58,7 @@ class OrderModel(BaseModel):
     SessionID: int = 0
     OrderRef: int = 0
     OrderID: str = ""
+    OrderStatus: int = 0
 
 
 class TradeModel(BaseModel):
