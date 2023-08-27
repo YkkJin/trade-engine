@@ -1332,6 +1332,11 @@ class CTORATstpInputOrderField(object):
         _traderapi.CTORATstpInputOrderField_swiginit(self, _traderapi.new_CTORATstpInputOrderField())
     __swig_destroy__ = _traderapi.delete_CTORATstpInputOrderField
 
+    @SecurityID.setter
+    def SecurityID(self, value):
+        self._SecurityID = value
+
+
 # Register CTORATstpInputOrderField in _traderapi:
 _traderapi.CTORATstpInputOrderField_swigregister(CTORATstpInputOrderField)
 

@@ -2,15 +2,17 @@ from pydantic import BaseModel
 
 
 class TickModel(BaseModel):
+    TradingDay: str = ""
+    UpdateTime: str = ""
     SecurityID: str = ""
     ExchangeID: str = ""
     SecurityName: str = ""
     # datetime: str = ""
-    Turnover: float = 0.0 
+    Turnover: float = 0.0
     OpenInterest: float = 0.0
     LastPrice: float = 0.0
     Volume: float = 0.0
-    UpperLimitPrice:  float = 0.0
+    UpperLimitPrice: float = 0.0
     LowerLimitPrice: float = 0.0
     OpenPrice: float = 0.0
     HighestPrice: float = 0.0
@@ -42,7 +44,28 @@ class TickModel(BaseModel):
     AskVolume5: float = 0.0
 
 
-class SubscribeRequest(BaseModel):
+class OrderModel(BaseModel):
     ExchangeID: str = ""
     SecurityID: str = ""
-    
+    Direction: str = ""
+    OrderPriceType: str = ""
+    TimeCondition: str = ""
+    VolumeCondition: str = ""
+    LimitPrice: float = 0.0
+    VolumeTotalOriginal: float = 0.0
+    RequestID: int = 0
+    FrontID: int = 0
+    SessionID: int = 0
+    OrderRef: int = 0
+    OrderID: str = ""
+
+
+class TradeModel(BaseModel):
+    SecurityID: str = ""
+    ExchangeID: str = ""
+    OrderID: str = ""
+    TradeID: str = ""
+    Direction: str = ""
+    Price: float = 0.0
+    Volume: int = 0
+

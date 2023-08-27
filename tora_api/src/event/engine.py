@@ -3,13 +3,14 @@ from .type import EventType
 
 class EventEngine:
 
-    def __init__(self, bus, strategy, quoter, trader):
+    def __init__(self, bus, strategy):
         self.bus = bus
         self.strategy = strategy
-        self.quoter = quoter
-        self.trader = trader
+        # self.quoter = quoter
+        # self.trader = trader
 
     def run(self):
         self.bus.register(EventType.TICK, self.strategy.on_tick)
-        self.quoter.subscribe(self.strategy.subscribe_list())
+        self.bus.register(EventType.TRADE, self.strategy.on_trade)
+        # self.quoter.subscribe(self.strategy.subscribe_list())
         self.bus.start()
