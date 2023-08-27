@@ -33,7 +33,7 @@ class Strategy:
             1. 根据参数执行买入
             2. 记录挂单OrderID
             3. 返回CancelReq实例
-            4. 开启策略成交回报监听
+            4. 开启策略挂单回报监控 -> 监控 挂单时间 以及 买一量
         模块3：execute_cancel()
             1. 判断cancel_trigger状态
             2. 根据参数执行撤单风控
@@ -65,10 +65,14 @@ class Strategy:
     def execute_cancel(self):
         self.__trader.cancel_order(self.cancel_req)
 
+    # 应该是挂单回报监控
     def on_trade(self, event: Event):
         """
         成交回报监听
         检查self__trader.OnRtnTrade()是否在OnTrade中向EventBus实例推送TRADE事件
+        """
+
+        pass
         """
         if event.type != EventType.TRADE:
             return
@@ -80,6 +84,13 @@ class Strategy:
                 event.payload.SessionID == session_id and \
                 event.payload.OrderRef == order_ref:
             self.cancel_trigger = True
+        """
+    def on_order(self, event: Event):
+        """
+        挂单委托监控，根据挂单时长执行撤单
+
+        """
+        pass
 
     def on_cancel(self, event: Event):
         """
