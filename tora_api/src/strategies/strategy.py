@@ -1,3 +1,5 @@
+from math import floor
+
 from ..event.event import Event
 from ..models.model import OrderModel
 from ..models.request import LimitPriceBuyRequest, CancelRequest, SubscribeRequest
@@ -16,6 +18,15 @@ from logging import Logger
 
 class Strategy:
     def __init__(self, trader: Trader, quoter: Quoter, limit_volume: int, cancel_volume: int, position: float):
+        """
+        打板策略
+        Params:
+        - trader: 一个traderspi实例
+        - quoter: 一个xmdspi实例
+        - limit_volume: 触发策略封单参数
+        - cancel_volume: 触发风控策略撤单参数
+        - position: 策略头寸
+        """
 
         self.name = 'test'
         self.subscribe_request: SubscribeRequest = None
@@ -47,24 +58,24 @@ class Strategy:
             2. 根据参数执行撤单风控
             3. 开启撤单回报监听
         """
-        # if self.check_upper_limit(event) and not self.cancel_trigger:
-        # execute_follow() 逻辑
-        # check_upper_limit做两层判断，第一层判断个股是否涨停，第二层判断是否触发涨停跟板封单参数设定
-        # cancel_trigger判断之前是否触发成交后建立撤单风控逻辑
-        # 如果触发涨停，则以买一价、封单金额、封单量（股）执行买入
-        req = LimitPriceBuyRequest()
-        req.ExchangeID = event.payload.ExchangeID
-        req.SecurityID = event.payload.SecurityID
-        req.LimitPrice = event.payload.BidPrice1
-        req.VolumeTotalOriginal = int(self.position / event.payload.BidPrice1) # 得改成100的整数倍
-        self.order_id = self.__trader.send_order(req)
-        req.OrderID = self.order_id
+        if self.check_upper_limit(event) and not self.cancel_trigger:
+            # execute_follow() 逻辑
+            # check_upper_limit做两层判断，第一层判断个股是否涨停，第二层判断是否触发涨停跟板封单参数设定
+            # cancel_trigger判断之前是否触发成交后建立撤单风控逻辑
+            # 如果触发涨停，则以买一价、封单金额、封单量（股）执行买入
+            req = LimitPriceBuyRequest()
+            req.ExchangeID = event.payload.ExchangeID
+            req.SecurityID = event.payload.SecurityID
+            req.LimitPrice = event.payload.BidPrice1
+            req.VolumeTotalOriginal = floor(int(self.position / event.payload.BidPrice1)/100)*100 # 改成100的整数倍
+            self.order_id = self.__trader.send_order(req)
+            req.OrderID = self.order_id
 
-        # 根据买入委托生成撤单委托
-        cancel_req = req.create_cancel_order_request(self.__trader.order_ref)
-        self.cancel_req = cancel_req
+            # 根据买入委托生成撤单委托
+            cancel_req = req.create_cancel_order_request(self.__trader.order_ref)
+            self.cancel_req = cancel_req
 
-        if self.cancel_trigger:
+        if self.cancel_trigger and self.check_rm():
             # 是否触发成交回报监听以及是否触发撤单风控
             self.execute_cancel()
             # 撤单风控重置
@@ -77,7 +88,7 @@ class Strategy:
     def on_trade(self, event: Event):
         """
         成交回报监听
-        检查self__trader.OnRtnTrade()是否在OnTrade中向EventBus实例推送TRADE事件
+        检查self__trader是否在OnRtnTrade()中向EventBus实例推送TRADE事件
         """
 
         pass
@@ -104,7 +115,7 @@ class Strategy:
     def on_cancel(self, event: Event):
         """
         撤单回报监听
-        检查self.__trader.OnRspOrderAction()是否在OnCancel中向EventBus实例推送CANCEL事件
+        检查self.__trader.OnRspOrderAction()是否在OnRspOrderAction()中向EventBus实例推送CANCEL事件
         """
         pass
 
@@ -115,12 +126,12 @@ class Strategy:
         if event.type == EventType.TICK:
             if event.payload.LastPrice == event.payload.UpperLimitPrice \
                     and event.payload.BidPrice1 == event.payload.UpperLimitPrice \
-                    and event.payload.BidVolume1 >= self.buy_trigger_volume:
+                    and event.payload.BidVolume1*event.payload.BidPrice1 >= self.buy_trigger_volume:
                 return True
         return False
 
     def check_rm(self, event: Event):
         if event.type == EventType.TICK:
-            if event.payload.BidVolume1 <= self.cancel_trigger_volume:
+            if event.payload.BidVolume1*event.payload.BidPrice1 <= self.cancel_trigger_volume:
                 return True
         return False
