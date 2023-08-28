@@ -11,6 +11,8 @@ click = "*"
 fastapi = "*"
 uvicorn = "*"
 pydantic = "*"
+streamlit-authenticator = "*"
+plotly = "*"
 
 [dev-packages]
 
