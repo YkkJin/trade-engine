@@ -1,4 +1,4 @@
-Ffrom typing import Dict, Tuple, Any, List
+from typing import Dict, Tuple, Any, List
 from time import sleep
 from datetime import datetime
 
