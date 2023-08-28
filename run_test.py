@@ -73,15 +73,15 @@ if __name__ == "__main__":
     quoter = Quoter(bus)
     sleep(1)
     trader = Trader(bus)
-    quoter.connect(UserID, Password, FrontAddress['level1_xmd_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
-    trader.connect(UserID,Password,FrontAddress['level1_trade_24A'],ACCOUNT_USERID, ADDRESS_FRONT)
+    quoter.connect(UserID, Password, FrontAddress['level1_xmd'], ACCOUNT_USERID, ADDRESS_FRONT)
+    trader.connect(UserID,Password,FrontAddress['level1_trade'],ACCOUNT_USERID, ADDRESS_FRONT)
     sleep(1)
     req = SubscribeRequest(
-        SecurityID='600000',
+        SecurityID='601099',
         ExchangeID=TORA_TSTP_EXD_SSE
     )
 
-    strategy = Strategy(trader=trader, quoter=quoter, limit_volume=1000, cancel_volume=500, position=1000)
+    strategy = Strategy(trader=trader, quoter=quoter, limit_volume=10000000, cancel_volume=80000000, position=10000)
     strategy.subscribe(req)
 
     e = EventEngine(bus, strategy=strategy)
