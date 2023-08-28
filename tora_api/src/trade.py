@@ -1,4 +1,4 @@
-from typing import Dict, Tuple, Any, List
+Ffrom typing import Dict, Tuple, Any, List
 from time import sleep
 from datetime import datetime
 
@@ -192,7 +192,7 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             tick.AskVolume4 = data.AskVolume4
             tick.AskVolume5 = data.AskVolume5
 
-        self.bus.put(Event(EventType.TICK, tick))
+        self.bus.put_lifo(Event(EventType.TICK, tick))
         print(tick.model_dump())
 
     def connect(
@@ -403,7 +403,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             OrderID = data.OrderID,
             OrderStatus = data.OrderStatus
         )
-        self.bus.put(Event(event_type=EventType.ORDER,payload = order))
+        self.bus.put_fifo(Event(event_type=EventType.ORDER,payload = order))
 
     def OnRtnTrade(self, data: CTORATstpTradeField) -> None:
         if not data:
@@ -430,7 +430,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             Volume=data.Volume
         )
 
-        self.bus.put(Event(event_type=EventType.TRADE, payload=trade))
+        self.bus.put_fifo(Event(event_type=EventType.TRADE, payload=trade))
 
         print("成交数据推送")
         print(symbol, data.ExchangeID, orderid, data.TradeID, data.Direction, data.Price, data.Volume)

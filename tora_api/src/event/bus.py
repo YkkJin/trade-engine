@@ -1,4 +1,4 @@
-from queue import Queue, Empty 
+from queue import Queue, Empty , LifoQueue
 from threading import Thread 
 from datetime import datetime
 from .event import Event 
@@ -11,16 +11,18 @@ class EventBus:
         self.__active = False 
         self.__thread = Thread(target = self.__run)
         self.__queue = Queue()
+        self.__lifoqueue = LifoQueue() 
         self.__handlers = defaultdict(list)
 
     
     def __run(self):
         while self.__active:
-            try:
-                event = self.__queue.get(block = True, timeout = 1)
+            while not self.__lifoqueue.empty() or not self.__queue.empty():
+                event = self.__lifoqueue.get()
                 self.__process(event)
-            except Empty:
-                pass
+                event = self.__queue.get()
+                self.__process(event)
+
 
     def __process(self,event):
         if event.type in self.__handlers:
@@ -36,8 +38,11 @@ class EventBus:
         self.__active = False 
         self.__thread.join() 
 
-    def put(self,event: Event):
+    def put_fifo(self,event: Event):
         self.__queue.put(event)
+    
+    def put_lifo(self,event: Event):
+        self.__lifoqueue.put(event)
     
     def register(self,type,handler):
         handlers = self.__handlers[type]
