@@ -85,7 +85,7 @@ def test_cancel_order(trader: Trader) -> bool:
             return False
     return True
 
-def add_strategy(engine,code,limit_volume,cancel_volume,position):
+def add_strategy(engine,trader,quoter,code,limit_volume,cancel_volume,position):
     req = SubscribeRequest(
         SecurityID=code,
         ExchangeID=TORA_TSTP_EXD_SSE
@@ -96,7 +96,7 @@ def add_strategy(engine,code,limit_volume,cancel_volume,position):
                         cancel_volume=cancel_volume, 
                         position=position)#limit_volume=10000000, cancel_volume=80000000, position=10000
     strategy.subscribe(req)
-
+    print('adding strategy')
     engine.bus.register(EventType.TICK, strategy.on_tick)
     engine.bus.register(EventType.TRADE, strategy.on_trade)
     engine.bus.register(EventType.ORDER, strategy.on_order)
@@ -146,6 +146,7 @@ if __name__ == "__main__":
 
     
     e,bus,quoter,trader = load_component()
+    print(f"id of event engine is {id(e.bus)}")
     if RUN_First_Time :
         print('only run once when app start')
 
@@ -153,7 +154,7 @@ if __name__ == "__main__":
 
         
     with st.sidebar:
-        st.button("Subscribe", type="primary",on_click = add_strategy ,args=(e,number1,number2,number3,number4))
+        st.button("Subscribe", type="primary",on_click = add_strategy ,args=(e,trader,quoter,number1,number2,number3,number4))
 
 
 

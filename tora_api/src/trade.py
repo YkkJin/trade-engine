@@ -193,7 +193,7 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             tick.AskVolume5 = data.AskVolume5
 
         self.bus.put_lifo(Event(EventType.TICK, tick))
-        print(f' last price is {tick.LastPrice}')
+        print(f' putting tick in event engine')
         print(tick.model_dump())
 
     def connect(
@@ -237,6 +237,7 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
     def subscribe(self, req: SubscribeRequest) -> None:
         """订阅行情"""
         if self.login_status:
+            print(f'Subccribed to quoter {req.SecurityID}')
             # exchange: Exchange = EXCHANGE_VT2TORA[req.exchange]
             self.api.SubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)
 

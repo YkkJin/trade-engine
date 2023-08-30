@@ -15,3 +15,4 @@ class EventEngine:
         #self.bus.register(EventType.ORDER, self.strategy.on_order)
         # self.quoter.subscribe(self.strategy.subscribe_list())
         self.bus.start()
+        print('bus started')

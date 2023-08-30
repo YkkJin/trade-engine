@@ -58,6 +58,11 @@ class Strategy:
             2. 根据参数执行撤单风控
             3. 开启撤单回报监听
         """
+        print('registered')
+        print(event.payload.SecurityID)
+        print(event.payload.BidPrice1)
+     
+
         if self.check_upper_limit(event) and not self.cancel_trigger:
             # execute_follow() 逻辑
             # check_upper_limit做两层判断，第一层判断个股是否涨停，第二层判断是否触发涨停跟板封单参数设定
@@ -121,6 +126,7 @@ class Strategy:
 
     def subscribe(self, subscribe_request: SubscribeRequest):
         self.__quoter.subscribe(subscribe_request)
+        print('sbscribed to market')
 
     def check_upper_limit(self, event: Event):
         if event.type == EventType.TICK:

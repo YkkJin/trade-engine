@@ -4,7 +4,8 @@ from datetime import datetime
 from .event import Event 
 from .type import EventType 
 from collections import defaultdict
-
+import time
+from streamlit.runtime.scriptrunner.script_run_context import add_script_run_ctx
 
 class EventBus:
     def __init__(self):
@@ -16,7 +17,10 @@ class EventBus:
 
     
     def __run(self):
+        
         while self.__active:
+            #print('bus running')
+            #time.sleep(1)
             while not self.__lifoqueue.empty() or not self.__queue.empty():
                 event = self.__lifoqueue.get()
                 self.__process(event)
@@ -32,6 +36,7 @@ class EventBus:
 
     def start(self):
         self.__active = True 
+        self.__thread = add_script_run_ctx(self.__thread)
         self.__thread.start()
     
     def stop(self):
