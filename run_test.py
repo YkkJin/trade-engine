@@ -14,7 +14,8 @@ else:
         f.write(f'Module First ran at {datetime.now()} \n')
 
 
-print('rerun')
+
+
 from tora_api.src.trade import Trader, Quoter
 from tora_api.src.strategies.strategy import Strategy
 from tora_api.src.event.bus import EventBus
@@ -142,6 +143,8 @@ def load_component():
     return e,bus,quoter,trader 
     
 if __name__ == "__main__":
+    
+    print('rerun 2')
     number1,number2,number3,number4 = set_up_page()
 
     

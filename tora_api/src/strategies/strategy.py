@@ -125,6 +125,7 @@ class Strategy:
         pass
 
     def subscribe(self, subscribe_request: SubscribeRequest):
+        #print(f"quoter id is {id(self.__quoter)}")
         self.__quoter.subscribe(subscribe_request)
         print('sbscribed to market')
 
