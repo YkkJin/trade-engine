@@ -193,6 +193,7 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             tick.AskVolume5 = data.AskVolume5
 
         self.bus.put_lifo(Event(EventType.TICK, tick))
+        print(f' last price is {tick.LastPrice}')
         print(tick.model_dump())
 
     def connect(
