@@ -106,15 +106,14 @@ class DummyBarFeed(DataFeed):
         self.thread.start()
 
     def _run(self):
-        for i in range(1000000):
+        for i in range(10000000):
             sleep(0.01)
-            temp = np.random.rand()
             bar = Bar(
-                    open = temp,
-                    high=temp,
-                    low=temp,
-                    close=temp, 
-                    volume = temp,
+                    open = i,
+                    high=i,
+                    low=i,
+                    close=i, 
+                    volume = i,
                     timestamp = datetime.now(),
                     time = str(datetime.now().minute)+':' +str(datetime.now().second)
                     # open = 100 *i,
@@ -128,6 +127,7 @@ class DummyBarFeed(DataFeed):
                         payload = bar
                         )
             self.bus.push(event)
+
 
 
 
