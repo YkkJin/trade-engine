@@ -141,7 +141,11 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
 
     def OnRtnMarketData(self, data: CTORATstpMarketDataField) -> None:
         """行情数据推送"""
+        #print(f'id of quoter is {id(self)}')
+        tick = TickModel()
         if not data:
+            #print('wrong ID, no data')
+            self.bus.put_lifo(Event(EventType.TICK, tick))
             return
         current_date: str = data.TradingDay
         current_time: str = data.UpdateTime
@@ -149,6 +153,7 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
         # f'{current_date}-{current_time}', "%Y%m%d-%H:%M:%S"
         # )
         # dt: datetime = dt.replace(tzinfo=CHINA_TZ)
+        #print(f"data is {data}")
         tick = TickModel(
             TradingDay = data.TradingDay,
             UpdateTime = data.UpdateTime,
@@ -171,7 +176,7 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             BidVolume1=data.BidVolume1,
             AskVolume1=data.AskVolume1,
         )
-
+        
         if data.BidVolume2 or data.AskVolume2:
             tick.BidPrice2 = data.BidPrice2
             tick.BidPrice3 = data.BidPrice3
@@ -193,9 +198,10 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             tick.AskVolume5 = data.AskVolume5
 
         self.bus.put_lifo(Event(EventType.TICK, tick))
-        print(f' putting tick in event engine')
-        print(tick.model_dump())
-
+        #print(f' putting tick in event engine')
+        #print(tick.model_dump())
+        return 
+    
     def connect(
             self,
             userid: str,

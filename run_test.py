@@ -2,20 +2,6 @@ import os
 from datetime import datetime
 import streamlit as st # web development
 
-RUN_First_Time = True
-
-initialized_state_file_name  = f"init_state_{datetime.now().year}{datetime.now().month}{datetime.now().day}.txt"
-if os.path.isfile(initialized_state_file_name):
-    print('not first run')
-    RUN_First_Time = False
-else:
-    print('not first run')
-    with open(initialized_state_file_name,'a') as f:
-        f.write(f'Module First ran at {datetime.now()} \n')
-
-
-
-
 from tora_api.src.trade import Trader, Quoter
 from tora_api.src.strategies.strategy import Strategy
 from tora_api.src.event.bus import EventBus
@@ -130,34 +116,42 @@ def set_up_page():
         st.write('The current number is ', number4)
     return number1,number2,number3,number4
 
-@st.cache_resource
+#@st.cache_resource
 def load_component():
     bus = EventBus()
     quoter = Quoter(bus)
+    print(f'in main , quoter id is {id(quoter)}')
     trader = Trader(bus)
     quoter.connect(UserID, Password, FrontAddress['level1_xmd_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
     trader.connect(UserID,Password,FrontAddress['level1_trade_24A'],ACCOUNT_USERID, ADDRESS_FRONT)
     e = EventEngine(bus)
-    e.run()
     print('component loaded')
     return e,bus,quoter,trader 
     
 if __name__ == "__main__":
     
     print('rerun 2')
+
     number1,number2,number3,number4 = set_up_page()
 
-    
-    e,bus,quoter,trader = load_component()
-    print(f"id of event engine is {id(e.bus)}")
-    if RUN_First_Time :
-        print('only run once when app start')
-
-
+    if 'e' not in st.session_state:
+        
+        e,bus,quoter,trader = load_component()
+        st.session_state['e'] = e
+        st.session_state['bus'] = bus
+        st.session_state['quoter'] = quoter
+        st.session_state['trader'] = trader
+        st.session_state['e'].run()
+    print(f"id of event engine is {id(st.session_state['e'].bus)}")
 
         
     with st.sidebar:
-        st.button("Subscribe", type="primary",on_click = add_strategy ,args=(e,trader,quoter,number1,number2,number3,number4))
+        st.button("Subscribe", type="primary",on_click = add_strategy ,args=(st.session_state['e'],
+                                                                             st.session_state['trader'],
+                                                                             st.session_state['quoter'],
+                                                                             number1,number2,number3,number4))
+
+
 
 
 

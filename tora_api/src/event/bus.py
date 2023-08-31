@@ -20,7 +20,7 @@ class EventBus:
     def __run(self):
         
         while self.__active:
-            
+            print('bus running 1')
             time.sleep(1)
             while not self.__lifoqueue.empty() or not self.__queue.empty():
                 print('bus running 2')
