@@ -73,11 +73,11 @@ if __name__ == "__main__":
     quoter = Quoter(bus)
     sleep(1)
     trader = Trader(bus)
-    quoter.connect(UserID, Password, FrontAddress['level1_xmd'], ACCOUNT_USERID, ADDRESS_FRONT)
-    trader.connect(UserID,Password,FrontAddress['level1_trade'],ACCOUNT_USERID, ADDRESS_FRONT)
+    quoter.connect(UserID, Password, FrontAddress['level1_xmd_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
+    trader.connect(UserID,Password,FrontAddress['level1_trade_24A'],ACCOUNT_USERID, ADDRESS_FRONT)
     sleep(1)
     req = SubscribeRequest(
-        SecurityID='601099',
+        SecurityID='603843',
         ExchangeID=TORA_TSTP_EXD_SSE
     )
 

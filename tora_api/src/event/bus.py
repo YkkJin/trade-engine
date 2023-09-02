@@ -25,7 +25,7 @@ class EventBus:
     def __process(self,event):
         if event.type in self.__handlers:
             [handler(event) for handler in self.__handlers[event.type]]
-        handlers = self.__handlers[event]
+
     
 
     def start(self):
@@ -45,10 +45,10 @@ class EventBus:
             handlers.append(handler)
     
     def unregister(self,type,handler):
-        handlers: list = self._handlers[type]
+        handlers: list = self.__handlers[type]
         if handler in handlers:
             handlers.remove(handler)
 
         if not handlers:
-            self._handlers.pop(type)
+            self.__handlers.pop(type)
 

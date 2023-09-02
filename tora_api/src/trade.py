@@ -8,7 +8,6 @@ from .models.request import OrderRequest, CancelRequest, SubscribeRequest
 from .event.bus import EventBus
 from .event.event import Event
 from .event.type import EventType
-from .tora_stock import (traderapi, xmdapi)
 from .tora_stock import (
     traderapi,
     xmdapi
@@ -75,10 +74,10 @@ from .tora_stock.xmdapi import (
 )
 
 EXCHANGE_MAP = {
-    '0': TORA_TSTP_EXD_COMM,
-    '1': TORA_TSTP_EXD_SSE,
-    '2': TORA_TSTP_EXD_SZSE,
-    '4': TORA_TSTP_EXD_BSE
+    0: TORA_TSTP_EXD_COMM,
+    1: TORA_TSTP_EXD_SSE,
+    2: TORA_TSTP_EXD_SZSE,
+    4: TORA_TSTP_EXD_BSE
 }
 
 class Quoter(xmdapi.CTORATstpXMdSpi):
@@ -135,8 +134,12 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
     ) -> None:
         """订阅行情回报"""
         if not error or not error.ErrorID:
+            print(data.ExchangeID, data.SecurityID)
+            print(error)
+            print(error.ErrorID)
+            print(error.ErrorMsg)
             return
-
+        print(data.ExchangeID,data.SecurityID)
         # self.gateway.write_error("行情订阅失败", error)
 
     def OnRtnMarketData(self, data: CTORATstpMarketDataField) -> None:
@@ -266,7 +269,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         self.login_failed: bool = False
 
         self.investor_id: str = None
-        self.shareholder_ids: Dict[Exchange, str] = {}
+        self.shareholder_ids: Dict[str, str] = {}
         self.account_id: str = None
         self.localid: int = 10000
         self.api: traderapi.CTORATstpTraderApi.CreateTstpTraderApi = None
@@ -351,9 +354,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
         if not data:
             print("无委托")
             return
-        symbol: str = data.SecurityID
-        # exchange: Exchange = EXCHANGE_TORA2VT[data.ExchangeID]
-        exchange: str = data.ExchangeID
         frontid: int = data.FrontID
         sessionid: int = data.SessionID
         order_ref: int = data.OrderRef
@@ -363,25 +363,31 @@ class Trader(traderapi.CTORATstpTraderSpi):
         # dt: datetime = datetime.strptime(timestamp, "%Y%m%d %H:%M:%S")
         # dt: datetime = dt.replace(tzinfo=CHINA_TZ)
         print("委托更新推送")
-        print(f"symbol: {symbol}, exchange: {exchange}, order_id: {order_id}")
-        '''
-        order: OrderData = OrderData(
-            symbol=symbol,
-            exchange=exchange,
-            orderid=order_id,
-            type=ORDERTYPE_TORA2VT[data.OrderPriceType],
-            direction=DIRECTION_TORA2VT[data.Direction],
-            price=data.LimitPrice,
-            volume=data.VolumeTotalOriginal,
-            traded=data.VolumeTraded,
-            status=ORDER_STATUS_TORA2VT[data.OrderStatus],
-            datetime=dt,
-            gateway_name=self.gateway_name
+        # print(f"symbol: {symbol}, exchange: {exchange}, order_id: {order_id}")
+        print(data.OrderSysID)
+        order = OrderModel(
+            ExchangeID = data.ExchangeID,
+            SecurityID = data.SecurityID,
+            Direction = data.Direction,
+            OrderPriceType = data.OrderPriceType,
+            TimeCondition = data.TimeCondition,
+            VolumeCondition = data.VolumeCondition,
+            LimitPrice = data.LimitPrice,
+            VolumeTotalOriginal = data.VolumeTotalOriginal,
+            RequestID = data.RequestID,
+            FrontID = data.FrontID,
+            SessionID = data.SessionID,
+            OrderRef = data.OrderRef,
+            #
+            OrderStatus = data.OrderStatus,
+            OrderSysID = data.OrderSysID
         )
-        self.gateway.on_order(order)
-        '''
+        order.OrderID = order_id
 
-        self.sysid_orderid_map[data.OrderSysID] = order_id
+        self.sysid_orderid_map[data.OrderSysID] = order.OrderID
+        if order.OrderStatus != 0: # 不放入未知状态的委托回报
+            self.bus.put(Event(event_type=EventType.ORDER, payload=order))
+
 
     def OnRspQryOrder(self, data: CTORATstpOrderField, error: CTORATstpRspInfoField, reqid: int, last: bool) -> None:
         if not data:
@@ -403,12 +409,13 @@ class Trader(traderapi.CTORATstpTraderSpi):
             OrderID = data.OrderID,
             OrderStatus = data.OrderStatus
         )
-        self.bus.put(Event(event_type=EventType.ORDER,payload = order))
+
 
     def OnRtnTrade(self, data: CTORATstpTradeField) -> None:
+        """成交数据推送"""
         if not data:
             return
-        """成交数据推送"""
+
         symbol: str = data.SecurityID
 
         '''
@@ -697,12 +704,13 @@ class Trader(traderapi.CTORATstpTraderSpi):
 
         self.reqid += 1
         self.order_ref += 1
+        print(self.shareholder_ids)
         req.ShareholderID = self.shareholder_ids[req.ExchangeID]
         req.OrderRef = self.order_ref
 
         tora_req: CTORATstpInputOrderField = CTORATstpInputOrderField()
         tora_req.ShareholderID = req.ShareholderID
-        tora_req.ExchangeID = EXCHANGE_MAP[req.ExchangeID]
+        tora_req.ExchangeID = EXCHANGE_MAP[int(req.ExchangeID)]
         tora_req.SecurityID = req.SecurityID
         tora_req.OrderPriceType = req.OrderPriceType
         tora_req.Direction = req.Direction
@@ -731,7 +739,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         tora_req.OrderRef = req.OrderRef
         tora_req.FrontID = req.FrontID
         tora_req.SessionID = req.SessionID
-        tora_req.ActionFlag = req.TORA_TSTP_AF_Delete
+        tora_req.ActionFlag = TORA_TSTP_AF_Delete
         tora_req.OrderActionRef = self.order_ref
 
         self.api.ReqOrderAction(tora_req, self.reqid)

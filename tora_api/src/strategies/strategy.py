@@ -75,11 +75,13 @@ class Strategy:
             cancel_req = req.create_cancel_order_request(self.__trader.order_ref)
             self.cancel_req = cancel_req
 
-        if self.cancel_trigger and self.check_rm():
+
+            self.cancel_trigger = True
+
+        if self.cancel_trigger and self.check_rm(event):
             # 是否触发成交回报监听以及是否触发撤单风控
             self.execute_cancel()
-            # 撤单风控重置
-            self.cancel_trigger = False
+
 
     def execute_cancel(self):
         self.__trader.cancel_order(self.cancel_req)
@@ -107,10 +109,16 @@ class Strategy:
 
     def on_order(self, event: Event):
         """
-        挂单委托监控，判断挂单是否成功，并根据挂单时长执行撤单
+        挂单委托监控，判断挂单是否成功
         """
-        if event.payload.OrderStatus == TORA_TSTP_OST_Accepted:
-            self.cancel_trigger = True
+        print("on_order事件监听")
+        print(self.__trader.sysid_orderid_map[event.payload.OrderSysID])
+        print(self.order_id)
+        if self.__trader.sysid_orderid_map[event.payload.OrderSysID] == self.order_id:
+            if (event.payload.OrderStatus == TORA_TSTP_OST_Accepted and self.__trader.sysid_orderid_map[event.payload.OrderSysID] == self.order_id):
+                print("开启风控撤单监控")
+                self.cancel_trigger = True
+        self.cancel_trigger = False
 
     def on_cancel(self, event: Event):
         """
