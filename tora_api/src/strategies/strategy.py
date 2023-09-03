@@ -37,10 +37,14 @@ class Strategy:
         self.__trader = trader
         self.__quoter = quoter
 
-        self.buy_trigger_volume = limit_volume
-        self.cancel_trigger_volume = cancel_volume
+        self.buy_trigger_volume = limit_volume # 封单量
+        self.cancel_trigger_volume = cancel_volume # 撤封单量
+        self.trigger_times = 0 # 触发次数
+
         self.position = position
         self.cancel_trigger = False
+
+
 
     def on_tick(self, event: Event):
         """

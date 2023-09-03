@@ -134,13 +134,18 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
     ) -> None:
         """订阅行情回报"""
         if not error or not error.ErrorID:
-            print(data.ExchangeID, data.SecurityID)
-            print(error)
-            print(error.ErrorID)
-            print(error.ErrorMsg)
             return
-        print(data.ExchangeID,data.SecurityID)
         # self.gateway.write_error("行情订阅失败", error)
+
+    def OnRspUnSubMarketData(
+            self,
+            data: CTORATstpSpecificSecurityField,
+            error: CTORATstpRspInfoField
+    ) -> None:
+        if not error or not error.ErrorID:
+            return
+
+
 
     def OnRtnMarketData(self, data: CTORATstpMarketDataField) -> None:
         """行情数据推送"""
@@ -241,6 +246,10 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
         if self.login_status:
             # exchange: Exchange = EXCHANGE_VT2TORA[req.exchange]
             self.api.SubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)
+
+    def unsubscribe(self, req: SubscribeRequest ) -> None:
+        if self.login_status:
+            self.api.UnSubscribeMarketData([str.enconde(req.SecurityID)],req.ExchangeID)
 
     def close(self) -> None:
         """关闭连接"""
