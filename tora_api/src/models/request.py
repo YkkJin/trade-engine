@@ -19,7 +19,7 @@ class CancelRequest(BaseModel):
     ActionFlag: int = TORA_TSTP_AF_Delete
     OrderActionRef: int = 0
 
-
+from tora_api.src.tora_stock.traderapi import  TORA_TSTP_EXD_SSE
 class SubscribeRequest(BaseModel):
     ExchangeID: str = ""
     SecurityID: str = ""

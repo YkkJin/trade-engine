@@ -8,7 +8,7 @@ from collections import defaultdict
 
 class EventBus:
     def __init__(self):
-        self.__active = False 
+        self.__active = True 
         self.__thread = Thread(target = self.__run)
         self.__queue = Queue()
         self.__handlers = defaultdict(list)
@@ -16,6 +16,7 @@ class EventBus:
     
     def __run(self):
         while self.__active:
+            print('bus is running 1')
             try:
                 event = self.__queue.get(block = True, timeout = 1)
                 self.__process(event)
