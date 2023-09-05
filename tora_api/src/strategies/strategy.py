@@ -95,6 +95,7 @@ class Strategy:
             self.log.info(f"触发撤单风控，剩余撤单触发次数: {self.count - self.trigger_times}")
             self.execute_cancel()
             self.order_id = None
+            self.cancel_trigger = False # 重置撤单状态
             self.trigger_times += 1
 
     def execute_cancel(self):

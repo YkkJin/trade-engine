@@ -82,6 +82,17 @@ EXCHANGE_MAP = {
     4: TORA_TSTP_EXD_BSE
 }
 
+ORDER_STATUS_MAP = {
+    0: "预埋",
+    1: "未知",
+    2: "交易所已接受",
+    3: "部分成交",
+    4: "全部成交",
+    5: "部成部撤",
+    6: "全部撤单",
+    7: "交易所已拒绝"
+
+}
 
 class Quoter(xmdapi.CTORATstpXMdSpi):
     def __init__(self, bus: EventBus, log: DefaultLogHandler) -> None:
@@ -214,7 +225,6 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             tick.AskVolume5 = data.AskVolume5
 
         self.bus.put(Event(EventType.TICK, tick))
-        self.log.info(tick.model_dump())
 
     def connect(
             self,
@@ -245,12 +255,15 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             self.connect_status = True
 
         elif not self.login_status:
+            self.log.info("行情登录")
             self.login()
 
     def login(self) -> None:
         """用户登录"""
         login_req: xmdapi.CTORATstpReqUserLoginField = xmdapi.CTORATstpReqUserLoginField()
-
+        login_req.LogInAccount = self.userid
+        login_req.Password = self.password
+        login_req.UserProductInfo = "HX5ZJ0C1PV"
         self.reqid += 1
         self.api.ReqUserLogin(login_req, self.reqid)
 
@@ -358,10 +371,11 @@ class Trader(traderapi.CTORATstpTraderSpi):
             reqid: int,
     ) -> None:
         """委托撤单失败回报"""
-        error_id: int = error.ErrorID
-        if error_id:
-            self.log.info("交易撤单失败")
-        self.log.info(f"交易撤单成功，订单编号：{data.FrontID}_{data.SessionID}_{data.OrderRef}")
+
+        if error.ErrorID != 0:
+            self.log.info(f"交易撤单失败: {error.ErrorMsg}")
+        else:
+            self.log.info(f"交易撤单成功，订单编号：{data.FrontID}_{data.SessionID}_{data.OrderRef}")
 
     def OnRtnOrder(self, data: CTORATstpOrderField) -> None:
         """委托更新推送"""
@@ -395,15 +409,15 @@ class Trader(traderapi.CTORATstpTraderSpi):
             FrontID=data.FrontID,
             SessionID=data.SessionID,
             OrderRef=data.OrderRef,
-            #
+            StatusMsg = data.StatusMsg,
             OrderStatus=data.OrderStatus,
             OrderSysID=data.OrderSysID
         )
         order.OrderID = order_id
 
         self.sysid_orderid_map[data.OrderSysID] = order.OrderID
-        if order.OrderStatus != 0:  # 不放入未知状态的委托回报
-            self.log.info(f"委托成功，订单编号:{order_id}")
+        if order.OrderStatus != 0 and order.OrderStatus != 1:  # 不放入未知状态的委托回报
+            self.log.info(f"委托成功，订单编号:{order_id}，订单状态：{ORDER_STATUS_MAP[order.OrderStatus]}")
             self.bus.put(Event(event_type=EventType.ORDER, payload=order))
 
     def OnRspQryOrder(self, data: CTORATstpOrderField, error: CTORATstpRspInfoField, reqid: int, last: bool) -> None:
@@ -706,7 +720,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
 
         self.reqid += 1
         self.order_ref += 1
-        print(self.shareholder_ids)
         req.ShareholderID = self.shareholder_ids[req.ExchangeID]
         req.OrderRef = self.order_ref
 

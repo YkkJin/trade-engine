@@ -59,6 +59,7 @@ class OrderModel(BaseModel):
     OrderRef: int = 0
     OrderID: str = ""
     OrderStatus: int = 0
+    StatusMsg: str = ""
     OrderSysID: str = ""
 
 
