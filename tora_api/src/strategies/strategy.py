@@ -58,7 +58,7 @@ class Strategy:
             2. 根据参数执行撤单风控
             3. 开启撤单回报监听
         """
-        print('registered')
+        print('--------------strategy on tick running---------------------------')
         print(event.payload.SecurityID)
         print(event.payload.BidPrice1)
      

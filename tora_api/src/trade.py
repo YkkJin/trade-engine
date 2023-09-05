@@ -145,7 +145,7 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
         tick = TickModel()
         if not data:
             #print('wrong ID, no data')
-            self.bus.put_lifo(Event(EventType.TICK, tick))
+            self.bus.put_fifo(Event(EventType.TICK, tick))
             return
         current_date: str = data.TradingDay
         current_time: str = data.UpdateTime
@@ -197,9 +197,9 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             tick.AskVolume4 = data.AskVolume4
             tick.AskVolume5 = data.AskVolume5
 
-        self.bus.put_lifo(Event(EventType.TICK, tick))
+        self.bus.put_fifo(Event(EventType.TICK, tick))
         #print(f' putting tick in event engine')
-        #print(tick.model_dump())
+        print(tick.model_dump())
         return 
     
     def connect(
@@ -243,9 +243,10 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
     def subscribe(self, req: SubscribeRequest) -> None:
         """订阅行情"""
         if self.login_status:
-            print(f'Subccribed to quoter {req.SecurityID}')
+            
             # exchange: Exchange = EXCHANGE_VT2TORA[req.exchange]
             self.api.SubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)
+            print(f'Subccribed to quoter {req.SecurityID}')
 
     def close(self) -> None:
         """关闭连接"""

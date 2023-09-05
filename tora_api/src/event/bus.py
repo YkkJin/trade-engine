@@ -10,7 +10,7 @@ import streamlit as st
  
 class EventBus:
     def __init__(self):
-        self.__active = False 
+        self.__active = True 
         self.__thread = Thread(target = self.__run)
         self.__queue = Queue()
         self.__lifoqueue = LifoQueue() 

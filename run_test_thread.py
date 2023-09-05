@@ -1,12 +1,10 @@
 import os
 from datetime import datetime
 import streamlit as st # web development
-import multiprocessing as mp
-from multiprocessing.managers import BaseManager
 
 from tora_api.src.trade import Trader, Quoter
 from tora_api.src.strategies.strategy import Strategy
-from tora_api.src.event.mp_bus import EventBus
+from tora_api.src.event.bus import EventBus
 from tora_api.src.event.type import EventType
 from tora_api.src.event.engine import EventEngine
 from tora_api.src.models.request import SubscribeRequest
@@ -38,12 +36,6 @@ order_reqs_sell = [LimitPriceOrderReqSell,
                 LimitPriceOrderReqSell]
 
 cancel_order_reqs = [LimitPriceOrderReqCancel]
-
-
-class CustomManager(BaseManager):
-    # nothing
-    pass
-
 
 
 def test_buy_order(trader: Trader) -> bool:
@@ -80,7 +72,7 @@ def test_cancel_order(trader: Trader) -> bool:
             return False
     return True
 
-def add_strategy(bus,trader,quoter,code,limit_volume,cancel_volume,position):
+def add_strategy(engine,trader,quoter,code,limit_volume,cancel_volume,position):
     req = SubscribeRequest(
         SecurityID=code,
         ExchangeID=TORA_TSTP_EXD_SSE
@@ -91,14 +83,10 @@ def add_strategy(bus,trader,quoter,code,limit_volume,cancel_volume,position):
                         cancel_volume=cancel_volume, 
                         position=position)#limit_volume=10000000, cancel_volume=80000000, position=10000
     strategy.subscribe(req)
-    print(f'adding strategy, type of tick is {EventType.TICK}')
-    bus.q_handlers.put({EventType.TICK: strategy.on_tick,
-                       EventType.TRADE: strategy.on_trade,
-                       EventType.ORDER: strategy.on_order})
-    # bus.register(EventType.TICK, strategy.on_tick)
-    # bus.register(EventType.TRADE, strategy.on_trade)
-    # bus.register(EventType.ORDER, strategy.on_order)
-    bus.q_register()
+    print('adding strategy')
+    engine.bus.register(EventType.TICK, strategy.on_tick)
+    engine.bus.register(EventType.TRADE, strategy.on_trade)
+    engine.bus.register(EventType.ORDER, strategy.on_order)
 
 def set_up_page():
     st.set_page_config(
@@ -136,57 +124,29 @@ def load_component():
     trader = Trader(bus)
     quoter.connect(UserID, Password, FrontAddress['level1_xmd_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
     trader.connect(UserID,Password,FrontAddress['level1_trade_24A'],ACCOUNT_USERID, ADDRESS_FRONT)
-    #e = EventEngine(bus)
+    e = EventEngine(bus)
     print('component loaded')
     return e,bus,quoter,trader 
     
-
-def work(shared_custom):
-    print('start bus top level')
-    shared_custom.run()
-
 if __name__ == "__main__":
-    CustomManager.register('MyCustomClass', EventBus)
-    print('rerun 2')
     
+    print('rerun 2')
+
     number1,number2,number3,number4 = set_up_page()
 
-    if 'bus' not in st.session_state:
-        with CustomManager() as manager:
-            bus = EventBus()
-            print(f'on init bus id is {id(bus)}')
-            process = mp.Process(target=work,args=(bus,))
-            process.start()
-        quoter = Quoter(bus)
-        print(f"bus handlers {bus.handlers}")
-        # print(f"quoter.connect_status {quoter.connect_status}")
-        # print(f"quoter.login_status {quoter.login_status}")
-        #print(f'in main , quoter id is {id(quoter)}')
-        trader = Trader(bus)
-        quoter.connect(UserID, Password, FrontAddress['level1_xmd_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
-        trader.connect(UserID,Password,FrontAddress['level1_trade_24A'],ACCOUNT_USERID, ADDRESS_FRONT)
-    #st.session_state['e'] = e
+    if 'e' not in st.session_state:
+        
+        e,bus,quoter,trader = load_component()
+        st.session_state['e'] = e
         st.session_state['bus'] = bus
         st.session_state['quoter'] = quoter
         st.session_state['trader'] = trader
-        # print(f'login_status quoter is {quoter.login_status}')
-        # print(f'connect_status quoter is {quoter.connect_status}')
-    else:
-
-        print(f"bus id is {id(st.session_state['bus'])},  handlers are {st.session_state['bus'].handlers}, id is {id(st.session_state['bus'].handlers)}")  
-
-        #st.session_state['e'].run()
-    #print(f"id of event engine is {id(st.session_state['e'].bus)}")
+        st.session_state['e'].run()
+    print(f"id of event engine is {id(st.session_state['e'].bus)}")
 
         
     with st.sidebar:
-        with CustomManager() as manager:
-            st.button("Subscribe", type="primary",on_click = add_strategy ,args=(st.session_state['bus'],
-                                                                                st.session_state['trader'],
-                                                                                st.session_state['quoter'],
-                                                                                number1,number2,number3,number4))
-
-
-
-
-
+        st.button("Subscribe", type="primary",on_click = add_strategy ,args=(st.session_state['e'],
+                                                                             st.session_state['trader'],
+                                                                             st.session_state['quoter'],
+                                                                             number1,number2,number3,number4))
