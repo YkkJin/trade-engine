@@ -40,67 +40,6 @@ from tora_api.src.tora_stock.traderapi import (
     CTORATstpOrderField,
 )
 
-@click.command()
-def interactive_program():
-    while True:
-        user_input = click.prompt('Please enter something (or "quit" to exit)')
-        user_input_something_else = click.prompt('Please enter something else')
-        if user_input.lower() == 'quit':
-            break
-        else:
-            click.echo('You entered: ' + user_input)
-@click.command()
-def cli():
-    user_id = click.prompt('请输入交易ID:')
-    password = click.prompt("请输入用户密码:")
-
-    trader = Trader()
-    trader.connect(user_id,password,FrontAddress['level1_trade_24A'],ACCOUNT_USERID,ADDRESS_FRONT)
-
-    while True:
-        func = click.prompt("""
-        请输入希望执行的功能（输入数字或输入quit退出）：
-        1. 持仓查询
-        2. 交易下单
-        
-        """)
-        if func == "1":
-            trader.query_positions()
-        elif func == "2":
-            SecurityID = click.prompt("""
-            输入证券代码:
-            """)
-            Direction = click.prompt("""
-            买卖方向:
-            """)
-            VolumeTotalOriginal = click.prompt("""
-            买卖数量(股):
-            """)
-            OrderType = click.prompt("""
-            委托类型:
-            (可选限价)
-            """)
-            LimitPrice = click.prompt("""
-            价格：
-            """)
-            req = CTORATstpInputOrderField()
-            req.SecurityID = SecurityID
-            req.ExchangeID = TORA_TSTP_EXD_SSE
-            req.ShareholderID = "A00032129"
-            req.Direction = TORA_TSTP_D_Sell
-            req.VolumeTotalOriginal = int(VolumeTotalOriginal)
-            req.LimitPrice = float(LimitPrice)
-            req.OrderPriceType = TORA_TSTP_OPT_LimitPrice
-            req.TimeCondition = TORA_TSTP_TC_GFD
-            req.VolumeCondition = TORA_TSTP_VC_AV 
-            trader.send_order(req)
-        elif func == "quit":
-            trader.logout()
-            trader.release()
-            break
-
-
-
 
 
 if __name__ == '__main__':

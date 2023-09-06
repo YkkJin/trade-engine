@@ -1,6 +1,5 @@
 
 UserID = "00032129"
-
 Password = "19359120"
 
 FrontAddress = {

@@ -8,10 +8,12 @@ from .models.request import OrderRequest, CancelRequest, SubscribeRequest
 from .event.bus import EventBus
 from .event.event import Event
 from .event.type import EventType
+from .log_handler.default_handler import DefaultLogHandler
 from .tora_stock import (
     traderapi,
     xmdapi
 )
+
 from .tora_stock.traderapi import (
     TORA_TSTP_D_Buy,
     TORA_TSTP_D_Sell,
@@ -80,14 +82,27 @@ EXCHANGE_MAP = {
     4: TORA_TSTP_EXD_BSE
 }
 
+ORDER_STATUS_MAP = {
+    0: "预埋",
+    1: "未知",
+    2: "交易所已接受",
+    3: "部分成交",
+    4: "全部成交",
+    5: "部成部撤",
+    6: "全部撤单",
+    7: "交易所已拒绝"
+
+}
+
 class Quoter(xmdapi.CTORATstpXMdSpi):
-    def __init__(self, bus: EventBus) -> None:
+    def __init__(self, bus: EventBus, log: DefaultLogHandler) -> None:
         """构造函数"""
         super().__init__()
 
         # self.gateway: ToraStockGateway = gateway
         # self.gateway_name: str = gateway.gateway_name
         self.bus = bus
+        self.log = log
 
         self.reqid: int = 0
         self.api: xmdapi.CTORATstpXMdApi_CreateTstpXMdApi = None
@@ -104,13 +119,13 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
 
     def OnFrontConnected(self) -> None:
         """服务器连接成功回报"""
-        # self.gateway.write_log("行情服务器连接成功")
+        self.log.info("行情服务器链接成功")
         self.login()
 
     def OnFrontDisconnected(self, reason: int) -> None:
         """服务器连接断开回报"""
         self.login_status = False
-        # self.gateway.write_log(f"行情服务器连接断开，原因{reason}")
+        self.log.info(f"行情服务器连接断开，原因{reason}")
 
     def OnRspUserLogin(
             self,
@@ -121,11 +136,20 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
         """用户登录请求回报"""
         if not error.ErrorID:
             self.login_status = True
-            print("行情服务器登录成功")
-            # self.gateway.write_log("行情服务器登录成功")
+            self.log.info("行情服务器登录成功")
         else:
-            print("login failed")
+            self.log.info("行情服务器登录失败", error)
             # self.gateway.write_error("行情服务器登录失败", error)
+
+    def OnRspUserLogout(self,
+                        data: CTORATstpUserLogoutField,
+                        error: CTORATstpRspInfoField,
+                        reqid: int) -> None:
+        if not error.ErrorID:
+            self.login_status = False
+            self.log.info("用户退出成功")
+        else:
+            self.log.info("用户退出失败")
 
     def OnRspSubMarketData(
             self,
@@ -134,8 +158,9 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
     ) -> None:
         """订阅行情回报"""
         if not error or not error.ErrorID:
+            self.log.info("行情订阅成功")
             return
-        # self.gateway.write_error("行情订阅失败", error)
+        self.log.info("行情订阅失败")
 
     def OnRspUnSubMarketData(
             self,
@@ -143,9 +168,8 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             error: CTORATstpRspInfoField
     ) -> None:
         if not error or not error.ErrorID:
+            self.log.info("行情退订成功")
             return
-
-
 
     def OnRtnMarketData(self, data: CTORATstpMarketDataField) -> None:
         """行情数据推送"""
@@ -158,8 +182,8 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
         # )
         # dt: datetime = dt.replace(tzinfo=CHINA_TZ)
         tick = TickModel(
-            TradingDay = data.TradingDay,
-            UpdateTime = data.UpdateTime,
+            TradingDay=data.TradingDay,
+            UpdateTime=data.UpdateTime,
             SecurityID=data.SecurityID,
             ExchangeID=data.ExchangeID,
             # datetime = dt,
@@ -201,8 +225,8 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             tick.AskVolume5 = data.AskVolume5
 
         self.bus.put(Event(EventType.TICK, tick))
-        print(tick.model_dump())
-
+        print(f'got data {tick}')
+        
     def connect(
             self,
             userid: str,
@@ -232,12 +256,15 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             self.connect_status = True
 
         elif not self.login_status:
+            self.log.info("行情登录")
             self.login()
 
     def login(self) -> None:
         """用户登录"""
         login_req: xmdapi.CTORATstpReqUserLoginField = xmdapi.CTORATstpReqUserLoginField()
-
+        login_req.LogInAccount = self.userid
+        login_req.Password = self.password
+        login_req.UserProductInfo = "HX5ZJ0C1PV"
         self.reqid += 1
         self.api.ReqUserLogin(login_req, self.reqid)
 
@@ -247,14 +274,20 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
             # exchange: Exchange = EXCHANGE_VT2TORA[req.exchange]
             self.api.SubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)
 
-    def unsubscribe(self, req: SubscribeRequest ) -> None:
+    def unsubscribe(self, req: SubscribeRequest) -> None:
         if self.login_status:
-            self.api.UnSubscribeMarketData([str.enconde(req.SecurityID)],req.ExchangeID)
+            self.api.UnSubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)
 
-    def close(self) -> None:
+    def logout(self) -> None:
         """关闭连接"""
         if self.connect_status:
-            self.exit()
+            req = xmdapi.CTORATstpUserLogoutField()
+            req.UserID = self.userid
+            self.reqid += 1
+            self.api.ReqUserLogout(req, self.reqid)
+
+    def release(self) -> None:
+        self.api.Release()
 
     def update_date(self) -> None:
         """更新当前日期"""
@@ -263,11 +296,12 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
 
 class Trader(traderapi.CTORATstpTraderSpi):
 
-    def __init__(self, bus: EventBus) -> None:
+    def __init__(self, bus: EventBus, log: DefaultLogHandler) -> None:
         """构造函数"""
         super().__init__()
 
         self.bus = bus
+        self.log = log
 
         self.reqid: int = 0
         self.order_ref: int = 0
@@ -291,15 +325,13 @@ class Trader(traderapi.CTORATstpTraderSpi):
 
     def OnFrontConnected(self) -> None:
         """服务器连接成功回报"""
-        # self.gateway.write_log("交易服务器连接成功")
+        self.log.info("交易服务器链接成功")
         self.login()
 
     def OnFrontDisconnected(self, reason: int) -> None:
         """服务器连接断开回报"""
         self.login_status = False
-        print("交易服务器链接断开:{reason}")
-
-    # self.gateway.write_log(f"交易服务器连接断开，原因{reason}")
+        self.log.info(f"交易服务器链接断开，原因{reason}")
 
     def OnRspUserLogin(
             self,
@@ -312,9 +344,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             self.frontid = data.FrontID
             self.sessionid = data.SessionID
             self.login_status = True
-            # self.gateway.write_log("交易服务器登录成功")
-            print("交易服务器登录成功")
-
+            self.log.info("交易服务器登录成功")
             self.query_contracts()
             self.query_investors()
             self.query_shareholder_ids()
@@ -322,8 +352,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             self.login_failed = True
 
             # self.gateway.write_error("交易服务器登录失败", error)
-
-            print("交易服务器登录失败", error)
+            self.log.info("交易服务器登录失败", error)
 
     def OnRspUserLogout(
             self,
@@ -334,10 +363,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         if not data:
             return
         if error.ErrorID == -1:
-            print(error.ErrorMsg)
-        print(error.ErrorID)
-        print(error.ErrorMsg)
-        print("User {data.UserID} logout successfully")
+            self.log.info("交易服务器登出失败", error)
 
     def OnRspOrderAction(
             self,
@@ -346,12 +372,11 @@ class Trader(traderapi.CTORATstpTraderSpi):
             reqid: int,
     ) -> None:
         """委托撤单失败回报"""
-        error_id: int = error.ErrorID
-        if error_id:
-            raise ValueError("交易撤单失败")
-            print("交易撤单失败", error)
-        print("交易撤单成功")
-        print(f"order_id: {data.FrontID}_{data.SessionID}_{data.OrderRef}")
+
+        if error.ErrorID != 0:
+            self.log.info(f"交易撤单失败: {error.ErrorMsg}")
+        else:
+            self.log.info(f"交易撤单成功，订单编号：{data.FrontID}_{data.SessionID}_{data.OrderRef}")
 
     def OnRtnOrder(self, data: CTORATstpOrderField) -> None:
         """委托更新推送"""
@@ -361,7 +386,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
             return
         '''
         if not data:
-            print("无委托")
             return
         frontid: int = data.FrontID
         sessionid: int = data.SessionID
@@ -371,54 +395,52 @@ class Trader(traderapi.CTORATstpTraderSpi):
         # timestamp: str = f"{data.InsertDate} {data.InsertTime}"
         # dt: datetime = datetime.strptime(timestamp, "%Y%m%d %H:%M:%S")
         # dt: datetime = dt.replace(tzinfo=CHINA_TZ)
-        print("委托更新推送")
+
         # print(f"symbol: {symbol}, exchange: {exchange}, order_id: {order_id}")
-        print(data.OrderSysID)
         order = OrderModel(
-            ExchangeID = data.ExchangeID,
-            SecurityID = data.SecurityID,
-            Direction = data.Direction,
-            OrderPriceType = data.OrderPriceType,
-            TimeCondition = data.TimeCondition,
-            VolumeCondition = data.VolumeCondition,
-            LimitPrice = data.LimitPrice,
-            VolumeTotalOriginal = data.VolumeTotalOriginal,
-            RequestID = data.RequestID,
-            FrontID = data.FrontID,
-            SessionID = data.SessionID,
-            OrderRef = data.OrderRef,
-            #
-            OrderStatus = data.OrderStatus,
-            OrderSysID = data.OrderSysID
+            ExchangeID=data.ExchangeID,
+            SecurityID=data.SecurityID,
+            Direction=data.Direction,
+            OrderPriceType=data.OrderPriceType,
+            TimeCondition=data.TimeCondition,
+            VolumeCondition=data.VolumeCondition,
+            LimitPrice=data.LimitPrice,
+            VolumeTotalOriginal=data.VolumeTotalOriginal,
+            RequestID=data.RequestID,
+            FrontID=data.FrontID,
+            SessionID=data.SessionID,
+            OrderRef=data.OrderRef,
+            StatusMsg = data.StatusMsg,
+            OrderStatus=data.OrderStatus,
+            OrderSysID=data.OrderSysID
         )
         order.OrderID = order_id
 
         self.sysid_orderid_map[data.OrderSysID] = order.OrderID
-        if order.OrderStatus != 0: # 不放入未知状态的委托回报
+        if order.OrderStatus != 0 and order.OrderStatus != 1:  # 不放入未知状态的委托回报
+            self.log.info(f"委托成功，订单编号:{order_id}，订单状态：{ORDER_STATUS_MAP[order.OrderStatus]}")
             self.bus.put(Event(event_type=EventType.ORDER, payload=order))
-
 
     def OnRspQryOrder(self, data: CTORATstpOrderField, error: CTORATstpRspInfoField, reqid: int, last: bool) -> None:
         if not data:
             return
 
         order = OrderModel(
-            ExchangeID = data.ExchangeID,
-            SecurityID = data.SecurityID,
-            Direction = data.Direction,
-            OrderPriceType = data.OrderPriceType,
-            TimeCondition = data.TimeCondition,
-            VolumeCondition = data.VolumeCondition,
-            LimitPrice = data.LimitPrice,
-            VolumeTotalOriginal = data.VolumeTotalOriginal,
-            RequestID = data.RequestID,
-            FrontID = data.FrontID,
-            SessionID = data.SessionID,
-            OrderRef = data.OrderRef,
-            OrderID = data.OrderID,
-            OrderStatus = data.OrderStatus
+            ExchangeID=data.ExchangeID,
+            SecurityID=data.SecurityID,
+            Direction=data.Direction,
+            OrderPriceType=data.OrderPriceType,
+            TimeCondition=data.TimeCondition,
+            VolumeCondition=data.VolumeCondition,
+            LimitPrice=data.LimitPrice,
+            VolumeTotalOriginal=data.VolumeTotalOriginal,
+            RequestID=data.RequestID,
+            FrontID=data.FrontID,
+            SessionID=data.SessionID,
+            OrderRef=data.OrderRef,
+            OrderID=data.OrderID,
+            OrderStatus=data.OrderStatus
         )
-
 
     def OnRtnTrade(self, data: CTORATstpTradeField) -> None:
         """成交数据推送"""
@@ -445,11 +467,8 @@ class Trader(traderapi.CTORATstpTraderSpi):
             Price=data.Price,
             Volume=data.Volume
         )
-
+        self.log.info(f"成交数据推送：{trade.model_dump()}")
         self.bus.put(Event(event_type=EventType.TRADE, payload=trade))
-
-        print("成交数据推送")
-        print(symbol, data.ExchangeID, orderid, data.TradeID, data.Direction, data.Price, data.Volume)
 
     def OnRspQrySecurity(
             self,
@@ -460,8 +479,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
     ) -> None:
         """合约查询回报"""
         if last:
-            '''self.gateway.write_log("合约信息查询成功")'''
-            print("合约信息查询成功")
+            self.log.info("合约信息查询成功")
         if not data:
             return
         '''
@@ -478,7 +496,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
         )
         self.gateway.on_contract(contract_data)
         '''
-        print(f"name: {data.SecurityName}, size: {data.VolumeMultiple}, pricetick: {data.PriceTick}")
 
     def OnRspQryTradingAccount(
             self,
@@ -501,8 +518,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
         )
         self.gateway.on_account(account_data)
         '''
-        print("资金回报查询")
-        print(f"accountid: {data.AccountID}, balance: {data.UsefulMoney}, fronze: {data.FrozenCash}")
 
     def OnRspQryShareholderAccount(
             self,
@@ -519,8 +534,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
         exchange: Exchange = EXCHANGE_TORA2VT[data.ExchangeID]
         self.shareholder_ids[exchange] = data.ShareholderID
         '''
-        print("客户号查询")
-        print(f"Exchange: {data.ExchangeID}, ShareholderID:{data.ShareholderID}")
         self.shareholder_ids[data.ExchangeID] = data.ShareholderID
 
     def OnRspQryInvestor(
@@ -534,7 +547,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
         if not data:
             return
         self.investor_id: str = data.InvestorID
-        print(f"InvestorID: {data.InvestorID}")
 
     def OnRspQryPosition(
             self,
@@ -551,7 +563,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
             '''
             self.gateway.write_log("OnRspQryPosition:收到其他账户的仓位信息")
             '''
-            print("OnRspQryPosition:收到其他账户的仓位信息")
             return
 
         volume: int = data.CurrentPosition
@@ -574,9 +585,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         )
         self.gateway.on_position(position_data)
         '''
-        print("持仓查询")
-        print(
-            f"symbol: {data.SecurityID},exchange: {data.ExchangeID},name: {data.SecurityName} ,volume: {volume}, price: {price}, 股份可用: {data.AvailablePosition}")
+
 
     def OnErrRtnOrderInsert(self, data: CTORATstpInputOrderField, error: CTORATstpRspInfoField, reason: int) -> None:
         """委托下单失败回报"""
@@ -610,8 +619,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             f"错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg}"
         )
         '''
-        print(
-            f"委托下单失败回报: 拒单({order_id}): 错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg} , symbol:{data.SecurityID},volume:{data.VolumeTotalOriginal}")
+        self.log.info(f"拒单({order_id}): 错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg} , 股票代码:{data.SecurityID}")
 
     def connect(
             self,
@@ -665,7 +673,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         req.UserID = self.userid
         self.api.ReqUserLogout(req, self.reqid)
 
-    def query_contracts(self, security_id: str = "600000") -> None:
+    def query_contracts(self, security_id: str = "") -> None:
         """查询合约"""
         req: CTORATstpQrySecurityField = CTORATstpQrySecurityField()
         req.SecurityID = security_id
@@ -713,7 +721,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
 
         self.reqid += 1
         self.order_ref += 1
-        print(self.shareholder_ids)
         req.ShareholderID = self.shareholder_ids[req.ExchangeID]
         req.OrderRef = self.order_ref
 

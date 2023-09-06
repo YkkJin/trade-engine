@@ -6,6 +6,7 @@ from tora_api.src.models.request import SubscribeRequest
 from tora_api.src.tora_stock.traderapi import (CTORATstpInputOrderActionField, TORA_TSTP_EXD_SSE)
 from time import sleep
 from tora_api.config.config import *
+from tora_api.src.log_handler.default_handler import DefaultLogHandler
 from tora_api.test.test_order import (
     LimitPriceOrderReq,
     LimitPriceOrderReqSell,
@@ -69,20 +70,27 @@ def test_cancel_order(trader: Trader) -> bool:
 
 
 if __name__ == "__main__":
+    log = DefaultLogHandler(name="主引擎", log_type='stdout',filepath='main_engine.log')
     bus = EventBus()
-    quoter = Quoter(bus)
+    quoter = Quoter(bus,log)
     sleep(1)
-    trader = Trader(bus)
+    trader = Trader(bus,log)
     quoter.connect(UserID, Password, FrontAddress['level1_xmd_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
-    trader.connect(UserID,Password,FrontAddress['level1_trade_24A'],ACCOUNT_USERID, ADDRESS_FRONT)
+    trader.connect(UserID, Password, FrontAddress['level1_trade_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
     sleep(1)
     req = SubscribeRequest(
-        SecurityID='603843',
+        SecurityID='600732',
         ExchangeID=TORA_TSTP_EXD_SSE
     )
 
-    strategy = Strategy(trader=trader, quoter=quoter, limit_volume=10000000, cancel_volume=80000000, position=10000)
+    strategy = Strategy(bus=bus, trader=trader, quoter=quoter, limit_volume=10000000, cancel_volume=800000000000, position=10000,count = 3)
     strategy.subscribe(req)
 
-    e = EventEngine(bus, strategy=strategy)
+    e = EventEngine(bus, strategy=strategy,log = log)
     e.run()
+    input()
+    trader.logout()
+    quoter.logout()
+    trader.release()
+    quoter.release()
+    e.stop()
