@@ -3,12 +3,19 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 verify_ssl = false
 name = "pip_conf_index_global"
 
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
 [packages]
 fastapi = "*"
 uvicorn = "*"
 pydantic = "*"
 pipfile = "*"
 logbook = "*"
+streamlit = "*"
+psutil = "*"
 
 [dev-packages]
 

@@ -79,7 +79,7 @@ if __name__ == "__main__":
     trader.connect(UserID, Password, FrontAddress['level1_trade_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
     sleep(1)
     req = SubscribeRequest(
-        SecurityID='600732',
+        SecurityID='600114',
         ExchangeID=TORA_TSTP_EXD_SSE
     )
 
