@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from collections import defaultdict
 import uvicorn
-import psutil
+#import psutil
 
 from tora_api.src.trade import Trader, Quoter
 from tora_api.src.strategies.strategy import Strategy
@@ -70,8 +70,8 @@ def check_strategy():
 
 
 if __name__ == "__main__":
-    p = psutil.Process()
-    p.cpu_affinity([0])
+    #p = psutil.Process()
+    #p.cpu_affinity([0])
 
     EXCHANGE_MAPPING_ST2TORA = {
         "SSE": TORA_TSTP_EXD_SSE,
@@ -84,8 +84,8 @@ if __name__ == "__main__":
     }
 
     log = DefaultLogHandler(name="主引擎", log_type='stdout')
-    log.info(f'主程序线程句柄：{p}')
-    log.info(f"主程序绑定CPU：{p.cpu_affinity()}")
+    #log.info(f'主程序线程句柄：{p}')
+    #log.info(f"主程序绑定CPU：{p.cpu_affinity()}")
     bus = EventBus()
     quoter = Quoter(bus, log)
     sleep(1)
