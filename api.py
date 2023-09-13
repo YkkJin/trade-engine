@@ -47,7 +47,7 @@ def remove_strategy(user_input: UserStrategyModel):
         e.remove_strategy(user_input.ID)
     except KeyError:
         error = Error(ErrorID=0, ErrorMsg=f"策略{user_input.ID}不存在")
-        return error.model_dump_json()
+        return error
 
 
 @app.get('/check_running_strategy')
@@ -55,19 +55,18 @@ def check_strategy():
     strategy_group = UserStrategyGroupModel()
     if not e.strategy_dict:
         return Error(ErrorID=0, ErrorMsg=f"服务器中无策略运行")
-    else:
-        for key in e.strategy_dict.keys():
-            strategy = UserStrategyModel()
-            strategy.ID = key
-            strategy.SecurityID = e.strategy_dict[key].subscribe_request.SecurityID
-            strategy.ExchangeID = EXCHANGE_MAPPING_TORA2ST[e.strategy_dict[key].subscribe_request.ExchangeID]
-            strategy.LimitVolume = e.strategy_dict[key].buy_trigger_volume
-            strategy.CancelVolume = e.strategy_dict[key].cancel_trigger_volume
-            strategy.Position = e.strategy_dict[key].position
-            strategy.Count = e.strategy_dict[key].trigger_times
-            strategy.ID = e.strategy_dict[key].id
-            strategy_group.StrategyGroup.append(strategy)
-        return strategy_group.model_dump_json()
+    for key in e.strategy_dict.keys():
+        strategy = UserStrategyModel()
+        strategy.ID = key
+        strategy.SecurityID = e.strategy_dict[key].subscribe_request.SecurityID
+        strategy.ExchangeID = EXCHANGE_MAPPING_TORA2ST[e.strategy_dict[key].subscribe_request.ExchangeID]
+        strategy.LimitVolume = e.strategy_dict[key].buy_trigger_volume
+        strategy.CancelVolume = e.strategy_dict[key].cancel_trigger_volume
+        strategy.Position = e.strategy_dict[key].position
+        strategy.Count = e.strategy_dict[key].trigger_times
+        strategy.ID = e.strategy_dict[key].id
+        strategy_group.StrategyGroup.append(strategy)
+    return strategy_group
 
 
 if __name__ == "__main__":

@@ -8,10 +8,14 @@ import pandas as pd
 import json
 import requests
 
+# Init Session state
+
 if "strategy_id" not in st.session_state:
     st.session_state.strategy_id = 0
 if "running_strategy" not in st.session_state:
     st.session_state.running_strategy = ''
+if "strategy_container" not in st.session_state:
+    st.session_state.strategy_container = False
 
 st.set_page_config(
     page_title='领桥量化',
@@ -45,6 +49,8 @@ def remove_strategy(user_input: UserStrategyModel):
     if res.status_code == 200:
         st.success('策略删除成功!', icon='✅')
         check_strategy()
+        if st.session_state.running_strategy == None:
+            st.session_state.strategy_container = False
         st.write(res.text)
 
     else:
@@ -53,7 +59,11 @@ def remove_strategy(user_input: UserStrategyModel):
 
 def check_strategy():
     res = requests.get(url="http://127.0.0.1:8000/check_running_strategy")
-    st.session_state.running_strategy = res.json()
+    if 'ErrorMsg' in res.json().keys():
+        st.session_state.strategy_container = False
+    else:
+        st.session_state.running_strategy = res.json()
+    st.write(res.text)
 
 
 with st.sidebar:
@@ -88,14 +98,15 @@ with st.sidebar:
                                      use_container_width=True)
     if submit:
         st.session_state.strategy_id += 1
+        st.session_state.strategy_container = True
 
 
 # ---- container ----
 container = st.container()
 container.header('策略管理')
 
-if check or submit or remove :
-    df = pd.DataFrame.from_dict(data=json.loads(st.session_state.running_strategy)['StrategyGroup'])
+if st.session_state.strategy_container :
+    df = pd.DataFrame.from_dict(data=st.session_state.running_strategy['StrategyGroup'])
     container.dataframe(
         df,
         column_config={
@@ -112,6 +123,7 @@ if check or submit or remove :
         use_container_width=True
     )
 
-
+else:
+    st.write(":u7121: 无策略运行")
 
 
