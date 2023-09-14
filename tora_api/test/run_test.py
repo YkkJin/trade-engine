@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../../')
 from tora_api.src.trade import Trader, Quoter
 from tora_api.src.strategies.strategy import Strategy
 from tora_api.src.event.bus import EventBus
@@ -83,14 +85,18 @@ if __name__ == "__main__":
         ExchangeID=TORA_TSTP_EXD_SSE
     )
 
-    strategy = Strategy(bus=bus, trader=trader, quoter=quoter, limit_volume=10000000, cancel_volume=800000000000, position=10000,count = 3)
+    strategy = Strategy(bus=bus, trader=trader, quoter=quoter, limit_volume=10000000, cancel_volume=800000000000, position=10000,count = 3,log = log,id=1)
+
     strategy.subscribe(req)
 
-    e = EventEngine(bus, strategy=strategy,log = log)
+    e = EventEngine(bus, log = log)
     e.run()
-    input()
-    trader.logout()
-    quoter.logout()
-    trader.release()
-    quoter.release()
-    e.stop()
+    cli = input('输入【1】+回车退出主引擎：\n')
+    if int(cli) == 1:
+        e.stop()
+        quoter.logout()
+        trader.logout()
+        quoter.release()
+        trader.release()
+
+
