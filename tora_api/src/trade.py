@@ -11,8 +11,10 @@ from .event.type import EventType
 from .log_handler.default_handler import DefaultLogHandler
 from .tora_stock import (
     traderapi,
-    xmdapi
+    xmdapi,
+    lev2mdapi
 )
+
 
 from .tora_stock.traderapi import (
     TORA_TSTP_D_Buy,
@@ -93,6 +95,11 @@ ORDER_STATUS_MAP = {
     7: "交易所已拒绝"
 
 }
+
+class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
+    def __init__(self, bus: EventBus, log: DefaultLogHandler) -> None:
+        pass
+
 
 class Quoter(xmdapi.CTORATstpXMdSpi):
     def __init__(self, bus: EventBus, log: DefaultLogHandler) -> None:
