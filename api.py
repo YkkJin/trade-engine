@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from collections import defaultdict
 import uvicorn
-#import psutil
+# import psutil
 
 from tora_api.src.trade import Trader, Quoter
 from tora_api.src.strategies.strategy import Strategy
@@ -19,60 +19,8 @@ from tora_api.src.log_handler.default_handler import DefaultLogHandler
 app = FastAPI()
 
 
-@app.post('/')
-def index():
-    print("Hello")
-
-
-@app.post('/add_strategy')
-def add_strategy(user_input: UserStrategyModel):
-    req = SubscribeRequest(
-        SecurityID=user_input.SecurityID,
-        ExchangeID=EXCHANGE_MAPPING_ST2TORA[user_input.ExchangeID]
-    )
-    print(user_input.SecurityID)
-    strategy = Strategy(trader=trader, quoter=quoter, bus=bus, limit_volume=user_input.LimitVolume,
-                        cancel_volume=user_input.CancelVolume, position=user_input.Position, count=user_input.Count,
-                        log=log, id=user_input.ID)
-    if e.load_strategy(strategy):
-        strategy.subscribe(req)
-
-
-@app.post('/remove_strategy')
-def remove_strategy(user_input: UserStrategyModel):
-    try:
-        strategy = e.strategy_dict[user_input.ID]
-
-        strategy.unsubscribe()
-        e.remove_strategy(user_input.ID)
-    except KeyError:
-        error = Error(ErrorID=0, ErrorMsg=f"策略{user_input.ID}不存在")
-        return error
-
-
-@app.get('/check_running_strategy')
-def check_strategy():
-    strategy_group = UserStrategyGroupModel()
-    if not e.strategy_dict:
-        return Error(ErrorID=0, ErrorMsg=f"服务器中无策略运行")
-    for key in e.strategy_dict.keys():
-        strategy = UserStrategyModel()
-        strategy.ID = key
-        strategy.SecurityID = e.strategy_dict[key].subscribe_request.SecurityID
-        strategy.ExchangeID = EXCHANGE_MAPPING_TORA2ST[e.strategy_dict[key].subscribe_request.ExchangeID]
-        strategy.LimitVolume = e.strategy_dict[key].buy_trigger_volume
-        strategy.CancelVolume = e.strategy_dict[key].cancel_trigger_volume
-        strategy.Position = e.strategy_dict[key].position
-        strategy.Count = e.strategy_dict[key].trigger_times
-        strategy.ID = e.strategy_dict[key].id
-        strategy_group.StrategyGroup.append(strategy)
-    return strategy_group
-
-
-if __name__ == "__main__":
-    #p = psutil.Process()
-    #p.cpu_affinity([0])
-
+@app.on_event('startup')
+def startup_event():
     EXCHANGE_MAPPING_ST2TORA = {
         "SSE": TORA_TSTP_EXD_SSE,
         "SZSE": TORA_TSTP_EXD_SZSE
@@ -84,8 +32,8 @@ if __name__ == "__main__":
     }
 
     log = DefaultLogHandler(name="主引擎", log_type='stdout')
-    #log.info(f'主程序线程句柄：{p}')
-    #log.info(f"主程序绑定CPU：{p.cpu_affinity()}")
+    # log.info(f'主程序线程句柄：{p}')
+    # log.info(f"主程序绑定CPU：{p.cpu_affinity()}")
     bus = EventBus()
     quoter = Quoter(bus, log)
     sleep(1)
@@ -95,18 +43,76 @@ if __name__ == "__main__":
 
     e = EventEngine(bus, log)
     e.run()
-    uvicorn.run(app)
-    log.info("关闭API服务")
-    cli = input('输入【1】+回车退出主引擎：')
-    if int(cli) == 1:
-        e.stop()
-        quoter.logout()
-        trader.logout()
-        quoter.release()
-        trader.release()
+
+    app.package = {
+        "EXCHANGE_MAPPING_ST2TORA": EXCHANGE_MAPPING_ST2TORA,
+        "EXCHANGE_MAPPING_TORA2ST": EXCHANGE_MAPPING_TORA2ST,
+        "logger": log,
+        "EventBus": bus,
+        "Quoter": quoter,
+        "Trader": trader,
+        "EventEngine": e
+    }
 
 
+@app.on_event('shutdown')
+def shutdown_event():
+    app.package["logger"].info("关闭API服务")
+    app.package["EventEngine"].stop()
+    app.package["Quoter"].logout()
+    app.package["Trader"].logout()
+    app.package["Quoter"].release()
+    app.package["Trader"].release()
 
 
+@app.post('/')
+def index():
+    print("Hello")
+
+
+@app.post('/add_strategy')
+def add_strategy(user_input: UserStrategyModel):
+    req = SubscribeRequest(
+        SecurityID=user_input.SecurityID,
+        ExchangeID=app.package["EXCHANGE_MAPPING_ST2TORA"][user_input.ExchangeID],
+    )
+    strategy = Strategy(trader=app.package["Trader"], quoter=app.package["Quoter"], bus=app.package["EventBus"],
+                        limit_volume=user_input.LimitVolume,
+                        cancel_volume=user_input.CancelVolume, position=user_input.Position, count=user_input.Count,
+                        log=app.package["logger"], id=user_input.ID)
+    if app.package["EventBus"].load_strategy(strategy):
+        strategy.subscribe(req)
+
+
+@app.post('/remove_strategy')
+def remove_strategy(user_input: UserStrategyModel):
+    try:
+        strategy = app.package["EventBus"].strategy_dict[user_input.ID]
+
+        strategy.unsubscribe()
+        app.package["EventBus"].remove_strategy(user_input.ID)
+    except KeyError:
+        error = Error(ErrorID=0, ErrorMsg=f"策略{user_input.ID}不存在")
+        return error
+
+
+@app.get('/check_running_strategy')
+def check_strategy():
+    strategy_group = UserStrategyGroupModel()
+    if not app.package["EventBus"].strategy_dict:
+        return Error(ErrorID=0, ErrorMsg=f"服务器中无策略运行")
+    for key in app.package["EventBus"].strategy_dict.keys():
+        strategy = UserStrategyModel()
+        strategy.ID = key
+        strategy.SecurityID = app.package["EventBus"].strategy_dict[key].subscribe_request.SecurityID
+        strategy.ExchangeID = app.package["EXCHANGE_MAPPING_TORA2ST"][
+            app.package["EventBus"].strategy_dict[key].subscribe_request.ExchangeID]
+        strategy.LimitVolume = app.package["EventBus"].strategy_dict[key].buy_trigger_volume
+        strategy.CancelVolume = app.package["EventBus"].strategy_dict[key].cancel_trigger_volume
+        strategy.Position = app.package["EventBus"].strategy_dict[key].position
+        strategy.Count = app.package["EventBus"].strategy_dict[key].trigger_times
+        strategy.ID = app.package["EventBus"].strategy_dict[key].id
+        strategy_group.StrategyGroup.append(strategy)
+    return strategy_group
 
 
