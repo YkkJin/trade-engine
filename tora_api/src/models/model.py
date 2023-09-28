@@ -44,6 +44,43 @@ class TickModel(BaseModel):
     AskVolume5: float = 0.0
 
 
+class L2TickModel(BaseModel):
+    SecurityID: str = ""
+    ExchangeID: str = ""
+    LastPrice: float = 0.0
+    Volume: float = 0.0
+    UpperLimitPrice: float = 0.0
+    LowerLimitPrice: float = 0.0
+    HighestPrice: float = 0.0
+    LowestPrice: float = 0.0
+    PreClosePrice: float = 0.0
+    BidPrice1: float = 0.0
+    AskPrice1: float = 0.0
+    BidVolume1: float = 0.0
+    AskVolume1: float = 0.0
+
+    BidPrice2: float = 0.0
+    AskPrice2: float = 0.0
+    BidVolume2: float = 0.0
+    AskVolume2: float = 0.0
+
+    BidPrice3: float = 0.0
+    AskPrice3: float = 0.0
+    BidVolume3: float = 0.0
+    AskVolume3: float = 0.0
+
+    BidPrice4: float = 0.0
+    AskPrice4: float = 0.0
+    BidVolume4: float = 0.0
+    AskVolume4: float = 0.0
+
+    BidPrice5: float = 0.0
+    AskPrice5: float = 0.0
+    BidVolume5: float = 0.0
+    AskVolume5: float = 0.0
+
+
+
 class OrderModel(BaseModel):
     ExchangeID: str = ""
     SecurityID: str = ""

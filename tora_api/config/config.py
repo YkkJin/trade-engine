@@ -7,6 +7,7 @@ FrontAddress = {
     "level1_trade": "tcp://210.14.72.21:4400",
     "level1_xmd_24A": "tcp://210.14.72.16:9402",
     "level1_trade_24A": "tcp://210.14.72.15:4400",
+    "level2_xmd_SH_test": "tcp://210.14.72.17:16900"
 
 }
 

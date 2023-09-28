@@ -3,7 +3,10 @@ from time import sleep
 from datetime import datetime
 
 from ..config.config import *
-from .models.model import TickModel, TradeModel, OrderModel
+from .models.model import (TickModel,
+                           L2TickModel,
+                           TradeModel,
+                           OrderModel)
 from .models.request import OrderRequest, CancelRequest, SubscribeRequest
 from .event.bus import EventBus
 from .event.event import Event
@@ -14,7 +17,6 @@ from .tora_stock import (
     xmdapi,
     lev2mdapi
 )
-
 
 from .tora_stock.traderapi import (
     TORA_TSTP_D_Buy,
@@ -96,9 +98,162 @@ ORDER_STATUS_MAP = {
 
 }
 
+
 class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
     def __init__(self, bus: EventBus, log: DefaultLogHandler) -> None:
-        pass
+        super().__init__()
+        self.bus = bus
+        self.log = log
+
+        self.reqid: int = 0
+        self.api: lev2mdapi.CTORATstpLev2MdApi_CreateTstpLev2MdApi = None
+
+        self.connect_status: bool = False
+        self.login_status: bool = False
+        self.subscribed: set = set()
+
+        self.userid: str = ""
+        self.password: str = ""
+        self.address: str = ""
+
+    def OnFrontConnected(self) -> None:
+        """服务器连接成功回报"""
+        self.log.info("L2行情服务器链接成功")
+        self.login()
+
+    def OnFrontDisconnected(self, reason: int) -> None:
+        """服务器连接断开回报"""
+        self.login_status = False
+        self.log.info(f"L2行情服务器连接断开，原因{reason}")
+
+    def OnRspUserLogin(
+            self,
+            data: lev2mdapi.CTORATstpRspUserLoginField,
+            error: lev2mdapi.CTORATstpRspInfoField,
+            reqid: int,
+            isLast: bool
+    ) -> None:
+        """用户登录请求回报"""
+        if not error:
+           return
+        else:
+            self.login_status = True
+            self.log.info(f"L2行情服务器登录成功",isLast)
+
+    def OnRspSubMarketData(self,
+                           data: lev2mdapi.CTORATstpSpecificSecurityField,
+                           error: lev2mdapi.CTORATstpRspInfoField,
+                           reqid: int,
+                           isLast: str):
+        if not error:
+            return
+        else:
+            self.log.info("L2行情快照订阅回报", error)
+
+    def OnRspSubNGTSTick(self,
+                         data: lev2mdapi.CTORATstpSpecificSecurityField,
+                         error: lev2mdapi.CTORATstpRspInfoField,
+                         reqid: int,
+                         isLast: str):
+        if not error:
+            return
+        else:
+            self.log.info("L2股基逐笔委托订阅回报", error)
+
+    def OnRtnMarketData(self, data:lev2mdapi.CTORATstpLev2MarketDataField, FirstLevelBuyNum, FirstLevelBuyOrderVolumes, FirstLevelSellNum, FirstLevelSellOrderVolumes):
+        if not data:
+            return
+        self.log.info(f"{data['SecurityID'],data['DataTimeStamp']},{data['LastPrice']},{data['HighestPrice']},{data['BidPrice1']},{data['BidVolume1']}")
+
+    def OnRtnNGTSTick(self, data: lev2mdapi.CTORATstpLev2NGTSTickField):
+        if not data:
+            return
+        self.log.info(f"{data}")
+        L2Tick = L2TickModel(
+                ExchangeID=data["ExchangeID"],
+                SecurityID=data["SecurityID"],
+                MainSeq=data["MainSeq"],
+                SubSeq=data["SubSeq"],
+                TickTime=data["TickTime"],
+                TickType=data["TickType"],
+                BuyNo=data["BuyNo"],
+                SellNo=data["SellNo"],
+                Price=data["Price"],
+                Volume=data["Volume"],
+                TradeMoney=data["TradeMoney"],
+                Side=data["Side"]
+            )
+        L2TickEvent = Event(
+                event_type=EventType.L2TICK,
+                payload=L2Tick
+            )
+        self.log.info("Putting Data")
+        self.bus.put(event=L2TickEvent)
+
+    def connect(
+            self,
+            userid: str,
+            password: str,
+            address: str,
+            account_type: str,
+            address_type: str
+    ) -> None:
+        """连接服务器"""
+        self.userid = userid
+        self.password = password
+        self.address = address
+        self.account_type = account_type
+        self.address_type = address_type
+
+        # 禁止重复发起连接，会导致异常崩溃
+        if not self.connect_status:
+            self.api = lev2mdapi.CTORATstpLev2MdApi_CreateTstpLev2MdApi(lev2mdapi.TORA_TSTP_MST_TCP,False)
+            self.api.RegisterSpi(self)
+
+            if self.address_type == ADDRESS_FRONT:
+                self.api.RegisterFront(address)
+            else:
+                self.api.RegisterNameServer(address)
+
+            self.api.Init()
+            self.log.debug('L2行情API初始化')
+            self.connect_status = True
+
+        elif not self.login_status:
+            self.log.info("L2行情登录")
+            self.login()
+
+    def login(self) -> None:
+        login_req: lev2mdapi.CTORATstpReqUserLoginField = lev2mdapi.CTORATstpReqUserLoginField()
+        #login_req.LogInAccount = self.userid
+        #login_req.Password = self.password
+        #login_req.UserProductInfo = "HX5ZJ0C1PV"
+        self.reqid += 1
+        self.api.ReqUserLogin(login_req, self.reqid)
+
+    def subscribe(self, req: SubscribeRequest) -> None:
+        """订阅行情"""
+        if self.login_status:
+            # exchange: Exchange = EXCHANGE_VT2TORA[req.exchange]
+            self.api.SubscribeNGTSTick([str.encode(req.SecurityID)], req.ExchangeID)  # 订阅逐笔委托行情
+            self.api.SubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)
+
+    def unsubscribe(self, req: SubscribeRequest) -> None:
+        if self.login_status:
+            self.api.UnSubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)
+
+    def logout(self) -> None:
+        """关闭连接"""
+        if self.connect_status:
+            req = lev2mdapi.CTORATstpUserLogoutField()
+            req.UserID = self.userid
+            self.reqid += 1
+            self.api.ReqUserLogout(req, self.reqid)
+            self.login_status = False
+            self.connect_status = False
+
+    def release(self) -> None:
+        self.api.Release()
 
 
 class Quoter(xmdapi.CTORATstpXMdSpi):
@@ -350,7 +505,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             self.frontid = data.FrontID
             self.sessionid = data.SessionID
             self.login_status = True
-            self.log.info("交易服务器登录成功")
+            self.log.info("交易服务器登录成功",error.ErrorID,error.ErrorMsg)
             self.query_contracts()
             self.query_investors()
             self.query_shareholder_ids()
@@ -416,7 +571,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             FrontID=data.FrontID,
             SessionID=data.SessionID,
             OrderRef=data.OrderRef,
-            StatusMsg = data.StatusMsg,
+            StatusMsg=data.StatusMsg,
             OrderStatus=data.OrderStatus,
             OrderSysID=data.OrderSysID
         )
@@ -592,7 +747,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
         self.gateway.on_position(position_data)
         '''
 
-
     def OnErrRtnOrderInsert(self, data: CTORATstpInputOrderField, error: CTORATstpRspInfoField, reason: int) -> None:
         """委托下单失败回报"""
         '''
@@ -625,7 +779,8 @@ class Trader(traderapi.CTORATstpTraderSpi):
             f"错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg}"
         )
         '''
-        self.log.info(f"拒单({order_id}): 错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg} , 股票代码:{data.SecurityID}")
+        self.log.info(
+            f"拒单({order_id}): 错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg} , 股票代码:{data.SecurityID}")
 
     def connect(
             self,
