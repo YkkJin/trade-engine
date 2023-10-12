@@ -117,7 +117,7 @@ def add_strategy(user_input: UserStrategyModel):
     base_strategy = StrategyBase(trader=app.package["Trader"], quoter=app.package["L2Quoter"],
                                  bus=app.package["EventBus"])
 
-    if app.package["EventBus"].load_strategy(base_strategy):
+    if app.package["EventEngine"].load_strategy(base_strategy):
         base_strategy.subscribe(req)
 
 

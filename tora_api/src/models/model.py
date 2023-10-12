@@ -54,6 +54,7 @@ class L2TickModel(BaseModel):
     HighestPrice: float = 0.0
     LowestPrice: float = 0.0
     PreClosePrice: float = 0.0
+
     BidPrice1: float = 0.0
     AskPrice1: float = 0.0
     BidVolume1: float = 0.0
@@ -79,6 +80,37 @@ class L2TickModel(BaseModel):
     BidVolume5: float = 0.0
     AskVolume5: float = 0.0
 
+    BidPrice6 : float = 0.0
+    AskPrice6 : float = 0.0
+    BidVolume6: float = 0.0
+    AskVolume6: float = 0.0
+
+    BidPrice7: float = 0.0
+    AskPrice7: float = 0.0
+    BidVolume7: float = 0.0
+    AskVolume7: float = 0.0
+
+    BidPrice8: float = 0.0
+    AskPrice8: float = 0.0
+    BidVolume8: float = 0.0
+    AskVolume8: float = 0.0
+
+    BidPrice9: float = 0.0
+    AskPrice9: float = 0.0
+    BidVolume9: float = 0.0
+    AskVolume9: float = 0.0
+
+    BidPrice10: float = 0.0
+    AskPrice10: float = 0.0
+    BidVolume10: float = 0.0
+    AskVolume10: float = 0.0
+
+    WithdrawBuyNumber: float = 0.0
+    WithdrawBuyAmount: float = 0.0
+    WithdrawBuyMoney: float = 0.0
+    WithdrawSellNumber: float = 0.0
+    WithdrawSellAmount: float = 0.0
+    WithdrawSellMoney: float = 0.0
 
 
 class OrderModel(BaseModel):
