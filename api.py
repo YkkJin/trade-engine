@@ -78,27 +78,6 @@ def index():
     print("Hello")
 
 
-@app.post('/add_strategy_l2')
-def add_strategy(user_input: SubscribeRequest):
-    req = SubscribeRequest(
-        SecurityID=user_input.SecurityID,
-        ExchangeID=app.package["EXCHANGE_MAPPING_ST2TORA"][user_input.ExchangeID],
-    )
-    """
-    #strategy = Strategy(trader=app.package["Trader"], quoter=app.package["Quoter"], bus=app.package["EventBus"],
-                        limit_volume=user_input.LimitVolume,
-                        cancel_volume=user_input.CancelVolume, position=user_input.Position, count=user_input.Count,
-                        log=app.package["logger"], id=user_input.ID)
-
-    #if app.package["EventBus"].load_strategy(strategy):
-        #strategy.subscribe(req) """
-
-    base_strategy = StrategyBase(trader=app.package["Trader"], quoter=app.package["L2Quoter"],
-                                 bus=app.package["EventBus"])
-
-    if app.package["EventEngine"].load_strategy(base_strategy):
-        base_strategy.subscribe(req)
-
 @app.post('/add_strategy')
 def add_strategy(user_input: UserStrategyModel):
     req = SubscribeRequest(
