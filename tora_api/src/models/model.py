@@ -1,7 +1,22 @@
 from pydantic import BaseModel
 
 
+
+
+class SecurityFieldModel(BaseModel):
+    TradingDay: str = ""
+    ExchangeID: str = ""
+    SecurityID: str = ""
+    SecurityName: str = ""
+    UpperLimitPrice: float = 0.0
+    LowerLimitPrice: float = 0.0
+
+
+
 class TickModel(BaseModel):
+    '''
+    L1行情快照
+    '''
     TradingDay: str = ""
     UpdateTime: str = ""
     SecurityID: str = ""
@@ -45,10 +60,13 @@ class TickModel(BaseModel):
 
 
 class L2TickModel(BaseModel):
+    '''
+    L2行情快照
+    '''
     SecurityID: str = ""
     ExchangeID: str = ""
+    DataTimeStamp: str = ""
     LastPrice: float = 0.0
-    Volume: float = 0.0
     UpperLimitPrice: float = 0.0
     LowerLimitPrice: float = 0.0
     HighestPrice: float = 0.0
@@ -112,8 +130,42 @@ class L2TickModel(BaseModel):
     WithdrawSellAmount: float = 0.0
     WithdrawSellMoney: float = 0.0
 
+class Lev2OrderDetailModel(BaseModel):
+    ExchangeID: str = ""
+    SecurityID: str = ""
+    OrderTime: str = ""
+    Price: float = 0.0
+    Volume: int = 0
+    Side: str = ""
+    OrderType: str = ""
+    MainSeq: str = ""
+    Subseq: str = ""
+    OrderNo: str = ""
+    OrderStatus: str = ""
+
+
+class Lev2TransactionDetailModel(BaseModel):
+    ExchangeID: str = ""
+    SecurityID: str = ""
+    TradeTime: str = ""
+    TradePrice: float = 0.0
+    TradeVolume: int = 0
+    ExecType: str = ""
+    MainSeq: int = ""
+    SubSeq: int = ""
+    BuyNo: int = ""
+    SellNo: int = ""
+
+
+
+
+
+
 
 class OrderModel(BaseModel):
+    '''
+    委托
+    '''
     ExchangeID: str = ""
     SecurityID: str = ""
     Direction: str = ""
@@ -133,6 +185,9 @@ class OrderModel(BaseModel):
 
 
 class TradeModel(BaseModel):
+    '''
+    成交
+    '''
     SecurityID: str = ""
     ExchangeID: str = ""
     OrderID: str = ""

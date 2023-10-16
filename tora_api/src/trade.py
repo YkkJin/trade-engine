@@ -727,20 +727,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             self.log.info("合约信息查询成功")
         if not data:
             return
-        '''
-        contract_data: ContractData = ContractData(
-            gateway_name=self.gateway_name,
-            symbol=data.SecurityID,
-            exchange=EXCHANGE_TORA2VT[data.ExchangeID],
-            name=data.SecurityName,
-            product=PRODUCT_TORA2VT.get(data.ProductID, Product.EQUITY),
-            size=data.VolumeMultiple,
-            pricetick=data.PriceTick,
-            min_volume=data.MinLimitOrderBuyVolume,
-            net_position=True,
-        )
-        self.gateway.on_contract(contract_data)
-        '''
+        print("OnRtnQrySecurity 股票代码[%s] 股票名称[%s] 交易所[%s] 涨停价[%.2f] 跌停价[%.2f]" % (data.SecurityID,data.SecurityName,data.ExchangeID,data.UpperLimitPrice,data.LowerLimitPrice))
 
     def OnRspQryTradingAccount(
             self,
