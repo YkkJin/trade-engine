@@ -163,7 +163,8 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
     def OnRtnOrderDetail(self, data: lev2mdapi.CTORATstpLev2OrderDetailField):
         if not data:
             return
-        
+        ##TODO : ADD data !!!!!!
+
         l2ord_detial = Lev2OrderDetailModel()
         self.bus.put(Event(EventType.L2OrdTrac, l2ord_detial))
         print(
@@ -180,7 +181,7 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
     def OnRtnTransaction(self, data: lev2mdapi.CTORATstpLev2TransactionField):
         if not data:
             return
-        
+        ##TODO : ADD data !!!!!!
         l2transac_detial = Lev2TransactionDetailModel()
         self.bus.put(Event(EventType.L2OrdTrac, l2transac_detial))
         print(
