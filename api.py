@@ -42,7 +42,7 @@ def startup_event():
     trader = Trader(bus, log)
     #quoter.connect(UserID, Password, FrontAddress['level1_xmd_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
     #sleep(1)
-    l2quoter.connect(UserID, Password, FrontAddress['level2_xmd_SH_test'], ACCOUNT_USERID, ADDRESS_FRONT)
+    l2quoter.connect(UserID, Password, FrontAddress['level2_xmd_SZ_test'], ACCOUNT_USERID, ADDRESS_FRONT)
     sleep(1)
     trader.connect(UserID, Password, FrontAddress['level1_trade_24A'], ACCOUNT_USERID, ADDRESS_FRONT)
 
