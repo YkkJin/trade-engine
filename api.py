@@ -103,10 +103,10 @@ def add_strategy(user_input: UserStrategyModel):
 @app.post('/remove_strategy')
 def remove_strategy(user_input: UserStrategyModel):
     try:
-        strategy = app.package["EventBus"].strategy_dict[user_input.ID]
+        strategy = app.package["EventEngine"].strategy_dict[user_input.ID]
 
         strategy.unsubscribe()
-        app.package["EventBus"].remove_strategy(user_input.ID)
+        app.package["EventEngine"].remove_strategy(user_input.ID)
     except KeyError:
         error = Error(ErrorID=0, ErrorMsg=f"策略{user_input.ID}不存在")
         return error
@@ -115,19 +115,19 @@ def remove_strategy(user_input: UserStrategyModel):
 @app.get('/check_running_strategy')
 def check_strategy():
     strategy_group = UserStrategyGroupModel()
-    if not app.package["EventBus"].strategy_dict:
+    if not app.package["EventEngine"].strategy_dict:
         return Error(ErrorID=0, ErrorMsg=f"服务器中无策略运行")
-    for key in app.package["EventBus"].strategy_dict.keys():
+    for key in app.package["EventEngine"].strategy_dict.keys():
         strategy = UserStrategyModel()
         strategy.ID = key
-        strategy.SecurityID = app.package["EventBus"].strategy_dict[key].subscribe_request.SecurityID
+        strategy.SecurityID = app.package["EventEngine"].strategy_dict[key].subscribe_request.SecurityID
         strategy.ExchangeID = app.package["EXCHANGE_MAPPING_TORA2ST"][
-            app.package["EventBus"].strategy_dict[key].subscribe_request.ExchangeID]
-        strategy.LimitVolume = app.package["EventBus"].strategy_dict[key].buy_trigger_volume
-        strategy.CancelVolume = app.package["EventBus"].strategy_dict[key].cancel_trigger_volume
-        strategy.Position = app.package["EventBus"].strategy_dict[key].position
-        strategy.Count = app.package["EventBus"].strategy_dict[key].trigger_times
-        strategy.ID = app.package["EventBus"].strategy_dict[key].id
+            app.package["EventEngine"].strategy_dict[key].subscribe_request.ExchangeID]
+        strategy.LimitVolume = app.package["EventEngine"].strategy_dict[key].buy_trigger_volume
+        strategy.CancelVolume = app.package["EventEngine"].strategy_dict[key].cancel_trigger_volume
+        strategy.Position = app.package["EventEngine"].strategy_dict[key].position
+        strategy.Count = app.package["EventEngine"].strategy_dict[key].trigger_times
+        strategy.ID = app.package["EventEngine"].strategy_dict[key].id
         strategy_group.StrategyGroup.append(strategy)
     return strategy_group
 
