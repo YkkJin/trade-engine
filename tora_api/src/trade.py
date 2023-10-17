@@ -6,7 +6,9 @@ from ..config.config import *
 from .models.model import (TickModel,
                            L2TickModel,
                            TradeModel,
-                           OrderModel)
+                           OrderModel,
+                           Lev2TransactionDetailModel,
+                           Lev2OrderDetailModel)
 from .models.request import OrderRequest, CancelRequest, SubscribeRequest
 from .event.bus import EventBus
 from .event.event import Event
@@ -158,11 +160,13 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
         if not error:
             return
         else:
-            self.log.info("L2股基逐笔委托订阅回报", error)
+            self.log.info("L2股基逐笔委托订阅回报", error["ErrorMsg"])
 
     def OnRtnOrderDetail(self, data: lev2mdapi.CTORATstpLev2OrderDetailField):
         if not data:
             return
+        l2ord_detail = Lev2OrderDetailModel()
+        self.bus.put(Event(EventType.L2OrdTrac,l2ord_detail))
         print(
             "逐笔委托 证券代码[%s] 委托时间[%d] 价格[%.2f] 委托量[%d] 方向[%s] 委托类型[%s] 主序列号[%d] 子序列号[%d]" % (
                 data['SecurityID'],
@@ -177,6 +181,8 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
     def OnRtnTransaction(self, data: lev2mdapi.CTORATstpLev2TransactionField):
         if not data:
             return
+        l2transac_detial = Lev2TransactionDetailModel()
+        self.bus.put(Event(EventType.L2OrdTrac, l2transac_detial))
         print(
             "逐笔成交 证券代码[%s] 成交时间[%s] 成交价[%.2f] 成交量[%d] 成交类型[%s] 主序列号[%d] 子序列号[%d] 买方代码[%d] 卖方代码[%d]" % (
                 data['SecurityID'],

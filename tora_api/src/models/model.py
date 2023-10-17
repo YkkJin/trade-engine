@@ -151,10 +151,10 @@ class Lev2TransactionDetailModel(BaseModel):
     TradePrice: float = 0.0
     TradeVolume: int = 0
     ExecType: str = ""
-    MainSeq: int = 0
-    SubSeq: int = 0
-    BuyNo: int = 0
-    SellNo: int = 0
+    MainSeq: str = ""
+    SubSeq: str = ""
+    BuyNo: str = ""
+    SellNo: str = ""
 
 
 
