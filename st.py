@@ -68,7 +68,7 @@ def check_strategy():
 with st.sidebar:
     submit_container = st.container()
     submit_container.subheader('策略提交')
-    stock_code = submit_container.text_input('输入股票代码(6位数字)：',value = '600000')
+    stock_code = submit_container.text_input('输入股票代码(6位数字)：',value = '600000.log')
     exchange = submit_container.selectbox('选择交易所：', ('SSE', 'SZSE'))
     limit_volume = submit_container.number_input('封单金额(万)：', min_value=100, step=100)
     cancel_volume = submit_container.number_input('撤单金额(万)：', min_value=100, step=100)

@@ -66,20 +66,22 @@ class DaBanStrategy:
         if 'TradePrice' in event.payload.model_dump().keys():
             if event.payload.TradePrice < self.limup_price:  # not limup, skip
                 return
-            else:
-                if event.payload.SellNo == 0 and event.payload.ExecType == 2 and event.payload.ExchangeID == TORA_TSTP_EXD_SZSE:  # cancel order (ExchangeID == '2') for SZ (buy only)
-                    self.fengban_volume -= event.payload.TradeVolume
+            if event.payload.SellNo == 0 and event.payload.ExecType == 2 and event.payload.ExchangeID == TORA_TSTP_EXD_SZSE:  # cancel order (ExchangeID == '2') for SZ (buy only)
+                self.fengban_volume -= event.payload.TradeVolume
+                self.log.info(f"on_l2OrdTrac回调触发: 触发类别[逐笔成交] 触发形式[未成交] 当前封板量[{self.fengban_volume}]")
         # Order
         else:
             if event.payload.Price < self.limup_price:  # not limup, skip
                 return
+            if event.payload.Side == 1 and event.payload.OrderStatus != "D":  # buy order not cancled, add buy volume to fengban_volume
+                self.fengban_volume += event.payload.TradeVolume
+                self.log.info(f"on_l2OrdTrac回调触发: 触发类别[逐笔委托] 触发形式[挂买单] 当前封板量[{self.fengban_volume}]")
+            elif event.payload.Side == 1 and event.payload.OrderStatus == "D":  # buy order and cancled, subtract volume from fengban
+                self.fengban_volume -= event.payload.TradeVolume
+                self.log.info(f"on_l2OrdTrac回调触发: 触发类别[逐笔委托] 触发形式[撤买单] 当前封板量[{self.fengban_volume}]")
             else:
-                if event.payload.Side == 1 and event.payload.OrderStatus != "D":  # buy order not cancled, add buy volume to fengban_volume
-                    self.fengban_volume += event.payload.TradeVolume
+                return
 
-                elif event.payload.Side == 1 and event.payload.OrderStatus == "D":  # buy order and cancled, subtract volume from fengban
-                    self.fengban_volume -= event.payload.TradeVolume
-        self.log.info(f"on_l2OrdTrac回调触发: 当前封板量[{self.fengban_volume}]")
         self.action()
 
     def on_l2tick(self, event: Event):
@@ -94,7 +96,7 @@ class DaBanStrategy:
         if event.payload.AskPrice1 < self.limup_price:  # not limup, skip
             return
         self.fengban_volume = event.payload.AskVolume1
-        self.log.info(f"on_l2Tick回调触发：当前封板量[{self.fengban_volume}]")
+        self.log.info(f"on_l2Tick回调触发：触发类别[L2快照] 触发形式[买一量] 当前封板量[{self.fengban_volume}]")
         self.action()
 
     # 应该是挂单回报监控
@@ -127,8 +129,9 @@ class DaBanStrategy:
         pass
 
     def log_handler(self):
-        filepath = os.path.join(LOG_DIR,self.date,f'{self.subscribe_request.SecurityID}')
-        return DefaultLogHandler(name=self.name, log_type='file', filepath=filepath)
+        filepath = os.path.join(LOG_DIR,self.date,f'{self.subscribe_request.SecurityID}.log')
+        log_name = f"{self.name}_{self.id}"
+        return DefaultLogHandler(name=log_name,log_type='file', filepath=filepath)
 
     def subscribe(self, subscribe_request: SubscribeRequest):
 
@@ -141,8 +144,9 @@ class DaBanStrategy:
 
     def unsubscribe(self):
         if not self.subscribe_request:
-            self.log.info(f"策略取消订阅成功：{self.subscribe_request.SecurityID}")
-            self.__quoter.unsubscribe(self.subscribe_request)
+            return
+        self.__quoter.unsubscribe(self.subscribe_request)
+        self.log.info(f"策略取消订阅成功：{self.subscribe_request.SecurityID}")
 
     def action(self):
         if self.order_id is None and self.fengban_volume >= self.buy_trigger_volume:  # 如果没有委托，且触发封单参数，则以涨停价挂买入单
@@ -154,9 +158,11 @@ class DaBanStrategy:
 
     def execute_cancel(self):
         self.__trader.cancel_order(self.cancel_req)
+        self.log.info(f"策略撤单成功")
 
     def execute_buy(self):
         self.order_id = self.__trader.send_order(self.buy_request)
+        self.log.info(f"策略委托买入成功")
         self.cancel_req = self.buy_request.create_cancel_order_request(self.__trader.order_ref)  # 生成撤单委托
 
     def create_buy_request(self):

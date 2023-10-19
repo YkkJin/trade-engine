@@ -263,6 +263,8 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
         l2tick.WithdrawSellMoney = data.WithdrawSellMoney
         """
         self.bus.put(Event(EventType.L2TICK, l2tick))
+        self.log.info(
+            f"L2行情快照 快照时间[{data['DataTimeStamp']}] 证券代码[{data['SecurityID']}] 交易所[{data['ExchangeID']}] 现价[{data['LastPrice']}] 涨停价[{data['UpperLimitPrice']}] 跌停价[{data['LowerLimitPrice']}]")
 
     def OnRtnNGTSTick(self, data: lev2mdapi.CTORATstpLev2NGTSTickField):
         if not data:
