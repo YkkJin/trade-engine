@@ -31,6 +31,8 @@ class EventEngine:
         self.bus.register(EventType.TICK, self.strategy_dict[strategy_key].on_tick)
         self.bus.register(EventType.TRADE, self.strategy_dict[strategy_key].on_trade)
         self.bus.register(EventType.ORDER, self.strategy_dict[strategy_key].on_order)
+        self.bus.register(EventType.L2OrdTrac, self.strategy_dict[strategy_key].on_l2OrdTrac)
+        self.bus.register(EventType.L2TICK, self.strategy_dict[strategy_key].on_l2tick)
         self.log.info(f"策略{strategy.name}_{strategy_key}添加成功！")
         return True
 
@@ -42,6 +44,8 @@ class EventEngine:
             self.bus.unregister(EventType.TICK, self.strategy_dict[strategy_key].on_tick)
             self.bus.unregister(EventType.TRADE, self.strategy_dict[strategy_key].on_trade)
             self.bus.unregister(EventType.ORDER, self.strategy_dict[strategy_key].on_order)
+            self.bus.unregister(EventType.L2OrdTrac, self.strategy_dict[strategy_key].on_l2OrdTrac)
+            self.bus.unregister(EventType.L2TICK, self.strategy_dict[strategy_key].on_l2tick)
             self.strategy_dict.pop(strategy_key)
             self.log.info(f"策略{strategy_key}已移除")
 

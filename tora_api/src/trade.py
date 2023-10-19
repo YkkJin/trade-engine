@@ -1,8 +1,9 @@
 from typing import Dict, Tuple, Any, List
 from time import sleep
 from datetime import datetime
+from collections import defaultdict
 
-from ..config.config import *
+from ..config.tora import *
 from .models.model import (TickModel,
                            L2TickModel,
                            TradeModel,
@@ -113,6 +114,8 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
         self.connect_status: bool = False
         self.login_status: bool = False
         self.subscribed: set = set()
+        self.account_type = None
+        self.address_type = None
 
         self.userid: str = ""
         self.password: str = ""
@@ -165,105 +168,93 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
     def OnRtnOrderDetail(self, data: lev2mdapi.CTORATstpLev2OrderDetailField):
         if not data:
             return
-        l2ord_detail = Lev2OrderDetailModel()
-        self.bus.put(Event(EventType.L2OrdTrac,l2ord_detail))
-        print(
-            "逐笔委托 证券代码[%s] 委托时间[%d] 价格[%.2f] 委托量[%d] 方向[%s] 委托类型[%s] 主序列号[%d] 子序列号[%d]" % (
-                data['SecurityID'],
-                data['OrderTime'],
-                data['Price'],
-                data['Volume'],
-                data['Side'],
-                data['OrderStatus'],
-                data['MainSeq'],
-                data['SubSeq']))
+        l2ord = Lev2OrderDetailModel()
+        l2ord.SecurityID = data["SecurityID"]
+        l2ord.ExchangeID = data["ExchangeID"].decode()
+        l2ord.Price = data["Price"]
+        l2ord.Volume = data["Volume"]
+        l2ord.Side = data["Side"].decode()
+        l2ord.OrderStatus = data["OrderStatus"].decode()
+        l2ord.MainSeq = data["MainSeq"]
+        l2ord.SubSeq = data["SubSeq"]
+        self.log.info(
+            f"逐笔委托推送: 委托时间[{data['OrderTime']}] 证券代码[{data['SecurityID']}] 交易所[{data['ExchangeID'].decode()}] 委托价格[{data['Price']}] 委托成交量[{data['Volume']}] 方向[{data['Side'].decode()}] 委托状态[{data['OrderStatus'].decode()}] 主序列号[{data['MainSeq']}] 子序列号[{data['SubSeq']}]")
+        self.bus.put(Event(EventType.L2OrdTrac, l2ord))
 
     def OnRtnTransaction(self, data: lev2mdapi.CTORATstpLev2TransactionField):
         if not data:
             return
-        l2transac_detial = Lev2TransactionDetailModel()
-        self.bus.put(Event(EventType.L2OrdTrac, l2transac_detial))
-        print(
-            "逐笔成交 证券代码[%s] 成交时间[%s] 成交价[%.2f] 成交量[%d] 成交类型[%s] 主序列号[%d] 子序列号[%d] 买方代码[%d] 卖方代码[%d]" % (
-                data['SecurityID'],
-                data['TradeTime'],
-                data['TradePrice'],
-                data['TradeVolume'],
-                data['ExecType'],
-                data['MainSeq'],
-                data['SubSeq'],
-                data['BuyNo'],
-                data['SellNo']))
+        l2transac = Lev2TransactionDetailModel()
+        l2transac.SecurityID = data["SecurityID"]
+        l2transac.ExchangeID = data["ExchangeID"].decode()
+        l2transac.TradeTime = data["TradeTime"]
+        l2transac.TradePrice = data["TradePrice"]
+        l2transac.TradeVolume = data["TradeVolume"]
+        l2transac.ExecType = data["ExecType"].decode()
+        l2transac.MainSeq = data["MainSeq"]
+        l2transac.SubSeq = data["SubSeq"]
+        l2transac.BuyNo = data["BuyNo"]
+        l2transac.SellNo = data["SellNo"]
+        self.log.info(
+            f"逐笔成交推送: 成交时间[{data['TradeTime']}] 证券代码[{data['SecurityID']}] 交易所[{data['ExchangeID'].decode()}] 委托价格[{data['TradePrice']}] 委托成交量[{data['TradeVolume']}] 成交类型[{data['ExecType'].decode()}] 主序列号[{data['MainSeq']}] 子序列号[{data['SubSeq']}] 买方代码[{data['BuyNo']}]  卖方代码[{data['SellNo']}]")
+        self.bus.put(Event(EventType.L2OrdTrac, l2transac))
 
     def OnRtnMarketData(self, data: lev2mdapi.CTORATstpLev2MarketDataField, FirstLevelBuyNum, FirstLevelBuyOrderVolumes,
                         FirstLevelSellNum, FirstLevelSellOrderVolumes):
         if not data:
             return
         l2tick = L2TickModel()
-        print(
-            "快照行情 证券代码[%s] 快照时间[%s] 现价[%.2f] 总成交量[%d] 买1价[%.2f] 买1量[%d] 卖1价[%.2f] 卖1量[%d]" % (
-                data['SecurityID'],
-                data['DataTimeStamp'],
-                data['LastPrice'],
-                data['TotalVolumeTrade'],
-                data['BidPrice1'],
-                data['BidVolume1'],
-                data['AskPrice1'],
-                data['AskVolume1']))
-        """
-            l2tick = L2TickModel()
-            l2tick.SecurityID = data["SecurityID"]
-            l2tick.ExchangeID = data["ExchangeID"]
-            l2tick.DataTimeStamp = data["DataTimeStamp"]
-            l2tick.LastPrice = data["LastPrice"]
-            l2tick.UpperLimitPrice = data["UpperLimitPrice"]
-            l2tick.LowerLimitPrice = data["LowerLimitPrice"]
-            l2tick.HighestPrice = data["HighestPrice"]
-            l2tick.LowestPrice = data["LowestPrice"]
-            l2tick.PreClosePrice = data["PreClosePrice"]
-            l2tick.BidPrice1 = data["BidPrice1"]
-            l2tick.AskPrice1 = data["AskPrice1"]
-            l2tick.BidVolume1 = data["BidVolume1"]
-            l2tick.AskVolume1 = data["AskVolume1"]
-            l2tick.BidPrice2 = data["BidPrice2"]
-            l2tick.AskPrice2 = data["AskPrice2"]
-            l2tick.BidVolume2 = data["BidVolume2"]
-            l2tick.AskVolume2 = data["AskVolume2"]
-            l2tick.BidPrice3 = data["BidPrice3"]
-            l2tick.AskPrice3 = data["AskPrice3"]
-            l2tick.BidVolume3 = data["BidVolume3"]
-            l2tick.AskVolume3 = data["AskVolume3"]
-            l2tick.BidPrice4 = data["BidPrice4"]
-            l2tick.AskPrice4 = data["AskPrice4"]
-            l2tick.BidVolume4 = data["BidVolume4"]
-            l2tick.AskVolume4 = data["AskVolume4"]
-            l2tick.BidPrice5 = data["BidPrice5"]
-            l2tick.AskPrice5 = data["AskPrice5"]
-            l2tick.BidVolume5 = data["BidVolume5"]
-            l2tick.AskVolume5 = data["AskVolume5"]
-            l2tick.BidPrice6 = data["BidPrice6"]
-            l2tick.AskPrice6 = data["AskPrice6"]
-            l2tick.BidVolume6 = data["BidVolume6"]
-            l2tick.AskVolume6 = data["AskVolume6"]
-            l2tick.BidPrice7 = data["BidPrice7"]
-            l2tick.AskPrice7 = data["AskPrice7"]
-            l2tick.BidVolume7 = data["BidVolume7"]
-            l2tick.AskVolume7 = data["AskVolume7"]
-            l2tick.BidPrice8 = data["BidPrice8"]
-            l2tick.AskPrice8 = data["AskPrice8"]
-            l2tick.BidVolume8 = data["BidVolume8"]
-            l2tick.AskVolume8 = data["AskVolume8"]
-            l2tick.BidPrice9 = data["BidPrice9"]
-            l2tick.AskPrice9 = data["AskPrice9"]
-            l2tick.BidVolume9 = data["BidVolume9"]
-            l2tick.AskVolume9 = data["AskVolume9"]
-        """
-        """
-        l2tick.BidPrice10  = data.BidPrice10  
-        l2tick.AskPrice10  = data.AskPrice10  
-        l2tick.BidVolume10 = data.BidVolume10 
-        l2tick.AskVolume10 = data.AskVolume10 
+        l2tick.SecurityID = data["SecurityID"]
+        l2tick.ExchangeID = data["ExchangeID"]
+        l2tick.DataTimeStamp = data["DataTimeStamp"]
+        l2tick.LastPrice = data["LastPrice"]
+        l2tick.UpperLimitPrice = data["UpperLimitPrice"]
+        l2tick.LowerLimitPrice = data["LowerLimitPrice"]
+        l2tick.HighestPrice = data["HighestPrice"]
+        l2tick.LowestPrice = data["LowestPrice"]
+        l2tick.PreClosePrice = data["PreClosePrice"]
+        l2tick.BidPrice1 = data["BidPrice1"]
+        l2tick.AskPrice1 = data["AskPrice1"]
+        l2tick.BidVolume1 = data["BidVolume1"]
+        l2tick.AskVolume1 = data["AskVolume1"]
+        l2tick.BidPrice2 = data["BidPrice2"]
+        l2tick.AskPrice2 = data["AskPrice2"]
+        l2tick.BidVolume2 = data["BidVolume2"]
+        l2tick.AskVolume2 = data["AskVolume2"]
+        l2tick.BidPrice3 = data["BidPrice3"]
+        l2tick.AskPrice3 = data["AskPrice3"]
+        l2tick.BidVolume3 = data["BidVolume3"]
+        l2tick.AskVolume3 = data["AskVolume3"]
+        l2tick.BidPrice4 = data["BidPrice4"]
+        l2tick.AskPrice4 = data["AskPrice4"]
+        l2tick.BidVolume4 = data["BidVolume4"]
+        l2tick.AskVolume4 = data["AskVolume4"]
+        l2tick.BidPrice5 = data["BidPrice5"]
+        l2tick.AskPrice5 = data["AskPrice5"]
+        l2tick.BidVolume5 = data["BidVolume5"]
+        l2tick.AskVolume5 = data["AskVolume5"]
+        l2tick.BidPrice6 = data["BidPrice6"]
+        l2tick.AskPrice6 = data["AskPrice6"]
+        l2tick.BidVolume6 = data["BidVolume6"]
+        l2tick.AskVolume6 = data["AskVolume6"]
+        l2tick.BidPrice7 = data["BidPrice7"]
+        l2tick.AskPrice7 = data["AskPrice7"]
+        l2tick.BidVolume7 = data["BidVolume7"]
+        l2tick.AskVolume7 = data["AskVolume7"]
+        l2tick.BidPrice8 = data["BidPrice8"]
+        l2tick.AskPrice8 = data["AskPrice8"]
+        l2tick.BidVolume8 = data["BidVolume8"]
+        l2tick.AskVolume8 = data["AskVolume8"]
+        l2tick.BidPrice9 = data["BidPrice9"]
+        l2tick.BidVolume9 = data["BidVolume9"]
+        l2tick.AskPrice9 = data["AskPrice9"]
+        l2tick.AskVolume9 = data["AskVolume9"]
 
+        l2tick.BidPrice10 = data["BidPrice10"]
+        l2tick.AskPrice10 = data["AskPrice10"]
+        l2tick.BidVolume10 = data["BidVolume10"]
+        l2tick.AskVolume10 = data["AskVolume10"]
+        """
         l2tick.WithdrawBuyNumber = data.WithdrawBuyNumber
         l2tick.WithdrawBuyAmount = data.WithdrawBuyAmount
         l2tick.WithdrawBuyMoney = data.WithdrawBuyMoney
@@ -328,10 +319,8 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
     def subscribe(self, req: SubscribeRequest) -> None:
         """订阅行情"""
         if self.login_status:
-            # exchange: Exchange = EXCHANGE_VT2TORA[req.exchange]
             self.api.SubscribeOrderDetail([str.encode(req.SecurityID)], req.ExchangeID)  # 订阅逐笔委托
             self.api.SubscribeTransaction([str.encode(req.SecurityID)], req.ExchangeID)  # 订阅逐笔成交
-            self.api.SubscribeNGTSTick([str.encode(req.SecurityID)], req.ExchangeID)
             self.api.SubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)  # 订阅L2行情快照
 
     def unsubscribe(self, req: SubscribeRequest) -> None:
@@ -372,6 +361,9 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
         self.userid: str = ""
         self.password: str = ""
         self.address: str = ""
+
+        self.account_type = None
+        self.address_type = None
 
         self.current_date: str = datetime.now().strftime("%Y%m%d")
 
@@ -580,6 +572,8 @@ class Trader(traderapi.CTORATstpTraderSpi):
 
         self.sysid_orderid_map: Dict[str, str] = {}
 
+        self.contract_limup_price = defaultdict()
+
     def OnFrontConnected(self) -> None:
         """服务器连接成功回报"""
         self.log.info("交易服务器链接成功")
@@ -733,7 +727,8 @@ class Trader(traderapi.CTORATstpTraderSpi):
             self.log.info("合约信息查询成功")
         if not data:
             return
-        print("OnRtnQrySecurity 股票代码[%s] 股票名称[%s] 交易所[%s] 涨停价[%.2f] 跌停价[%.2f]" % (data.SecurityID,data.SecurityName,data.ExchangeID,data.UpperLimitPrice,data.LowerLimitPrice))
+        self.contract_limup_price[data.SecurityID] = data.UpperLimitPrice
+        # print("OnRtnQrySecurity 股票代码[%s] 股票名称[%s] 交易所[%s] 涨停价[%.2f] 跌停价[%.2f]" % (data.SecurityID,data.SecurityName,data.ExchangeID,data.UpperLimitPrice,data.LowerLimitPrice))
 
     def OnRspQryTradingAccount(
             self,
@@ -798,9 +793,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
             return
 
         if data.InvestorID != self.investor_id:
-            '''
-            self.gateway.write_log("OnRspQryPosition:收到其他账户的仓位信息")
-            '''
             return
 
         volume: int = data.CurrentPosition
@@ -810,19 +802,6 @@ class Trader(traderapi.CTORATstpTraderSpi):
             price = data.TotalPosCost / volume
 
         frozen: int = data.HistoryPosFrozen + data.TodayBSPosFrozen + data.TodayPRPosFrozen
-        '''
-        position_data: PositionData = PositionData(
-            gateway_name=self.gateway_name,
-            symbol=data.SecurityID,
-            exchange=EXCHANGE_TORA2VT[data.ExchangeID],
-            direction=Direction.NET,
-            volume=volume,
-            frozen=frozen,
-            price=price,
-            yd_volume=data.HistoryPos,
-        )
-        self.gateway.on_position(position_data)
-        '''
 
     def OnErrRtnOrderInsert(self, data: CTORATstpInputOrderField, error: CTORATstpRspInfoField, reason: int) -> None:
         """委托下单失败回报"""

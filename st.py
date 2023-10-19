@@ -34,11 +34,9 @@ st.sidebar.header("策略编辑")
 
 
 def add_strategy(user_input: UserStrategyModel):
-    st.subheader(st.session_state.strategy_id)
     user_input.ID = st.session_state.strategy_id
     res = requests.post(url="http://127.0.0.1:8000/add_strategy", data=user_input.model_dump_json())
     if res.status_code == 200:
-        st.success(f'策略提交成功！策略编号{user_input.ID}', icon='✅')
         check_strategy()
     else:
         st.error('策略提交异常', icon='🚨')
@@ -49,9 +47,10 @@ def remove_strategy(user_input: UserStrategyModel):
     if res.status_code == 200:
         st.success('策略删除成功!', icon='✅')
         check_strategy()
+        st.session_state.strategy_id -= 1
         if st.session_state.running_strategy == None:
             st.session_state.strategy_container = False
-        st.write(res.text)
+            st.session_state.strategy_id = 0
 
     else:
         st.error('策略删除异常', icon='🚨')
@@ -63,7 +62,7 @@ def check_strategy():
         st.session_state.strategy_container = False
     else:
         st.session_state.running_strategy = res.json()
-    st.write(res.text)
+    st.success('策略查询成功', icon='✅')
 
 
 with st.sidebar:
@@ -71,9 +70,9 @@ with st.sidebar:
     submit_container.subheader('策略提交')
     stock_code = submit_container.text_input('输入股票代码(6位数字)：',value = '600000')
     exchange = submit_container.selectbox('选择交易所：', ('SSE', 'SZSE'))
-    limit_volume = submit_container.number_input('封单金额：', min_value=100, step=100)
-    cancel_volume = submit_container.number_input('撤单金额：', min_value=100, step=100)
-    position = submit_container.number_input('打板金额：', min_value=100, step=100)
+    limit_volume = submit_container.number_input('封单金额(万)：', min_value=100, step=100)
+    cancel_volume = submit_container.number_input('撤单金额(万)：', min_value=100, step=100)
+    position = submit_container.number_input('打板金额(万)：', min_value=1, step=100)
     count = submit_container.number_input('撤单次数：', min_value=1, step=1)
 
     user_strategy = UserStrategyModel()
@@ -105,7 +104,7 @@ with st.sidebar:
 container = st.container()
 container.header('策略管理')
 
-if st.session_state.strategy_container :
+if st.session_state.strategy_container:
     df = pd.DataFrame.from_dict(data=st.session_state.running_strategy['StrategyGroup'])
     container.dataframe(
         df,

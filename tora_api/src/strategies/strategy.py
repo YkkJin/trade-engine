@@ -39,7 +39,7 @@ class Strategy:
         self.__bus = bus
         self.__trader = trader
         self.__quoter = quoter
-        self.log = log
+        self.log = self.log_handler()
         self.id = id
 
         self.buy_trigger_volume = limit_volume  # 封单量
@@ -145,7 +145,7 @@ class Strategy:
         pass
 
     def log_handler(self):
-        return DefaultLogHandler(name=self.name, log_type='stdout', filepath='strategy.log')
+        return DefaultLogHandler(name=self.name, log_type='file', filepath='strategy.log',loglevel='NOTICE')
 
     def subscribe(self, subscribe_request: SubscribeRequest):
         self.subscribe_request = subscribe_request

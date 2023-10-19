@@ -1,8 +1,6 @@
 from pydantic import BaseModel
 
 
-
-
 class SecurityFieldModel(BaseModel):
     TradingDay: str = ""
     ExchangeID: str = ""
@@ -10,7 +8,6 @@ class SecurityFieldModel(BaseModel):
     SecurityName: str = ""
     UpperLimitPrice: float = 0.0
     LowerLimitPrice: float = 0.0
-
 
 
 class TickModel(BaseModel):
@@ -98,8 +95,8 @@ class L2TickModel(BaseModel):
     BidVolume5: float = 0.0
     AskVolume5: float = 0.0
 
-    BidPrice6 : float = 0.0
-    AskPrice6 : float = 0.0
+    BidPrice6: float = 0.0
+    AskPrice6: float = 0.0
     BidVolume6: float = 0.0
     AskVolume6: float = 0.0
 
@@ -130,6 +127,7 @@ class L2TickModel(BaseModel):
     WithdrawSellAmount: float = 0.0
     WithdrawSellMoney: float = 0.0
 
+
 class Lev2OrderDetailModel(BaseModel):
     ExchangeID: str = ""
     SecurityID: str = ""
@@ -138,10 +136,10 @@ class Lev2OrderDetailModel(BaseModel):
     Volume: int = 0
     Side: str = ""
     OrderType: str = ""
-    MainSeq: str = ""
-    Subseq: str = ""
-    OrderNo: str = ""
     OrderStatus: str = ""
+    MainSeq: int = 0
+    SubSeq: int = 0
+    OrderNo: int = 0
 
 
 class Lev2TransactionDetailModel(BaseModel):
@@ -151,15 +149,10 @@ class Lev2TransactionDetailModel(BaseModel):
     TradePrice: float = 0.0
     TradeVolume: int = 0
     ExecType: str = ""
-    MainSeq: str = ""
-    SubSeq: str = ""
-    BuyNo: str = ""
-    SellNo: str = ""
-
-
-
-
-
+    MainSeq: int = 0
+    SubSeq: int = 0
+    BuyNo: int = 0
+    SellNo: int = 0
 
 
 class OrderModel(BaseModel):
@@ -195,4 +188,3 @@ class TradeModel(BaseModel):
     Direction: str = ""
     Price: float = 0.0
     Volume: int = 0
-

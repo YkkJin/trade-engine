@@ -7,7 +7,7 @@ from tora_api.src.event.engine import EventEngine
 from tora_api.src.models.request import SubscribeRequest
 from tora_api.src.tora_stock.traderapi import (CTORATstpInputOrderActionField, TORA_TSTP_EXD_SSE)
 from time import sleep
-from tora_api.config.config import *
+from tora_api.config.tora import *
 from tora_api.src.log_handler.default_handler import DefaultLogHandler
 from tora_api.test.test_order import (
     LimitPriceOrderReq,
