@@ -48,7 +48,7 @@ VolumeTotalOriginal = 100
 ***** 限价
 '''
 LimitPriceOrderReq = CTORATstpInputOrderField()
-LimitPriceOrderReq.SecurityID = '600000'
+LimitPriceOrderReq.SecurityID = '600000.log'
 LimitPriceOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 LimitPriceOrderReq.ShareholderID = "A00032129"
 LimitPriceOrderReq.Direction = TORA_TSTP_D_Buy
@@ -62,7 +62,7 @@ LimitPriceOrderReq.VolumeCondition = TORA_TSTP_VC_AV
 ***** 最优五档成交剩余转撤销
 '''
 FiveLevelPriceToCancelOrderReq = CTORATstpInputOrderField()
-FiveLevelPriceToCancelOrderReq.SecurityID = '600000'
+FiveLevelPriceToCancelOrderReq.SecurityID = '600000.log'
 FiveLevelPriceToCancelOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 FiveLevelPriceToCancelOrderReq.ShareholderID = "A00032129"
 FiveLevelPriceToCancelOrderReq.Direction = TORA_TSTP_D_Buy
@@ -76,7 +76,7 @@ FiveLevelPriceToCancelOrderReq.VolumeCondition = TORA_TSTP_VC_AV
 ***** 最优五档成交剩余转限价
 '''
 FiveLevelPriceToLimitOrderReq = CTORATstpInputOrderField()
-FiveLevelPriceToLimitOrderReq.SecurityID = '600000'
+FiveLevelPriceToLimitOrderReq.SecurityID = '600000.log'
 FiveLevelPriceToLimitOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 FiveLevelPriceToLimitOrderReq.ShareholderID = "A00032129"
 FiveLevelPriceToLimitOrderReq.Direction = TORA_TSTP_D_Buy
@@ -90,7 +90,7 @@ FiveLevelPriceToLimitOrderReq.VolumeCondition = TORA_TSTP_VC_AV
 ***** 本方最优
 '''
 HomeBestPriceOrderReq = CTORATstpInputOrderField()
-HomeBestPriceOrderReq.SecurityID = '600000'
+HomeBestPriceOrderReq.SecurityID = '600000.log'
 HomeBestPriceOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 HomeBestPriceOrderReq.ShareholderID = "A00032129"
 HomeBestPriceOrderReq.Direction = TORA_TSTP_D_Buy
@@ -104,7 +104,7 @@ HomeBestPriceOrderReq.VolumeCondition = TORA_TSTP_VC_AV
 ***** 对手方最优
 '''
 BestPriceOrderReq = CTORATstpInputOrderField()
-BestPriceOrderReq.SecurityID = '600000'
+BestPriceOrderReq.SecurityID = '600000.log'
 BestPriceOrderReq.ExchangeID  = TORA_TSTP_EXD_SSE
 BestPriceOrderReq.ShareholderID = "A00032129"
 BestPriceOrderReq.Direction = TORA_TSTP_D_Buy
@@ -123,7 +123,7 @@ BestPriceOrderReq.VolumeCondition = TORA_TSTP_VC_AV
 ***** 限价卖出
 '''
 LimitPriceOrderReqSell = CTORATstpInputOrderField()
-LimitPriceOrderReqSell.SecurityID = '600000'
+LimitPriceOrderReqSell.SecurityID = '600000.log'
 LimitPriceOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 LimitPriceOrderReqSell.ShareholderID = "A00032129"
 LimitPriceOrderReqSell.Direction = TORA_TSTP_D_Sell
@@ -137,7 +137,7 @@ LimitPriceOrderReqSell.VolumeCondition = TORA_TSTP_VC_AV
 ***** 最优五档成交剩余转撤销
 '''
 FiveLevelPriceToCancelOrderReqSell = CTORATstpInputOrderField()
-FiveLevelPriceToCancelOrderReqSell.SecurityID = '600000'
+FiveLevelPriceToCancelOrderReqSell.SecurityID = '600000.log'
 FiveLevelPriceToCancelOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 FiveLevelPriceToCancelOrderReqSell.ShareholderID = "A00032129"
 FiveLevelPriceToCancelOrderReqSell.Direction = TORA_TSTP_D_Sell
@@ -151,7 +151,7 @@ FiveLevelPriceToCancelOrderReqSell.VolumeCondition = TORA_TSTP_VC_AV
 ***** 最优五档成交剩余转限价
 '''
 FiveLevelPriceToLimitOrderReqSell = CTORATstpInputOrderField()
-FiveLevelPriceToLimitOrderReqSell.SecurityID = '600000'
+FiveLevelPriceToLimitOrderReqSell.SecurityID = '600000.log'
 FiveLevelPriceToLimitOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 FiveLevelPriceToLimitOrderReqSell.ShareholderID = "A00032129"
 FiveLevelPriceToLimitOrderReqSell.Direction = TORA_TSTP_D_Sell
@@ -165,7 +165,7 @@ FiveLevelPriceToLimitOrderReqSell.VolumeCondition = TORA_TSTP_VC_AV
 ***** 本方最优
 '''
 HomeBestPriceOrderReqSell = CTORATstpInputOrderField()
-HomeBestPriceOrderReqSell.SecurityID = '600000'
+HomeBestPriceOrderReqSell.SecurityID = '600000.log'
 HomeBestPriceOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 HomeBestPriceOrderReqSell.ShareholderID = "A00032129"
 HomeBestPriceOrderReqSell.Direction = TORA_TSTP_D_Sell
@@ -179,7 +179,7 @@ HomeBestPriceOrderReqSell.VolumeCondition = TORA_TSTP_VC_AV
 ***** 对手方最优
 '''
 BestPriceOrderReqSell = CTORATstpInputOrderField()
-BestPriceOrderReqSell.SecurityID = '600000'
+BestPriceOrderReqSell.SecurityID = '600000.log'
 BestPriceOrderReqSell.ExchangeID  = TORA_TSTP_EXD_SSE
 BestPriceOrderReqSell.ShareholderID = "A00032129"
 BestPriceOrderReqSell.Direction = TORA_TSTP_D_Sell
@@ -198,7 +198,7 @@ BestPriceOrderReqSell.VolumeCondition = TORA_TSTP_VC_AV
 '''
 
 LimitPriceOrderReqCancel = CTORATstpInputOrderField()
-LimitPriceOrderReqCancel.SecurityID = '600000'
+LimitPriceOrderReqCancel.SecurityID = '600000.log'
 LimitPriceOrderReqCancel.ExchangeID  = TORA_TSTP_EXD_SSE
 LimitPriceOrderReqCancel.ShareholderID = "A00032129"
 LimitPriceOrderReqCancel.Direction = TORA_TSTP_D_Buy
