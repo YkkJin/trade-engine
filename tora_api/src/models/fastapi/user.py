@@ -9,6 +9,8 @@ class UserStrategyModel(BaseModel):
     Position: int = 0
     Count: int = 0
     ID: int = 0
+    Status: str = ""
+    OrderID: str = ""
 
 
 class UserStrategyGroupModel(BaseModel):

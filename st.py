@@ -35,7 +35,7 @@ st.sidebar.header("策略编辑")
 
 def add_strategy(user_input: UserStrategyModel):
     user_input.ID = st.session_state.strategy_id
-    res = requests.post(url="http://127.0.0.1:8000/add_strategy", data=user_input.model_dump_json())
+    res = requests.post(url="http://127.0.0.1:8001/add_strategy", data=user_input.model_dump_json())
     if res.status_code == 200:
         check_strategy()
     else:
@@ -43,7 +43,7 @@ def add_strategy(user_input: UserStrategyModel):
 
 
 def remove_strategy(user_input: UserStrategyModel):
-    res = requests.post(url="http://127.0.0.1:8000/remove_strategy", data=user_input.model_dump_json())
+    res = requests.post(url="http://127.0.0.1:8001/remove_strategy", data=user_input.model_dump_json())
     if res.status_code == 200:
         st.success('策略删除成功!', icon='✅')
         check_strategy()
@@ -57,7 +57,7 @@ def remove_strategy(user_input: UserStrategyModel):
 
 
 def check_strategy():
-    res = requests.get(url="http://127.0.0.1:8000/check_running_strategy")
+    res = requests.get(url="http://127.0.0.1:8001/check_running_strategy")
     if 'ErrorMsg' in res.json().keys():
         st.session_state.strategy_container = False
     else:
@@ -68,11 +68,11 @@ def check_strategy():
 with st.sidebar:
     submit_container = st.container()
     submit_container.subheader('策略提交')
-    stock_code = submit_container.text_input('输入股票代码(6位数字)：',value = '600000.log')
+    stock_code = submit_container.text_input('输入股票代码(6位数字)：', placeholder='600000')
     exchange = submit_container.selectbox('选择交易所：', ('SSE', 'SZSE'))
-    limit_volume = submit_container.number_input('封单金额(万)：', min_value=100, step=100)
-    cancel_volume = submit_container.number_input('撤单金额(万)：', min_value=100, step=100)
-    position = submit_container.number_input('打板金额(万)：', min_value=1, step=100)
+    limit_volume = submit_container.number_input('封单金额(万)：', min_value=1000, step=1000)
+    cancel_volume = submit_container.number_input('撤单金额(万)：', min_value=1000, step=1000)
+    position = submit_container.number_input('打板金额(万)：', min_value=0.01, step=100.0)
     count = submit_container.number_input('撤单次数：', min_value=1, step=1)
 
     user_strategy = UserStrategyModel()
@@ -99,7 +99,6 @@ with st.sidebar:
         st.session_state.strategy_id += 1
         st.session_state.strategy_container = True
 
-
 # ---- container ----
 container = st.container()
 container.header('策略管理')
@@ -115,14 +114,14 @@ if st.session_state.strategy_container:
             'CancelVolume': '撤单额',
             'Position': '仓位',
             'Count': '撤单次数',
-            'ID': '策略编号'
+            'ID': '策略编号',
+            "Status": "策略状态",
+            "OrderID": "策略委托"
         },
-        column_order=('ID', 'SecurityID', 'ExchangeID', 'LimitVolume', 'CancelVolume', 'Position', 'Count'),
+        column_order=('ID', 'SecurityID', 'ExchangeID', 'LimitVolume', 'CancelVolume', 'Position', 'Count','Status','OrderID'),
         hide_index=True,
         use_container_width=True
     )
 
 else:
     st.write(":u7121: 无策略运行")
-
-
