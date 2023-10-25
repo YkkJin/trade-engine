@@ -6,7 +6,7 @@ class UserStrategyModel(BaseModel):
     ExchangeID: str = ""
     LimitVolume: int = 0
     CancelVolume: int = 0
-    Position: int = 0
+    Position: float = 0.0
     Count: int = 0
     ID: int = 0
     Status: str = ""

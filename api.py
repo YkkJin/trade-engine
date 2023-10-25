@@ -87,10 +87,10 @@ def add_strategy(user_input: UserStrategyModel):
     strategy = DaBanStrategy(trader=app.package["Trader"],
                         quoter=app.package["L2Quoter"],
                         bus=app.package["EventBus"],
-                        limit_volume=user_input.LimitVolume * 10000,
-                        cancel_volume=user_input.CancelVolume * 10000,
+                        limit_volume=user_input.LimitVolume,
+                        cancel_volume=user_input.CancelVolume,
                         count=user_input.Count,
-                        position=user_input.Position * 10000,
+                        position=user_input.Position,
                         id=user_input.ID,
                         log=app.package["logger"])
 

@@ -47,7 +47,6 @@ def remove_strategy(user_input: UserStrategyModel):
     if res.status_code == 200:
         st.success('策略删除成功!', icon='✅')
         check_strategy()
-        st.session_state.strategy_id -= 1
         if st.session_state.running_strategy == None:
             st.session_state.strategy_container = False
             st.session_state.strategy_id = 0
@@ -81,7 +80,7 @@ with st.sidebar:
     user_strategy.ExchangeID = exchange
     user_strategy.LimitVolume = int(limit_volume)
     user_strategy.CancelVolume = int(cancel_volume)
-    user_strategy.Position = int(position)
+    user_strategy.Position = position
     user_strategy.Count = int(count)
     submit = submit_container.button("提交策略", type="primary", on_click=add_strategy, args=(user_strategy,),
                                      use_container_width=True)
