@@ -71,7 +71,7 @@ with st.sidebar:
     exchange = submit_container.selectbox('选择交易所：', ('SSE', 'SZSE'))
     limit_volume = submit_container.number_input('封单金额(万)：', min_value=1000, step=1000)
     cancel_volume = submit_container.number_input('撤单金额(万)：', min_value=1000, step=1000)
-    position = submit_container.number_input('打板金额(万)：', min_value=0.01, step=100.0)
+    position = submit_container.number_input('打板金额(万)：', min_value=0.1, step=100.0)
     count = submit_container.number_input('撤单次数：', min_value=1, step=1)
 
     user_strategy = UserStrategyModel()
