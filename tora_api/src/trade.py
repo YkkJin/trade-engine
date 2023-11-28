@@ -1,15 +1,17 @@
 from typing import Dict, Tuple, Any, List
 from time import sleep
 from datetime import datetime
+import psutil
 from collections import defaultdict
 
 from ..config.tora import *
 from .models.model import (TickModel,
+                           SecurityFieldModel,
                            L2TickModel,
                            TradeModel,
                            OrderModel,
-                           Lev2TransactionDetailModel,
-                           Lev2OrderDetailModel)
+                           Lev2OrderDetailModel,
+                           Lev2TransactionDetailModel)
 from .models.request import OrderRequest, CancelRequest, SubscribeRequest
 from .event.bus import EventBus
 from .event.event import Event
@@ -66,6 +68,7 @@ from .tora_stock.traderapi import (
 
     #
     CTORATstpRspInfoField,
+    CTORATstpConnectionInfoField,
     #
     CTORATstpOrderField,
     CTORATstpConditionOrderField,
@@ -102,6 +105,7 @@ ORDER_STATUS_MAP = {
 }
 
 
+
 class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
     def __init__(self, bus: EventBus, log: DefaultLogHandler) -> None:
         super().__init__()
@@ -114,8 +118,7 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
         self.connect_status: bool = False
         self.login_status: bool = False
         self.subscribed: set = set()
-        self.account_type = None
-        self.address_type = None
+
 
         self.userid: str = ""
         self.password: str = ""
@@ -177,8 +180,7 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
         l2ord.OrderStatus = data["OrderStatus"].decode()
         l2ord.MainSeq = data["MainSeq"]
         l2ord.SubSeq = data["SubSeq"]
-        self.log.info(
-            f"逐笔委托推送: 委托时间[{data['OrderTime']}] 证券代码[{data['SecurityID']}] 交易所[{data['ExchangeID'].decode()}] 委托价格[{data['Price']}] 委托成交量[{data['Volume']}] 方向[{data['Side'].decode()}] 委托状态[{data['OrderStatus'].decode()}] 主序列号[{data['MainSeq']}] 子序列号[{data['SubSeq']}]")
+        #self.log.info(f"逐笔委托推送: 委托时间[{data['OrderTime']}] 证券代码[{data['SecurityID']}] 交易所[{data['ExchangeID'].decode()}] 委托价格[{data['Price']}] 委托成交量[{data['Volume']}] 方向[{data['Side'].decode()}] 委托状态[{data['OrderStatus'].decode()}] 主序列号[{data['MainSeq']}] 子序列号[{data['SubSeq']}]")
         self.bus.put(Event(EventType.L2OrdTrac, l2ord))
 
     def OnRtnTransaction(self, data: lev2mdapi.CTORATstpLev2TransactionField):
@@ -191,12 +193,11 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
         l2transac.TradePrice = data["TradePrice"]
         l2transac.TradeVolume = data["TradeVolume"]
         l2transac.ExecType = data["ExecType"].decode()
-        l2transac.MainSeq = data["MainSeq"]
-        l2transac.SubSeq = data["SubSeq"]
-        l2transac.BuyNo = data["BuyNo"]
-        l2transac.SellNo = data["SellNo"]
-        self.log.info(
-            f"逐笔成交推送: 成交时间[{data['TradeTime']}] 证券代码[{data['SecurityID']}] 交易所[{data['ExchangeID'].decode()}] 委托价格[{data['TradePrice']}] 委托成交量[{data['TradeVolume']}] 成交类型[{data['ExecType'].decode()}] 主序列号[{data['MainSeq']}] 子序列号[{data['SubSeq']}] 买方代码[{data['BuyNo']}]  卖方代码[{data['SellNo']}]")
+        l2transac.MainSeq = int(data["MainSeq"])
+        l2transac.SubSeq = int(data["SubSeq"])
+        l2transac.BuyNo = int(data["BuyNo"])
+        l2transac.SellNo = int(data["SellNo"])
+        #self.log.info(f"逐笔成交推送: 成交时间[{data['TradeTime']}] 证券代码[{data['SecurityID']}] 交易所[{data['ExchangeID'].decode()}] 委托价格[{data['TradePrice']}] 委托成交量[{data['TradeVolume']}] 成交类型[{data['ExecType'].decode()}] 主序列号[{data['MainSeq']}] 子序列号[{data['SubSeq']}] 买方代码[{data['BuyNo']}]  卖方代码[{data['SellNo']}]")
         self.bus.put(Event(EventType.L2OrdTrac, l2transac))
 
     def OnRtnMarketData(self, data: lev2mdapi.CTORATstpLev2MarketDataField, FirstLevelBuyNum, FirstLevelBuyOrderVolumes,
@@ -263,8 +264,7 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
         l2tick.WithdrawSellMoney = data.WithdrawSellMoney
         """
         self.bus.put(Event(EventType.L2TICK, l2tick))
-        self.log.info(
-            f"L2行情快照 快照时间[{data['DataTimeStamp']}] 证券代码[{data['SecurityID']}] 交易所[{data['ExchangeID']}] 现价[{data['LastPrice']}] 涨停价[{data['UpperLimitPrice']}] 跌停价[{data['LowerLimitPrice']}]")
+        #self.log.info(f"L2行情快照 快照时间[{data['DataTimeStamp']}] 证券代码[{data['SecurityID']}] 交易所[{data['ExchangeID'].decode()}] 现价[{data['LastPrice']}] 买一价[{data['BidPrice1']}] 买一量[{data['BidVolume1']}]")
 
     def OnRtnNGTSTick(self, data: lev2mdapi.CTORATstpLev2NGTSTickField):
         if not data:
@@ -280,27 +280,18 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
     def connect(
             self,
             userid: str,
-            password: str,
-            address: str,
-            account_type: str,
-            address_type: str
+            password: str
     ) -> None:
         """连接服务器"""
         self.userid = userid
         self.password = password
-        self.address = address
-        self.account_type = account_type
-        self.address_type = address_type
 
         # 禁止重复发起连接，会导致异常崩溃
         if not self.connect_status:
-            self.api = lev2mdapi.CTORATstpLev2MdApi_CreateTstpLev2MdApi(lev2mdapi.TORA_TSTP_MST_TCP, True)
+            self.api = lev2mdapi.CTORATstpLev2MdApi_CreateTstpLev2MdApi(lev2mdapi.TORA_TSTP_MST_MCAST, True)
             self.api.RegisterSpi(self)
 
-            if self.address_type == ADDRESS_FRONT:
-                self.api.RegisterFront(address)
-            else:
-                self.api.RegisterNameServer(address)
+            self.api.RegisterMulticast("udp://224.224.2.2:7889","172.16.2121.1","")
 
             self.api.Init()
             self.log.debug('L2行情API初始化')
@@ -312,9 +303,9 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
 
     def login(self) -> None:
         login_req: lev2mdapi.CTORATstpReqUserLoginField = lev2mdapi.CTORATstpReqUserLoginField()
-        # login_req.LogInAccount = self.userid
-        # login_req.Password = self.password
-        # login_req.UserProductInfo = "HX5ZJ0C1PV"
+        login_req.LogInAccount = self.userid
+        login_req.Password = self.password
+        login_req.UserProductInfo = "HX5ZJ0C1PV"
         self.reqid += 1
         self.api.ReqUserLogin(login_req, self.reqid)
 
@@ -328,6 +319,8 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
     def unsubscribe(self, req: SubscribeRequest) -> None:
         if self.login_status:
             self.api.UnSubscribeMarketData([str.encode(req.SecurityID)], req.ExchangeID)
+            self.api.UnSubscribeTransaction([str.encode(req.SecurityID)], req.ExchangeID)
+            self.api.UnSubscribeOrderDetail([str.encode(req.SecurityID)], req.ExchangeID)
 
     def logout(self) -> None:
         """关闭连接"""
@@ -341,6 +334,7 @@ class L2Quoter(lev2mdapi.CTORATstpLev2MdSpi):
 
     def release(self) -> None:
         self.api.Release()
+
 
 
 class Quoter(xmdapi.CTORATstpXMdSpi):
@@ -363,9 +357,6 @@ class Quoter(xmdapi.CTORATstpXMdSpi):
         self.userid: str = ""
         self.password: str = ""
         self.address: str = ""
-
-        self.account_type = None
-        self.address_type = None
 
         self.current_date: str = datetime.now().strftime("%Y%m%d")
 
@@ -551,8 +542,10 @@ class Trader(traderapi.CTORATstpTraderSpi):
         """构造函数"""
         super().__init__()
 
+
         self.bus = bus
         self.log = log
+
 
         self.reqid: int = 0
         self.order_ref: int = 0
@@ -561,18 +554,20 @@ class Trader(traderapi.CTORATstpTraderSpi):
         self.login_status: bool = False
         self.auth_status: bool = False
         self.login_failed: bool = False
+        self.terminal_info = f'PC;IIP=NA;IPORT=NA;LIP=NA;MAC=123ABC456DEF;HD=00b6f88d0890cb7c2b505cb50cb00506;@HX5ZJ0C1PV'
 
         self.investor_id: str = None
         self.shareholder_ids: Dict[str, str] = {}
         self.account_id: str = None
         self.localid: int = 10000
-        self.api: traderapi.CTORATstpTraderApi.CreateTstpTraderApi = None
+        self.api: traderapi.CTORATstpTraderApi = None
         self.userid: str = ""
         self.password: str = ""
         self.frontid: int = 0
         self.sessionid: int = 0
 
         self.sysid_orderid_map: Dict[str, str] = {}
+        self.process = psutil.Process()
 
         self.contract_limup_price = defaultdict()
 
@@ -597,7 +592,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             self.frontid = data.FrontID
             self.sessionid = data.SessionID
             self.login_status = True
-            self.log.info("交易服务器登录成功", error.ErrorID, error.ErrorMsg)
+            self.log.info("交易服务器登录成功")
             self.query_contracts()
             self.query_investors()
             self.query_shareholder_ids()
@@ -605,7 +600,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
             self.login_failed = True
 
             # self.gateway.write_error("交易服务器登录失败", error)
-            self.log.info("交易服务器登录失败", error)
+            self.log.info(f"交易服务器登录失败，原因:{error.ErrorMsg}")
 
     def OnRspUserLogout(
             self,
@@ -625,11 +620,27 @@ class Trader(traderapi.CTORATstpTraderSpi):
             reqid: int,
     ) -> None:
         """委托撤单失败回报"""
-
-        if error.ErrorID != 0:
-            self.log.info(f"交易撤单失败: {error.ErrorMsg}")
+        if not data:
+            return
+        order = OrderModel()
+        order.OrderID = self.sysid_orderid_map[data.OrderSysID]
+        #order.SecurityID = data.SecurityID
+        #order.ExchangeID = data.ExchangeID
+        order.SInfo = data.SInfo
+        order.IInfo = data.IInfo
+        error_id = error.ErrorID
+        error_msg = error.ErrorMsg
+        if error_id == 0:
+            self.log.info(f"撤单成功，{order.OrderID},{error_msg}")
+            self.bus.put(Event(event_type=EventType.CANCEL_SUCCESS, payload=order))  
+            #self.bus.put(Event(event_type=EventType.ORDER_SUCCESS, payload=order))
         else:
-            self.log.info(f"交易撤单成功，订单编号：{data.FrontID}_{data.SessionID}_{data.OrderRef}")
+            order.OrderStatus = error.ErrorID 
+            order.StatusMsg = error.ErrorMsg
+            self.log.info(f"撤单失败，{order.OrderID},{error_msg}")
+            self.bus.put(Event(event_type=EventType.CANCEL_ERROR, payload=order)) 
+         
+            
 
     def OnRtnOrder(self, data: CTORATstpOrderField) -> None:
         """委托更新推送"""
@@ -644,6 +655,12 @@ class Trader(traderapi.CTORATstpTraderSpi):
         sessionid: int = data.SessionID
         order_ref: int = data.OrderRef
         order_id: str = f"{frontid}_{sessionid}_{order_ref}"
+
+        # timestamp: str = f"{data.InsertDate} {data.InsertTime}"
+        # dt: datetime = datetime.strptime(timestamp, "%Y%m%d %H:%M:%S")
+        # dt: datetime = dt.replace(tzinfo=CHINA_TZ)
+
+        # print(f"symbol: {symbol}, exchange: {exchange}, order_id: {order_id}")
         order = OrderModel(
             ExchangeID=data.ExchangeID,
             SecurityID=data.SecurityID,
@@ -657,16 +674,18 @@ class Trader(traderapi.CTORATstpTraderSpi):
             FrontID=data.FrontID,
             SessionID=data.SessionID,
             OrderRef=data.OrderRef,
-            StatusMsg=data.StatusMsg,
+            StatusMsg = data.StatusMsg,
             OrderStatus=data.OrderStatus,
-            OrderSysID=data.OrderSysID
+            OrderSysID=data.OrderSysID,
+            IInfo=data.IInfo,
+            SInfo=data.SInfo
         )
         order.OrderID = order_id
 
         self.sysid_orderid_map[data.OrderSysID] = order.OrderID
         if order.OrderStatus != 0 and order.OrderStatus != 1:  # 不放入未知状态的委托回报
-            self.log.info(f"委托成功，订单编号:{order_id}，订单状态：{ORDER_STATUS_MAP[order.OrderStatus]}")
-            self.bus.put(Event(event_type=EventType.ORDER, payload=order))
+            #self.log.info(f"委托成功，订单编号:{order_id}，订单状态：{ORDER_STATUS_MAP[order.OrderStatus]}")
+            self.bus.put(Event(event_type=EventType.ORDER_SUCCESS, payload=order))
 
     def OnRspQryOrder(self, data: CTORATstpOrderField, error: CTORATstpRspInfoField, reqid: int, last: bool) -> None:
         if not data:
@@ -685,8 +704,10 @@ class Trader(traderapi.CTORATstpTraderSpi):
             FrontID=data.FrontID,
             SessionID=data.SessionID,
             OrderRef=data.OrderRef,
-            OrderID=data.OrderID,
-            OrderStatus=data.OrderStatus
+            OrderSysID=data.OrderSysID,
+            OrderStatus=data.OrderStatus,
+            IInfo=data.IInfo,
+            SInfo=data.SInfo
         )
 
     def OnRtnTrade(self, data: CTORATstpTradeField) -> None:
@@ -695,26 +716,22 @@ class Trader(traderapi.CTORATstpTraderSpi):
             return
 
         symbol: str = data.SecurityID
-
-        '''
-        exchange: Exchange = EXCHANGE_TORA2VT[data.ExchangeID]
-        '''
-
-        orderid: str = self.sysid_orderid_map[data.OrderSysID]
-
-        timestamp: str = f"{data.TradeDate} {data.TradeTime}"
-        dt: datetime = datetime.strptime(timestamp, "%Y%m%d %H:%M:%S")
+        order_id: str = self.sysid_orderid_map[data.OrderSysID]
+        #timestamp: str = f"{data.TradeDate} {data.TradeTime}"
+        #dt: datetime = datetime.strptime(timestamp, "%Y%m%d %H:%M:%S")
         # dt: datetime = dt.replace(tzinfo=CHINA_TZ)
         trade: TradeModel = TradeModel(
             SecurityID=data.SecurityID,
             ExchangeID=data.ExchangeID,
-            OrderID=data.OrderID,
+            OrderSysID = data.OrderSysID,
             TradeID=data.TradeID,
             Direction=data.Direction,
             Price=data.Price,
-            Volume=data.Volume
+            Volume=data.Volume,
+            TradeDate = data.TradeDate,
+            TradeTime = data.TradeTime,
         )
-        self.log.info(f"成交数据推送：{trade.model_dump()}")
+        trade.OrderID = order_id
         self.bus.put(Event(event_type=EventType.TRADE, payload=trade))
 
     def OnRspQrySecurity(
@@ -730,7 +747,14 @@ class Trader(traderapi.CTORATstpTraderSpi):
         if not data:
             return
         self.contract_limup_price[data.SecurityID] = data.UpperLimitPrice
-        # print("OnRtnQrySecurity 股票代码[%s] 股票名称[%s] 交易所[%s] 涨停价[%.2f] 跌停价[%.2f]" % (data.SecurityID,data.SecurityName,data.ExchangeID,data.UpperLimitPrice,data.LowerLimitPrice))
+        security = SecurityFieldModel()
+        security.TradingDay = data.TradingDay
+        security.ExchangeID = data.ExchangeID
+        security.SecurityName = data.SecurityName
+        security.UpperLimitPrice = data.UpperLimitPrice
+        security.LowerLimitPrice = data.LowerLimitPrice 
+
+
 
     def OnRspQryTradingAccount(
             self,
@@ -795,6 +819,9 @@ class Trader(traderapi.CTORATstpTraderSpi):
             return
 
         if data.InvestorID != self.investor_id:
+            '''
+            self.gateway.write_log("OnRspQryPosition:收到其他账户的仓位信息")
+            '''
             return
 
         volume: int = data.CurrentPosition
@@ -804,41 +831,34 @@ class Trader(traderapi.CTORATstpTraderSpi):
             price = data.TotalPosCost / volume
 
         frozen: int = data.HistoryPosFrozen + data.TodayBSPosFrozen + data.TodayPRPosFrozen
+    
+    def OnRspGetConnectionInfo(self, data: CTORATstpConnectionInfoField, error: CTORATstpRspInfoField, req_id: int) -> None:
+        self.log.info(f'PC;IIP={data.InnerIPAddress};IPORT={data.InnerPort};LIP={data.OuterIPAddress};MAC={data.MacAddress};HD=00b6f88d0890cb7c2b505cb50cb00506;@HX5ZJ0C1PV')
+        self.terminal_info = f'PC;IIP=NA;IPORT=NA;LIP={data.OuterIPAddress};MAC={data.MacAddress};HD=00b6f88d0890cb7c2b505cb50cb00506;@HX5ZJ0C1PV'
+
 
     def OnErrRtnOrderInsert(self, data: CTORATstpInputOrderField, error: CTORATstpRspInfoField, reason: int) -> None:
         """委托下单失败回报"""
-        '''
-        type: OrderType = ORDERTYPE_TORA2VT.get(data.OrderPriceType, None)
-        if not type:
+        if data == None:
             return
-        '''
-
+        #self.log.info(f"{type(data.Direction)}")
         order_ref: int = data.OrderRef
         order_id: str = f"{self.frontid}_{self.sessionid}_{order_ref}"
         dt: datetime = datetime.now()
-        # dt: datetime = dt.replace(tzinfo=CHINA_TZ)
-        '''
-        order: OrderData = OrderData(
-            symbol=data.SecurityID,
-            exchange=EXCHANGE_TORA2VT[data.ExchangeID],
-            orderid=order_id,
-            type=ORDERTYPE_TORA2VT[data.OrderPriceType],
-            direction=DIRECTION_TORA2VT[data.Direction],
-            price=data.LimitPrice,
-            volume=data.VolumeTotalOriginal,
-            status=Status.REJECTED,
-            datetime=dt,
-            gateway_name=self.gateway_name
-        )
-        self.gateway.on_order(order)
+        order = OrderModel()
+        order.SecurityID = data.SecurityID
+        order.ExchangeID = data.ExchangeID
+        order.LimitPrice = data.LimitPrice
+        order.VolumeTotalOriginal = data.VolumeTotalOriginal
+        order.Direction = data.Direction
+        order.Status = "REJECTED"
+        order.StatusMsg = error.ErrorMsg
+        order.IInfo = data.IInfo
+        order.SInfo = data.SInfo 
+        #order.OrderID = order_id
+        #self.log.info(f"created order model")
+        self.bus.put(Event(event_type=EventType.ORDER_ERROR, payload=order))
 
-        self.gateway.write_log(
-            f"拒单({order_id}):"
-            f"错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg}"
-        )
-        '''
-        self.log.info(
-            f"拒单({order_id}): 错误码:{error.ErrorID}, 错误消息:{error.ErrorMsg} , 股票代码:{data.SecurityID}")
 
     def connect(
             self,
@@ -856,7 +876,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         self.address_type = address_type
 
         if not self.connect_status:
-            self.api = traderapi.CTORATstpTraderApi.CreateTstpTraderApi('./flow', False)
+            self.api = traderapi.CTORATstpTraderApi_CreateTstpTraderApi('./flow', False,traderapi.TORA_TSTP_TCM_PROXY)
 
             self.api.RegisterSpi(self)
 
@@ -868,6 +888,8 @@ class Trader(traderapi.CTORATstpTraderSpi):
             self.api.SubscribePublicTopic(TORA_TERT_QUICK)
             self.api.Init()
             self.connect_status = True
+            self.get_connection_info()
+            
 
     def login(self) -> None:
         """用户登录"""
@@ -877,7 +899,7 @@ class Trader(traderapi.CTORATstpTraderSpi):
         login_req.UserProductInfo = "HX5ZJ0C1PV"
         '''login_req.TerminalInfo = get_terminal_info()
         '''
-        login_req.TerminalInfo = 'PC;IIP=000.000.000.000;IPORT=00000;LIP=x.xx.xxx.xxx;MAC=123ABC456DEF;HD=XXXXXXXXXX'
+        login_req.TerminalInfo = self.terminal_info
         if self.account_type == ACCOUNT_USERID:
             login_req.LogInAccountType = TORA_TSTP_LACT_UserID
         else:
@@ -935,13 +957,13 @@ class Trader(traderapi.CTORATstpTraderSpi):
         self.reqid += 1
         self.api.ReqQryTrade(req, self.reqid)
 
-    def send_order(self, req: OrderRequest):
+    def send_order(self, req: OrderRequest) -> None:
         """委托下单"""
 
         self.reqid += 1
         self.order_ref += 1
         req.ShareholderID = self.shareholder_ids[req.ExchangeID]
-        req.OrderRef = self.order_ref
+        req.OrderRef = self.order_ref #报单引用选填
 
         tora_req: CTORATstpInputOrderField = CTORATstpInputOrderField()
         tora_req.ShareholderID = req.ShareholderID
@@ -953,31 +975,33 @@ class Trader(traderapi.CTORATstpTraderSpi):
         tora_req.VolumeTotalOriginal = req.VolumeTotalOriginal
         tora_req.TimeCondition = req.TimeCondition
         tora_req.VolumeCondition = req.VolumeCondition
+        tora_req.SInfo = req.SInfo
+        tora_req.IInfo = req.IInfo
 
         self.api.ReqOrderInsert(tora_req, self.reqid)
 
-        order_id: str = f"{self.frontid}_{self.sessionid}_{self.order_ref}"
+        
 
-        '''order: OrderData = req.create_order_data(order_id, self.gateway_name)
-        self.gateway.on_order(order)
-        '''
 
-        return f"{order_id}"
+    def get_connection_info(self) -> None:
+        self.reqid += 1
+        self.api.ReqGetConnectionInfo(self.reqid)
 
     def cancel_order(self, req: CancelRequest) -> None:
         """委托撤单"""
         self.reqid += 1
-        self.order_ref += 1
+        # 使用OrderSysID撤单
         tora_req: CTORATstpInputOrderActionField = CTORATstpInputOrderActionField()
         tora_req.ExchangeID = req.ExchangeID
-        tora_req.SecurityID = req.SecurityID
-        tora_req.OrderRef = req.OrderRef
-        tora_req.FrontID = req.FrontID
-        tora_req.SessionID = req.SessionID
+        tora_req.OrderSysID = req.OrderSysID
         tora_req.ActionFlag = TORA_TSTP_AF_Delete
-        tora_req.OrderActionRef = self.order_ref
-
+        tora_req.SInfo = req.SInfo
+        tora_req.IInfo = req.IInfo
         self.api.ReqOrderAction(tora_req, self.reqid)
 
     def release(self):
         self.api.Release()
+
+    def set_affinity(self):
+        self.process.cpu_affinity([49])
+        self.log.info(f"交易绑定核心: {self.process.cpu_affinity()}")

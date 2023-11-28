@@ -12,14 +12,13 @@ from ..tora_stock.traderapi import (
     TORA_TSTP_EXD_SZSE,
     TORA_TSTP_EXD_COMM,
     TORA_TSTP_EXD_BSE)
-from ..trade import Trader, Quoter
-
+from ..trade import Trader, Quoter,L2Quoter
 
 class Strategy:
     name = '程序化打板策略'
+    
 
-    def __init__(self, bus: EventBus, trader: Trader, quoter: Quoter, limit_volume: int, cancel_volume: int,
-                 position: float, count: int, log: DefaultLogHandler, id: int):
+    def __init__(self, bus: EventBus, trader: Trader, quoter: L2Quoter, limit_volume: int, cancel_volume: int, position: float,count: int, log: DefaultLogHandler, id: int):
         """
         打板策略
         Params:
@@ -39,7 +38,7 @@ class Strategy:
         self.__bus = bus
         self.__trader = trader
         self.__quoter = quoter
-        self.log = self.log_handler()
+        self.log = log
         self.id = id
 
         self.buy_trigger_volume = limit_volume  # 封单量
@@ -48,6 +47,8 @@ class Strategy:
         self.position = position
         self.cancel_trigger = False
         self.trigger_times = 1  # 执行次数监控
+
+        
 
     def on_tick(self, event: Event):
         """
@@ -66,10 +67,10 @@ class Strategy:
             3. 开启撤单回报监听
         """
         if event.payload.SecurityID != self.subscribe_request.SecurityID:
+            print(event.payload.SecurityID,self.subscribe_request.SecurityID)
             return
-
-        self.log.info(
-            f'策略ID:{self.id},{event.payload.UpdateTime},{event.payload.SecurityID},{event.payload.LastPrice},{event.payload.Volume}')
+        
+        self.log.info(f'策略ID:{self.id},{event.payload.SecurityID},{event.payload.LastPrice},{event.payload.BidPrice1},{event.payload.AskPrice1}')
 
         if self.trigger_times > self.count:
             self.log.info("策略触发达到上限，停止行情监听")
@@ -126,8 +127,8 @@ class Strategy:
         挂单委托监控，判断挂单是否成功
         """
         """
-
-
+        
+        
         print("on_order事件监听")
         print(self.__trader.sysid_orderid_map[event.payload.OrderSysID])
         print(self.order_id)
@@ -145,12 +146,12 @@ class Strategy:
         pass
 
     def log_handler(self):
-        return DefaultLogHandler(name=self.name, log_type='file', filepath='strategy.log',loglevel='NOTICE')
+        return DefaultLogHandler(name=self.name, log_type='stdout', filepath='strategy.log')
 
     def subscribe(self, subscribe_request: SubscribeRequest):
         self.subscribe_request = subscribe_request
         self.__quoter.subscribe(self.subscribe_request)
-
+    
     def unsubscribe(self):
         if not self.subscribe_request:
             self.__quoter.unsubscribe(self.subscribe_request)

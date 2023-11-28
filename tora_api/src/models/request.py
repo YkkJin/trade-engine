@@ -18,6 +18,10 @@ class CancelRequest(BaseModel):
     SessionID: int = 0
     ActionFlag: int = TORA_TSTP_AF_Delete
     OrderActionRef: int = 0
+    OrderSysID: str = ""
+    IInfo: str = ""
+    SInfo: str = ""
+
 
 
 class SubscribeRequest(BaseModel):
@@ -27,16 +31,18 @@ class SubscribeRequest(BaseModel):
 
 class OrderRequest(BaseModel):
     ShareholderID: str = ""
-    OrderRef: str = ""
+    OrderRef: int = 0
     ExchangeID: str = ""
     SecurityID: str = ""
-    Direction: str = ""
+    Direction: int = 0
     VolumeTotalOriginal: int = 0
     LimitPrice: float = 0.0
     OrderPriceType: str = ""
     TimeCondition: str = ""
     VolumeCondition: str = ""
     OrderID: str = ""
+    IInfo: str = ""
+    SInfo: str = ""
 
     def create_cancel_order_request(self, order_action_ref: int) -> CancelRequest:
         '''

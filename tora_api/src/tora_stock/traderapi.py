@@ -75,63 +75,63 @@ TORA_TERT_QUICK = _traderapi.TORA_TERT_QUICK
 
 
 
-#########################################µÇÂ¼ÇëÇó############################################
+#########################################ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpReqUserLoginField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpReqUserLoginField_UserRequestID_get, _traderapi.CTORATstpReqUserLoginField_UserRequestID_set)
 
-	# µÇÂ¼ÕË»§
+	# ï¿½ï¿½Â¼ï¿½Ë»ï¿½
     LogInAccount = property(_traderapi.CTORATstpReqUserLoginField_LogInAccount_get, _traderapi.CTORATstpReqUserLoginField_LogInAccount_set)
 
-	# µÇÂ¼ÕË»§ÀàÐÍ
+	# ï¿½ï¿½Â¼ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     LogInAccountType = property(_traderapi.CTORATstpReqUserLoginField_LogInAccountType_get, _traderapi.CTORATstpReqUserLoginField_LogInAccountType_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë£¨ÒÔ×Ê½ðÕËºÅ·½Ê½µÇÂ¼Ê±±ØÌî£©
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ë£¨ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ËºÅ·ï¿½Ê½ï¿½ï¿½Â¼Ê±ï¿½ï¿½ï¿½î£©
     DepartmentID = property(_traderapi.CTORATstpReqUserLoginField_DepartmentID_get, _traderapi.CTORATstpReqUserLoginField_DepartmentID_set)
 
-	# ÈÏÖ¤·½Ê½(Ö¸ÎÆ»òÔ¿³×´®ÈÏÖ¤Ê±±ØÌî)
+	# ï¿½ï¿½Ö¤ï¿½ï¿½Ê½(Ö¸ï¿½Æ»ï¿½Ô¿ï¿½×´ï¿½ï¿½ï¿½Ö¤Ê±ï¿½ï¿½ï¿½ï¿½)
     AuthMode = property(_traderapi.CTORATstpReqUserLoginField_AuthMode_get, _traderapi.CTORATstpReqUserLoginField_AuthMode_set)
 
-	# ÃÜÂë(ÃÜÂëÈÏÖ¤Ê±±ØÌî)
+	# ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤Ê±ï¿½ï¿½ï¿½ï¿½)
     Password = property(_traderapi.CTORATstpReqUserLoginField_Password_get, _traderapi.CTORATstpReqUserLoginField_Password_set)
 
-	# ÓÃ»§¶Ë²úÆ·ÐÅÏ¢
+	# ï¿½Ã»ï¿½ï¿½Ë²ï¿½Æ·ï¿½ï¿½Ï¢
     UserProductInfo = property(_traderapi.CTORATstpReqUserLoginField_UserProductInfo_get, _traderapi.CTORATstpReqUserLoginField_UserProductInfo_set)
 
-	# ½Ó¿Ú¶Ë²úÆ·ÐÅÏ¢
+	# ï¿½Ó¿Ú¶Ë²ï¿½Æ·ï¿½ï¿½Ï¢
     InterfaceProductInfo = property(_traderapi.CTORATstpReqUserLoginField_InterfaceProductInfo_get, _traderapi.CTORATstpReqUserLoginField_InterfaceProductInfo_set)
 
-	# ÖÕ¶Ë²É¼¯ÐÅÏ¢
+	# ï¿½Õ¶Ë²É¼ï¿½ï¿½ï¿½Ï¢
     TerminalInfo = property(_traderapi.CTORATstpReqUserLoginField_TerminalInfo_get, _traderapi.CTORATstpReqUserLoginField_TerminalInfo_set)
 
-	# ÄÚÍøIPµØÖ·
+	# ï¿½ï¿½ï¿½ï¿½IPï¿½ï¿½Ö·
     InnerIPAddress = property(_traderapi.CTORATstpReqUserLoginField_InnerIPAddress_get, _traderapi.CTORATstpReqUserLoginField_InnerIPAddress_set)
 
-	# ÍâÍøIPµØÖ·
+	# ï¿½ï¿½ï¿½ï¿½IPï¿½ï¿½Ö·
     OuterIPAddress = property(_traderapi.CTORATstpReqUserLoginField_OuterIPAddress_get, _traderapi.CTORATstpReqUserLoginField_OuterIPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpReqUserLoginField_MacAddress_get, _traderapi.CTORATstpReqUserLoginField_MacAddress_set)
 
-	# ½Ó¿ÚÓïÑÔ
+	# ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½
     Lang = property(_traderapi.CTORATstpReqUserLoginField_Lang_get, _traderapi.CTORATstpReqUserLoginField_Lang_set)
 
-	# ÖÕ¶Ë¶¯Ì¬ÃØÔ¿
+	# ï¿½Õ¶Ë¶ï¿½Ì¬ï¿½ï¿½Ô¿
     DynamicPassword = property(_traderapi.CTORATstpReqUserLoginField_DynamicPassword_get, _traderapi.CTORATstpReqUserLoginField_DynamicPassword_set)
 
-	# Éè±¸±êÊ¶(Ö¸ÎÆÈÏÖ¤Ê±±ØÌî)
+	# ï¿½è±¸ï¿½ï¿½Ê¶(Ö¸ï¿½ï¿½ï¿½ï¿½Ö¤Ê±ï¿½ï¿½ï¿½ï¿½)
     DeviceID = property(_traderapi.CTORATstpReqUserLoginField_DeviceID_get, _traderapi.CTORATstpReqUserLoginField_DeviceID_set)
 
-	# ÈÏÖ¤ÐòÁÐºÅ(Ö¸ÎÆ»òÔ¿³×´®ÈÏÖ¤Ê±±ØÌî)
+	# ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½Ðºï¿½(Ö¸ï¿½Æ»ï¿½Ô¿ï¿½×´ï¿½ï¿½ï¿½Ö¤Ê±ï¿½ï¿½ï¿½ï¿½)
     CertSerial = property(_traderapi.CTORATstpReqUserLoginField_CertSerial_get, _traderapi.CTORATstpReqUserLoginField_CertSerial_set)
 
-	# Éè±¸Àà±ð(Ö¸ÎÆ»òÔ¿³×´®ÈÏÖ¤Ê±±ØÌî)
+	# ï¿½è±¸ï¿½ï¿½ï¿?(Ö¸ï¿½Æ»ï¿½Ô¿ï¿½×´ï¿½ï¿½ï¿½Ö¤Ê±ï¿½ï¿½ï¿½ï¿½)
     DeviceType = property(_traderapi.CTORATstpReqUserLoginField_DeviceType_get, _traderapi.CTORATstpReqUserLoginField_DeviceType_set)
 
-	# ¹ØÁª½Úµã±àºÅ(ÄÚ²¿Ê¹ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
     NodeRef = property(_traderapi.CTORATstpReqUserLoginField_NodeRef_get, _traderapi.CTORATstpReqUserLoginField_NodeRef_set)
 
     def __init__(self):
@@ -146,893 +146,893 @@ FLOAT_NULL_VAL = cvar.FLOAT_NULL_VAL
 CHAR_NULL_VAL = cvar.CHAR_NULL_VAL
 WORD_NULL_VAL = cvar.WORD_NULL_VAL
 LONG_NULL_VAL = cvar.LONG_NULL_VAL
-# ÓÃ»§´úÂë
+# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_LACT_UserID = cvar.TORA_TSTP_LACT_UserID
-# ×Ê½ðÕËºÅ
+# ï¿½Ê½ï¿½ï¿½Ëºï¿½
 TORA_TSTP_LACT_AccountID = cvar.TORA_TSTP_LACT_AccountID
-# ÉÏº£A¹É
+# ï¿½Ïºï¿½Aï¿½ï¿½
 TORA_TSTP_LACT_SHAStock = cvar.TORA_TSTP_LACT_SHAStock
-# ÉîÛÚA¹É
+# ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½
 TORA_TSTP_LACT_SZAStock = cvar.TORA_TSTP_LACT_SZAStock
-# ÉÏº£B¹É
+# ï¿½Ïºï¿½Bï¿½ï¿½
 TORA_TSTP_LACT_SHBStock = cvar.TORA_TSTP_LACT_SHBStock
-# ÉîÛÚB¹É
+# ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½
 TORA_TSTP_LACT_SZBStock = cvar.TORA_TSTP_LACT_SZBStock
-# Èý°åA
+# ï¿½ï¿½ï¿½ï¿½A
 TORA_TSTP_LACT_ThreeNewBoardA = cvar.TORA_TSTP_LACT_ThreeNewBoardA
-# Èý°åB
+# ï¿½ï¿½ï¿½ï¿½B
 TORA_TSTP_LACT_ThreeNewBoardB = cvar.TORA_TSTP_LACT_ThreeNewBoardB
-# ¸Û¹É
+# ï¿½Û¹ï¿½
 TORA_TSTP_LACT_HKStock = cvar.TORA_TSTP_LACT_HKStock
-# Í³Ò»ÓÃ»§´úÂë
+# Í³Ò»ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_LACT_UnifiedUserID = cvar.TORA_TSTP_LACT_UnifiedUserID
-# ±±¾©A¹É
+# ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½
 TORA_TSTP_LACT_BJAStock = cvar.TORA_TSTP_LACT_BJAStock
-# ÃÜÂë
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_AM_Password = cvar.TORA_TSTP_AM_Password
-# Ö¸ÎÆ
+# Ö¸ï¿½ï¿½
 TORA_TSTP_AM_FingerPrint = cvar.TORA_TSTP_AM_FingerPrint
-# Ô¿³×´®
+# Ô¿ï¿½×´ï¿½
 TORA_TSTP_AM_CertInfo = cvar.TORA_TSTP_AM_CertInfo
-# ¼òÌåÖÐÎÄ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_LGT_ZHCN = cvar.TORA_TSTP_LGT_ZHCN
-# ÖÐÎÄÏã¸Û
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_LGT_ZHHK = cvar.TORA_TSTP_LGT_ZHHK
-# Ó¢ÎÄÃÀ¹ú
+# Ó¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_LGT_ENUS = cvar.TORA_TSTP_LGT_ENUS
-# PC¶Ë
+# PCï¿½ï¿½
 TORA_TSTP_DVT_PC = cvar.TORA_TSTP_DVT_PC
-# ÒÆ¶¯¶Ë
+# ï¿½Æ¶ï¿½ï¿½ï¿½
 TORA_TSTP_DVT_Mobile = cvar.TORA_TSTP_DVT_Mobile
-# ¾­¼Í¹«Ë¾ÓÃ»§
+# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½Ã»ï¿½
 TORA_TSTP_UTYPE_BrokerUser = cvar.TORA_TSTP_UTYPE_BrokerUser
-# ³¬¼¶ÓÃ»§
+# ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
 TORA_TSTP_UTYPE_SuperUser = cvar.TORA_TSTP_UTYPE_SuperUser
-# Í¶×ÊÕßÓÃ»§
+# Í¶ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
 TORA_TSTP_UTYPE_Investor = cvar.TORA_TSTP_UTYPE_Investor
-# Í¨ÓÃ(ÄÚ²¿Ê¹ÓÃ)
+# Í¨ï¿½ï¿½(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
 TORA_TSTP_EXD_COMM = cvar.TORA_TSTP_EXD_COMM
-# ÉÏº£½»Ò×Ëù
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_EXD_SSE = cvar.TORA_TSTP_EXD_SSE
-# ÉîÛÚ½»Ò×Ëù
+# ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_EXD_SZSE = cvar.TORA_TSTP_EXD_SZSE
-# Ïã¸Û½»Ò×Ëù
+# ï¿½ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_EXD_HK = cvar.TORA_TSTP_EXD_HK
-# ±±¾©Ö¤È¯½»Ò×Ëù
+# ï¿½ï¿½ï¿½ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_EXD_BSE = cvar.TORA_TSTP_EXD_BSE
-# ÂòÈë
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_Buy = cvar.TORA_TSTP_D_Buy
-# Âô³ö
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_Sell = cvar.TORA_TSTP_D_Sell
-# ETFÉê¹º
+# ETFï¿½ê¹º
 TORA_TSTP_D_ETFPur = cvar.TORA_TSTP_D_ETFPur
-# ETFÊê»Ø
+# ETFï¿½ï¿½ï¿?
 TORA_TSTP_D_ETFRed = cvar.TORA_TSTP_D_ETFRed
-# ÐÂ¹ÉÉê¹º
+# ï¿½Â¹ï¿½ï¿½ê¹º
 TORA_TSTP_D_IPO = cvar.TORA_TSTP_D_IPO
-# Õý»Ø¹º
+# ï¿½ï¿½ï¿½Ø¹ï¿½
 TORA_TSTP_D_Repurchase = cvar.TORA_TSTP_D_Repurchase
-# Äæ»Ø¹º
+# ï¿½ï¿½Ø¹ï¿?
 TORA_TSTP_D_ReverseRepur = cvar.TORA_TSTP_D_ReverseRepur
-# ¿ª·ÅÊ½»ù½ðÉê¹º
+# ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ê¹º
 TORA_TSTP_D_OeFundPur = cvar.TORA_TSTP_D_OeFundPur
-# ¿ª·ÅÊ½»ù½ðÊê»Ø
+# ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_D_OeFundRed = cvar.TORA_TSTP_D_OeFundRed
-# µ£±£Æ·»®Èë
+# ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_CollateralIn = cvar.TORA_TSTP_D_CollateralIn
-# µ£±£Æ·»®³ö
+# ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_CollateralOut = cvar.TORA_TSTP_D_CollateralOut
-# ÖÊÑºÈë¿â
+# ï¿½ï¿½Ñºï¿½ï¿½ï¿?
 TORA_TSTP_D_PledgeIn = cvar.TORA_TSTP_D_PledgeIn
-# ÖÊÑº³ö¿â
+# ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_PledgeOut = cvar.TORA_TSTP_D_PledgeOut
-# Åä¹ÉÅäÕ®
+# ï¿½ï¿½ï¿½ï¿½ï¿½Õ?
 TORA_TSTP_D_Rationed = cvar.TORA_TSTP_D_Rationed
-# »ù½ð²ð·Ö
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_Split = cvar.TORA_TSTP_D_Split
-# »ù½ðºÏ²¢
+# ï¿½ï¿½ï¿½ï¿½Ï²ï¿?
 TORA_TSTP_D_Merge = cvar.TORA_TSTP_D_Merge
-# ÈÚ×ÊÂòÈë
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_CreditBuy = cvar.TORA_TSTP_D_CreditBuy
-# ÈÚÈ¯Âô³ö
+# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_CreditSell = cvar.TORA_TSTP_D_CreditSell
-# ÂôÈ¯»¹¿î
+# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_SellRepay = cvar.TORA_TSTP_D_SellRepay
-# ÂòÈ¯»¹È¯
+# ï¿½ï¿½È¯ï¿½ï¿½È¯
 TORA_TSTP_D_BuyRepay = cvar.TORA_TSTP_D_BuyRepay
-# »¹È¯»®×ª
+# ï¿½ï¿½È¯ï¿½ï¿½×ª
 TORA_TSTP_D_RepayTransfer = cvar.TORA_TSTP_D_RepayTransfer
-# ÓàÈ¯»®×ª
+# ï¿½ï¿½È¯ï¿½ï¿½×ª
 TORA_TSTP_D_SurplusTransfer = cvar.TORA_TSTP_D_SurplusTransfer
-# Ô´È¯»®×ª
+# Ô´È¯ï¿½ï¿½×ª
 TORA_TSTP_D_SourceTransfer = cvar.TORA_TSTP_D_SourceTransfer
-# Õ®È¯×ª¹É
+# Õ®È¯×ªï¿½ï¿½
 TORA_TSTP_D_BondConvertStock = cvar.TORA_TSTP_D_BondConvertStock
-# Õ®È¯»ØÊÛ
+# Õ®È¯ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_BondPutback = cvar.TORA_TSTP_D_BondPutback
-# ETFÊµÎïÉê¹º
+# ETFÊµï¿½ï¿½ï¿½ê¹º
 TORA_TSTP_D_ETFOtPur = cvar.TORA_TSTP_D_ETFOtPur
-# ETFÊµÎïÊê»Ø
+# ETFÊµï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_D_ETFOtRed = cvar.TORA_TSTP_D_ETFOtRed
-# »ØÊÛ³·Ïú
+# ï¿½ï¿½ï¿½Û³ï¿½ï¿½ï¿½
 TORA_TSTP_D_PutbackRelieve = cvar.TORA_TSTP_D_PutbackRelieve
-# ÒâÏòÂòÈë
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_IOIBuy = cvar.TORA_TSTP_D_IOIBuy
-# ÒâÏòÂô³ö
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_IOISell = cvar.TORA_TSTP_D_IOISell
-# ³É½»È·ÈÏÂòÈë
+# ï¿½É½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_TCRBuy = cvar.TORA_TSTP_D_TCRBuy
-# ³É½»È·ÈÏÂô³ö
+# ï¿½É½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_D_TCRSell = cvar.TORA_TSTP_D_TCRSell
-# ÈÎÒâ¼Û
+# ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_OPT_AnyPrice = cvar.TORA_TSTP_OPT_AnyPrice
-# ÏÞ¼Û
+# ï¿½Þ¼ï¿½
 TORA_TSTP_OPT_LimitPrice = cvar.TORA_TSTP_OPT_LimitPrice
-# ×îÓÅ¼Û
+# ï¿½ï¿½ï¿½Å¼ï¿½
 TORA_TSTP_OPT_BestPrice = cvar.TORA_TSTP_OPT_BestPrice
-# ÅÌºó¶¨¼Û
+# ï¿½Ìºó¶¨¼ï¿½
 TORA_TSTP_OPT_FixPrice = cvar.TORA_TSTP_OPT_FixPrice
-# Îåµµ¼Û
+# ï¿½åµµï¿½ï¿½
 TORA_TSTP_OPT_FiveLevelPrice = cvar.TORA_TSTP_OPT_FiveLevelPrice
-# ±¾·½×îÓÅ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_OPT_HomeBestPrice = cvar.TORA_TSTP_OPT_HomeBestPrice
-# Á¢¼´Íê³É£¬·ñÔò³·Ïú
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_TC_IOC = cvar.TORA_TSTP_TC_IOC
-# ±¾½ÚÓÐÐ§
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
 TORA_TSTP_TC_GFS = cvar.TORA_TSTP_TC_GFS
-# µ±ÈÕÓÐÐ§
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
 TORA_TSTP_TC_GFD = cvar.TORA_TSTP_TC_GFD
-# Ö¸¶¨ÈÕÆÚÇ°ÓÐÐ§
+# Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ð§
 TORA_TSTP_TC_GTD = cvar.TORA_TSTP_TC_GTD
-# ³·ÏúÇ°ÓÐÐ§
+# ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ð§
 TORA_TSTP_TC_GTC = cvar.TORA_TSTP_TC_GTC
-# ¼¯ºÏ¾º¼ÛÓÐÐ§
+# ï¿½ï¿½ï¿½Ï¾ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
 TORA_TSTP_TC_GFA = cvar.TORA_TSTP_TC_GFA
-# ÈÎºÎÊýÁ¿
+# ï¿½Îºï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_VC_AV = cvar.TORA_TSTP_VC_AV
-# ×îÐ¡ÊýÁ¿
+# ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_VC_MV = cvar.TORA_TSTP_VC_MV
-# È«²¿ÊýÁ¿
+# È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_VC_CV = cvar.TORA_TSTP_VC_CV
-# ¿Õ
+# ï¿½ï¿½
 TORA_TSTP_OPERW_Non = cvar.TORA_TSTP_OPERW_Non
-# µç»°Î¯ÍÐ
+# ï¿½ç»°Î¯ï¿½ï¿½
 TORA_TSTP_OPERW_Telephone = cvar.TORA_TSTP_OPERW_Telephone
-# ¹ñÌ¨Î¯ÍÐ
+# ï¿½ï¿½Ì¨Î¯ï¿½ï¿½
 TORA_TSTP_OPERW_OTC = cvar.TORA_TSTP_OPERW_OTC
-# ÒÆ¶¯¿Í»§¶ËÎ¯ÍÐ
+# ï¿½Æ¶ï¿½ï¿½Í»ï¿½ï¿½ï¿½Î¯ï¿½ï¿½
 TORA_TSTP_OPERW_MobileClient = cvar.TORA_TSTP_OPERW_MobileClient
-# PC¿Í»§¶ËÎ¯ÍÐ
+# PCï¿½Í»ï¿½ï¿½ï¿½Î¯ï¿½ï¿½
 TORA_TSTP_OPERW_PCClient = cvar.TORA_TSTP_OPERW_PCClient
-# TYÎ¯ÍÐ
+# TYÎ¯ï¿½ï¿½
 TORA_TSTP_OPERW_TY = cvar.TORA_TSTP_OPERW_TY
-# Í¨µÀÎ¯ÍÐ
+# Í¨ï¿½ï¿½Î¯ï¿½ï¿½
 TORA_TSTP_OPERW_Channel = cvar.TORA_TSTP_OPERW_Channel
-# Áã¹É¶©µ¥
+# ï¿½ï¿½É¶ï¿½ï¿½ï¿?
 TORA_TSTP_LT_OddLot = cvar.TORA_TSTP_LT_OddLot
-# ÕûÊÖ¶©µ¥
+# ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½
 TORA_TSTP_LT_RoundLot = cvar.TORA_TSTP_LT_RoundLot
-# ²»×öÈÎºÎ¼ì²é
+# ï¿½ï¿½ï¿½ï¿½ï¿½ÎºÎ¼ï¿½ï¿?
 TORA_TSTP_CCT_None = cvar.TORA_TSTP_CCT_None
-# ×Ô³É½»¼ì²é
+# ï¿½Ô³É½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_CCT_SelfDeal = cvar.TORA_TSTP_CCT_SelfDeal
-# ·ÇÇ¿Æ½
+# ï¿½ï¿½Ç¿Æ½
 TORA_TSTP_FCC_NotForceClose = cvar.TORA_TSTP_FCC_NotForceClose
-# ×Ê½ð²»×ã
+# ï¿½Ê½ï¿½ï¿½ï¿½
 TORA_TSTP_FCC_MoneyNotEnough = cvar.TORA_TSTP_FCC_MoneyNotEnough
-# ²ÖÎ»³¬ÏÞ
+# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_FCC_PositionOverFull = cvar.TORA_TSTP_FCC_PositionOverFull
-# ÆäËü
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_FCC_Other = cvar.TORA_TSTP_FCC_Other
-# ÆÕÍ¨
+# ï¿½ï¿½Í¨
 TORA_TSTP_CQT_Normal = cvar.TORA_TSTP_CQT_Normal
-# ×¨Ïî
+# ×¨ï¿½ï¿½
 TORA_TSTP_CQT_Special = cvar.TORA_TSTP_CQT_Special
-# Ô¤Âñ
+# Ô¤ï¿½ï¿½
 TORA_TSTP_OST_Cached = cvar.TORA_TSTP_OST_Cached
 # Î´Öª
 TORA_TSTP_OST_Unknown = cvar.TORA_TSTP_OST_Unknown
-# ½»Ò×ËùÒÑ½ÓÊÕ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ½ï¿½ï¿½ï¿½
 TORA_TSTP_OST_Accepted = cvar.TORA_TSTP_OST_Accepted
-# ²¿·Ö³É½»
+# ï¿½ï¿½ï¿½Ö³É½ï¿½
 TORA_TSTP_OST_PartTraded = cvar.TORA_TSTP_OST_PartTraded
-# È«²¿³É½»
+# È«ï¿½ï¿½ï¿½É½ï¿½
 TORA_TSTP_OST_AllTraded = cvar.TORA_TSTP_OST_AllTraded
-# ²¿³É²¿³·
+# ï¿½ï¿½ï¿½É²ï¿½ï¿½ï¿½
 TORA_TSTP_OST_PartTradeCanceled = cvar.TORA_TSTP_OST_PartTradeCanceled
-# È«²¿³·µ¥
+# È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_OST_AllCanceled = cvar.TORA_TSTP_OST_AllCanceled
-# ½»Ò×ËùÒÑ¾Ü¾ø
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾Ü¾ï¿½
 TORA_TSTP_OST_Rejected = cvar.TORA_TSTP_OST_Rejected
-# ·¢Íù½»Ò×ºËÐÄ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ºï¿½ï¿½ï¿½
 TORA_TSTP_OST_SendTradeEngine = cvar.TORA_TSTP_OST_SendTradeEngine
-# Î´Ìá½»
+# Î´ï¿½á½»
 TORA_TSTP_OSS_InsertUnSubmit = cvar.TORA_TSTP_OSS_InsertUnSubmit
-# ÒÑÌá½»
+# ï¿½ï¿½ï¿½á½»
 TORA_TSTP_OSS_InsertSubmitted = cvar.TORA_TSTP_OSS_InsertSubmitted
-# ³·µ¥Î´Ìá½»
+# ï¿½ï¿½ï¿½ï¿½Î´ï¿½á½»
 TORA_TSTP_OSS_CancelUnSubmit = cvar.TORA_TSTP_OSS_CancelUnSubmit
-# ³·µ¥ÒÑÌá½»
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á½»
 TORA_TSTP_OSS_CancelSubmitted = cvar.TORA_TSTP_OSS_CancelSubmitted
-# ³·µ¥ÒÑ±»¾Ü¾ø
+# ï¿½ï¿½ï¿½ï¿½ï¿½Ñ±ï¿½ï¿½Ü¾ï¿½
 TORA_TSTP_OSS_CancelRejected = cvar.TORA_TSTP_OSS_CancelRejected
-# ³·µ¥ÒÑÉ¾³ý
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
 TORA_TSTP_OSS_CancelDeleted = cvar.TORA_TSTP_OSS_CancelDeleted
-# ÈËÃñ±Ò
+# ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_CID_CNY = cvar.TORA_TSTP_CID_CNY
-# ¸Û±Ò
+# ï¿½Û±ï¿½
 TORA_TSTP_CID_HKD = cvar.TORA_TSTP_CID_HKD
-# ÃÀÔª
+# ï¿½ï¿½Ôª
 TORA_TSTP_CID_USD = cvar.TORA_TSTP_CID_USD
-# Õý³£
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_ORDT_Normal = cvar.TORA_TSTP_ORDT_Normal
-# ±¨¼ÛÑÜÉú
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_ORDT_DeriveFromQuote = cvar.TORA_TSTP_ORDT_DeriveFromQuote
-# ×éºÏÑÜÉú
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_ORDT_DeriveFromCombination = cvar.TORA_TSTP_ORDT_DeriveFromCombination
-# ×éºÏ±¨µ¥
+# ï¿½ï¿½Ï±ï¿½ï¿½ï¿?
 TORA_TSTP_ORDT_Combination = cvar.TORA_TSTP_ORDT_Combination
-# Ìõ¼þµ¥
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_ORDT_ConditionalOrder = cvar.TORA_TSTP_ORDT_ConditionalOrder
-# »¥»»µ¥
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_ORDT_Swap = cvar.TORA_TSTP_ORDT_Swap
-# Ô¤Âñµ¥
+# Ô¤ï¿½ï¿½
 TORA_TSTP_ORDT_Cache = cvar.TORA_TSTP_ORDT_Cache
-# Ò¹ÊÐÎ¯ÍÐ
+# Ò¹ï¿½ï¿½Î¯ï¿½ï¿½
 TORA_TSTP_ORDT_Night = cvar.TORA_TSTP_ORDT_Night
-# Í¨µÀÎ¯ÍÐ
+# Í¨ï¿½ï¿½Î¯ï¿½ï¿½
 TORA_TSTP_ORDT_Board = cvar.TORA_TSTP_ORDT_Board
-# É¾³ý
+# É¾ï¿½ï¿½
 TORA_TSTP_AF_Delete = cvar.TORA_TSTP_AF_Delete
-# ÐÞ¸Ä
+# ï¿½Þ¸ï¿½
 TORA_TSTP_AF_Modify = cvar.TORA_TSTP_AF_Modify
-# Ç¿ÖÆÉ¾³ý
+# Ç¿ï¿½ï¿½É¾ï¿½ï¿½
 TORA_TSTP_AF_ForceDelete = cvar.TORA_TSTP_AF_ForceDelete
-# ×Ô¶¨ÒåÊýÁ¿
+# ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_TOVT_CustomVol = cvar.TORA_TSTP_TOVT_CustomVol
-# Ïà¹ØÊýÁ¿
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_TOVT_RelativeVol = cvar.TORA_TSTP_TOVT_RelativeVol
-# ×Ô¶¨Òå¼Û¸ñ
+# ï¿½Ô¶ï¿½ï¿½ï¿½Û¸ï¿?
 TORA_TSTP_TOPT_CustomPrice = cvar.TORA_TSTP_TOPT_CustomPrice
-# ×îÐÂ¼Û
+# ï¿½ï¿½ï¿½Â¼ï¿½
 TORA_TSTP_TOPT_LastPrice = cvar.TORA_TSTP_TOPT_LastPrice
-# ÂôÒ»¼Û
+# ï¿½ï¿½Ò»ï¿½ï¿½
 TORA_TSTP_TOPT_AskPrice1 = cvar.TORA_TSTP_TOPT_AskPrice1
-# ÂòÒ»¼Û
+# ï¿½ï¿½Ò»ï¿½ï¿½
 TORA_TSTP_TOPT_BidPrice1 = cvar.TORA_TSTP_TOPT_BidPrice1
-# Ïà¹Ø¼Û
+# ï¿½ï¿½Ø¼ï¿?
 TORA_TSTP_TOPT_Relative = cvar.TORA_TSTP_TOPT_Relative
-# ³É½»´¥·¢
+# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CC_TradeTouch = cvar.TORA_TSTP_CC_TradeTouch
-# ³·µ¥´¥·¢
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CC_CancelTouch = cvar.TORA_TSTP_CC_CancelTouch
-# Ê±¼ä´¥·¢
+# Ê±ï¿½ä´¥ï¿½ï¿½
 TORA_TSTP_CC_TimeTouch = cvar.TORA_TSTP_CC_TimeTouch
-# ½»Ò×Ê±¶Î´¥·¢
+# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Î´ï¿½ï¿½ï¿½
 TORA_TSTP_CC_SegmentTouch = cvar.TORA_TSTP_CC_SegmentTouch
-# ×îÐÂ¼Û´óÓÚµÈÓÚÌõ¼þ¼Û
+# ï¿½ï¿½ï¿½Â¼Û´ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CC_LastPriceGreaterThanStopPrice = cvar.TORA_TSTP_CC_LastPriceGreaterThanStopPrice
-# ×îÐÂ¼ÛÐ¡ÓÚµÈÓÚÌõ¼þ¼Û
+# ï¿½ï¿½ï¿½Â¼ï¿½Ð¡ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CC_LastPriceLesserThanStopPrice = cvar.TORA_TSTP_CC_LastPriceLesserThanStopPrice
-# ÂôÒ»¼Û´óÓÚµÈÓÚÌõ¼þ¼Û
+# ï¿½ï¿½Ò»ï¿½Û´ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CC_AskPriceGreaterEqualStopPrice = cvar.TORA_TSTP_CC_AskPriceGreaterEqualStopPrice
-# ÂôÒ»¼ÛÐ¡ÓÚµÈÓÚÌõ¼þ¼Û
+# ï¿½ï¿½Ò»ï¿½ï¿½Ð¡ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CC_AskPriceLesserEqualStopPrice = cvar.TORA_TSTP_CC_AskPriceLesserEqualStopPrice
-# ÂòÒ»¼Û´óÓÚµÈÓÚÌõ¼þ¼Û
+# ï¿½ï¿½Ò»ï¿½Û´ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CC_BidPriceGreaterEqualStopPrice = cvar.TORA_TSTP_CC_BidPriceGreaterEqualStopPrice
-# ÂòÒ»¼ÛÐ¡ÓÚµÈÓÚÌõ¼þ¼Û
+# ï¿½ï¿½Ò»ï¿½ï¿½Ð¡ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CC_BidPriceLesserEqualStopPrice = cvar.TORA_TSTP_CC_BidPriceLesserEqualStopPrice
-# ³õÊ¼
+# ï¿½ï¿½Ê¼
 TORA_TSTP_COST_Initial = cvar.TORA_TSTP_COST_Initial
-# Î´´¥·¢
+# Î´ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_COST_NotTouched = cvar.TORA_TSTP_COST_NotTouched
-# ÒÑ´¥·¢
+# ï¿½Ñ´ï¿½ï¿½ï¿½
 TORA_TSTP_COST_Touched = cvar.TORA_TSTP_COST_Touched
-# ÒÑ½áÊø
+# ï¿½Ñ½ï¿½ï¿½ï¿½
 TORA_TSTP_COST_Finished = cvar.TORA_TSTP_COST_Finished
-# ÒÑ³·Ïú
+# ï¿½Ñ³ï¿½ï¿½ï¿½
 TORA_TSTP_COST_Cancel = cvar.TORA_TSTP_COST_Cancel
-# ´¥·¢Ê§°Ü
+# ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
 TORA_TSTP_COST_Failed = cvar.TORA_TSTP_COST_Failed
-# Í¨ÓÃ(ÄÚ²¿Ê¹ÓÃ)
+# Í¨ï¿½ï¿½(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
 TORA_TSTP_MKD_COMMON = cvar.TORA_TSTP_MKD_COMMON
-# ÉÏº£A¹É
+# ï¿½Ïºï¿½Aï¿½ï¿½
 TORA_TSTP_MKD_SHA = cvar.TORA_TSTP_MKD_SHA
-# ÉîÛÚA¹É
+# ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½
 TORA_TSTP_MKD_SZA = cvar.TORA_TSTP_MKD_SZA
-# ÉÏº£B¹É
+# ï¿½Ïºï¿½Bï¿½ï¿½
 TORA_TSTP_MKD_SHB = cvar.TORA_TSTP_MKD_SHB
-# ÉîÛÚB¹É
+# ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½
 TORA_TSTP_MKD_SZB = cvar.TORA_TSTP_MKD_SZB
-# ÉîÛÚÈý°æA¹É
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½
 TORA_TSTP_MKD_SZThreeA = cvar.TORA_TSTP_MKD_SZThreeA
-# ÉîÛÚÈý°æB¹É
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½
 TORA_TSTP_MKD_SZThreeB = cvar.TORA_TSTP_MKD_SZThreeB
-# ¾³ÍâÊÐ³¡
+# ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½
 TORA_TSTP_MKD_Foreign = cvar.TORA_TSTP_MKD_Foreign
-# ÉîÛÚ¸Û¹ÉÍ¨ÊÐ³¡
+# ï¿½ï¿½ï¿½Ú¸Û¹ï¿½Í¨ï¿½Ð³ï¿½
 TORA_TSTP_MKD_SZHK = cvar.TORA_TSTP_MKD_SZHK
-# ÉÏº£¸Û¹ÉÍ¨ÊÐ³¡
+# ï¿½Ïºï¿½ï¿½Û¹ï¿½Í¨ï¿½Ð³ï¿½
 TORA_TSTP_MKD_SHHK = cvar.TORA_TSTP_MKD_SHHK
-# ±±¾©Ö÷°å
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MKD_BJMain = cvar.TORA_TSTP_MKD_BJMain
 # Î´Öª
 TORA_TSTP_MST_UnKnown = cvar.TORA_TSTP_MST_UnKnown
-# ¿ªÅÌÇ°
+# ï¿½ï¿½ï¿½ï¿½Ç°
 TORA_TSTP_MST_BeforeTrading = cvar.TORA_TSTP_MST_BeforeTrading
-# Á¬Ðø½»Ò×
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MST_Continous = cvar.TORA_TSTP_MST_Continous
-# ÊÕÅÌ
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MST_Closed = cvar.TORA_TSTP_MST_Closed
-# ¿ªÅÌ¼¯ºÏ¾º¼Û
+# ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½Ï¾ï¿½ï¿½ï¿½
 TORA_TSTP_MST_OpenCallAuction = cvar.TORA_TSTP_MST_OpenCallAuction
-# (¸Û¹ÉÍ¨)Î´¿ªÊÐ
+# (ï¿½Û¹ï¿½Í¨)Î´ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKUnopened = cvar.TORA_TSTP_MST_SZSEHKUnopened
-# (¸Û¹ÉÍ¨)¿ªÅÌ¼¯ºÏ¾º¼ÛÊäÈëÂòÂôÅÌ
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½Ï¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKOpenCallAuctionInput = cvar.TORA_TSTP_MST_SZSEHKOpenCallAuctionInput
-# (¸Û¹ÉÍ¨)¿ªÅÌ¼¯ºÏ¾º¼Û¶ÔÅÌÇ°
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½Ï¾ï¿½ï¿½Û¶ï¿½ï¿½ï¿½Ç°
 TORA_TSTP_MST_SZSEHKOpenCallAuctionBeforeMatch = cvar.TORA_TSTP_MST_SZSEHKOpenCallAuctionBeforeMatch
-# (¸Û¹ÉÍ¨)¿ªÅÌ¼¯ºÏ¾º¼Û¶ÔÅÌ
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½Ï¾ï¿½ï¿½Û¶ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKOpenCallAuctionMatch = cvar.TORA_TSTP_MST_SZSEHKOpenCallAuctionMatch
-# (¸Û¹ÉÍ¨)ÔÝÍ£
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½Í£
 TORA_TSTP_MST_SZSEHKHalt = cvar.TORA_TSTP_MST_SZSEHKHalt
-# (¸Û¹ÉÍ¨)³ÖÐø½»Ò×
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKContinous = cvar.TORA_TSTP_MST_SZSEHKContinous
-# (¸Û¹ÉÍ¨)Exchange Intervention
+# (ï¿½Û¹ï¿½Í¨)Exchange Intervention
 TORA_TSTP_MST_SZSEHKExchangeIntervention = cvar.TORA_TSTP_MST_SZSEHKExchangeIntervention
-# (¸Û¹ÉÍ¨)ÊÕÅÌ¼¯ºÏ¾º¼Û²Î¿¼¼Û¶¨¼Û
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½Ï¾ï¿½ï¿½Û²Î¿ï¿½ï¿½Û¶ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKCloseCallAuctionReferencePrice = cvar.TORA_TSTP_MST_SZSEHKCloseCallAuctionReferencePrice
-# (¸Û¹ÉÍ¨)ÊÕÅÌ¼¯ºÏ¾º¼ÛÊäÈëÂòÂôÅÌ
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½Ï¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKCloseCallAuctionInput = cvar.TORA_TSTP_MST_SZSEHKCloseCallAuctionInput
-# (¸Û¹ÉÍ¨)ÊÕÅÌ¼¯ºÏ¾º¼Û²»¿ÉÈ¡Ïû
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½Ï¾ï¿½ï¿½Û²ï¿½ï¿½ï¿½È¡ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKCloseCallAuctionCannotCancel = cvar.TORA_TSTP_MST_SZSEHKCloseCallAuctionCannotCancel
-# (¸Û¹ÉÍ¨)ÊÕÅÌ¼¯ºÏ¾º¼Û¶ÔÅÌ
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½Ï¾ï¿½ï¿½Û¶ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKCloseCallAuctionMatch = cvar.TORA_TSTP_MST_SZSEHKCloseCallAuctionMatch
-# (¸Û¹ÉÍ¨)ÊÕÅÌ¼¯ºÏ¾º¼ÛËæ»úÊÕÊÐ
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½Ï¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_MST_SZSEHKCloseCallAuctionRandomClosed = cvar.TORA_TSTP_MST_SZSEHKCloseCallAuctionRandomClosed
-# (¸Û¹ÉÍ¨)È¡ÏûÂòÂôÅÌ
+# (ï¿½Û¹ï¿½Í¨)È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKCancel = cvar.TORA_TSTP_MST_SZSEHKCancel
-# (¸Û¹ÉÍ¨)ÊÕÊÐ
+# (ï¿½Û¹ï¿½Í¨)ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKClosed = cvar.TORA_TSTP_MST_SZSEHKClosed
-# (¸Û¹ÉÍ¨)È«ÈÕÊÕÊÐ
+# (ï¿½Û¹ï¿½Í¨)È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_MST_SZSEHKWholeClosed = cvar.TORA_TSTP_MST_SZSEHKWholeClosed
-# À¶²¹
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_TRNSD_In = cvar.TORA_TSTP_TRNSD_In
-# ºì³å
+# ï¿½ï¿½ï¿?
 TORA_TSTP_TRNSD_Out = cvar.TORA_TSTP_TRNSD_Out
-# ¼¯ÖÐ½»Ò×µ÷Èë
+# ï¿½ï¿½ï¿½Ð½ï¿½ï¿½×µï¿½ï¿½ï¿½
 TORA_TSTP_TRNSD_MoveIn = cvar.TORA_TSTP_TRNSD_MoveIn
-# ¼¯ÖÐ½»Ò×µ÷³ö
+# ï¿½ï¿½ï¿½Ð½ï¿½ï¿½×µï¿½ï¿½ï¿½
 TORA_TSTP_TRNSD_MoveOut = cvar.TORA_TSTP_TRNSD_MoveOut
-# ¶³½á
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_TRNSD_Freeze = cvar.TORA_TSTP_TRNSD_Freeze
-# ½â¶³
+# ï¿½â¶³
 TORA_TSTP_TRNSD_UnFreeze = cvar.TORA_TSTP_TRNSD_UnFreeze
-# Ö¤È¯×ªÒøÐÐ
+# Ö¤È¯×ªï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_TRNSD_StockToBank = cvar.TORA_TSTP_TRNSD_StockToBank
-# ÒøÐÐ×ªÖ¤È¯
+# ï¿½ï¿½ï¿½ï¿½×ªÖ¤È¯
 TORA_TSTP_TRNSD_BankToStock = cvar.TORA_TSTP_TRNSD_BankToStock
-# Íâ²¿½Úµã×ªÈë
+# ï¿½â²¿ï¿½Úµï¿½×ªï¿½ï¿½
 TORA_TSTP_TRNSD_NodeMoveIn = cvar.TORA_TSTP_TRNSD_NodeMoveIn
-# Íâ²¿½Úµã×ª³ö
+# ï¿½â²¿ï¿½Úµï¿½×ªï¿½ï¿½
 TORA_TSTP_TRNSD_NodeMoveOut = cvar.TORA_TSTP_TRNSD_NodeMoveOut
-# Ö±½Ó»¹¿î
+# Ö±ï¿½Ó»ï¿½ï¿½ï¿½
 TORA_TSTP_TRNSD_CashRepay = cvar.TORA_TSTP_TRNSD_CashRepay
-# Ö±½Ó»¹Ï¢(ÄÚ²¿Ê¹ÓÃ)
+# Ö±ï¿½Ó»ï¿½Ï¢(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
 TORA_TSTP_TRNSD_CashRepayInterestFee = cvar.TORA_TSTP_TRNSD_CashRepayInterestFee
-# ÖÐ¹ú½¨ÉèÒøÐÐ
+# ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_CCB = cvar.TORA_TSTP_BKID_CCB
-# ÖÐ¹úÅ©ÒµÒøÐÐ
+# ï¿½Ð¹ï¿½Å©Òµï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_ABC = cvar.TORA_TSTP_BKID_ABC
-# ÖÐ¹ú¹¤ÉÌÒøÐÐ
+# ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_ICBC = cvar.TORA_TSTP_BKID_ICBC
-# ÖÐ¹úÒøÐÐ
+# ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_BOC = cvar.TORA_TSTP_BKID_BOC
-# ÖÐ¹úÕÐÉÌÒøÐÐ
+# ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_CMB = cvar.TORA_TSTP_BKID_CMB
-# ÖÐ¹ú½»Í¨ÒøÐÐ
+# ï¿½Ð¹ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_BC = cvar.TORA_TSTP_BKID_BC
-# ÆÖ¶«·¢Õ¹ÒøÐÐ
+# ï¿½Ö¶ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_SPDB = cvar.TORA_TSTP_BKID_SPDB
-# ÐËÒµÒøÐÐ
+# ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_CIB = cvar.TORA_TSTP_BKID_CIB
-# ÖÐ¹ú¹â´óÒøÐÐ
+# ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_BKID_CEB = cvar.TORA_TSTP_BKID_CEB
-# ¹ã¶«·¢Õ¹ÒøÐÐ
+# ï¿½ã¶«ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_GDB = cvar.TORA_TSTP_BKID_GDB
-# ÄÏ¾©ÒøÐÐ
+# ï¿½Ï¾ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_NJCB = cvar.TORA_TSTP_BKID_NJCB
-# ÉÏº£ÒøÐÐ
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_SHCB = cvar.TORA_TSTP_BKID_SHCB
-# ÖÐÐÅÒøÐÐ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_CITICB = cvar.TORA_TSTP_BKID_CITICB
-# »ªÏÄÒøÐÐ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_HXB = cvar.TORA_TSTP_BKID_HXB
-# ÃñÉúÒøÐÐ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_CMBC = cvar.TORA_TSTP_BKID_CMBC
-# Æ½°²ÒøÐÐ
+# Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_PACB = cvar.TORA_TSTP_BKID_PACB
-# Äþ²¨ÒøÐÐ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_NBCB = cvar.TORA_TSTP_BKID_NBCB
-# ±±¾©ÒøÐÐ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_BOB = cvar.TORA_TSTP_BKID_BOB
-# ÓÊ´¢ÒøÐÐ
+# ï¿½Ê´ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BKID_PSBC = cvar.TORA_TSTP_BKID_PSBC
-# ×ªÒÆÕýÔÚ´¦Àí
+# ×ªï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½
 TORA_TSTP_TRANST_TranferHandling = cvar.TORA_TSTP_TRANST_TranferHandling
-# ×ªÒÆ³É¹¦
+# ×ªï¿½Æ³É¹ï¿½
 TORA_TSTP_TRANST_TransferSuccess = cvar.TORA_TSTP_TRANST_TransferSuccess
-# ×ªÒÆÊ§°Ü
+# ×ªï¿½ï¿½Ê§ï¿½ï¿½
 TORA_TSTP_TRANST_TransferFail = cvar.TORA_TSTP_TRANST_TransferFail
-# ³åÕýÕýÔÚ´¦Àí
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½
 TORA_TSTP_TRANST_RepealHandling = cvar.TORA_TSTP_TRANST_RepealHandling
-# ³åÕý³É¹¦
+# ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½
 TORA_TSTP_TRANST_RepealSuccess = cvar.TORA_TSTP_TRANST_RepealSuccess
-# ³åÕýÊ§°Ü
+# ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
 TORA_TSTP_TRANST_RepealFail = cvar.TORA_TSTP_TRANST_RepealFail
-# Íâ²¿ÏµÍ³ÒÑ½ÓÊÕ
+# ï¿½â²¿ÏµÍ³ï¿½Ñ½ï¿½ï¿½ï¿½
 TORA_TSTP_TRANST_ExternalAccepted = cvar.TORA_TSTP_TRANST_ExternalAccepted
-# ·¢Íù½»Ò×ºËÐÄ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ºï¿½ï¿½ï¿½
 TORA_TSTP_TRANST_SendTradeEngine = cvar.TORA_TSTP_TRANST_SendTradeEngine
-# ÈÎÒâ²Ö
+# ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_TPT_ALL = cvar.TORA_TSTP_TPT_ALL
-# ×ò²Ö
+# ï¿½ï¿½ï¿?
 TORA_TSTP_TPT_History = cvar.TORA_TSTP_TPT_History
-# ½ñÂòÂô²Ö
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_TPT_TodayBS = cvar.TORA_TSTP_TPT_TodayBS
-# ½ñÉêÊê²Ö
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_TPT_TodayPR = cvar.TORA_TSTP_TPT_TodayPR
-# ½ñ²ð·ÖºÏ²¢²Ö
+# ï¿½ï¿½ï¿½ÖºÏ²ï¿½ï¿½ï¿½
 TORA_TSTP_TPT_TodaySM = cvar.TORA_TSTP_TPT_TodaySM
-# Î´Í¬²½
+# Î´Í¬ï¿½ï¿½
 TORA_TSTP_DS_Asynchronous = cvar.TORA_TSTP_DS_Asynchronous
-# Í¬²½ÖÐ
+# Í¬ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_DS_Synchronizing = cvar.TORA_TSTP_DS_Synchronizing
-# ÒÑÍ¬²½
+# ï¿½ï¿½Í¬ï¿½ï¿½
 TORA_TSTP_DS_Synchronized = cvar.TORA_TSTP_DS_Synchronized
-# È«²¿Í¬²½Íê³É
+# È«ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_DS_AllSynchronized = cvar.TORA_TSTP_DS_AllSynchronized
-# Ô¤Í¬²½Íê³É
+# Ô¤Í¬ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_DS_PreSync = cvar.TORA_TSTP_DS_PreSync
-# Í¨ÓÃ(ÄÚ²¿Ê¹ÓÃ)
+# Í¨ï¿½ï¿½(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
 TORA_TSTP_PID_COMMON = cvar.TORA_TSTP_PID_COMMON
-# ÉÏº£¹ÉÆ±
+# ï¿½Ïºï¿½ï¿½ï¿½Æ±
 TORA_TSTP_PID_SHStock = cvar.TORA_TSTP_PID_SHStock
-# ÉÏº£»ù½ð
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_PID_SHFund = cvar.TORA_TSTP_PID_SHFund
-# ÉÏº£Õ®È¯
+# ï¿½Ïºï¿½Õ®È¯
 TORA_TSTP_PID_SHBond = cvar.TORA_TSTP_PID_SHBond
-# ÉÏº£±ê×¼È¯
+# ï¿½Ïºï¿½ï¿½ï¿½×¼È¯
 TORA_TSTP_PID_SHStandard = cvar.TORA_TSTP_PID_SHStandard
-# ÉÏº£ÖÊÑºÊ½»Ø¹º
+# ï¿½Ïºï¿½ï¿½ï¿½ÑºÊ½ï¿½Ø¹ï¿½
 TORA_TSTP_PID_SHRepurchase = cvar.TORA_TSTP_PID_SHRepurchase
-# ÉîÛÚ¹ÉÆ±
+# ï¿½ï¿½ï¿½Ú¹ï¿½Æ±
 TORA_TSTP_PID_SZStock = cvar.TORA_TSTP_PID_SZStock
-# ÉîÛÚ»ù½ð
+# ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½
 TORA_TSTP_PID_SZFund = cvar.TORA_TSTP_PID_SZFund
-# ÉîÛÚÕ®È¯
+# ï¿½ï¿½ï¿½ï¿½Õ®È¯
 TORA_TSTP_PID_SZBond = cvar.TORA_TSTP_PID_SZBond
-# ÉîÛÚ±ê×¼È¯
+# ï¿½ï¿½ï¿½Ú±ï¿½×¼È¯
 TORA_TSTP_PID_SZStandard = cvar.TORA_TSTP_PID_SZStandard
-# ÉîÛÚÖÊÑºÊ½»Ø¹º
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÑºÊ½ï¿½Ø¹ï¿½
 TORA_TSTP_PID_SZRepurchase = cvar.TORA_TSTP_PID_SZRepurchase
-# Éî¸ÛÍ¨¸Û¹ÉÖ÷°å
+# ï¿½ï¿½ï¿½Í?¿½Û¹ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_PID_SZSEHKMain = cvar.TORA_TSTP_PID_SZSEHKMain
-# Éî¸ÛÍ¨¸Û¹É´´Òµ°å
+# ï¿½ï¿½ï¿½Í?¿½Û¹É´ï¿½Òµï¿½ï¿?
 TORA_TSTP_PID_SZSEHKGEM = cvar.TORA_TSTP_PID_SZSEHKGEM
-# Éî¸ÛÍ¨¸Û¹ÉÀ©³ä½»Ò×Ö¤È¯
+# ï¿½ï¿½ï¿½Í?¿½Û¹ï¿½ï¿½ï¿½ï¿½ä½»ï¿½ï¿½Ö¤È?
 TORA_TSTP_PID_SZSEHKETS = cvar.TORA_TSTP_PID_SZSEHKETS
-# Éî¸ÛÍ¨¸Û¹ÉNasdaqAMXÊÐ³¡
+# ï¿½ï¿½ï¿½Í?¿½Û¹ï¿½NasdaqAMXï¿½Ð³ï¿½
 TORA_TSTP_PID_SZSEHKNasdaqAMX = cvar.TORA_TSTP_PID_SZSEHKNasdaqAMX
-# ÉÏº£¿Æ´´°å
+# ï¿½Ïºï¿½ï¿½Æ´ï¿½ï¿½ï¿½
 TORA_TSTP_PID_SHKC = cvar.TORA_TSTP_PID_SHKC
-# ±±¾©¹ÉÆ±
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ±
 TORA_TSTP_PID_BJStock = cvar.TORA_TSTP_PID_BJStock
-# Í¨ÓÃ(ÄÚ²¿Ê¹ÓÃ)
+# Í¨ï¿½ï¿½(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
 TORA_TSTP_STP_COMMON = cvar.TORA_TSTP_STP_COMMON
-# ÉÏº£A¹É
+# ï¿½Ïºï¿½Aï¿½ï¿½
 TORA_TSTP_STP_SHAShares = cvar.TORA_TSTP_STP_SHAShares
-# ÉÏº£µ¥ÊÐ³¡¹ÉÆ±ETF
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½Æ±ETF
 TORA_TSTP_STP_SHSingleMarketStockETF = cvar.TORA_TSTP_STP_SHSingleMarketStockETF
-# ÉÏº£µ¥ÊÐ³¡ÊµÎïÕ®È¯ETF
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½Ð³ï¿½Êµï¿½ï¿½Õ®È¯ETF
 TORA_TSTP_STP_SHSingleMarketBondETF = cvar.TORA_TSTP_STP_SHSingleMarketBondETF
-# ÉÏº£»Æ½ðETF
+# ï¿½Ïºï¿½ï¿½Æ½ï¿½ETF
 TORA_TSTP_STP_SHGoldETF = cvar.TORA_TSTP_STP_SHGoldETF
-# ÉÏº£»õ±ÒETF
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½ETF
 TORA_TSTP_STP_SHTradableMonetaryFund = cvar.TORA_TSTP_STP_SHTradableMonetaryFund
-# ÉÏº£¹úÕ®µØ·½Õ®
+# ï¿½Ïºï¿½ï¿½ï¿½Õ®ï¿½Ø·ï¿½Õ®
 TORA_TSTP_STP_SHBondNation = cvar.TORA_TSTP_STP_SHBondNation
-# ÉÏº£ÆóÒµÕ®
+# ï¿½Ïºï¿½ï¿½ï¿½ÒµÕ®
 TORA_TSTP_STP_SHBondCorporation = cvar.TORA_TSTP_STP_SHBondCorporation
-# ÉÏº£¹«Ë¾Õ®
+# ï¿½Ïºï¿½ï¿½ï¿½Ë¾Õ®
 TORA_TSTP_STP_SHBondCompany = cvar.TORA_TSTP_STP_SHBondCompany
-# ÉÏº£¿É×ªÕ®
+# ï¿½Ïºï¿½ï¿½ï¿½×ªÕ®
 TORA_TSTP_STP_SHBondConversion = cvar.TORA_TSTP_STP_SHBondConversion
-# ÉÏº£·ÖÀëÕ®
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½Õ®
 TORA_TSTP_STP_SHBondSeparation = cvar.TORA_TSTP_STP_SHBondSeparation
-# ÉÏº£±ê×¼È¯
+# ï¿½Ïºï¿½ï¿½ï¿½×¼È¯
 TORA_TSTP_STP_SHStandard = cvar.TORA_TSTP_STP_SHStandard
-# ÉÏº£ÖÊÑºÊ½»Ø¹º
+# ï¿½Ïºï¿½ï¿½ï¿½ÑºÊ½ï¿½Ø¹ï¿½
 TORA_TSTP_STP_SHRepo = cvar.TORA_TSTP_STP_SHRepo
-# ÉÏº£·â±ÕÊ½»ù½ð
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_STP_SHCEFund = cvar.TORA_TSTP_STP_SHCEFund
-# ÉÏº£¿ª·ÅÊ½»ù½ð
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SHOEFund = cvar.TORA_TSTP_STP_SHOEFund
-# ÉÏº£¿çÊÐ³¡ETF
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½Ð³ï¿½ETF
 TORA_TSTP_STP_SHCrossMarketStockETF = cvar.TORA_TSTP_STP_SHCrossMarketStockETF
-# ÉÏº£¿ç¾³ETF
+# ï¿½Ïºï¿½ï¿½ç¾³ETF
 TORA_TSTP_STP_SHCrossBorderETF = cvar.TORA_TSTP_STP_SHCrossBorderETF
-# ÉÏº£·Ö¼¶Ä¸»ù½ð
+# ï¿½Ïºï¿½ï¿½Ö¼ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SHMontherStructFund = cvar.TORA_TSTP_STP_SHMontherStructFund
-# ÉÏº£·Ö¼¶×Ó»ù½ð
+# ï¿½Ïºï¿½ï¿½Ö¼ï¿½ï¿½Ó»ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SHSubStructFund = cvar.TORA_TSTP_STP_SHSubStructFund
-# ÉÏº£ÊµÊ±ÉêÊê»õ±Ò»ù½ð
+# ï¿½Ïºï¿½ÊµÊ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿?
 TORA_TSTP_STP_SHRealTimeMonetaryFund = cvar.TORA_TSTP_STP_SHRealTimeMonetaryFund
-# ÉÏº£¿É½»»»Õ®
+# ï¿½Ïºï¿½ï¿½É½ï¿½ï¿½ï¿½Õ®
 TORA_TSTP_STP_SHExchangeableBond = cvar.TORA_TSTP_STP_SHExchangeableBond
-# ÉÏº£±ê×¼LOF»ù½ð
+# ï¿½Ïºï¿½ï¿½ï¿½×¼LOFï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SHLOF = cvar.TORA_TSTP_STP_SHLOF
-# ÉîÛÚÖ÷°åA¹É
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½
 TORA_TSTP_STP_SZMainAShares = cvar.TORA_TSTP_STP_SZMainAShares
-# ÉîÛÚÖÐÐ¡ÆóÒµ°å
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Òµï¿½ï¿½
 TORA_TSTP_STP_SZSME = cvar.TORA_TSTP_STP_SZSME
-# ÉîÛÚ¹úÕ®¡¢µØ·½Õ®
+# ï¿½ï¿½ï¿½Ú¹ï¿½Õ®ï¿½ï¿½ï¿½Ø·ï¿½Õ®
 TORA_TSTP_STP_SZBondNation = cvar.TORA_TSTP_STP_SZBondNation
-# ÉîÛÚÆóÒµÕ®
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒµÕ®
 TORA_TSTP_STP_SZBondCorporation = cvar.TORA_TSTP_STP_SZBondCorporation
-# ÉîÛÚ¹«Ë¾Õ®
+# ï¿½ï¿½ï¿½Ú¹ï¿½Ë¾Õ®
 TORA_TSTP_STP_SZBondCompany = cvar.TORA_TSTP_STP_SZBondCompany
-# ÉîÛÚ¿É×ªÕ®
+# ï¿½ï¿½ï¿½Ú¿ï¿½×ªÕ®
 TORA_TSTP_STP_SZBondConversion = cvar.TORA_TSTP_STP_SZBondConversion
-# ÉîÛÚ·ÖÀëÕ®
+# ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½Õ®
 TORA_TSTP_STP_SZBondSeparation = cvar.TORA_TSTP_STP_SZBondSeparation
-# ÉîÛÚ´´Òµ°å(×¢²áÖÆ)
+# ï¿½ï¿½ï¿½Ú´ï¿½Òµï¿½ï¿½(×¢ï¿½ï¿½ï¿½ï¿½)
 TORA_TSTP_STP_SZGEMReg = cvar.TORA_TSTP_STP_SZGEMReg
-# ÉîÛÚ´´Òµ°å¿É×ªÕ®(×¢²áÖÆ)
+# ï¿½ï¿½ï¿½Ú´ï¿½Òµï¿½ï¿½ï¿½×??(×¢ï¿½ï¿½ï¿½ï¿½)
 TORA_TSTP_STP_SZGEMBondConversionReg = cvar.TORA_TSTP_STP_SZGEMBondConversionReg
-# ÉîÛÚ¿ç¾³ETF
+# ï¿½ï¿½ï¿½Ú¿ç¾³ETF
 TORA_TSTP_STP_SZCrossBorderETF = cvar.TORA_TSTP_STP_SZCrossBorderETF
-# ÉîÛÚ»Æ½ðETF
+# ï¿½ï¿½ï¿½Ú»Æ½ï¿½ETF
 TORA_TSTP_STP_SZGoldETF = cvar.TORA_TSTP_STP_SZGoldETF
-# ÉîÛÚÏÖ½ðÕ®È¯ETF
+# ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½Õ®È¯ETF
 TORA_TSTP_STP_SZCashBondETF = cvar.TORA_TSTP_STP_SZCashBondETF
-# ÉîÛÚµ¥ÊÐ³¡¹ÉÆ±ETF
+# ï¿½ï¿½ï¿½Úµï¿½ï¿½Ð³ï¿½ï¿½ï¿½Æ±ETF
 TORA_TSTP_STP_SZSingleMarketStockETF = cvar.TORA_TSTP_STP_SZSingleMarketStockETF
-# ÉîÛÚµ¥ÊÐ³¡ÊµÎïÕ®È¯ETF
+# ï¿½ï¿½ï¿½Úµï¿½ï¿½Ð³ï¿½Êµï¿½ï¿½Õ®È¯ETF
 TORA_TSTP_STP_SZSingleMarketBondETF = cvar.TORA_TSTP_STP_SZSingleMarketBondETF
-# ÉîÛÚ»õ±ÒETF
+# ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½ETF
 TORA_TSTP_STP_SZMonetaryFundETF = cvar.TORA_TSTP_STP_SZMonetaryFundETF
-# ÉîÛÚ´´Òµ°å
+# ï¿½ï¿½ï¿½Ú´ï¿½Òµï¿½ï¿½
 TORA_TSTP_STP_SZGEM = cvar.TORA_TSTP_STP_SZGEM
-# ÉîÛÚ´´Òµ°å¿É½»»»Õ®
+# ï¿½ï¿½ï¿½Ú´ï¿½Òµï¿½ï¿½É½ï¿½ï¿½ï¿½Õ?
 TORA_TSTP_STP_SZGEMExchangeableBond = cvar.TORA_TSTP_STP_SZGEMExchangeableBond
-# ÉîÛÚ´´Òµ°å¿É½»»»Õ®(×¢²áÖÆ)
+# ï¿½ï¿½ï¿½Ú´ï¿½Òµï¿½ï¿½É½ï¿½ï¿½ï¿½Õ?(×¢ï¿½ï¿½ï¿½ï¿½)
 TORA_TSTP_STP_SZGEMExchangeableBondReg = cvar.TORA_TSTP_STP_SZGEMExchangeableBondReg
-# ÉîÛÚ±ê×¼È¯
+# ï¿½ï¿½ï¿½Ú±ï¿½×¼È¯
 TORA_TSTP_STP_SZStandard = cvar.TORA_TSTP_STP_SZStandard
-# ÉîÛÚÖÊÑºÊ½»Ø¹º
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÑºÊ½ï¿½Ø¹ï¿½
 TORA_TSTP_STP_SZRepo = cvar.TORA_TSTP_STP_SZRepo
-# ÉîÛÚ·â±ÕÊ½»ù½ð
+# ï¿½ï¿½ï¿½Ú·ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_STP_SZCEFund = cvar.TORA_TSTP_STP_SZCEFund
-# ÉîÛÚ¿ª·ÅÊ½»ù½ð
+# ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SZOEFund = cvar.TORA_TSTP_STP_SZOEFund
-# ÉîÛÚ¿ç¾³¿ª·ÅÊ½»ù½ð
+# ï¿½ï¿½ï¿½Ú¿ç¾³ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SZCrossBorderOEFund = cvar.TORA_TSTP_STP_SZCrossBorderOEFund
-# ÉîÛÚ¿çÊÐ³¡¹ÉÆ±ETF
+# ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½Ð³ï¿½ï¿½ï¿½Æ±ETF
 TORA_TSTP_STP_SZCrossMarketStockETF = cvar.TORA_TSTP_STP_SZCrossMarketStockETF
-# ÉîÛÚ±ê×¼LOF»ù½ð
+# ï¿½ï¿½ï¿½Ú±ï¿½×¼LOFï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SZLOF = cvar.TORA_TSTP_STP_SZLOF
-# ÉîÛÚ¿ç¾³LOF»ù½ð
+# ï¿½ï¿½ï¿½Ú¿ç¾³LOFï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SZCrossBorderLOF = cvar.TORA_TSTP_STP_SZCrossBorderLOF
-# ÉîÛÚ´«Í³·Ö¼¶Ä¸»ù½ð
+# ï¿½ï¿½ï¿½Ú´ï¿½Í³ï¿½Ö¼ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SZMontherStructFund = cvar.TORA_TSTP_STP_SZMontherStructFund
-# ÉîÛÚ´«Í³·Ö¼¶×Ó»ù½ð
+# ï¿½ï¿½ï¿½Ú´ï¿½Í³ï¿½Ö¼ï¿½ï¿½Ó»ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SZSubStructFund = cvar.TORA_TSTP_STP_SZSubStructFund
-# ÉîÛÚ¿ç¾³·Ö¼¶Ä¸»ù½ð
+# ï¿½ï¿½ï¿½Ú¿ç¾³ï¿½Ö¼ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SZMontherCrossBorderStructFund = cvar.TORA_TSTP_STP_SZMontherCrossBorderStructFund
-# ÉîÛÚ¿ç¾³·Ö¼¶×Ó»ù½ð
+# ï¿½ï¿½ï¿½Ú¿ç¾³ï¿½Ö¼ï¿½ï¿½Ó»ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SZSubCrossBorderStructFund = cvar.TORA_TSTP_STP_SZSubCrossBorderStructFund
-# ÉîÛÚ¿É½»»»Õ®
+# ï¿½ï¿½ï¿½Ú¿É½ï¿½ï¿½ï¿½Õ®
 TORA_TSTP_STP_SZExchangeableBond = cvar.TORA_TSTP_STP_SZExchangeableBond
-# ÉîÛÚ´´Òµ°å¿É×ªÕ®
+# ï¿½ï¿½ï¿½Ú´ï¿½Òµï¿½ï¿½ï¿½×??
 TORA_TSTP_STP_SZGEMBondConversion = cvar.TORA_TSTP_STP_SZGEMBondConversion
-# Éî¸ÛÍ¨¸Û¹ÉÕ®È¯
+# ï¿½ï¿½ï¿½Í?¿½Û¹ï¿½Õ??
 TORA_TSTP_STP_SZSEHKBond = cvar.TORA_TSTP_STP_SZSEHKBond
-# Éî¸ÛÍ¨¸Û¹ÉÒ»Àº×ÓÈ¨Ö¤
+# ï¿½ï¿½ï¿½Í?¿½Û¹ï¿½Ò»ï¿½ï¿½ï¿½ï¿½È¨Ö?
 TORA_TSTP_STP_SZSEHKBasketWarrant = cvar.TORA_TSTP_STP_SZSEHKBasketWarrant
-# Éî¸ÛÍ¨¸Û¹É¹É±¾
+# ï¿½ï¿½ï¿½Í?¿½Û¹É¹É±ï¿?
 TORA_TSTP_STP_SZSEHKEquity = cvar.TORA_TSTP_STP_SZSEHKEquity
-# Éî¸ÛÍ¨¸Û¹ÉÐÅÍÐ
+# ï¿½ï¿½ï¿½Í?¿½Û¹ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_STP_SZSEHKTrust = cvar.TORA_TSTP_STP_SZSEHKTrust
-# Éî¸ÛÍ¨¸Û¹ÉÈ¨Ö¤
+# ï¿½ï¿½ï¿½Í?¿½Û¹ï¿½È¨Ö?
 TORA_TSTP_STP_SZSEHKWarrant = cvar.TORA_TSTP_STP_SZSEHKWarrant
-# ÉÏº£´æÍÐÆ¾Ö¤
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½Æ¾Ö¤
 TORA_TSTP_STP_SHCDR = cvar.TORA_TSTP_STP_SHCDR
-# ÉÏº£¿Æ´´°å¹ÉÆ±
+# ï¿½Ïºï¿½ï¿½Æ´ï¿½ï¿½ï¿½ï¿½Æ?
 TORA_TSTP_STP_SHKC = cvar.TORA_TSTP_STP_SHKC
-# ¿Æ´´°å²úÆ·£¨ÉÏÊÐºóÇ°5¸ö½»Ò×ÈÕ£©
+# ï¿½Æ´ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½Ç?5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ£ï¿½
 TORA_TSTP_STP_SHKC1 = cvar.TORA_TSTP_STP_SHKC1
-# ÉÏº£¿Æ´´°å´æÍÐÆ¾Ö¤
+# ï¿½Ïºï¿½ï¿½Æ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¾Ö?
 TORA_TSTP_STP_SHKCCDR = cvar.TORA_TSTP_STP_SHKCCDR
-# ÉîÛÚÖ÷°å¡¢ÖÐÐ¡°å´´ÐÂÆóÒµ¹ÉÆ±»ò´æÍÐÆ¾Ö¤
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å¡¢ï¿½ï¿½Ð¡ï¿½å´´ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½Æ¾Ö?
 TORA_TSTP_STP_SZCDR = cvar.TORA_TSTP_STP_SZCDR
-# ÉîÛÚ´´Òµ°å´´ÐÂÆóÒµ¹ÉÆ±»ò´æÍÐÆ¾Ö¤
+# ï¿½ï¿½ï¿½Ú´ï¿½Òµï¿½å´´ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½Æ¾Ö?
 TORA_TSTP_STP_SZGEMCDR = cvar.TORA_TSTP_STP_SZGEMCDR
-# ÉîÛÚ´´Òµ°å´´ÐÂÆóÒµ¹ÉÆ±»ò´æÍÐÆ¾Ö¤(×¢²áÖÆ)
+# ï¿½ï¿½ï¿½Ú´ï¿½Òµï¿½å´´ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½Æ¾Ö?(×¢ï¿½ï¿½ï¿½ï¿½)
 TORA_TSTP_STP_SZGEMCDRReg = cvar.TORA_TSTP_STP_SZGEMCDRReg
-# ÉîÛÚÉÌÆ·ÆÚ»õETF
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½Ú»ï¿½ETF
 TORA_TSTP_STP_SZCommFuturesETF = cvar.TORA_TSTP_STP_SZCommFuturesETF
-# ÉîÛÚ»ù´¡ÉèÊ©»ù½ð
+# ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½ï¿½ï¿½Ê©ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SZInfrastructureFund = cvar.TORA_TSTP_STP_SZInfrastructureFund
-# ÉÏº£¿Æ´´°åETF
+# ï¿½Ïºï¿½ï¿½Æ´ï¿½ï¿½ï¿½ETF
 TORA_TSTP_STP_SHKCETF = cvar.TORA_TSTP_STP_SHKCETF
-# ÉÏº£¿Æ´´°åLOF
+# ï¿½Ïºï¿½ï¿½Æ´ï¿½ï¿½ï¿½LOF
 TORA_TSTP_STP_SHKCLOF = cvar.TORA_TSTP_STP_SHKCLOF
-# ÉÏº£¿Æ´´°å¿É×ªÕ®
+# ï¿½Ïºï¿½ï¿½Æ´ï¿½ï¿½ï¿½ï¿½×??
 TORA_TSTP_STP_SHKCBondConversion = cvar.TORA_TSTP_STP_SHKCBondConversion
-# ÉÏº£¶¨Ïò¿É×ªÕ®
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×??
 TORA_TSTP_STP_SHOrientedConversionBond = cvar.TORA_TSTP_STP_SHOrientedConversionBond
-# ÉîÛÚ¶¨Ïò¿É×ªÕ®
+# ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½×??
 TORA_TSTP_STP_SZOrientedConversionBond = cvar.TORA_TSTP_STP_SZOrientedConversionBond
-# ÉÏº£»ù´¡ÉèÊ©»ù½ð
+# ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê©ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_STP_SHInfrastructureFund = cvar.TORA_TSTP_STP_SHInfrastructureFund
-# ±±¾©¹ÉÆ±
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ±
 TORA_TSTP_STP_BJStock = cvar.TORA_TSTP_STP_BJStock
-# ÊÖ
+# ï¿½ï¿½
 TORA_TSTP_OUT_Shou = cvar.TORA_TSTP_OUT_Shou
-# ¹É
+# ï¿½ï¿½
 TORA_TSTP_OUT_Gu = cvar.TORA_TSTP_OUT_Gu
-# ·Ý
+# ï¿½ï¿½
 TORA_TSTP_OUT_Fen = cvar.TORA_TSTP_OUT_Fen
-# ÕÅ
+# ï¿½ï¿½
 TORA_TSTP_OUT_Zhang = cvar.TORA_TSTP_OUT_Zhang
-# ÊÐÖµÅäÊÛ·½Ê½
+# ï¿½ï¿½Öµï¿½ï¿½ï¿½Û·ï¿½Ê½
 TORA_TSTP_IMO_ValueLimit = cvar.TORA_TSTP_IMO_ValueLimit
-# Ôö·¢¶¨¼Û·½Ê½
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û·ï¿½Ê½
 TORA_TSTP_IMO_AddIssue = cvar.TORA_TSTP_IMO_AddIssue
-# ÐÅÓÃÉê¹º·½Ê½
+# ï¿½ï¿½ï¿½ï¿½ï¿½ê¹ºï¿½ï¿½Ê½
 TORA_TSTP_IMO_Credit = cvar.TORA_TSTP_IMO_Credit
-# ¶¨¼Û·¢ÐÐ(±±½»Ëù)
+# ï¿½ï¿½ï¿½Û·ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 TORA_TSTP_IMO_Fixed = cvar.TORA_TSTP_IMO_Fixed
-# ¾º¼Û·¢ÐÐ(±±½»Ëù)
+# ï¿½ï¿½ï¿½Û·ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 TORA_TSTP_IMO_Auction = cvar.TORA_TSTP_IMO_Auction
-# ÆôÓÃ
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_USTS_Enabled = cvar.TORA_TSTP_USTS_Enabled
-# ½ûÓÃ
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_USTS_Disabled = cvar.TORA_TSTP_USTS_Disabled
-# Ëø¶¨
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_USTS_Locked = cvar.TORA_TSTP_USTS_Locked
-# ¸öÈË
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CT_Person = cvar.TORA_TSTP_CT_Person
-# »ú¹¹
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CT_Company = cvar.TORA_TSTP_CT_Company
-# ×ÔÓª
+# ï¿½ï¿½Óª
 TORA_TSTP_CT_SelfOperate = cvar.TORA_TSTP_CT_SelfOperate
-# ²âÊÔ
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CT_Test = cvar.TORA_TSTP_CT_Test
-# ×éÖ¯»ú¹¹´úÂë
+# ï¿½ï¿½Ö¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_ICT_EID = cvar.TORA_TSTP_ICT_EID
-# ÖÐ¹ú¹«ÃñÉí·ÝÖ¤
+# ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_IDCard = cvar.TORA_TSTP_ICT_IDCard
-# ¾ü¹ÙÖ¤
+# ï¿½ï¿½ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_OfficerIDCard = cvar.TORA_TSTP_ICT_OfficerIDCard
-# ¾¯¹ÙÖ¤
+# ï¿½ï¿½ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_PoliceIDCard = cvar.TORA_TSTP_ICT_PoliceIDCard
-# Ê¿±øÖ¤
+# Ê¿ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_SoldierIDCard = cvar.TORA_TSTP_ICT_SoldierIDCard
-# »§¿Ú²¾
+# ï¿½ï¿½ï¿½Ú²ï¿½
 TORA_TSTP_ICT_HouseholdRegister = cvar.TORA_TSTP_ICT_HouseholdRegister
-# »¤ÕÕ
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_ICT_Passport = cvar.TORA_TSTP_ICT_Passport
-# Ì¨°ûÖ¤
+# Ì¨ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_TaiwanCompatriotIDCard = cvar.TORA_TSTP_ICT_TaiwanCompatriotIDCard
-# »ØÏçÖ¤
+# ï¿½ï¿½ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_HomeComingCard = cvar.TORA_TSTP_ICT_HomeComingCard
-# ÓªÒµÖ´ÕÕºÅ
+# ÓªÒµÖ´ï¿½Õºï¿½
 TORA_TSTP_ICT_LicenseNo = cvar.TORA_TSTP_ICT_LicenseNo
-# Ë°ÎñµÇ¼ÇºÅ/µ±µØÄÉË°ID
+# Ë°ï¿½ï¿½Ç¼Çºï¿?/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë°ID
 TORA_TSTP_ICT_TaxNo = cvar.TORA_TSTP_ICT_TaxNo
-# ¸Û°Ä¾ÓÃñÀ´ÍùÄÚµØÍ¨ÐÐÖ¤
+# ï¿½Û°Ä¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Í¨ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_HMMainlandTravelPermit = cvar.TORA_TSTP_ICT_HMMainlandTravelPermit
-# Ì¨Íå¾ÓÃñÀ´Íù´óÂ½Í¨ÐÐÖ¤
+# Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â½Í?¿½ï¿½Ö?
 TORA_TSTP_ICT_TwMainlandTravelPermit = cvar.TORA_TSTP_ICT_TwMainlandTravelPermit
-# ¼ÝÕÕ
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_ICT_DrivingLicense = cvar.TORA_TSTP_ICT_DrivingLicense
-# µ±µØÉç±£ID
+# ï¿½ï¿½ï¿½ï¿½ï¿½ç±£ID
 TORA_TSTP_ICT_SocialID = cvar.TORA_TSTP_ICT_SocialID
-# µ±µØÉí·ÝÖ¤
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_LocalID = cvar.TORA_TSTP_ICT_LocalID
-# ÉÌÒµµÇ¼ÇÖ¤
+# ï¿½ï¿½Òµï¿½Ç¼ï¿½Ö¤
 TORA_TSTP_ICT_BusinessRegistration = cvar.TORA_TSTP_ICT_BusinessRegistration
-# ¸Û°ÄÓÀ¾ÃÐÔ¾ÓÃñÉí·ÝÖ¤
+# ï¿½Û°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_HKMCIDCard = cvar.TORA_TSTP_ICT_HKMCIDCard
-# ÈËÐÐ¿ª»§Ðí¿ÉÖ¤
+# ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤
 TORA_TSTP_ICT_AccountsPermits = cvar.TORA_TSTP_ICT_AccountsPermits
-# ÆäËûÖ¤¼þ
+# ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½
 TORA_TSTP_ICT_OtherCard = cvar.TORA_TSTP_ICT_OtherCard
-# Õý³£
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_TS_Normal = cvar.TORA_TSTP_TS_Normal
-# ÕýÔÚÇ¿Æ½
+# ï¿½ï¿½ï¿½ï¿½Ç¿Æ½
 TORA_TSTP_TS_ForceClosing = cvar.TORA_TSTP_TS_ForceClosing
-# Òì³£
+# ï¿½ì³£
 TORA_TSTP_TS_Exception = cvar.TORA_TSTP_TS_Exception
-# ·Ç×¨ÒµÍ¶×ÊÕß
+# ï¿½ï¿½×¨ÒµÍ¶ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_PIT_Normal = cvar.TORA_TSTP_PIT_Normal
-# ×¨ÒµÍ¶×ÊÕß
+# ×¨ÒµÍ¶ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_PIT_Professional = cvar.TORA_TSTP_PIT_Professional
-# ±ê×¼Ì×²Í
+# ï¿½ï¿½×¼ï¿½×²ï¿½
 TORA_TSTP_PLTP_Standard = cvar.TORA_TSTP_PLTP_Standard
-# ÖÇÄÜÌ×²Í
+# ï¿½ï¿½ï¿½ï¿½ï¿½×²ï¿½
 TORA_TSTP_PLTP_Smart = cvar.TORA_TSTP_PLTP_Smart
-# Ô¤Áô1
+# Ô¤ï¿½ï¿½1
 TORA_TSTP_PLTP_Reserve1 = cvar.TORA_TSTP_PLTP_Reserve1
-# Ô¤Áô2
+# Ô¤ï¿½ï¿½2
 TORA_TSTP_PLTP_Reserve2 = cvar.TORA_TSTP_PLTP_Reserve2
-# Î´¶¨ÒåÀàÐÍ£¨ÄÚ²¿Ê¹ÓÃ£©
+# Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½Ú²ï¿½Ê¹ï¿½Ã£ï¿½
 TORA_TSTP_PLTP_Undefined = cvar.TORA_TSTP_PLTP_Undefined
-# Í¶»ú
+# Í¶ï¿½ï¿½
 TORA_TSTP_SIDT_Speculation = cvar.TORA_TSTP_SIDT_Speculation
-# Ì×Àû
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_SIDT_Arbitrage = cvar.TORA_TSTP_SIDT_Arbitrage
-# Ì×±£
+# ï¿½×±ï¿½
 TORA_TSTP_SIDT_Hedge = cvar.TORA_TSTP_SIDT_Hedge
-# ÆÕÍ¨
+# ï¿½ï¿½Í¨
 TORA_TSTP_SIDT_Normal = cvar.TORA_TSTP_SIDT_Normal
-# ÐÅÓÃ
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_SIDT_Credit = cvar.TORA_TSTP_SIDT_Credit
-# ÑÜÉúÆ·
+# ï¿½ï¿½ï¿½ï¿½Æ·
 TORA_TSTP_SIDT_Derivatives = cvar.TORA_TSTP_SIDT_Derivatives
-# Ô¤Âñ
+# Ô¤ï¿½ï¿½
 TORA_TSTP_CORDS_Cached = cvar.TORA_TSTP_CORDS_Cached
-# ÒÑÌá½»
+# ï¿½ï¿½ï¿½á½»
 TORA_TSTP_CORDS_Submitted = cvar.TORA_TSTP_CORDS_Submitted
-# ³É¹¦
+# ï¿½É¹ï¿½
 TORA_TSTP_CORDS_Success = cvar.TORA_TSTP_CORDS_Success
-# ¾Ü¾ø
+# ï¿½Ü¾ï¿½
 TORA_TSTP_CORDS_Rejected = cvar.TORA_TSTP_CORDS_Rejected
-# ÆÕÍ¨³·µ¥
+# ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CORDT_Normal = cvar.TORA_TSTP_CORDT_Normal
-# Ç¿ÖÆ³·µ¥
+# Ç¿ï¿½Æ³ï¿½ï¿½ï¿½
 TORA_TSTP_CORDT_Force = cvar.TORA_TSTP_CORDT_Force
-# Ô¤Âñ³·µ¥
+# Ô¤ï¿½ñ³·µï¿½
 TORA_TSTP_CORDT_Cache = cvar.TORA_TSTP_CORDT_Cache
-# Í¨µÀ³·µ¥
+# Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CORDT_Board = cvar.TORA_TSTP_CORDT_Board
-# ÆÕÍ¨
+# ï¿½ï¿½Í¨
 TORA_TSTP_FAT_Normal = cvar.TORA_TSTP_FAT_Normal
-# ÐÅÓÃ
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_FAT_Credit = cvar.TORA_TSTP_FAT_Credit
-# ÑÜÉúÆ·
+# ï¿½ï¿½ï¿½ï¿½Æ·
 TORA_TSTP_FAT_Derivatives = cvar.TORA_TSTP_FAT_Derivatives
-# ÂòÈë
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_Buy = cvar.TORA_TSTP_BC_Buy
-# Âô³ö
+# ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_Sell = cvar.TORA_TSTP_BC_Sell
-# ETFÉê¹º
+# ETFï¿½ê¹º
 TORA_TSTP_BC_ETFPur = cvar.TORA_TSTP_BC_ETFPur
-# ETFÊê»Ø
+# ETFï¿½ï¿½ï¿?
 TORA_TSTP_BC_ETFRed = cvar.TORA_TSTP_BC_ETFRed
-# ÐÂ¹ÉÉê¹º
+# ï¿½Â¹ï¿½ï¿½ê¹º
 TORA_TSTP_BC_SubscribingShares = cvar.TORA_TSTP_BC_SubscribingShares
-# Õý»Ø¹º
+# ï¿½ï¿½ï¿½Ø¹ï¿½
 TORA_TSTP_BC_Repurchase = cvar.TORA_TSTP_BC_Repurchase
-# Äæ»Ø¹º
+# ï¿½ï¿½Ø¹ï¿?
 TORA_TSTP_BC_ReverseRepur = cvar.TORA_TSTP_BC_ReverseRepur
-# ¿ª·ÅÊ½»ù½ðÉê¹º
+# ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ê¹º
 TORA_TSTP_BC_OeFundPur = cvar.TORA_TSTP_BC_OeFundPur
-# ¿ª·ÅÊ½»ù½ðÊê»Ø
+# ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_BC_OeFundRed = cvar.TORA_TSTP_BC_OeFundRed
-# µ£±£Æ·»®Èë
+# ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_CollateralIn = cvar.TORA_TSTP_BC_CollateralIn
-# µ£±£Æ·»®³ö
+# ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_CollateralOut = cvar.TORA_TSTP_BC_CollateralOut
-# ÖÊÑºÈë¿â
+# ï¿½ï¿½Ñºï¿½ï¿½ï¿?
 TORA_TSTP_BC_PledgeIn = cvar.TORA_TSTP_BC_PledgeIn
-# ÖÊÑº³ö¿â
+# ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_PledgeOut = cvar.TORA_TSTP_BC_PledgeOut
-# Åä¹ÉÅäÕ®
+# ï¿½ï¿½ï¿½ï¿½ï¿½Õ?
 TORA_TSTP_BC_Rationed = cvar.TORA_TSTP_BC_Rationed
-# ¿ª·ÅÊ½»ù½ð²ð·Ö
+# ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_Split = cvar.TORA_TSTP_BC_Split
-# ¿ª·ÅÊ½»ù½ðºÏ²¢
+# ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ï²ï¿?
 TORA_TSTP_BC_Merge = cvar.TORA_TSTP_BC_Merge
-# ÈÚ×ÊÂòÈë
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_CreditBuy = cvar.TORA_TSTP_BC_CreditBuy
-# ÈÚÈ¯Âô³ö
+# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_CreditSell = cvar.TORA_TSTP_BC_CreditSell
-# ÂôÈ¯»¹¿î
+# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_SellRepay = cvar.TORA_TSTP_BC_SellRepay
-# ÂòÈ¯»¹È¯
+# ï¿½ï¿½È¯ï¿½ï¿½È¯
 TORA_TSTP_BC_BuyRepay = cvar.TORA_TSTP_BC_BuyRepay
-# »¹È¯»®×ª
+# ï¿½ï¿½È¯ï¿½ï¿½×ª
 TORA_TSTP_BC_RepayTransfer = cvar.TORA_TSTP_BC_RepayTransfer
-# ÓàÈ¯»®×ª
+# ï¿½ï¿½È¯ï¿½ï¿½×ª
 TORA_TSTP_BC_SurplusTransfer = cvar.TORA_TSTP_BC_SurplusTransfer
-# Ô´È¯»®×ª
+# Ô´È¯ï¿½ï¿½×ª
 TORA_TSTP_BC_SourceTransfer = cvar.TORA_TSTP_BC_SourceTransfer
-# ÂôÈ¯Ç¿Æ½»¹¿î(ÄÚ²¿Ê¹ÓÃ)
+# ï¿½ï¿½È¯Ç¿Æ½ï¿½ï¿½ï¿½ï¿½(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
 TORA_TSTP_BC_ForceSellRepay = cvar.TORA_TSTP_BC_ForceSellRepay
-# ÂòÈ¯Ç¿Æ½»¹È¯(ÄÚ²¿Ê¹ÓÃ)
+# ï¿½ï¿½È¯Ç¿Æ½ï¿½ï¿½È¯(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
 TORA_TSTP_BC_ForceBuyRepay = cvar.TORA_TSTP_BC_ForceBuyRepay
-# ¸ºÕ®Õ¹ÆÚ(ÄÚ²¿Ê¹ÓÃ)
+# ï¿½ï¿½Õ®Õ¹ï¿½ï¿½(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
 TORA_TSTP_BC_DebtExtend = cvar.TORA_TSTP_BC_DebtExtend
-# ×ªÍÐ¹Ü
+# ×ªï¿½Ð¹ï¿½
 TORA_TSTP_BC_CustodyTransfer = cvar.TORA_TSTP_BC_CustodyTransfer
-# Õ®È¯×ª¹É
+# Õ®È¯×ªï¿½ï¿½
 TORA_TSTP_BC_BondConvertStock = cvar.TORA_TSTP_BC_BondConvertStock
-# Õ®È¯»ØÊÛ
+# Õ®È¯ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_BC_BondPutback = cvar.TORA_TSTP_BC_BondPutback
-# ETFÊµÎïÉê¹º
+# ETFÊµï¿½ï¿½ï¿½ê¹º
 TORA_TSTP_BC_ETFOtPur = cvar.TORA_TSTP_BC_ETFOtPur
-# ETFÊµÎïÊê»Ø
+# ETFÊµï¿½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_BC_ETFOtRed = cvar.TORA_TSTP_BC_ETFOtRed
-# »ØÊÛ³·Ïú
+# ï¿½ï¿½ï¿½Û³ï¿½ï¿½ï¿½
 TORA_TSTP_BC_PutbackRelieve = cvar.TORA_TSTP_BC_PutbackRelieve
-# Ã«Ó¶½ð
+# Ã«Ó¶ï¿½ï¿½
 TORA_TSTP_BT_Gross = cvar.TORA_TSTP_BT_Gross
-# ¾»Ó¶½ð
+# ï¿½ï¿½Ó¶ï¿½ï¿½
 TORA_TSTP_BT_Net = cvar.TORA_TSTP_BT_Net
-# ÊµÊ±ÉÏ³¡
+# ÊµÊ±ï¿½Ï³ï¿½
 TORA_TSTP_OPRTSRC_DBCommand = cvar.TORA_TSTP_OPRTSRC_DBCommand
-# APIµ÷ÓÃ
+# APIï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_OPRTSRC_SyncAPI = cvar.TORA_TSTP_OPRTSRC_SyncAPI
-# ×Ô¶¯´¥·¢
+# ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_OPRTSRC_AutoTrigger = cvar.TORA_TSTP_OPRTSRC_AutoTrigger
-# API½ô¼±ÉÏ³¡
+# APIï¿½ï¿½ï¿½ï¿½ï¿½Ï³ï¿½
 TORA_TSTP_OPRTSRC_EmergencyAPI = cvar.TORA_TSTP_OPRTSRC_EmergencyAPI
-# ´´Òµ°å
+# ï¿½ï¿½Òµï¿½ï¿½
 TORA_TSTP_SPLT_GEM = cvar.TORA_TSTP_SPLT_GEM
-# ·çÏÕ¾¯Ê¾°å
+# ï¿½ï¿½ï¿½Õ¾ï¿½Ê¾ï¿½ï¿½
 TORA_TSTP_SPLT_RiskWarning = cvar.TORA_TSTP_SPLT_RiskWarning
-# ÍËÊÐÕûÀí°å
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_SPLT_Delisting = cvar.TORA_TSTP_SPLT_Delisting
-# ¸Û¹ÉÍ¨
+# ï¿½Û¹ï¿½Í¨
 TORA_TSTP_SPLT_SZSEHK = cvar.TORA_TSTP_SPLT_SZSEHK
-# ¿Æ´´°å
+# ï¿½Æ´ï¿½ï¿½ï¿½
 TORA_TSTP_SPLT_SHKC = cvar.TORA_TSTP_SPLT_SHKC
-# ´´Òµ°å×¢²áÖÆ
+# ï¿½ï¿½Òµï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_SPLT_GEMRegistration = cvar.TORA_TSTP_SPLT_GEMRegistration
-# ·Ö¼¶»ù½ð
+# ï¿½Ö¼ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_SPLT_StructFund = cvar.TORA_TSTP_SPLT_StructFund
-# ¿É×ªÕ®
+# ï¿½ï¿½×ªÕ®
 TORA_TSTP_SPLT_ConvertBond = cvar.TORA_TSTP_SPLT_ConvertBond
-# »ù´¡ÉèÊ©»ù½ð
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê©ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_SPLT_InfrastructureFund = cvar.TORA_TSTP_SPLT_InfrastructureFund
-# ¶¨Ïò¿É×ªÕ®
+# ï¿½ï¿½ï¿½ï¿½ï¿½×??
 TORA_TSTP_SPLT_OrientedConvertBond = cvar.TORA_TSTP_SPLT_OrientedConvertBond
-# ±±½»Ëù¹ÉÆ±
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ±
 TORA_TSTP_SPLT_BJStock = cvar.TORA_TSTP_SPLT_BJStock
-# ÆÕÍ¨ÉêÊê
+# ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CRT_IS = cvar.TORA_TSTP_CRT_IS
-# ÊµÎïÉêÊê
+# Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_CRT_OS = cvar.TORA_TSTP_CRT_OS
-# ½ûÖ¹ÏÖ½ðÌæ´ú
+# ï¿½ï¿½Ö¹ï¿½Ö½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_ETFCTSTAT_Forbidden = cvar.TORA_TSTP_ETFCTSTAT_Forbidden
-# ¿ÉÒÔÏÖ½ðÌæ´ú
+# ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_ETFCTSTAT_Allow = cvar.TORA_TSTP_ETFCTSTAT_Allow
-# ±ØÐëÏÖ½ðÌæ´ú
+# ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_ETFCTSTAT_Force = cvar.TORA_TSTP_ETFCTSTAT_Force
-# ¿çÊÐÍË²¹ÏÖ½ðÌæ´ú
+# ï¿½ï¿½ï¿½ï¿½ï¿½Ë²ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_ETFCTSTAT_CBAllow = cvar.TORA_TSTP_ETFCTSTAT_CBAllow
-# ¿çÊÐ±ØÐëÏÖ½ðÌæ´ú
+# ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿?
 TORA_TSTP_ETFCTSTAT_CBForce = cvar.TORA_TSTP_ETFCTSTAT_CBForce
-# ¹É±¾Ö¤È¯
+# ï¿½É±ï¿½Ö¤È¯
 TORA_TSTP_PTID_Stock = cvar.TORA_TSTP_PTID_Stock
-# Õ®ÎñÖ¤È¯
+# Õ®ï¿½ï¿½Ö¤È¯
 TORA_TSTP_PTID_Bond = cvar.TORA_TSTP_PTID_Bond
-# ¹ÉÆ±ÆÚÈ¨
+# ï¿½ï¿½Æ±ï¿½ï¿½È¨
 TORA_TSTP_PTID_Option = cvar.TORA_TSTP_PTID_Option
-# ÂòÂô»ù½ð
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_PTID_Fund = cvar.TORA_TSTP_PTID_Fund
-# ¼Û¸ñÉÏÏÂÏÞ
+# ï¿½Û¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_PPT_LimitPrice = cvar.TORA_TSTP_PPT_LimitPrice
-# ¼Û²î×é
+# ï¿½Û²ï¿½ï¿½ï¿½
 TORA_TSTP_PPT_PriceTick = cvar.TORA_TSTP_PPT_PriceTick
-# ±ê×¼LOF
+# ï¿½ï¿½×¼LOF
 TORA_TSTP_FUT_Normal = cvar.TORA_TSTP_FUT_Normal
-# ·Ö¼¶Ä¸»ù½ð
+# ï¿½Ö¼ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½
 TORA_TSTP_FUT_Mother = cvar.TORA_TSTP_FUT_Mother
-# ·Ö¼¶×Ó»ù½ð
+# ï¿½Ö¼ï¿½ï¿½Ó»ï¿½ï¿½ï¿½
 TORA_TSTP_FUT_Sub = cvar.TORA_TSTP_FUT_Sub
 # TCPÄ£Ê½
 TORA_TSTP_TCM_TCP = cvar.TORA_TSTP_TCM_TCP
@@ -1044,81 +1044,81 @@ TORA_TSTP_TCM_PROXY = cvar.TORA_TSTP_TCM_PROXY
 
 
 
-#########################################µÇÂ¼ÏìÓ¦############################################
+#########################################ï¿½ï¿½Â¼ï¿½ï¿½Ó¦############################################
 class CTORATstpRspUserLoginField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpRspUserLoginField_UserRequestID_get, _traderapi.CTORATstpRspUserLoginField_UserRequestID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpRspUserLoginField_DepartmentID_get, _traderapi.CTORATstpRspUserLoginField_DepartmentID_set)
 
-	# µÇÂ¼ÕË»§
+	# ï¿½ï¿½Â¼ï¿½Ë»ï¿½
     LogInAccount = property(_traderapi.CTORATstpRspUserLoginField_LogInAccount_get, _traderapi.CTORATstpRspUserLoginField_LogInAccount_set)
 
-	# µÇÂ¼ÕË»§ÀàÐÍ
+	# ï¿½ï¿½Â¼ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     LogInAccountType = property(_traderapi.CTORATstpRspUserLoginField_LogInAccountType_get, _traderapi.CTORATstpRspUserLoginField_LogInAccountType_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpRspUserLoginField_FrontID_get, _traderapi.CTORATstpRspUserLoginField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpRspUserLoginField_SessionID_get, _traderapi.CTORATstpRspUserLoginField_SessionID_set)
 
-	# ×î´ó±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ó±¨µï¿½ï¿½ï¿½ï¿½ï¿?
     MaxOrderRef = property(_traderapi.CTORATstpRspUserLoginField_MaxOrderRef_get, _traderapi.CTORATstpRspUserLoginField_MaxOrderRef_set)
 
-	# Ë½ÓÐÁ÷³¤¶È
+	# Ë½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     PrivateFlowCount = property(_traderapi.CTORATstpRspUserLoginField_PrivateFlowCount_get, _traderapi.CTORATstpRspUserLoginField_PrivateFlowCount_set)
 
-	# ¹«ÓÐÁ÷³¤¶È
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     PublicFlowCount = property(_traderapi.CTORATstpRspUserLoginField_PublicFlowCount_get, _traderapi.CTORATstpRspUserLoginField_PublicFlowCount_set)
 
-	# µÇÂ¼Ê±¼ä
+	# ï¿½ï¿½Â¼Ê±ï¿½ï¿½
     LoginTime = property(_traderapi.CTORATstpRspUserLoginField_LoginTime_get, _traderapi.CTORATstpRspUserLoginField_LoginTime_set)
 
-	# ½»Ò×ÏµÍ³Ãû³Æ
+	# ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½
     SystemName = property(_traderapi.CTORATstpRspUserLoginField_SystemName_get, _traderapi.CTORATstpRspUserLoginField_SystemName_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpRspUserLoginField_TradingDay_get, _traderapi.CTORATstpRspUserLoginField_TradingDay_set)
 
-	# ÓÃ»§´úÂë
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserID = property(_traderapi.CTORATstpRspUserLoginField_UserID_get, _traderapi.CTORATstpRspUserLoginField_UserID_set)
 
-	# ÓÃ»§Ãû³Æ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserName = property(_traderapi.CTORATstpRspUserLoginField_UserName_get, _traderapi.CTORATstpRspUserLoginField_UserName_set)
 
-	# ÓÃ»§ÀàÐÍ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserType = property(_traderapi.CTORATstpRspUserLoginField_UserType_get, _traderapi.CTORATstpRspUserLoginField_UserType_set)
 
-	# ±¨µ¥Á÷¿Ø
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderInsertCommFlux = property(_traderapi.CTORATstpRspUserLoginField_OrderInsertCommFlux_get, _traderapi.CTORATstpRspUserLoginField_OrderInsertCommFlux_set)
 
-	# ³·µ¥Á÷¿Ø
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderActionCommFlux = property(_traderapi.CTORATstpRspUserLoginField_OrderActionCommFlux_get, _traderapi.CTORATstpRspUserLoginField_OrderActionCommFlux_set)
 
-	# ÃÜÂëµ½ÆÚÈÕÆÚ
+	# ï¿½ï¿½ï¿½ëµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     PasswordExpiryDate = property(_traderapi.CTORATstpRspUserLoginField_PasswordExpiryDate_get, _traderapi.CTORATstpRspUserLoginField_PasswordExpiryDate_set)
 
-	# ÊÇ·ñÐèÒª¸ÄÃÜ
+	# ï¿½Ç·ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½
     NeedUpdatePassword = property(_traderapi.CTORATstpRspUserLoginField_NeedUpdatePassword_get, _traderapi.CTORATstpRspUserLoginField_NeedUpdatePassword_set)
 
-	# ÈÏÖ¤ÐòÁÐºÅ
+	# ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½Ðºï¿½
     CertSerial = property(_traderapi.CTORATstpRspUserLoginField_CertSerial_get, _traderapi.CTORATstpRspUserLoginField_CertSerial_set)
 
-	# ÄÚÍøIPµØÖ·
+	# ï¿½ï¿½ï¿½ï¿½IPï¿½ï¿½Ö·
     InnerIPAddress = property(_traderapi.CTORATstpRspUserLoginField_InnerIPAddress_get, _traderapi.CTORATstpRspUserLoginField_InnerIPAddress_set)
 
-	# ÍâÍøIPµØÖ·
+	# ï¿½ï¿½ï¿½ï¿½IPï¿½ï¿½Ö·
     OuterIPAddress = property(_traderapi.CTORATstpRspUserLoginField_OuterIPAddress_get, _traderapi.CTORATstpRspUserLoginField_OuterIPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpRspUserLoginField_MacAddress_get, _traderapi.CTORATstpRspUserLoginField_MacAddress_set)
 
-	# ¹ØÁª½Úµã±àºÅ(ÄÚ²¿Ê¹ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½(ï¿½Ú²ï¿½Ê¹ï¿½ï¿½)
     NodeRef = property(_traderapi.CTORATstpRspUserLoginField_NodeRef_get, _traderapi.CTORATstpRspUserLoginField_NodeRef_set)
 
     def __init__(self):
@@ -1131,15 +1131,15 @@ _traderapi.CTORATstpRspUserLoginField_swigregister(CTORATstpRspUserLoginField)
 
 
 
-#########################################ÏìÓ¦ÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ó¦ï¿½ï¿½Ï¢############################################
 class CTORATstpRspInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ´íÎó´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     ErrorID = property(_traderapi.CTORATstpRspInfoField_ErrorID_get, _traderapi.CTORATstpRspInfoField_ErrorID_set)
 
-	# ´íÎóÐÅÏ¢
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     ErrorMsg = property(_traderapi.CTORATstpRspInfoField_ErrorMsg_get, _traderapi.CTORATstpRspInfoField_ErrorMsg_set)
 
     def __init__(self):
@@ -1152,15 +1152,15 @@ _traderapi.CTORATstpRspInfoField_swigregister(CTORATstpRspInfoField)
 
 
 
-#########################################ÓÃ»§µÇ³ö############################################
+#########################################ï¿½Ã»ï¿½ï¿½Ç³ï¿½############################################
 class CTORATstpUserLogoutField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpUserLogoutField_UserRequestID_get, _traderapi.CTORATstpUserLogoutField_UserRequestID_set)
 
-	# ÓÃ»§´úÂë
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserID = property(_traderapi.CTORATstpUserLogoutField_UserID_get, _traderapi.CTORATstpUserLogoutField_UserID_set)
 
     def __init__(self):
@@ -1173,21 +1173,21 @@ _traderapi.CTORATstpUserLogoutField_swigregister(CTORATstpUserLogoutField)
 
 
 
-#########################################ÐÞ¸ÄÓÃ»§ÃÜÂë############################################
+#########################################ï¿½Þ¸ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpUserPasswordUpdateField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§´úÂë
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserID = property(_traderapi.CTORATstpUserPasswordUpdateField_UserID_get, _traderapi.CTORATstpUserPasswordUpdateField_UserID_set)
 
-	# ¾ÉÃÜÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OldPassword = property(_traderapi.CTORATstpUserPasswordUpdateField_OldPassword_get, _traderapi.CTORATstpUserPasswordUpdateField_OldPassword_set)
 
-	# ÐÂÃÜÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     NewPassword = property(_traderapi.CTORATstpUserPasswordUpdateField_NewPassword_get, _traderapi.CTORATstpUserPasswordUpdateField_NewPassword_set)
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpUserPasswordUpdateField_UserRequestID_get, _traderapi.CTORATstpUserPasswordUpdateField_UserRequestID_set)
 
     def __init__(self):
@@ -1200,24 +1200,24 @@ _traderapi.CTORATstpUserPasswordUpdateField_swigregister(CTORATstpUserPasswordUp
 
 
 
-#########################################ÇëÇóÂ¼ÈëÉè±¸ÐòÁÐ############################################
+#########################################ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpReqInputDeviceSerialField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpReqInputDeviceSerialField_UserRequestID_get, _traderapi.CTORATstpReqInputDeviceSerialField_UserRequestID_set)
 
-	# ÓÃ»§´úÂë
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserID = property(_traderapi.CTORATstpReqInputDeviceSerialField_UserID_get, _traderapi.CTORATstpReqInputDeviceSerialField_UserID_set)
 
-	# Éè±¸±êÊ¶
+	# ï¿½è±¸ï¿½ï¿½Ê¶
     DeviceID = property(_traderapi.CTORATstpReqInputDeviceSerialField_DeviceID_get, _traderapi.CTORATstpReqInputDeviceSerialField_DeviceID_set)
 
-	# Éè±¸ÐòÁÐºÅ
+	# ï¿½è±¸ï¿½ï¿½ï¿½Ðºï¿½
     CertSerial = property(_traderapi.CTORATstpReqInputDeviceSerialField_CertSerial_get, _traderapi.CTORATstpReqInputDeviceSerialField_CertSerial_set)
 
-	# Éè±¸Àà±ð
+	# ï¿½è±¸ï¿½ï¿½ï¿?
     DeviceType = property(_traderapi.CTORATstpReqInputDeviceSerialField_DeviceType_get, _traderapi.CTORATstpReqInputDeviceSerialField_DeviceType_set)
 
     def __init__(self):
@@ -1230,15 +1230,15 @@ _traderapi.CTORATstpReqInputDeviceSerialField_swigregister(CTORATstpReqInputDevi
 
 
 
-#########################################Â¼ÈëÉè±¸ÐòÁÐÏìÓ¦############################################
+#########################################Â¼ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦############################################
 class CTORATstpRspInputDeviceSerialField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpRspInputDeviceSerialField_UserRequestID_get, _traderapi.CTORATstpRspInputDeviceSerialField_UserRequestID_set)
 
-	# ÓÃ»§´úÂë
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserID = property(_traderapi.CTORATstpRspInputDeviceSerialField_UserID_get, _traderapi.CTORATstpRspInputDeviceSerialField_UserID_set)
 
     def __init__(self):
@@ -1251,81 +1251,81 @@ _traderapi.CTORATstpRspInputDeviceSerialField_swigregister(CTORATstpRspInputDevi
 
 
 
-#########################################ÊäÈë±¨µ¥############################################
+#########################################ï¿½ï¿½ï¿½ë±¨ï¿½ï¿½############################################
 class CTORATstpInputOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputOrderField_UserRequestID_get, _traderapi.CTORATstpInputOrderField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInputOrderField_ExchangeID_get, _traderapi.CTORATstpInputOrderField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInputOrderField_InvestorID_get, _traderapi.CTORATstpInputOrderField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpInputOrderField_BusinessUnitID_get, _traderapi.CTORATstpInputOrderField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpInputOrderField_ShareholderID_get, _traderapi.CTORATstpInputOrderField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpInputOrderField_SecurityID_get, _traderapi.CTORATstpInputOrderField_SecurityID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpInputOrderField_Direction_get, _traderapi.CTORATstpInputOrderField_Direction_set)
 
-	# ¼Û¸ñ
+	# ï¿½Û¸ï¿½
     LimitPrice = property(_traderapi.CTORATstpInputOrderField_LimitPrice_get, _traderapi.CTORATstpInputOrderField_LimitPrice_set)
 
-	# ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½
     VolumeTotalOriginal = property(_traderapi.CTORATstpInputOrderField_VolumeTotalOriginal_get, _traderapi.CTORATstpInputOrderField_VolumeTotalOriginal_set)
 
-	# ±¨µ¥¼Û¸ñÌõ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderPriceType = property(_traderapi.CTORATstpInputOrderField_OrderPriceType_get, _traderapi.CTORATstpInputOrderField_OrderPriceType_set)
 
-	# ÓÐÐ§ÆÚÀàÐÍ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TimeCondition = property(_traderapi.CTORATstpInputOrderField_TimeCondition_get, _traderapi.CTORATstpInputOrderField_TimeCondition_set)
 
-	# ³É½»Á¿ÀàÐÍ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeCondition = property(_traderapi.CTORATstpInputOrderField_VolumeCondition_get, _traderapi.CTORATstpInputOrderField_VolumeCondition_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpInputOrderField_Operway_get, _traderapi.CTORATstpInputOrderField_Operway_set)
 
-	# ±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderRef = property(_traderapi.CTORATstpInputOrderField_OrderRef_get, _traderapi.CTORATstpInputOrderField_OrderRef_set)
 
-	# ¸Û¹ÉÍ¨¶©µ¥ÊýÁ¿ÀàÐÍ
+	# ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     LotType = property(_traderapi.CTORATstpInputOrderField_LotType_get, _traderapi.CTORATstpInputOrderField_LotType_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpInputOrderField_OrderSysID_get, _traderapi.CTORATstpInputOrderField_OrderSysID_set)
 
-	# Ìõ¼þ¼ì²é
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondCheck = property(_traderapi.CTORATstpInputOrderField_CondCheck_get, _traderapi.CTORATstpInputOrderField_CondCheck_set)
 
-	# ÓÐÐ§ÈÕÆÚ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½
     GTDate = property(_traderapi.CTORATstpInputOrderField_GTDate_get, _traderapi.CTORATstpInputOrderField_GTDate_set)
 
-	# Ç¿Æ½Ô­Òò(Á½ÈÚ×¨ÓÃ)
+	# Ç¿Æ½Ô­ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     ForceCloseReason = property(_traderapi.CTORATstpInputOrderField_ForceCloseReason_get, _traderapi.CTORATstpInputOrderField_ForceCloseReason_set)
 
-	# Ö¸¶¨³¥»¹µÄÐÅÓÃ¸ºÕ®±àºÅ£¨¸Ã×Ö¶ÎÖÃ¿Õ±íÊ¾²»Ö¸¶¨³¥»¹£©(Á½ÈÚ×¨ÓÃ)
+	# Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Õ®ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½Ã¿Õ±ï¿½Ê¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditDebtID = property(_traderapi.CTORATstpInputOrderField_CreditDebtID_get, _traderapi.CTORATstpInputOrderField_CreditDebtID_set)
 
-	# Í·´çÀàÐÍ(Á½ÈÚ×¨ÓÃ)
+	# Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditQuotaType = property(_traderapi.CTORATstpInputOrderField_CreditQuotaType_get, _traderapi.CTORATstpInputOrderField_CreditQuotaType_set)
 
-	# ·ÑÏ¢ÕÛ¿ÛÈ¯±àºÅ£¨0±íÊ¾²»Ê¹ÓÃÕÛ¿ÛÈ¯£©(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½Ï¢ï¿½Û¿ï¿½È¯ï¿½ï¿½Å£ï¿?0ï¿½ï¿½Ê¾ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Û¿ï¿½È¯ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     DiscountCouponID = property(_traderapi.CTORATstpInputOrderField_DiscountCouponID_get, _traderapi.CTORATstpInputOrderField_DiscountCouponID_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpInputOrderField_SInfo_get, _traderapi.CTORATstpInputOrderField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpInputOrderField_IInfo_get, _traderapi.CTORATstpInputOrderField_IInfo_set)
 
     def __init__(self):
@@ -1338,168 +1338,168 @@ _traderapi.CTORATstpInputOrderField_swigregister(CTORATstpInputOrderField)
 
 
 
-#########################################±¨µ¥############################################
+#########################################ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpOrderField_ExchangeID_get, _traderapi.CTORATstpOrderField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpOrderField_InvestorID_get, _traderapi.CTORATstpOrderField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpOrderField_BusinessUnitID_get, _traderapi.CTORATstpOrderField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpOrderField_ShareholderID_get, _traderapi.CTORATstpOrderField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpOrderField_SecurityID_get, _traderapi.CTORATstpOrderField_SecurityID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpOrderField_Direction_get, _traderapi.CTORATstpOrderField_Direction_set)
 
-	# ±¨µ¥¼Û¸ñÌõ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderPriceType = property(_traderapi.CTORATstpOrderField_OrderPriceType_get, _traderapi.CTORATstpOrderField_OrderPriceType_set)
 
-	# ÓÐÐ§ÆÚÀàÐÍ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TimeCondition = property(_traderapi.CTORATstpOrderField_TimeCondition_get, _traderapi.CTORATstpOrderField_TimeCondition_set)
 
-	# ³É½»Á¿ÀàÐÍ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeCondition = property(_traderapi.CTORATstpOrderField_VolumeCondition_get, _traderapi.CTORATstpOrderField_VolumeCondition_set)
 
-	# ¼Û¸ñ
+	# ï¿½Û¸ï¿½
     LimitPrice = property(_traderapi.CTORATstpOrderField_LimitPrice_get, _traderapi.CTORATstpOrderField_LimitPrice_set)
 
-	# ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½
     VolumeTotalOriginal = property(_traderapi.CTORATstpOrderField_VolumeTotalOriginal_get, _traderapi.CTORATstpOrderField_VolumeTotalOriginal_set)
 
-	# ¸Û¹ÉÍ¨¶©µ¥ÊýÁ¿ÀàÐÍ
+	# ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     LotType = property(_traderapi.CTORATstpOrderField_LotType_get, _traderapi.CTORATstpOrderField_LotType_set)
 
-	# ÓÐÐ§ÈÕÆÚ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½
     GTDate = property(_traderapi.CTORATstpOrderField_GTDate_get, _traderapi.CTORATstpOrderField_GTDate_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpOrderField_Operway_get, _traderapi.CTORATstpOrderField_Operway_set)
 
-	# Ìõ¼þ¼ì²é
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondCheck = property(_traderapi.CTORATstpOrderField_CondCheck_get, _traderapi.CTORATstpOrderField_CondCheck_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpOrderField_SInfo_get, _traderapi.CTORATstpOrderField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpOrderField_IInfo_get, _traderapi.CTORATstpOrderField_IInfo_set)
 
-	# ÇëÇó±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RequestID = property(_traderapi.CTORATstpOrderField_RequestID_get, _traderapi.CTORATstpOrderField_RequestID_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpOrderField_FrontID_get, _traderapi.CTORATstpOrderField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpOrderField_SessionID_get, _traderapi.CTORATstpOrderField_SessionID_set)
 
-	# ±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderRef = property(_traderapi.CTORATstpOrderField_OrderRef_get, _traderapi.CTORATstpOrderField_OrderRef_set)
 
-	# ±¾µØ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpOrderField_OrderLocalID_get, _traderapi.CTORATstpOrderField_OrderLocalID_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpOrderField_OrderSysID_get, _traderapi.CTORATstpOrderField_OrderSysID_set)
 
-	# ±¨µ¥×´Ì¬
+	# ï¿½ï¿½ï¿½ï¿½×´Ì¬
     OrderStatus = property(_traderapi.CTORATstpOrderField_OrderStatus_get, _traderapi.CTORATstpOrderField_OrderStatus_set)
 
-	# ±¨µ¥Ìá½»×´Ì¬
+	# ï¿½ï¿½ï¿½ï¿½ï¿½á½»×´Ì¬
     OrderSubmitStatus = property(_traderapi.CTORATstpOrderField_OrderSubmitStatus_get, _traderapi.CTORATstpOrderField_OrderSubmitStatus_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpOrderField_StatusMsg_get, _traderapi.CTORATstpOrderField_StatusMsg_set)
 
-	# ÒÑ³É½»ÊýÁ¿
+	# ï¿½Ñ³É½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeTraded = property(_traderapi.CTORATstpOrderField_VolumeTraded_get, _traderapi.CTORATstpOrderField_VolumeTraded_set)
 
-	# ÒÑ³·ÏúÊýÁ¿
+	# ï¿½Ñ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeCanceled = property(_traderapi.CTORATstpOrderField_VolumeCanceled_get, _traderapi.CTORATstpOrderField_VolumeCanceled_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpOrderField_TradingDay_get, _traderapi.CTORATstpOrderField_TradingDay_set)
 
-	# Éê±¨ÓÃ»§
+	# ï¿½ê±¨ï¿½Ã»ï¿½
     InsertUser = property(_traderapi.CTORATstpOrderField_InsertUser_get, _traderapi.CTORATstpOrderField_InsertUser_set)
 
-	# Éê±¨ÈÕÆÚ
+	# ï¿½ê±¨ï¿½ï¿½ï¿½ï¿½
     InsertDate = property(_traderapi.CTORATstpOrderField_InsertDate_get, _traderapi.CTORATstpOrderField_InsertDate_set)
 
-	# Éê±¨Ê±¼ä
+	# ï¿½ê±¨Ê±ï¿½ï¿½
     InsertTime = property(_traderapi.CTORATstpOrderField_InsertTime_get, _traderapi.CTORATstpOrderField_InsertTime_set)
 
-	# ½»Ò×Ëù½ÓÊÕÊ±¼ä
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     AcceptTime = property(_traderapi.CTORATstpOrderField_AcceptTime_get, _traderapi.CTORATstpOrderField_AcceptTime_set)
 
-	# ³·ÏúÓÃ»§
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
     CancelUser = property(_traderapi.CTORATstpOrderField_CancelUser_get, _traderapi.CTORATstpOrderField_CancelUser_set)
 
-	# ³·ÏúÊ±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     CancelTime = property(_traderapi.CTORATstpOrderField_CancelTime_get, _traderapi.CTORATstpOrderField_CancelTime_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpOrderField_DepartmentID_get, _traderapi.CTORATstpOrderField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpOrderField_AccountID_get, _traderapi.CTORATstpOrderField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpOrderField_CurrencyID_get, _traderapi.CTORATstpOrderField_CurrencyID_set)
 
-	# ½»Ò×µ¥Ôª´úÂë
+	# ï¿½ï¿½ï¿½×µï¿½Ôªï¿½ï¿½ï¿½ï¿½
     PbuID = property(_traderapi.CTORATstpOrderField_PbuID_get, _traderapi.CTORATstpOrderField_PbuID_set)
 
-	# ³É½»½ð¶î
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿?
     Turnover = property(_traderapi.CTORATstpOrderField_Turnover_get, _traderapi.CTORATstpOrderField_Turnover_set)
 
-	# ±¨µ¥ÀàÐÍ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderType = property(_traderapi.CTORATstpOrderField_OrderType_get, _traderapi.CTORATstpOrderField_OrderType_set)
 
-	# ÓÃ»§¶Ë²úÆ·ÐÅÏ¢
+	# ï¿½Ã»ï¿½ï¿½Ë²ï¿½Æ·ï¿½ï¿½Ï¢
     UserProductInfo = property(_traderapi.CTORATstpOrderField_UserProductInfo_get, _traderapi.CTORATstpOrderField_UserProductInfo_set)
 
-	# Ç¿Æ½Ô­Òò(Á½ÈÚ×¨ÓÃ)
+	# Ç¿Æ½Ô­ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     ForceCloseReason = property(_traderapi.CTORATstpOrderField_ForceCloseReason_get, _traderapi.CTORATstpOrderField_ForceCloseReason_set)
 
-	# ÐÅÓÃÍ·´ç±àºÅ(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditQuotaID = property(_traderapi.CTORATstpOrderField_CreditQuotaID_get, _traderapi.CTORATstpOrderField_CreditQuotaID_set)
 
-	# Í·´çÀàÐÍ(Á½ÈÚ×¨ÓÃ)
+	# Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditQuotaType = property(_traderapi.CTORATstpOrderField_CreditQuotaType_get, _traderapi.CTORATstpOrderField_CreditQuotaType_set)
 
-	# ÐÅÓÃ¸ºÕ®±àºÅ(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½Ã¸ï¿½Õ®ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditDebtID = property(_traderapi.CTORATstpOrderField_CreditDebtID_get, _traderapi.CTORATstpOrderField_CreditDebtID_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpOrderField_IPAddress_get, _traderapi.CTORATstpOrderField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpOrderField_MacAddress_get, _traderapi.CTORATstpOrderField_MacAddress_set)
 
-	# »Ø±¨¸½¼Ó¸¡µãÐÍÊý¾ÝÐÅÏ¢
+	# ï¿½Ø±ï¿½ï¿½ï¿½ï¿½Ó¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     RtnFloatInfo = property(_traderapi.CTORATstpOrderField_RtnFloatInfo_get, _traderapi.CTORATstpOrderField_RtnFloatInfo_set)
 
-	# »Ø±¨¸½¼ÓÕûÐÍÊý¾Ý
+	# ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RtnIntInfo = property(_traderapi.CTORATstpOrderField_RtnIntInfo_get, _traderapi.CTORATstpOrderField_RtnIntInfo_set)
 
-	# »Ø±¨¸½¼Ó¸¡µãÐÍÊý¾Ý1
+	# ï¿½Ø±ï¿½ï¿½ï¿½ï¿½Ó¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
     RtnFloatInfo1 = property(_traderapi.CTORATstpOrderField_RtnFloatInfo1_get, _traderapi.CTORATstpOrderField_RtnFloatInfo1_set)
 
-	# »Ø±¨¸½¼Ó¸¡µãÐÍÊý¾Ý2
+	# ï¿½Ø±ï¿½ï¿½ï¿½ï¿½Ó¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
     RtnFloatInfo2 = property(_traderapi.CTORATstpOrderField_RtnFloatInfo2_get, _traderapi.CTORATstpOrderField_RtnFloatInfo2_set)
 
-	# »Ø±¨¸½¼Ó¸¡µãÐÍÊý¾Ý3
+	# ï¿½Ø±ï¿½ï¿½ï¿½ï¿½Ó¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3
     RtnFloatInfo3 = property(_traderapi.CTORATstpOrderField_RtnFloatInfo3_get, _traderapi.CTORATstpOrderField_RtnFloatInfo3_set)
 
     def __init__(self):
@@ -1512,12 +1512,12 @@ _traderapi.CTORATstpOrderField_swigregister(CTORATstpOrderField)
 
 
 
-#########################################ÓÃ»§±êÊ¶############################################
+#########################################ï¿½Ã»ï¿½ï¿½ï¿½Ê¶############################################
 class CTORATstpUserRefField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§´úÂë
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserID = property(_traderapi.CTORATstpUserRefField_UserID_get, _traderapi.CTORATstpUserRefField_UserID_set)
 
     def __init__(self):
@@ -1530,66 +1530,66 @@ _traderapi.CTORATstpUserRefField_swigregister(CTORATstpUserRefField)
 
 
 
-#########################################³É½»############################################
+#########################################ï¿½É½ï¿½############################################
 class CTORATstpTradeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpTradeField_ExchangeID_get, _traderapi.CTORATstpTradeField_ExchangeID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpTradeField_DepartmentID_get, _traderapi.CTORATstpTradeField_DepartmentID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpTradeField_InvestorID_get, _traderapi.CTORATstpTradeField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpTradeField_BusinessUnitID_get, _traderapi.CTORATstpTradeField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpTradeField_ShareholderID_get, _traderapi.CTORATstpTradeField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpTradeField_SecurityID_get, _traderapi.CTORATstpTradeField_SecurityID_set)
 
-	# ³É½»±àºÅ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿?
     TradeID = property(_traderapi.CTORATstpTradeField_TradeID_get, _traderapi.CTORATstpTradeField_TradeID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpTradeField_Direction_get, _traderapi.CTORATstpTradeField_Direction_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpTradeField_OrderSysID_get, _traderapi.CTORATstpTradeField_OrderSysID_set)
 
-	# ±¾µØ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpTradeField_OrderLocalID_get, _traderapi.CTORATstpTradeField_OrderLocalID_set)
 
-	# ³É½»¼Û¸ñ
+	# ï¿½É½ï¿½ï¿½Û¸ï¿½
     Price = property(_traderapi.CTORATstpTradeField_Price_get, _traderapi.CTORATstpTradeField_Price_set)
 
-	# ³É½»ÊýÁ¿
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½
     Volume = property(_traderapi.CTORATstpTradeField_Volume_get, _traderapi.CTORATstpTradeField_Volume_set)
 
-	# ³É½»ÈÕÆÚ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradeDate = property(_traderapi.CTORATstpTradeField_TradeDate_get, _traderapi.CTORATstpTradeField_TradeDate_set)
 
-	# ³É½»Ê±¼ä
+	# ï¿½É½ï¿½Ê±ï¿½ï¿½
     TradeTime = property(_traderapi.CTORATstpTradeField_TradeTime_get, _traderapi.CTORATstpTradeField_TradeTime_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpTradeField_TradingDay_get, _traderapi.CTORATstpTradeField_TradingDay_set)
 
-	# ½»Ò×µ¥Ôª´úÂë
+	# ï¿½ï¿½ï¿½×µï¿½Ôªï¿½ï¿½ï¿½ï¿½
     PbuID = property(_traderapi.CTORATstpTradeField_PbuID_get, _traderapi.CTORATstpTradeField_PbuID_set)
 
-	# ±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderRef = property(_traderapi.CTORATstpTradeField_OrderRef_get, _traderapi.CTORATstpTradeField_OrderRef_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpTradeField_AccountID_get, _traderapi.CTORATstpTradeField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpTradeField_CurrencyID_get, _traderapi.CTORATstpTradeField_CurrencyID_set)
 
     def __init__(self):
@@ -1602,45 +1602,45 @@ _traderapi.CTORATstpTradeField_swigregister(CTORATstpTradeField)
 
 
 
-#########################################ÊäÈë³·µ¥²Ù×÷############################################
+#########################################ï¿½ï¿½ï¿½ë³·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpInputOrderActionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputOrderActionField_UserRequestID_get, _traderapi.CTORATstpInputOrderActionField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInputOrderActionField_ExchangeID_get, _traderapi.CTORATstpInputOrderActionField_ExchangeID_set)
 
-	# ±»³·±¨µ¥Ç°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpInputOrderActionField_FrontID_get, _traderapi.CTORATstpInputOrderActionField_FrontID_set)
 
-	# ±»³·±¨µ¥»á»°±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpInputOrderActionField_SessionID_get, _traderapi.CTORATstpInputOrderActionField_SessionID_set)
 
-	# ±»³·±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderRef = property(_traderapi.CTORATstpInputOrderActionField_OrderRef_get, _traderapi.CTORATstpInputOrderActionField_OrderRef_set)
 
-	# ±»³·±¨µ¥ÏµÍ³±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpInputOrderActionField_OrderSysID_get, _traderapi.CTORATstpInputOrderActionField_OrderSysID_set)
 
-	# ²Ù×÷±êÖ¾
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
     ActionFlag = property(_traderapi.CTORATstpInputOrderActionField_ActionFlag_get, _traderapi.CTORATstpInputOrderActionField_ActionFlag_set)
 
-	# ±¨µ¥²Ù×÷ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderActionRef = property(_traderapi.CTORATstpInputOrderActionField_OrderActionRef_get, _traderapi.CTORATstpInputOrderActionField_OrderActionRef_set)
 
-	# ÏµÍ³³·µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelOrderSysID = property(_traderapi.CTORATstpInputOrderActionField_CancelOrderSysID_get, _traderapi.CTORATstpInputOrderActionField_CancelOrderSysID_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpInputOrderActionField_Operway_get, _traderapi.CTORATstpInputOrderActionField_Operway_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpInputOrderActionField_SInfo_get, _traderapi.CTORATstpInputOrderActionField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpInputOrderActionField_IInfo_get, _traderapi.CTORATstpInputOrderActionField_IInfo_set)
 
     def __init__(self):
@@ -1653,123 +1653,123 @@ _traderapi.CTORATstpInputOrderActionField_swigregister(CTORATstpInputOrderAction
 
 
 
-#########################################Ìõ¼þµ¥Â¼ÈëÓò############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpInputCondOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputCondOrderField_UserRequestID_get, _traderapi.CTORATstpInputCondOrderField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInputCondOrderField_ExchangeID_get, _traderapi.CTORATstpInputCondOrderField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInputCondOrderField_InvestorID_get, _traderapi.CTORATstpInputCondOrderField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpInputCondOrderField_BusinessUnitID_get, _traderapi.CTORATstpInputCondOrderField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpInputCondOrderField_ShareholderID_get, _traderapi.CTORATstpInputCondOrderField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpInputCondOrderField_SecurityID_get, _traderapi.CTORATstpInputCondOrderField_SecurityID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpInputCondOrderField_Direction_get, _traderapi.CTORATstpInputCondOrderField_Direction_set)
 
-	# ¼Û¸ñÀàÐÍ
+	# ï¿½Û¸ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderPriceType = property(_traderapi.CTORATstpInputCondOrderField_OrderPriceType_get, _traderapi.CTORATstpInputCondOrderField_OrderPriceType_set)
 
-	# ÓÐÐ§ÆÚÀàÐÍ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TimeCondition = property(_traderapi.CTORATstpInputCondOrderField_TimeCondition_get, _traderapi.CTORATstpInputCondOrderField_TimeCondition_set)
 
-	# ³É½»Á¿ÀàÐÍ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeCondition = property(_traderapi.CTORATstpInputCondOrderField_VolumeCondition_get, _traderapi.CTORATstpInputCondOrderField_VolumeCondition_set)
 
-	# ±¨µ¥¼Û¸ñ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½
     LimitPrice = property(_traderapi.CTORATstpInputCondOrderField_LimitPrice_get, _traderapi.CTORATstpInputCondOrderField_LimitPrice_set)
 
-	# ±¨µ¥ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeTotalOriginal = property(_traderapi.CTORATstpInputCondOrderField_VolumeTotalOriginal_get, _traderapi.CTORATstpInputCondOrderField_VolumeTotalOriginal_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpInputCondOrderField_Operway_get, _traderapi.CTORATstpInputCondOrderField_Operway_set)
 
-	# ¸Û¹ÉÍ¨¶©µ¥ÊýÁ¿ÀàÐÍ
+	# ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     LotType = property(_traderapi.CTORATstpInputCondOrderField_LotType_get, _traderapi.CTORATstpInputCondOrderField_LotType_set)
 
-	# Ìõ¼þ¼ì²é
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondCheck = property(_traderapi.CTORATstpInputCondOrderField_CondCheck_get, _traderapi.CTORATstpInputCondOrderField_CondCheck_set)
 
-	# ÓÐÐ§ÈÕÆÚ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½
     GTDate = property(_traderapi.CTORATstpInputCondOrderField_GTDate_get, _traderapi.CTORATstpInputCondOrderField_GTDate_set)
 
-	# Ç¿Æ½Ô­Òò(Á½ÈÚ×¨ÓÃ)
+	# Ç¿Æ½Ô­ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     ForceCloseReason = property(_traderapi.CTORATstpInputCondOrderField_ForceCloseReason_get, _traderapi.CTORATstpInputCondOrderField_ForceCloseReason_set)
 
-	# Ö¸¶¨³¥»¹µÄÐÅÓÃ¸ºÕ®±àºÅ£¨¸Ã×Ö¶ÎÖÃ¿Õ±íÊ¾²»Ö¸¶¨³¥»¹£©(Á½ÈÚ×¨ÓÃ)
+	# Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Õ®ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½Ã¿Õ±ï¿½Ê¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditDebtID = property(_traderapi.CTORATstpInputCondOrderField_CreditDebtID_get, _traderapi.CTORATstpInputCondOrderField_CreditDebtID_set)
 
-	# Í·´çÀàÐÍ(Á½ÈÚ×¨ÓÃ)
+	# Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditQuotaType = property(_traderapi.CTORATstpInputCondOrderField_CreditQuotaType_get, _traderapi.CTORATstpInputCondOrderField_CreditQuotaType_set)
 
-	# ·ÑÏ¢ÕÛ¿ÛÈ¯±àºÅ£¨0±íÊ¾²»Ê¹ÓÃÕÛ¿ÛÈ¯£©(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½Ï¢ï¿½Û¿ï¿½È¯ï¿½ï¿½Å£ï¿?0ï¿½ï¿½Ê¾ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Û¿ï¿½È¯ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     DiscountCouponID = property(_traderapi.CTORATstpInputCondOrderField_DiscountCouponID_get, _traderapi.CTORATstpInputCondOrderField_DiscountCouponID_set)
 
-	# Ìõ¼þ±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CondOrderRef = property(_traderapi.CTORATstpInputCondOrderField_CondOrderRef_get, _traderapi.CTORATstpInputCondOrderField_CondOrderRef_set)
 
-	# Ìõ¼þ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondOrderID = property(_traderapi.CTORATstpInputCondOrderField_CondOrderID_get, _traderapi.CTORATstpInputCondOrderField_CondOrderID_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpInputCondOrderField_SInfo_get, _traderapi.CTORATstpInputCondOrderField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpInputCondOrderField_IInfo_get, _traderapi.CTORATstpInputCondOrderField_IInfo_set)
 
-	# ´¥·¢»ù×¼ÊýÁ¿ÀàÐÍ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TriggerOrderVolumeType = property(_traderapi.CTORATstpInputCondOrderField_TriggerOrderVolumeType_get, _traderapi.CTORATstpInputCondOrderField_TriggerOrderVolumeType_set)
 
-	# ´¥·¢»ù×¼¼ÛÀàÐÍ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TriggerOrderPriceType = property(_traderapi.CTORATstpInputCondOrderField_TriggerOrderPriceType_get, _traderapi.CTORATstpInputCondOrderField_TriggerOrderPriceType_set)
 
-	# Ìõ¼þµ¥´¥·¢Ìõ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ContingentCondition = property(_traderapi.CTORATstpInputCondOrderField_ContingentCondition_get, _traderapi.CTORATstpInputCondOrderField_ContingentCondition_set)
 
-	# Ìõ¼þ¼Û
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ConditionPrice = property(_traderapi.CTORATstpInputCondOrderField_ConditionPrice_get, _traderapi.CTORATstpInputCondOrderField_ConditionPrice_set)
 
-	# ¼Û¸ñ¸¡¶¯tickÊý
+	# ï¿½Û¸ñ¸¡¶ï¿½tickï¿½ï¿½
     PriceTicks = property(_traderapi.CTORATstpInputCondOrderField_PriceTicks_get, _traderapi.CTORATstpInputCondOrderField_PriceTicks_set)
 
-	# ÊýÁ¿¸¡¶¯±¶Êý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeMultiple = property(_traderapi.CTORATstpInputCondOrderField_VolumeMultiple_get, _traderapi.CTORATstpInputCondOrderField_VolumeMultiple_set)
 
-	# Ïà¹ØÇ°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿½
     RelativeFrontID = property(_traderapi.CTORATstpInputCondOrderField_RelativeFrontID_get, _traderapi.CTORATstpInputCondOrderField_RelativeFrontID_set)
 
-	# Ïà¹Ø»á»°±àºÅ
+	# ï¿½ï¿½Ø»á»°ï¿½ï¿½ï¿½
     RelativeSessionID = property(_traderapi.CTORATstpInputCondOrderField_RelativeSessionID_get, _traderapi.CTORATstpInputCondOrderField_RelativeSessionID_set)
 
-	# Ïà¹ØÌõ¼þ²ÎÊý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     RelativeParam = property(_traderapi.CTORATstpInputCondOrderField_RelativeParam_get, _traderapi.CTORATstpInputCondOrderField_RelativeParam_set)
 
-	# ¸½¼ÓÌõ¼þµ¥´¥·¢Ìõ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     AppendContingentCondition = property(_traderapi.CTORATstpInputCondOrderField_AppendContingentCondition_get, _traderapi.CTORATstpInputCondOrderField_AppendContingentCondition_set)
 
-	# ¸½¼ÓÌõ¼þ¼Û
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     AppendConditionPrice = property(_traderapi.CTORATstpInputCondOrderField_AppendConditionPrice_get, _traderapi.CTORATstpInputCondOrderField_AppendConditionPrice_set)
 
-	# ¸½¼ÓÏà¹ØÇ°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿½
     AppendRelativeFrontID = property(_traderapi.CTORATstpInputCondOrderField_AppendRelativeFrontID_get, _traderapi.CTORATstpInputCondOrderField_AppendRelativeFrontID_set)
 
-	# ¸½¼ÓÏà¹Ø»á»°±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø»á»°ï¿½ï¿½ï¿½
     AppendRelativeSessionID = property(_traderapi.CTORATstpInputCondOrderField_AppendRelativeSessionID_get, _traderapi.CTORATstpInputCondOrderField_AppendRelativeSessionID_set)
 
-	# ¸½¼ÓÏà¹ØÌõ¼þ²ÎÊý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     AppendRelativeParam = property(_traderapi.CTORATstpInputCondOrderField_AppendRelativeParam_get, _traderapi.CTORATstpInputCondOrderField_AppendRelativeParam_set)
 
     def __init__(self):
@@ -1782,171 +1782,171 @@ _traderapi.CTORATstpInputCondOrderField_swigregister(CTORATstpInputCondOrderFiel
 
 
 
-#########################################Ìõ¼þµ¥Óò############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpConditionOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpConditionOrderField_ExchangeID_get, _traderapi.CTORATstpConditionOrderField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpConditionOrderField_InvestorID_get, _traderapi.CTORATstpConditionOrderField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpConditionOrderField_BusinessUnitID_get, _traderapi.CTORATstpConditionOrderField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpConditionOrderField_ShareholderID_get, _traderapi.CTORATstpConditionOrderField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpConditionOrderField_SecurityID_get, _traderapi.CTORATstpConditionOrderField_SecurityID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpConditionOrderField_Direction_get, _traderapi.CTORATstpConditionOrderField_Direction_set)
 
-	# ¼Û¸ñÀàÐÍ
+	# ï¿½Û¸ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderPriceType = property(_traderapi.CTORATstpConditionOrderField_OrderPriceType_get, _traderapi.CTORATstpConditionOrderField_OrderPriceType_set)
 
-	# ÓÐÐ§ÆÚÀàÐÍ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TimeCondition = property(_traderapi.CTORATstpConditionOrderField_TimeCondition_get, _traderapi.CTORATstpConditionOrderField_TimeCondition_set)
 
-	# ³É½»Á¿ÀàÐÍ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeCondition = property(_traderapi.CTORATstpConditionOrderField_VolumeCondition_get, _traderapi.CTORATstpConditionOrderField_VolumeCondition_set)
 
-	# ±¨µ¥¼Û¸ñ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½
     LimitPrice = property(_traderapi.CTORATstpConditionOrderField_LimitPrice_get, _traderapi.CTORATstpConditionOrderField_LimitPrice_set)
 
-	# ±¨µ¥ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeTotalOriginal = property(_traderapi.CTORATstpConditionOrderField_VolumeTotalOriginal_get, _traderapi.CTORATstpConditionOrderField_VolumeTotalOriginal_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpConditionOrderField_Operway_get, _traderapi.CTORATstpConditionOrderField_Operway_set)
 
-	# ¸Û¹ÉÍ¨¶©µ¥ÊýÁ¿ÀàÐÍ
+	# ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     LotType = property(_traderapi.CTORATstpConditionOrderField_LotType_get, _traderapi.CTORATstpConditionOrderField_LotType_set)
 
-	# Ìõ¼þ¼ì²é
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondCheck = property(_traderapi.CTORATstpConditionOrderField_CondCheck_get, _traderapi.CTORATstpConditionOrderField_CondCheck_set)
 
-	# ÓÐÐ§ÈÕÆÚ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½
     GTDate = property(_traderapi.CTORATstpConditionOrderField_GTDate_get, _traderapi.CTORATstpConditionOrderField_GTDate_set)
 
-	# Ç¿Æ½Ô­Òò(Á½ÈÚ×¨ÓÃ)
+	# Ç¿Æ½Ô­ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     ForceCloseReason = property(_traderapi.CTORATstpConditionOrderField_ForceCloseReason_get, _traderapi.CTORATstpConditionOrderField_ForceCloseReason_set)
 
-	# Ö¸¶¨³¥»¹µÄÐÅÓÃ¸ºÕ®±àºÅ£¨¸Ã×Ö¶ÎÖÃ¿Õ±íÊ¾²»Ö¸¶¨³¥»¹£©(Á½ÈÚ×¨ÓÃ)
+	# Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Õ®ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½Ã¿Õ±ï¿½Ê¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditDebtID = property(_traderapi.CTORATstpConditionOrderField_CreditDebtID_get, _traderapi.CTORATstpConditionOrderField_CreditDebtID_set)
 
-	# Í·´çÀàÐÍ(Á½ÈÚ×¨ÓÃ)
+	# Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditQuotaType = property(_traderapi.CTORATstpConditionOrderField_CreditQuotaType_get, _traderapi.CTORATstpConditionOrderField_CreditQuotaType_set)
 
-	# ·ÑÏ¢ÕÛ¿ÛÈ¯±àºÅ£¨0±íÊ¾²»Ê¹ÓÃÕÛ¿ÛÈ¯£©(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½Ï¢ï¿½Û¿ï¿½È¯ï¿½ï¿½Å£ï¿?0ï¿½ï¿½Ê¾ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Û¿ï¿½È¯ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     DiscountCouponID = property(_traderapi.CTORATstpConditionOrderField_DiscountCouponID_get, _traderapi.CTORATstpConditionOrderField_DiscountCouponID_set)
 
-	# Ìõ¼þ±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CondOrderRef = property(_traderapi.CTORATstpConditionOrderField_CondOrderRef_get, _traderapi.CTORATstpConditionOrderField_CondOrderRef_set)
 
-	# ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondOrderID = property(_traderapi.CTORATstpConditionOrderField_CondOrderID_get, _traderapi.CTORATstpConditionOrderField_CondOrderID_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpConditionOrderField_SInfo_get, _traderapi.CTORATstpConditionOrderField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpConditionOrderField_IInfo_get, _traderapi.CTORATstpConditionOrderField_IInfo_set)
 
-	# ´¥·¢»ù×¼ÊýÁ¿ÀàÐÍ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TriggerOrderVolumeType = property(_traderapi.CTORATstpConditionOrderField_TriggerOrderVolumeType_get, _traderapi.CTORATstpConditionOrderField_TriggerOrderVolumeType_set)
 
-	# ´¥·¢»ù×¼¼ÛÀàÐÍ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TriggerOrderPriceType = property(_traderapi.CTORATstpConditionOrderField_TriggerOrderPriceType_get, _traderapi.CTORATstpConditionOrderField_TriggerOrderPriceType_set)
 
-	# Ìõ¼þµ¥´¥·¢Ìõ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ContingentCondition = property(_traderapi.CTORATstpConditionOrderField_ContingentCondition_get, _traderapi.CTORATstpConditionOrderField_ContingentCondition_set)
 
-	# Ìõ¼þ¼Û
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ConditionPrice = property(_traderapi.CTORATstpConditionOrderField_ConditionPrice_get, _traderapi.CTORATstpConditionOrderField_ConditionPrice_set)
 
-	# ¼Û¸ñ¸¡¶¯tickÊý
+	# ï¿½Û¸ñ¸¡¶ï¿½tickï¿½ï¿½
     PriceTicks = property(_traderapi.CTORATstpConditionOrderField_PriceTicks_get, _traderapi.CTORATstpConditionOrderField_PriceTicks_set)
 
-	# ÊýÁ¿¸¡¶¯±¶Êý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeMultiple = property(_traderapi.CTORATstpConditionOrderField_VolumeMultiple_get, _traderapi.CTORATstpConditionOrderField_VolumeMultiple_set)
 
-	# Ïà¹ØÇ°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿½
     RelativeFrontID = property(_traderapi.CTORATstpConditionOrderField_RelativeFrontID_get, _traderapi.CTORATstpConditionOrderField_RelativeFrontID_set)
 
-	# Ïà¹Ø»á»°±àºÅ
+	# ï¿½ï¿½Ø»á»°ï¿½ï¿½ï¿½
     RelativeSessionID = property(_traderapi.CTORATstpConditionOrderField_RelativeSessionID_get, _traderapi.CTORATstpConditionOrderField_RelativeSessionID_set)
 
-	# Ïà¹ØÌõ¼þ²ÎÊý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     RelativeParam = property(_traderapi.CTORATstpConditionOrderField_RelativeParam_get, _traderapi.CTORATstpConditionOrderField_RelativeParam_set)
 
-	# ¸½¼ÓÌõ¼þµ¥´¥·¢Ìõ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     AppendContingentCondition = property(_traderapi.CTORATstpConditionOrderField_AppendContingentCondition_get, _traderapi.CTORATstpConditionOrderField_AppendContingentCondition_set)
 
-	# ¸½¼ÓÌõ¼þ¼Û
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     AppendConditionPrice = property(_traderapi.CTORATstpConditionOrderField_AppendConditionPrice_get, _traderapi.CTORATstpConditionOrderField_AppendConditionPrice_set)
 
-	# ¸½¼ÓÏà¹ØÇ°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿½
     AppendRelativeFrontID = property(_traderapi.CTORATstpConditionOrderField_AppendRelativeFrontID_get, _traderapi.CTORATstpConditionOrderField_AppendRelativeFrontID_set)
 
-	# ¸½¼ÓÏà¹Ø»á»°±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø»á»°ï¿½ï¿½ï¿½
     AppendRelativeSessionID = property(_traderapi.CTORATstpConditionOrderField_AppendRelativeSessionID_get, _traderapi.CTORATstpConditionOrderField_AppendRelativeSessionID_set)
 
-	# ¸½¼ÓÏà¹ØÌõ¼þ²ÎÊý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     AppendRelativeParam = property(_traderapi.CTORATstpConditionOrderField_AppendRelativeParam_get, _traderapi.CTORATstpConditionOrderField_AppendRelativeParam_set)
 
-	# ÇëÇó±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RequestID = property(_traderapi.CTORATstpConditionOrderField_RequestID_get, _traderapi.CTORATstpConditionOrderField_RequestID_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpConditionOrderField_TradingDay_get, _traderapi.CTORATstpConditionOrderField_TradingDay_set)
 
-	# Ìõ¼þµ¥×´Ì¬
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
     CondOrderStatus = property(_traderapi.CTORATstpConditionOrderField_CondOrderStatus_get, _traderapi.CTORATstpConditionOrderField_CondOrderStatus_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpConditionOrderField_StatusMsg_get, _traderapi.CTORATstpConditionOrderField_StatusMsg_set)
 
-	# Éê±¨ÓÃ»§
+	# ï¿½ê±¨ï¿½Ã»ï¿½
     InsertUser = property(_traderapi.CTORATstpConditionOrderField_InsertUser_get, _traderapi.CTORATstpConditionOrderField_InsertUser_set)
 
-	# Éê±¨ÈÕÆÚ
+	# ï¿½ê±¨ï¿½ï¿½ï¿½ï¿½
     InsertDate = property(_traderapi.CTORATstpConditionOrderField_InsertDate_get, _traderapi.CTORATstpConditionOrderField_InsertDate_set)
 
-	# Éê±¨Ê±¼ä
+	# ï¿½ê±¨Ê±ï¿½ï¿½
     InsertTime = property(_traderapi.CTORATstpConditionOrderField_InsertTime_get, _traderapi.CTORATstpConditionOrderField_InsertTime_set)
 
-	# ´¥·¢ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ActiveDate = property(_traderapi.CTORATstpConditionOrderField_ActiveDate_get, _traderapi.CTORATstpConditionOrderField_ActiveDate_set)
 
-	# ´¥·¢Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     ActiveTime = property(_traderapi.CTORATstpConditionOrderField_ActiveTime_get, _traderapi.CTORATstpConditionOrderField_ActiveTime_set)
 
-	# ³·ÏúÓÃ»§
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
     CancelUser = property(_traderapi.CTORATstpConditionOrderField_CancelUser_get, _traderapi.CTORATstpConditionOrderField_CancelUser_set)
 
-	# ³·ÏúÊ±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     CancelTime = property(_traderapi.CTORATstpConditionOrderField_CancelTime_get, _traderapi.CTORATstpConditionOrderField_CancelTime_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpConditionOrderField_FrontID_get, _traderapi.CTORATstpConditionOrderField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpConditionOrderField_SessionID_get, _traderapi.CTORATstpConditionOrderField_SessionID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpConditionOrderField_DepartmentID_get, _traderapi.CTORATstpConditionOrderField_DepartmentID_set)
 
-	# ÓÃ»§¶Ë²úÆ·ÐÅÏ¢
+	# ï¿½Ã»ï¿½ï¿½Ë²ï¿½Æ·ï¿½ï¿½Ï¢
     UserProductInfo = property(_traderapi.CTORATstpConditionOrderField_UserProductInfo_get, _traderapi.CTORATstpConditionOrderField_UserProductInfo_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpConditionOrderField_IPAddress_get, _traderapi.CTORATstpConditionOrderField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpConditionOrderField_MacAddress_get, _traderapi.CTORATstpConditionOrderField_MacAddress_set)
 
     def __init__(self):
@@ -1959,45 +1959,45 @@ _traderapi.CTORATstpConditionOrderField_swigregister(CTORATstpConditionOrderFiel
 
 
 
-#########################################Ìõ¼þµ¥²Ù×÷Â¼Èë############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½############################################
 class CTORATstpInputCondOrderActionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputCondOrderActionField_UserRequestID_get, _traderapi.CTORATstpInputCondOrderActionField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInputCondOrderActionField_ExchangeID_get, _traderapi.CTORATstpInputCondOrderActionField_ExchangeID_set)
 
-	# ±»³·Ìõ¼þµ¥Ç°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpInputCondOrderActionField_FrontID_get, _traderapi.CTORATstpInputCondOrderActionField_FrontID_set)
 
-	# ±»³·Ìõ¼þµ¥»á»°±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpInputCondOrderActionField_SessionID_get, _traderapi.CTORATstpInputCondOrderActionField_SessionID_set)
 
-	# ±»³·Ìõ¼þµ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CondOrderRef = property(_traderapi.CTORATstpInputCondOrderActionField_CondOrderRef_get, _traderapi.CTORATstpInputCondOrderActionField_CondOrderRef_set)
 
-	# ±»³·Ìõ¼þµ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondOrderID = property(_traderapi.CTORATstpInputCondOrderActionField_CondOrderID_get, _traderapi.CTORATstpInputCondOrderActionField_CondOrderID_set)
 
-	# ²Ù×÷±êÖ¾
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
     ActionFlag = property(_traderapi.CTORATstpInputCondOrderActionField_ActionFlag_get, _traderapi.CTORATstpInputCondOrderActionField_ActionFlag_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpInputCondOrderActionField_Operway_get, _traderapi.CTORATstpInputCondOrderActionField_Operway_set)
 
-	# Ìõ¼þµ¥²Ù×÷ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CondOrderActionRef = property(_traderapi.CTORATstpInputCondOrderActionField_CondOrderActionRef_get, _traderapi.CTORATstpInputCondOrderActionField_CondOrderActionRef_set)
 
-	# Ìõ¼þµ¥³·µ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelCondOrderID = property(_traderapi.CTORATstpInputCondOrderActionField_CancelCondOrderID_get, _traderapi.CTORATstpInputCondOrderActionField_CancelCondOrderID_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpInputCondOrderActionField_SInfo_get, _traderapi.CTORATstpInputCondOrderActionField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpInputCondOrderActionField_IInfo_get, _traderapi.CTORATstpInputCondOrderActionField_IInfo_set)
 
     def __init__(self):
@@ -2010,60 +2010,60 @@ _traderapi.CTORATstpInputCondOrderActionField_swigregister(CTORATstpInputCondOrd
 
 
 
-#########################################ÊäÈë±¨µ¥############################################
+#########################################ï¿½ï¿½ï¿½ë±¨ï¿½ï¿½############################################
 class CTORATstpInputNegoOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputNegoOrderField_UserRequestID_get, _traderapi.CTORATstpInputNegoOrderField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInputNegoOrderField_ExchangeID_get, _traderapi.CTORATstpInputNegoOrderField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInputNegoOrderField_InvestorID_get, _traderapi.CTORATstpInputNegoOrderField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpInputNegoOrderField_BusinessUnitID_get, _traderapi.CTORATstpInputNegoOrderField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpInputNegoOrderField_ShareholderID_get, _traderapi.CTORATstpInputNegoOrderField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpInputNegoOrderField_SecurityID_get, _traderapi.CTORATstpInputNegoOrderField_SecurityID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpInputNegoOrderField_Direction_get, _traderapi.CTORATstpInputNegoOrderField_Direction_set)
 
-	# ¼Û¸ñ
+	# ï¿½Û¸ï¿½
     LimitPrice = property(_traderapi.CTORATstpInputNegoOrderField_LimitPrice_get, _traderapi.CTORATstpInputNegoOrderField_LimitPrice_set)
 
-	# ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½
     VolumeTotalOriginal = property(_traderapi.CTORATstpInputNegoOrderField_VolumeTotalOriginal_get, _traderapi.CTORATstpInputNegoOrderField_VolumeTotalOriginal_set)
 
-	# ÁªÏµÈË(ÒâÏòÉê±¨Ê±±ØÌî)
+	# ï¿½ï¿½Ïµï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ê±¨Ê±ï¿½ï¿½ï¿½ï¿½)
     Contractor = property(_traderapi.CTORATstpInputNegoOrderField_Contractor_get, _traderapi.CTORATstpInputNegoOrderField_Contractor_set)
 
-	# ÁªÏµ·½Ê½(ÒâÏòÉê±¨Ê±±ØÌî)
+	# ï¿½ï¿½Ïµï¿½ï¿½Ê½(ï¿½ï¿½ï¿½ï¿½ï¿½ê±¨Ê±ï¿½ï¿½ï¿½ï¿½)
     ContractorInfo = property(_traderapi.CTORATstpInputNegoOrderField_ContractorInfo_get, _traderapi.CTORATstpInputNegoOrderField_ContractorInfo_set)
 
-	# Ô¼¶¨ºÅ(³É½»Éê±¨Ê±±ØÌî)
+	# Ô¼ï¿½ï¿½ï¿½ï¿½(ï¿½É½ï¿½ï¿½ê±¨Ê±ï¿½ï¿½ï¿½ï¿½)
     ConfirmID = property(_traderapi.CTORATstpInputNegoOrderField_ConfirmID_get, _traderapi.CTORATstpInputNegoOrderField_ConfirmID_set)
 
-	# ¶ÔÊÖ·½Ï¯Î»ºÅ(³É½»Éê±¨Ê±±ØÌî)
+	# ï¿½ï¿½ï¿½Ö·ï¿½Ï¯Î»ï¿½ï¿½(ï¿½É½ï¿½ï¿½ê±¨Ê±ï¿½ï¿½ï¿½ï¿½)
     CounterpartyPbuID = property(_traderapi.CTORATstpInputNegoOrderField_CounterpartyPbuID_get, _traderapi.CTORATstpInputNegoOrderField_CounterpartyPbuID_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpInputNegoOrderField_OrderSysID_get, _traderapi.CTORATstpInputNegoOrderField_OrderSysID_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpInputNegoOrderField_Operway_get, _traderapi.CTORATstpInputNegoOrderField_Operway_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpInputNegoOrderField_SInfo_get, _traderapi.CTORATstpInputNegoOrderField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpInputNegoOrderField_IInfo_get, _traderapi.CTORATstpInputNegoOrderField_IInfo_set)
 
     def __init__(self):
@@ -2076,126 +2076,126 @@ _traderapi.CTORATstpInputNegoOrderField_swigregister(CTORATstpInputNegoOrderFiel
 
 
 
-#########################################Ð­Òé½»Ò×±¨µ¥############################################
+#########################################Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½############################################
 class CTORATstpNegoOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpNegoOrderField_ExchangeID_get, _traderapi.CTORATstpNegoOrderField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpNegoOrderField_InvestorID_get, _traderapi.CTORATstpNegoOrderField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpNegoOrderField_BusinessUnitID_get, _traderapi.CTORATstpNegoOrderField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpNegoOrderField_ShareholderID_get, _traderapi.CTORATstpNegoOrderField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpNegoOrderField_SecurityID_get, _traderapi.CTORATstpNegoOrderField_SecurityID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpNegoOrderField_Direction_get, _traderapi.CTORATstpNegoOrderField_Direction_set)
 
-	# ¼Û¸ñ
+	# ï¿½Û¸ï¿½
     LimitPrice = property(_traderapi.CTORATstpNegoOrderField_LimitPrice_get, _traderapi.CTORATstpNegoOrderField_LimitPrice_set)
 
-	# ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½
     VolumeTotalOriginal = property(_traderapi.CTORATstpNegoOrderField_VolumeTotalOriginal_get, _traderapi.CTORATstpNegoOrderField_VolumeTotalOriginal_set)
 
-	# ÁªÏµÈË
+	# ï¿½ï¿½Ïµï¿½ï¿½
     Contractor = property(_traderapi.CTORATstpNegoOrderField_Contractor_get, _traderapi.CTORATstpNegoOrderField_Contractor_set)
 
-	# ÁªÏµ·½Ê½
+	# ï¿½ï¿½Ïµï¿½ï¿½Ê½
     ContractorInfo = property(_traderapi.CTORATstpNegoOrderField_ContractorInfo_get, _traderapi.CTORATstpNegoOrderField_ContractorInfo_set)
 
-	# Ô¼¶¨ºÅ
+	# Ô¼ï¿½ï¿½ï¿½ï¿½
     ConfirmID = property(_traderapi.CTORATstpNegoOrderField_ConfirmID_get, _traderapi.CTORATstpNegoOrderField_ConfirmID_set)
 
-	# ¶ÔÊÖ·½Ï¯Î»ºÅ
+	# ï¿½ï¿½ï¿½Ö·ï¿½Ï¯Î»ï¿½ï¿½
     CounterpartyPbuID = property(_traderapi.CTORATstpNegoOrderField_CounterpartyPbuID_get, _traderapi.CTORATstpNegoOrderField_CounterpartyPbuID_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpNegoOrderField_Operway_get, _traderapi.CTORATstpNegoOrderField_Operway_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpNegoOrderField_SInfo_get, _traderapi.CTORATstpNegoOrderField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpNegoOrderField_IInfo_get, _traderapi.CTORATstpNegoOrderField_IInfo_set)
 
-	# ÇëÇó±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RequestID = property(_traderapi.CTORATstpNegoOrderField_RequestID_get, _traderapi.CTORATstpNegoOrderField_RequestID_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpNegoOrderField_FrontID_get, _traderapi.CTORATstpNegoOrderField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpNegoOrderField_SessionID_get, _traderapi.CTORATstpNegoOrderField_SessionID_set)
 
-	# ±¾µØ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpNegoOrderField_OrderLocalID_get, _traderapi.CTORATstpNegoOrderField_OrderLocalID_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpNegoOrderField_OrderSysID_get, _traderapi.CTORATstpNegoOrderField_OrderSysID_set)
 
-	# ±¨µ¥×´Ì¬
+	# ï¿½ï¿½ï¿½ï¿½×´Ì¬
     OrderStatus = property(_traderapi.CTORATstpNegoOrderField_OrderStatus_get, _traderapi.CTORATstpNegoOrderField_OrderStatus_set)
 
-	# ±¨µ¥Ìá½»×´Ì¬
+	# ï¿½ï¿½ï¿½ï¿½ï¿½á½»×´Ì¬
     OrderSubmitStatus = property(_traderapi.CTORATstpNegoOrderField_OrderSubmitStatus_get, _traderapi.CTORATstpNegoOrderField_OrderSubmitStatus_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpNegoOrderField_StatusMsg_get, _traderapi.CTORATstpNegoOrderField_StatusMsg_set)
 
-	# ÒÑ³É½»ÊýÁ¿
+	# ï¿½Ñ³É½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeTraded = property(_traderapi.CTORATstpNegoOrderField_VolumeTraded_get, _traderapi.CTORATstpNegoOrderField_VolumeTraded_set)
 
-	# ÒÑ³·ÏúÊýÁ¿
+	# ï¿½Ñ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeCanceled = property(_traderapi.CTORATstpNegoOrderField_VolumeCanceled_get, _traderapi.CTORATstpNegoOrderField_VolumeCanceled_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpNegoOrderField_TradingDay_get, _traderapi.CTORATstpNegoOrderField_TradingDay_set)
 
-	# Éê±¨ÓÃ»§
+	# ï¿½ê±¨ï¿½Ã»ï¿½
     InsertUser = property(_traderapi.CTORATstpNegoOrderField_InsertUser_get, _traderapi.CTORATstpNegoOrderField_InsertUser_set)
 
-	# Éê±¨ÈÕÆÚ
+	# ï¿½ê±¨ï¿½ï¿½ï¿½ï¿½
     InsertDate = property(_traderapi.CTORATstpNegoOrderField_InsertDate_get, _traderapi.CTORATstpNegoOrderField_InsertDate_set)
 
-	# Éê±¨Ê±¼ä
+	# ï¿½ê±¨Ê±ï¿½ï¿½
     InsertTime = property(_traderapi.CTORATstpNegoOrderField_InsertTime_get, _traderapi.CTORATstpNegoOrderField_InsertTime_set)
 
-	# ½»Ò×Ëù½ÓÊÕÊ±¼ä
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     AcceptTime = property(_traderapi.CTORATstpNegoOrderField_AcceptTime_get, _traderapi.CTORATstpNegoOrderField_AcceptTime_set)
 
-	# ³·ÏúÓÃ»§
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
     CancelUser = property(_traderapi.CTORATstpNegoOrderField_CancelUser_get, _traderapi.CTORATstpNegoOrderField_CancelUser_set)
 
-	# ³·ÏúÊ±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     CancelTime = property(_traderapi.CTORATstpNegoOrderField_CancelTime_get, _traderapi.CTORATstpNegoOrderField_CancelTime_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpNegoOrderField_DepartmentID_get, _traderapi.CTORATstpNegoOrderField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpNegoOrderField_AccountID_get, _traderapi.CTORATstpNegoOrderField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpNegoOrderField_CurrencyID_get, _traderapi.CTORATstpNegoOrderField_CurrencyID_set)
 
-	# ½»Ò×µ¥Ôª´úÂë
+	# ï¿½ï¿½ï¿½×µï¿½Ôªï¿½ï¿½ï¿½ï¿½
     PbuID = property(_traderapi.CTORATstpNegoOrderField_PbuID_get, _traderapi.CTORATstpNegoOrderField_PbuID_set)
 
-	# ÓÃ»§¶Ë²úÆ·ÐÅÏ¢
+	# ï¿½Ã»ï¿½ï¿½Ë²ï¿½Æ·ï¿½ï¿½Ï¢
     UserProductInfo = property(_traderapi.CTORATstpNegoOrderField_UserProductInfo_get, _traderapi.CTORATstpNegoOrderField_UserProductInfo_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpNegoOrderField_IPAddress_get, _traderapi.CTORATstpNegoOrderField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpNegoOrderField_MacAddress_get, _traderapi.CTORATstpNegoOrderField_MacAddress_set)
 
     def __init__(self):
@@ -2208,69 +2208,69 @@ _traderapi.CTORATstpNegoOrderField_swigregister(CTORATstpNegoOrderField)
 
 
 
-#########################################Ð­Òé½»Ò×³É½»############################################
+#########################################Ð­ï¿½é½»ï¿½×³É½ï¿½############################################
 class CTORATstpNegoTradeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpNegoTradeField_ExchangeID_get, _traderapi.CTORATstpNegoTradeField_ExchangeID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpNegoTradeField_DepartmentID_get, _traderapi.CTORATstpNegoTradeField_DepartmentID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpNegoTradeField_InvestorID_get, _traderapi.CTORATstpNegoTradeField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpNegoTradeField_BusinessUnitID_get, _traderapi.CTORATstpNegoTradeField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpNegoTradeField_ShareholderID_get, _traderapi.CTORATstpNegoTradeField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpNegoTradeField_SecurityID_get, _traderapi.CTORATstpNegoTradeField_SecurityID_set)
 
-	# ³É½»±àºÅ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿?
     TradeID = property(_traderapi.CTORATstpNegoTradeField_TradeID_get, _traderapi.CTORATstpNegoTradeField_TradeID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpNegoTradeField_Direction_get, _traderapi.CTORATstpNegoTradeField_Direction_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpNegoTradeField_OrderSysID_get, _traderapi.CTORATstpNegoTradeField_OrderSysID_set)
 
-	# ±¾µØ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpNegoTradeField_OrderLocalID_get, _traderapi.CTORATstpNegoTradeField_OrderLocalID_set)
 
-	# ³É½»¼Û¸ñ
+	# ï¿½É½ï¿½ï¿½Û¸ï¿½
     Price = property(_traderapi.CTORATstpNegoTradeField_Price_get, _traderapi.CTORATstpNegoTradeField_Price_set)
 
-	# ³É½»ÊýÁ¿
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½
     Volume = property(_traderapi.CTORATstpNegoTradeField_Volume_get, _traderapi.CTORATstpNegoTradeField_Volume_set)
 
-	# ³É½»ÈÕÆÚ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradeDate = property(_traderapi.CTORATstpNegoTradeField_TradeDate_get, _traderapi.CTORATstpNegoTradeField_TradeDate_set)
 
-	# ³É½»Ê±¼ä
+	# ï¿½É½ï¿½Ê±ï¿½ï¿½
     TradeTime = property(_traderapi.CTORATstpNegoTradeField_TradeTime_get, _traderapi.CTORATstpNegoTradeField_TradeTime_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpNegoTradeField_TradingDay_get, _traderapi.CTORATstpNegoTradeField_TradingDay_set)
 
-	# ½»Ò×µ¥Ôª´úÂë
+	# ï¿½ï¿½ï¿½×µï¿½Ôªï¿½ï¿½ï¿½ï¿½
     PbuID = property(_traderapi.CTORATstpNegoTradeField_PbuID_get, _traderapi.CTORATstpNegoTradeField_PbuID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpNegoTradeField_AccountID_get, _traderapi.CTORATstpNegoTradeField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpNegoTradeField_CurrencyID_get, _traderapi.CTORATstpNegoTradeField_CurrencyID_set)
 
-	# ¶ÔÊÖ·½½»Ò×µ¥Ôª´úÂë
+	# ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½×µï¿½Ôªï¿½ï¿½ï¿½ï¿½
     CounterpartyPbuID = property(_traderapi.CTORATstpNegoTradeField_CounterpartyPbuID_get, _traderapi.CTORATstpNegoTradeField_CounterpartyPbuID_set)
 
-	# ¶ÔÊÖ·½¹É¶«ÕËºÅ
+	# ï¿½ï¿½ï¿½Ö·ï¿½ï¿½É¶ï¿½ï¿½Ëºï¿½
     CounterpartyShareholderID = property(_traderapi.CTORATstpNegoTradeField_CounterpartyShareholderID_get, _traderapi.CTORATstpNegoTradeField_CounterpartyShareholderID_set)
 
     def __init__(self):
@@ -2283,33 +2283,33 @@ _traderapi.CTORATstpNegoTradeField_swigregister(CTORATstpNegoTradeField)
 
 
 
-#########################################ÊäÈëÐ­Òé½»Ò×³·µ¥²Ù×÷############################################
+#########################################ï¿½ï¿½ï¿½ï¿½Ð­ï¿½é½»ï¿½×³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpInputNegoOrderActionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputNegoOrderActionField_UserRequestID_get, _traderapi.CTORATstpInputNegoOrderActionField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInputNegoOrderActionField_ExchangeID_get, _traderapi.CTORATstpInputNegoOrderActionField_ExchangeID_set)
 
-	# ±»³·±¨µ¥ÏµÍ³±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpInputNegoOrderActionField_OrderSysID_get, _traderapi.CTORATstpInputNegoOrderActionField_OrderSysID_set)
 
-	# ²Ù×÷±êÖ¾
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
     ActionFlag = property(_traderapi.CTORATstpInputNegoOrderActionField_ActionFlag_get, _traderapi.CTORATstpInputNegoOrderActionField_ActionFlag_set)
 
-	# ÏµÍ³³·µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelOrderSysID = property(_traderapi.CTORATstpInputNegoOrderActionField_CancelOrderSysID_get, _traderapi.CTORATstpInputNegoOrderActionField_CancelOrderSysID_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpInputNegoOrderActionField_Operway_get, _traderapi.CTORATstpInputNegoOrderActionField_Operway_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpInputNegoOrderActionField_SInfo_get, _traderapi.CTORATstpInputNegoOrderActionField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpInputNegoOrderActionField_IInfo_get, _traderapi.CTORATstpInputNegoOrderActionField_IInfo_set)
 
     def __init__(self):
@@ -2322,84 +2322,84 @@ _traderapi.CTORATstpInputNegoOrderActionField_swigregister(CTORATstpInputNegoOrd
 
 
 
-#########################################ÊäÈë±¨µ¥############################################
+#########################################ï¿½ï¿½ï¿½ë±¨ï¿½ï¿½############################################
 class CTORATstpInputOrderExField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputOrderExField_UserRequestID_get, _traderapi.CTORATstpInputOrderExField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInputOrderExField_ExchangeID_get, _traderapi.CTORATstpInputOrderExField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInputOrderExField_InvestorID_get, _traderapi.CTORATstpInputOrderExField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpInputOrderExField_BusinessUnitID_get, _traderapi.CTORATstpInputOrderExField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpInputOrderExField_ShareholderID_get, _traderapi.CTORATstpInputOrderExField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpInputOrderExField_SecurityID_get, _traderapi.CTORATstpInputOrderExField_SecurityID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpInputOrderExField_Direction_get, _traderapi.CTORATstpInputOrderExField_Direction_set)
 
-	# ¼Û¸ñ
+	# ï¿½Û¸ï¿½
     LimitPrice = property(_traderapi.CTORATstpInputOrderExField_LimitPrice_get, _traderapi.CTORATstpInputOrderExField_LimitPrice_set)
 
-	# ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½
     VolumeTotalOriginal = property(_traderapi.CTORATstpInputOrderExField_VolumeTotalOriginal_get, _traderapi.CTORATstpInputOrderExField_VolumeTotalOriginal_set)
 
-	# ±¨µ¥¼Û¸ñÌõ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderPriceType = property(_traderapi.CTORATstpInputOrderExField_OrderPriceType_get, _traderapi.CTORATstpInputOrderExField_OrderPriceType_set)
 
-	# ÓÐÐ§ÆÚÀàÐÍ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TimeCondition = property(_traderapi.CTORATstpInputOrderExField_TimeCondition_get, _traderapi.CTORATstpInputOrderExField_TimeCondition_set)
 
-	# ³É½»Á¿ÀàÐÍ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeCondition = property(_traderapi.CTORATstpInputOrderExField_VolumeCondition_get, _traderapi.CTORATstpInputOrderExField_VolumeCondition_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpInputOrderExField_Operway_get, _traderapi.CTORATstpInputOrderExField_Operway_set)
 
-	# ±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderRef = property(_traderapi.CTORATstpInputOrderExField_OrderRef_get, _traderapi.CTORATstpInputOrderExField_OrderRef_set)
 
-	# ¸Û¹ÉÍ¨¶©µ¥ÊýÁ¿ÀàÐÍ
+	# ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     LotType = property(_traderapi.CTORATstpInputOrderExField_LotType_get, _traderapi.CTORATstpInputOrderExField_LotType_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpInputOrderExField_OrderSysID_get, _traderapi.CTORATstpInputOrderExField_OrderSysID_set)
 
-	# Ìõ¼þ¼ì²é
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondCheck = property(_traderapi.CTORATstpInputOrderExField_CondCheck_get, _traderapi.CTORATstpInputOrderExField_CondCheck_set)
 
-	# ÓÐÐ§ÈÕÆÚ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½
     GTDate = property(_traderapi.CTORATstpInputOrderExField_GTDate_get, _traderapi.CTORATstpInputOrderExField_GTDate_set)
 
-	# Ç¿Æ½Ô­Òò(Á½ÈÚ×¨ÓÃ)
+	# Ç¿Æ½Ô­ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     ForceCloseReason = property(_traderapi.CTORATstpInputOrderExField_ForceCloseReason_get, _traderapi.CTORATstpInputOrderExField_ForceCloseReason_set)
 
-	# Ö¸¶¨³¥»¹µÄÐÅÓÃ¸ºÕ®±àºÅ£¨¸Ã×Ö¶ÎÖÃ¿Õ±íÊ¾²»Ö¸¶¨³¥»¹£©(Á½ÈÚ×¨ÓÃ)
+	# Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Õ®ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½Ã¿Õ±ï¿½Ê¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditDebtID = property(_traderapi.CTORATstpInputOrderExField_CreditDebtID_get, _traderapi.CTORATstpInputOrderExField_CreditDebtID_set)
 
-	# Í·´çÀàÐÍ(Á½ÈÚ×¨ÓÃ)
+	# Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditQuotaType = property(_traderapi.CTORATstpInputOrderExField_CreditQuotaType_get, _traderapi.CTORATstpInputOrderExField_CreditQuotaType_set)
 
-	# ·ÑÏ¢ÕÛ¿ÛÈ¯±àºÅ£¨0±íÊ¾²»Ê¹ÓÃÕÛ¿ÛÈ¯£©(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½Ï¢ï¿½Û¿ï¿½È¯ï¿½ï¿½Å£ï¿?0ï¿½ï¿½Ê¾ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Û¿ï¿½È¯ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     DiscountCouponID = property(_traderapi.CTORATstpInputOrderExField_DiscountCouponID_get, _traderapi.CTORATstpInputOrderExField_DiscountCouponID_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpInputOrderExField_SInfo_get, _traderapi.CTORATstpInputOrderExField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpInputOrderExField_IInfo_get, _traderapi.CTORATstpInputOrderExField_IInfo_set)
 
-	# ¹ØÁª½Úµã±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½
     NodeRef = property(_traderapi.CTORATstpInputOrderExField_NodeRef_get, _traderapi.CTORATstpInputOrderExField_NodeRef_set)
 
     def __init__(self):
@@ -2412,48 +2412,48 @@ _traderapi.CTORATstpInputOrderExField_swigregister(CTORATstpInputOrderExField)
 
 
 
-#########################################ÊäÈë³·µ¥²Ù×÷############################################
+#########################################ï¿½ï¿½ï¿½ë³·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpInputOrderActionExField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputOrderActionExField_UserRequestID_get, _traderapi.CTORATstpInputOrderActionExField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInputOrderActionExField_ExchangeID_get, _traderapi.CTORATstpInputOrderActionExField_ExchangeID_set)
 
-	# ±»³·±¨µ¥Ç°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpInputOrderActionExField_FrontID_get, _traderapi.CTORATstpInputOrderActionExField_FrontID_set)
 
-	# ±»³·±¨µ¥»á»°±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpInputOrderActionExField_SessionID_get, _traderapi.CTORATstpInputOrderActionExField_SessionID_set)
 
-	# ±»³·±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderRef = property(_traderapi.CTORATstpInputOrderActionExField_OrderRef_get, _traderapi.CTORATstpInputOrderActionExField_OrderRef_set)
 
-	# ±»³·±¨µ¥ÏµÍ³±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpInputOrderActionExField_OrderSysID_get, _traderapi.CTORATstpInputOrderActionExField_OrderSysID_set)
 
-	# ²Ù×÷±êÖ¾
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
     ActionFlag = property(_traderapi.CTORATstpInputOrderActionExField_ActionFlag_get, _traderapi.CTORATstpInputOrderActionExField_ActionFlag_set)
 
-	# ±¨µ¥²Ù×÷ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderActionRef = property(_traderapi.CTORATstpInputOrderActionExField_OrderActionRef_get, _traderapi.CTORATstpInputOrderActionExField_OrderActionRef_set)
 
-	# ÏµÍ³³·µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelOrderSysID = property(_traderapi.CTORATstpInputOrderActionExField_CancelOrderSysID_get, _traderapi.CTORATstpInputOrderActionExField_CancelOrderSysID_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpInputOrderActionExField_Operway_get, _traderapi.CTORATstpInputOrderActionExField_Operway_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpInputOrderActionExField_SInfo_get, _traderapi.CTORATstpInputOrderActionExField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpInputOrderActionExField_IInfo_get, _traderapi.CTORATstpInputOrderActionExField_IInfo_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpInputOrderActionExField_SecurityID_get, _traderapi.CTORATstpInputOrderActionExField_SecurityID_set)
 
     def __init__(self):
@@ -2466,15 +2466,15 @@ _traderapi.CTORATstpInputOrderActionExField_swigregister(CTORATstpInputOrderActi
 
 
 
-#########################################ÊÐ³¡×´Ì¬############################################
+#########################################ï¿½Ð³ï¿½×´Ì¬############################################
 class CTORATstpMarketStatusField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpMarketStatusField_MarketID_get, _traderapi.CTORATstpMarketStatusField_MarketID_set)
 
-	# ÊÐ³¡×´Ì¬
+	# ï¿½Ð³ï¿½×´Ì¬
     MarketStatus = property(_traderapi.CTORATstpMarketStatusField_MarketStatus_get, _traderapi.CTORATstpMarketStatusField_MarketStatus_set)
 
     def __init__(self):
@@ -2487,54 +2487,54 @@ _traderapi.CTORATstpMarketStatusField_swigregister(CTORATstpMarketStatusField)
 
 
 
-#########################################×Ê½ð×ªÒÆ############################################
+#########################################ï¿½Ê½ï¿½×ªï¿½ï¿½############################################
 class CTORATstpInputTransferFundField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputTransferFundField_UserRequestID_get, _traderapi.CTORATstpInputTransferFundField_UserRequestID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpInputTransferFundField_DepartmentID_get, _traderapi.CTORATstpInputTransferFundField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpInputTransferFundField_AccountID_get, _traderapi.CTORATstpInputTransferFundField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpInputTransferFundField_CurrencyID_get, _traderapi.CTORATstpInputTransferFundField_CurrencyID_set)
 
-	# ÉêÇëÁ÷Ë®ºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     ApplySerial = property(_traderapi.CTORATstpInputTransferFundField_ApplySerial_get, _traderapi.CTORATstpInputTransferFundField_ApplySerial_set)
 
-	# ×ªÒÆ·½Ïò
+	# ×ªï¿½Æ·ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpInputTransferFundField_TransferDirection_get, _traderapi.CTORATstpInputTransferFundField_TransferDirection_set)
 
-	# ×ªÒÆ½ð¶î
+	# ×ªï¿½Æ½ï¿½ï¿?
     Amount = property(_traderapi.CTORATstpInputTransferFundField_Amount_get, _traderapi.CTORATstpInputTransferFundField_Amount_set)
 
-	# ÒøÐÐ´úÂë(ÒøÖ¤×ªÕËÊ±±ØÌî)
+	# ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½(ï¿½ï¿½Ö¤×ªï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½)
     BankID = property(_traderapi.CTORATstpInputTransferFundField_BankID_get, _traderapi.CTORATstpInputTransferFundField_BankID_set)
 
-	# ×Ê½ðÃÜÂë(Ö¤È¯×ªÒøÐÐÊ±±ØÌî)
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½(Ö¤È¯×ªï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½)
     AccountPassword = property(_traderapi.CTORATstpInputTransferFundField_AccountPassword_get, _traderapi.CTORATstpInputTransferFundField_AccountPassword_set)
 
-	# ÒøÐÐÃÜÂë(ÒøÐÐ×ªÖ¤È¯Ê±±ØÌî)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×ªÖ¤È¯Ê±ï¿½ï¿½ï¿½ï¿½)
     BankPassword = property(_traderapi.CTORATstpInputTransferFundField_BankPassword_get, _traderapi.CTORATstpInputTransferFundField_BankPassword_set)
 
-	# Íâ²¿½ÚµãºÅ(½Úµã¼ä×Ê½ðµ÷²¦Ê±±ØÌî)
+	# ï¿½â²¿ï¿½Úµï¿½ï¿?(ï¿½Úµï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½)
     ExternalNodeID = property(_traderapi.CTORATstpInputTransferFundField_ExternalNodeID_get, _traderapi.CTORATstpInputTransferFundField_ExternalNodeID_set)
 
-	# Ö¸¶¨³¥»¹µÄÐÅÓÃ¸ºÕ®±àºÅ(Á½ÈÚ×¨ÓÃ)
+	# Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Õ®ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditDebtID = property(_traderapi.CTORATstpInputTransferFundField_CreditDebtID_get, _traderapi.CTORATstpInputTransferFundField_CreditDebtID_set)
 
-	# Ç¿Æ½Ô­Òò(Á½ÈÚ×¨ÓÃ)
+	# Ç¿Æ½Ô­ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     ForceCloseReason = property(_traderapi.CTORATstpInputTransferFundField_ForceCloseReason_get, _traderapi.CTORATstpInputTransferFundField_ForceCloseReason_set)
 
-	# Êµ¼Ê³¥»¹½ð¶î(·µ»Ø)(Á½ÈÚ×¨ÓÃ)
+	# Êµï¿½Ê³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½)(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     RealAmount = property(_traderapi.CTORATstpInputTransferFundField_RealAmount_get, _traderapi.CTORATstpInputTransferFundField_RealAmount_set)
 
-	# Ç¿ÖÆ±êÊ¶(Ö¤È¯×ªÒøÐÐÊ±ÓÐÐ§)
+	# Ç¿ï¿½Æ±ï¿½Ê¶(Ö¤È¯×ªï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ð§)
     ForceFlag = property(_traderapi.CTORATstpInputTransferFundField_ForceFlag_get, _traderapi.CTORATstpInputTransferFundField_ForceFlag_set)
 
     def __init__(self):
@@ -2547,72 +2547,72 @@ _traderapi.CTORATstpInputTransferFundField_swigregister(CTORATstpInputTransferFu
 
 
 
-#########################################×Ê½ð×ªÒÆ»Ø±¨############################################
+#########################################ï¿½Ê½ï¿½×ªï¿½Æ»Ø±ï¿½############################################
 class CTORATstpTransferFundField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ×ªÒÆÁ÷Ë®ºÅ
+	# ×ªï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     FundSerial = property(_traderapi.CTORATstpTransferFundField_FundSerial_get, _traderapi.CTORATstpTransferFundField_FundSerial_set)
 
-	# ÉêÇëÁ÷Ë®ºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     ApplySerial = property(_traderapi.CTORATstpTransferFundField_ApplySerial_get, _traderapi.CTORATstpTransferFundField_ApplySerial_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpTransferFundField_FrontID_get, _traderapi.CTORATstpTransferFundField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpTransferFundField_SessionID_get, _traderapi.CTORATstpTransferFundField_SessionID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpTransferFundField_DepartmentID_get, _traderapi.CTORATstpTransferFundField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpTransferFundField_AccountID_get, _traderapi.CTORATstpTransferFundField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpTransferFundField_CurrencyID_get, _traderapi.CTORATstpTransferFundField_CurrencyID_set)
 
-	# ×ªÒÆ·½Ïò
+	# ×ªï¿½Æ·ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpTransferFundField_TransferDirection_get, _traderapi.CTORATstpTransferFundField_TransferDirection_set)
 
-	# ×ªÒÆ½ð¶î
+	# ×ªï¿½Æ½ï¿½ï¿?
     Amount = property(_traderapi.CTORATstpTransferFundField_Amount_get, _traderapi.CTORATstpTransferFundField_Amount_set)
 
-	# ×ªÒÆ×´Ì¬
+	# ×ªï¿½ï¿½×´Ì¬
     TransferStatus = property(_traderapi.CTORATstpTransferFundField_TransferStatus_get, _traderapi.CTORATstpTransferFundField_TransferStatus_set)
 
-	# ²Ù×÷ÈËÔ±
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±
     OperatorID = property(_traderapi.CTORATstpTransferFundField_OperatorID_get, _traderapi.CTORATstpTransferFundField_OperatorID_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OperateDate = property(_traderapi.CTORATstpTransferFundField_OperateDate_get, _traderapi.CTORATstpTransferFundField_OperateDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     OperateTime = property(_traderapi.CTORATstpTransferFundField_OperateTime_get, _traderapi.CTORATstpTransferFundField_OperateTime_set)
 
-	# Ç©Ô¼ÒøÐÐÕË»§
+	# Ç©Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½
     BankAccountID = property(_traderapi.CTORATstpTransferFundField_BankAccountID_get, _traderapi.CTORATstpTransferFundField_BankAccountID_set)
 
-	# ÒøÐÐ´úÂë
+	# ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½
     BankID = property(_traderapi.CTORATstpTransferFundField_BankID_get, _traderapi.CTORATstpTransferFundField_BankID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpTransferFundField_InvestorID_get, _traderapi.CTORATstpTransferFundField_InvestorID_set)
 
-	# Íâ²¿½ÚµãºÅ
+	# ï¿½â²¿ï¿½Úµï¿½ï¿?
     ExternalNodeID = property(_traderapi.CTORATstpTransferFundField_ExternalNodeID_get, _traderapi.CTORATstpTransferFundField_ExternalNodeID_set)
 
-	# Ç¿Æ½Ô­Òò(Á½ÈÚ×¨ÓÃ)
+	# Ç¿Æ½Ô­ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     ForceCloseReason = property(_traderapi.CTORATstpTransferFundField_ForceCloseReason_get, _traderapi.CTORATstpTransferFundField_ForceCloseReason_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpTransferFundField_IPAddress_get, _traderapi.CTORATstpTransferFundField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpTransferFundField_MacAddress_get, _traderapi.CTORATstpTransferFundField_MacAddress_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpTransferFundField_BusinessUnitID_get, _traderapi.CTORATstpTransferFundField_BusinessUnitID_set)
 
     def __init__(self):
@@ -2625,45 +2625,45 @@ _traderapi.CTORATstpTransferFundField_swigregister(CTORATstpTransferFundField)
 
 
 
-#########################################²ÖÎ»×ªÒÆ############################################
+#########################################ï¿½ï¿½Î»×ªï¿½ï¿½############################################
 class CTORATstpInputTransferPositionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInputTransferPositionField_InvestorID_get, _traderapi.CTORATstpInputTransferPositionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpInputTransferPositionField_BusinessUnitID_get, _traderapi.CTORATstpInputTransferPositionField_BusinessUnitID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInputTransferPositionField_ExchangeID_get, _traderapi.CTORATstpInputTransferPositionField_ExchangeID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpInputTransferPositionField_ShareholderID_get, _traderapi.CTORATstpInputTransferPositionField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpInputTransferPositionField_SecurityID_get, _traderapi.CTORATstpInputTransferPositionField_SecurityID_set)
 
-	# ÉêÇëÁ÷Ë®ºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     ApplySerial = property(_traderapi.CTORATstpInputTransferPositionField_ApplySerial_get, _traderapi.CTORATstpInputTransferPositionField_ApplySerial_set)
 
-	# ×ªÒÆ·½Ïò
+	# ×ªï¿½Æ·ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpInputTransferPositionField_TransferDirection_get, _traderapi.CTORATstpInputTransferPositionField_TransferDirection_set)
 
-	# ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½
     Volume = property(_traderapi.CTORATstpInputTransferPositionField_Volume_get, _traderapi.CTORATstpInputTransferPositionField_Volume_set)
 
-	# ×ªÒÆ³Ö²ÖÀàÐÍ
+	# ×ªï¿½Æ³Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
     TransferPositionType = property(_traderapi.CTORATstpInputTransferPositionField_TransferPositionType_get, _traderapi.CTORATstpInputTransferPositionField_TransferPositionType_set)
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputTransferPositionField_UserRequestID_get, _traderapi.CTORATstpInputTransferPositionField_UserRequestID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpInputTransferPositionField_MarketID_get, _traderapi.CTORATstpInputTransferPositionField_MarketID_set)
 
-	# Íâ²¿½Úµã±àºÅ(Íâ²¿ÏµÍ³×ª²ÖÊ±±ØÌî)
+	# ï¿½â²¿ï¿½Úµï¿½ï¿½ï¿½(ï¿½â²¿ÏµÍ³×ªï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½)
     ExternalNodeID = property(_traderapi.CTORATstpInputTransferPositionField_ExternalNodeID_get, _traderapi.CTORATstpInputTransferPositionField_ExternalNodeID_set)
 
     def __init__(self):
@@ -2676,81 +2676,81 @@ _traderapi.CTORATstpInputTransferPositionField_swigregister(CTORATstpInputTransf
 
 
 
-#########################################²ÖÎ»×ªÒÆ»Ø±¨############################################
+#########################################ï¿½ï¿½Î»×ªï¿½Æ»Ø±ï¿½############################################
 class CTORATstpTransferPositionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ²ÖÎ»×ªÒÆÁ÷Ë®ºÅ
+	# ï¿½ï¿½Î»×ªï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     PositionSerial = property(_traderapi.CTORATstpTransferPositionField_PositionSerial_get, _traderapi.CTORATstpTransferPositionField_PositionSerial_set)
 
-	# ÉêÇëÁ÷Ë®ºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     ApplySerial = property(_traderapi.CTORATstpTransferPositionField_ApplySerial_get, _traderapi.CTORATstpTransferPositionField_ApplySerial_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpTransferPositionField_FrontID_get, _traderapi.CTORATstpTransferPositionField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpTransferPositionField_SessionID_get, _traderapi.CTORATstpTransferPositionField_SessionID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpTransferPositionField_InvestorID_get, _traderapi.CTORATstpTransferPositionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpTransferPositionField_BusinessUnitID_get, _traderapi.CTORATstpTransferPositionField_BusinessUnitID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpTransferPositionField_ExchangeID_get, _traderapi.CTORATstpTransferPositionField_ExchangeID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpTransferPositionField_ShareholderID_get, _traderapi.CTORATstpTransferPositionField_ShareholderID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpTransferPositionField_MarketID_get, _traderapi.CTORATstpTransferPositionField_MarketID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpTransferPositionField_SecurityID_get, _traderapi.CTORATstpTransferPositionField_SecurityID_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpTransferPositionField_TradingDay_get, _traderapi.CTORATstpTransferPositionField_TradingDay_set)
 
-	# ×ªÒÆ·½Ïò
+	# ×ªï¿½Æ·ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpTransferPositionField_TransferDirection_get, _traderapi.CTORATstpTransferPositionField_TransferDirection_set)
 
-	# ×ªÒÆ³Ö²ÖÀàÐÍ
+	# ×ªï¿½Æ³Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
     TransferPositionType = property(_traderapi.CTORATstpTransferPositionField_TransferPositionType_get, _traderapi.CTORATstpTransferPositionField_TransferPositionType_set)
 
-	# ×òÈÕ³Ö²ÖÊýÁ¿
+	# ï¿½ï¿½ï¿½Õ³Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
     HistoryVolume = property(_traderapi.CTORATstpTransferPositionField_HistoryVolume_get, _traderapi.CTORATstpTransferPositionField_HistoryVolume_set)
 
-	# ½ñÈÕÂòÂô³Ö²ÖÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
     TodayBSVolume = property(_traderapi.CTORATstpTransferPositionField_TodayBSVolume_get, _traderapi.CTORATstpTransferPositionField_TodayBSVolume_set)
 
-	# ½ñÈÕÉêÊê³Ö²ÖÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿?
     TodayPRVolume = property(_traderapi.CTORATstpTransferPositionField_TodayPRVolume_get, _traderapi.CTORATstpTransferPositionField_TodayPRVolume_set)
 
-	# ½ñÈÕ²ð·ÖºÏ²¢³Ö²ÖÊýÁ¿
+	# ï¿½ï¿½ï¿½Õ²ï¿½ÖºÏ²ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿?
     TodaySMVolume = property(_traderapi.CTORATstpTransferPositionField_TodaySMVolume_get, _traderapi.CTORATstpTransferPositionField_TodaySMVolume_set)
 
-	# ×ªÒÆ×´Ì¬
+	# ×ªï¿½ï¿½×´Ì¬
     TransferStatus = property(_traderapi.CTORATstpTransferPositionField_TransferStatus_get, _traderapi.CTORATstpTransferPositionField_TransferStatus_set)
 
-	# ²Ù×÷ÈËÔ±
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±
     OperatorID = property(_traderapi.CTORATstpTransferPositionField_OperatorID_get, _traderapi.CTORATstpTransferPositionField_OperatorID_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OperateDate = property(_traderapi.CTORATstpTransferPositionField_OperateDate_get, _traderapi.CTORATstpTransferPositionField_OperateDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     OperateTime = property(_traderapi.CTORATstpTransferPositionField_OperateTime_get, _traderapi.CTORATstpTransferPositionField_OperateTime_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpTransferPositionField_IPAddress_get, _traderapi.CTORATstpTransferPositionField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpTransferPositionField_MacAddress_get, _traderapi.CTORATstpTransferPositionField_MacAddress_set)
 
-	# Íâ²¿½Úµã±àºÅ
+	# ï¿½â²¿ï¿½Úµï¿½ï¿½ï¿½
     ExternalNodeID = property(_traderapi.CTORATstpTransferPositionField_ExternalNodeID_get, _traderapi.CTORATstpTransferPositionField_ExternalNodeID_set)
 
     def __init__(self):
@@ -2763,81 +2763,81 @@ _traderapi.CTORATstpTransferPositionField_swigregister(CTORATstpTransferPosition
 
 
 
-#########################################ÍâÎ§ÏµÍ³²ÖÎ»×ªÒÆ»Ø±¨############################################
+#########################################ï¿½ï¿½Î§ÏµÍ³ï¿½ï¿½Î»×ªï¿½Æ»Ø±ï¿½############################################
 class CTORATstpPeripheryTransferPositionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ²ÖÎ»µ÷²¦Á÷Ë®ºÅ
+	# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     PositionSerial = property(_traderapi.CTORATstpPeripheryTransferPositionField_PositionSerial_get, _traderapi.CTORATstpPeripheryTransferPositionField_PositionSerial_set)
 
-	# ²ÖÎ»µ÷²¦ÇëÇóÁ÷Ë®ºÅ
+	# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     ApplySerial = property(_traderapi.CTORATstpPeripheryTransferPositionField_ApplySerial_get, _traderapi.CTORATstpPeripheryTransferPositionField_ApplySerial_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpPeripheryTransferPositionField_FrontID_get, _traderapi.CTORATstpPeripheryTransferPositionField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpPeripheryTransferPositionField_SessionID_get, _traderapi.CTORATstpPeripheryTransferPositionField_SessionID_set)
 
-	# ²ÖÎ»µ÷²¦·½Ïò
+	# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpPeripheryTransferPositionField_TransferDirection_get, _traderapi.CTORATstpPeripheryTransferPositionField_TransferDirection_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpPeripheryTransferPositionField_ExchangeID_get, _traderapi.CTORATstpPeripheryTransferPositionField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpPeripheryTransferPositionField_MarketID_get, _traderapi.CTORATstpPeripheryTransferPositionField_MarketID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpPeripheryTransferPositionField_InvestorID_get, _traderapi.CTORATstpPeripheryTransferPositionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpPeripheryTransferPositionField_BusinessUnitID_get, _traderapi.CTORATstpPeripheryTransferPositionField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpPeripheryTransferPositionField_ShareholderID_get, _traderapi.CTORATstpPeripheryTransferPositionField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpPeripheryTransferPositionField_SecurityID_get, _traderapi.CTORATstpPeripheryTransferPositionField_SecurityID_set)
 
-	# ½ñÈÕÂòÂô²ÖÎ»×ªÈë×ª³öÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»×ªï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TodayBSPos = property(_traderapi.CTORATstpPeripheryTransferPositionField_TodayBSPos_get, _traderapi.CTORATstpPeripheryTransferPositionField_TodayBSPos_set)
 
-	# ½ñÈÕÉêÊê²ÖÎ»×ªÈëÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»×?¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     TodayPRPos = property(_traderapi.CTORATstpPeripheryTransferPositionField_TodayPRPos_get, _traderapi.CTORATstpPeripheryTransferPositionField_TodayPRPos_set)
 
-	# ×òÈÕ²ÖÎ»×ªÈëÊýÁ¿
+	# ï¿½ï¿½ï¿½Õ²ï¿½Î»×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     HistoryPos = property(_traderapi.CTORATstpPeripheryTransferPositionField_HistoryPos_get, _traderapi.CTORATstpPeripheryTransferPositionField_HistoryPos_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpPeripheryTransferPositionField_TradingDay_get, _traderapi.CTORATstpPeripheryTransferPositionField_TradingDay_set)
 
-	# ²ÖÎ»µ÷²¦Ô­Òò
+	# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½
     TransferReason = property(_traderapi.CTORATstpPeripheryTransferPositionField_TransferReason_get, _traderapi.CTORATstpPeripheryTransferPositionField_TransferReason_set)
 
-	# ×ªÒÆ×´Ì¬
+	# ×ªï¿½ï¿½×´Ì¬
     TransferStatus = property(_traderapi.CTORATstpPeripheryTransferPositionField_TransferStatus_get, _traderapi.CTORATstpPeripheryTransferPositionField_TransferStatus_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OperateDate = property(_traderapi.CTORATstpPeripheryTransferPositionField_OperateDate_get, _traderapi.CTORATstpPeripheryTransferPositionField_OperateDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     OperateTime = property(_traderapi.CTORATstpPeripheryTransferPositionField_OperateTime_get, _traderapi.CTORATstpPeripheryTransferPositionField_OperateTime_set)
 
-	# ³åÕýÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RepealDate = property(_traderapi.CTORATstpPeripheryTransferPositionField_RepealDate_get, _traderapi.CTORATstpPeripheryTransferPositionField_RepealDate_set)
 
-	# ³åÕýÊ±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     RepealTime = property(_traderapi.CTORATstpPeripheryTransferPositionField_RepealTime_get, _traderapi.CTORATstpPeripheryTransferPositionField_RepealTime_set)
 
-	# ³åÕýÔ­Òò
+	# ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½
     RepealReason = property(_traderapi.CTORATstpPeripheryTransferPositionField_RepealReason_get, _traderapi.CTORATstpPeripheryTransferPositionField_RepealReason_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpPeripheryTransferPositionField_StatusMsg_get, _traderapi.CTORATstpPeripheryTransferPositionField_StatusMsg_set)
 
-	# ½ñÈÕ²ð·ÖºÏ²¢²ÖÎ»×ªÈëÊýÁ¿
+	# ï¿½ï¿½ï¿½Õ²ï¿½ÖºÏ²ï¿½ï¿½ï¿½Î»×?¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     TodaySMPos = property(_traderapi.CTORATstpPeripheryTransferPositionField_TodaySMPos_get, _traderapi.CTORATstpPeripheryTransferPositionField_TodaySMPos_set)
 
     def __init__(self):
@@ -2850,66 +2850,66 @@ _traderapi.CTORATstpPeripheryTransferPositionField_swigregister(CTORATstpPeriphe
 
 
 
-#########################################ÍâÎ§ÏµÍ³×Ê½ð×ªÒÆ»Ø±¨############################################
+#########################################ï¿½ï¿½Î§ÏµÍ³ï¿½Ê½ï¿½×ªï¿½Æ»Ø±ï¿½############################################
 class CTORATstpPeripheryTransferFundField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ×Ê½ðµ÷²¦Á÷Ë®ºÅ
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë?¿½ï¿?
     FundSerial = property(_traderapi.CTORATstpPeripheryTransferFundField_FundSerial_get, _traderapi.CTORATstpPeripheryTransferFundField_FundSerial_set)
 
-	# ×Ê½ðµ÷²¦ÇëÇóÁ÷Ë®ºÅ
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë?¿½ï¿?
     ApplySerial = property(_traderapi.CTORATstpPeripheryTransferFundField_ApplySerial_get, _traderapi.CTORATstpPeripheryTransferFundField_ApplySerial_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpPeripheryTransferFundField_FrontID_get, _traderapi.CTORATstpPeripheryTransferFundField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpPeripheryTransferFundField_SessionID_get, _traderapi.CTORATstpPeripheryTransferFundField_SessionID_set)
 
-	# ×Ê½ðµ÷²¦·½Ïò
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     TransferDirection = property(_traderapi.CTORATstpPeripheryTransferFundField_TransferDirection_get, _traderapi.CTORATstpPeripheryTransferFundField_TransferDirection_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpPeripheryTransferFundField_DepartmentID_get, _traderapi.CTORATstpPeripheryTransferFundField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpPeripheryTransferFundField_AccountID_get, _traderapi.CTORATstpPeripheryTransferFundField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpPeripheryTransferFundField_CurrencyID_get, _traderapi.CTORATstpPeripheryTransferFundField_CurrencyID_set)
 
-	# ×ªÒÆ½ð¶î
+	# ×ªï¿½Æ½ï¿½ï¿?
     Amount = property(_traderapi.CTORATstpPeripheryTransferFundField_Amount_get, _traderapi.CTORATstpPeripheryTransferFundField_Amount_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpPeripheryTransferFundField_InvestorID_get, _traderapi.CTORATstpPeripheryTransferFundField_InvestorID_set)
 
-	# ×Ê½ðµ÷²¦Ô­Òò
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ô?¿½ï¿?
     TransferReason = property(_traderapi.CTORATstpPeripheryTransferFundField_TransferReason_get, _traderapi.CTORATstpPeripheryTransferFundField_TransferReason_set)
 
-	# ×ªÒÆ×´Ì¬
+	# ×ªï¿½ï¿½×´Ì¬
     TransferStatus = property(_traderapi.CTORATstpPeripheryTransferFundField_TransferStatus_get, _traderapi.CTORATstpPeripheryTransferFundField_TransferStatus_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OperateDate = property(_traderapi.CTORATstpPeripheryTransferFundField_OperateDate_get, _traderapi.CTORATstpPeripheryTransferFundField_OperateDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     OperateTime = property(_traderapi.CTORATstpPeripheryTransferFundField_OperateTime_get, _traderapi.CTORATstpPeripheryTransferFundField_OperateTime_set)
 
-	# ³åÕýÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RepealDate = property(_traderapi.CTORATstpPeripheryTransferFundField_RepealDate_get, _traderapi.CTORATstpPeripheryTransferFundField_RepealDate_set)
 
-	# ³åÕýÊ±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     RepealTime = property(_traderapi.CTORATstpPeripheryTransferFundField_RepealTime_get, _traderapi.CTORATstpPeripheryTransferFundField_RepealTime_set)
 
-	# ³åÕýÔ­Òò
+	# ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½
     RepealReason = property(_traderapi.CTORATstpPeripheryTransferFundField_RepealReason_get, _traderapi.CTORATstpPeripheryTransferFundField_RepealReason_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpPeripheryTransferFundField_StatusMsg_get, _traderapi.CTORATstpPeripheryTransferFundField_StatusMsg_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpPeripheryTransferFundField_BusinessUnitID_get, _traderapi.CTORATstpPeripheryTransferFundField_BusinessUnitID_set)
 
     def __init__(self):
@@ -2922,21 +2922,21 @@ _traderapi.CTORATstpPeripheryTransferFundField_swigregister(CTORATstpPeripheryTr
 
 
 
-#########################################²éÑ¯¼¯ÖÐ½»Ò×ÏµÍ³×Ê½ðÇëÇó############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½ÏµÍ³ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpReqInquiryJZFundField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpReqInquiryJZFundField_AccountID_get, _traderapi.CTORATstpReqInquiryJZFundField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpReqInquiryJZFundField_CurrencyID_get, _traderapi.CTORATstpReqInquiryJZFundField_CurrencyID_set)
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpReqInquiryJZFundField_UserRequestID_get, _traderapi.CTORATstpReqInquiryJZFundField_UserRequestID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpReqInquiryJZFundField_DepartmentID_get, _traderapi.CTORATstpReqInquiryJZFundField_DepartmentID_set)
 
     def __init__(self):
@@ -2949,27 +2949,27 @@ _traderapi.CTORATstpReqInquiryJZFundField_swigregister(CTORATstpReqInquiryJZFund
 
 
 
-#########################################²éÑ¯¼¯ÖÐ½»Ò×ÏµÍ³×Ê½ðÏìÓ¦############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½ÏµÍ³ï¿½Ê½ï¿½ï¿½ï¿½Ó¦############################################
 class CTORATstpRspInquiryJZFundField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpRspInquiryJZFundField_AccountID_get, _traderapi.CTORATstpRspInquiryJZFundField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpRspInquiryJZFundField_CurrencyID_get, _traderapi.CTORATstpRspInquiryJZFundField_CurrencyID_set)
 
-	# ¿ÉÓÃ½ð¶î
+	# ï¿½ï¿½ï¿½Ã½ï¿½ï¿?
     UsefulMoney = property(_traderapi.CTORATstpRspInquiryJZFundField_UsefulMoney_get, _traderapi.CTORATstpRspInquiryJZFundField_UsefulMoney_set)
 
-	# ¿ÉÈ¡¶î¶È
+	# ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     FetchLimit = property(_traderapi.CTORATstpRspInquiryJZFundField_FetchLimit_get, _traderapi.CTORATstpRspInquiryJZFundField_FetchLimit_set)
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpRspInquiryJZFundField_UserRequestID_get, _traderapi.CTORATstpRspInquiryJZFundField_UserRequestID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpRspInquiryJZFundField_DepartmentID_get, _traderapi.CTORATstpRspInquiryJZFundField_DepartmentID_set)
 
     def __init__(self):
@@ -2982,27 +2982,27 @@ _traderapi.CTORATstpRspInquiryJZFundField_swigregister(CTORATstpRspInquiryJZFund
 
 
 
-#########################################²éÑ¯ÒøÐÐÕË»§Óà¶îÇëÇó############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?############################################
 class CTORATstpReqInquiryBankAccountFundField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpReqInquiryBankAccountFundField_UserRequestID_get, _traderapi.CTORATstpReqInquiryBankAccountFundField_UserRequestID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpReqInquiryBankAccountFundField_DepartmentID_get, _traderapi.CTORATstpReqInquiryBankAccountFundField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpReqInquiryBankAccountFundField_AccountID_get, _traderapi.CTORATstpReqInquiryBankAccountFundField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpReqInquiryBankAccountFundField_CurrencyID_get, _traderapi.CTORATstpReqInquiryBankAccountFundField_CurrencyID_set)
 
-	# ÒøÐÐ´úÂë
+	# ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½
     BankID = property(_traderapi.CTORATstpReqInquiryBankAccountFundField_BankID_get, _traderapi.CTORATstpReqInquiryBankAccountFundField_BankID_set)
 
-	# ÒøÐÐÃÜÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     BankPassword = property(_traderapi.CTORATstpReqInquiryBankAccountFundField_BankPassword_get, _traderapi.CTORATstpReqInquiryBankAccountFundField_BankPassword_set)
 
     def __init__(self):
@@ -3015,30 +3015,30 @@ _traderapi.CTORATstpReqInquiryBankAccountFundField_swigregister(CTORATstpReqInqu
 
 
 
-#########################################²éÑ¯ÒøÐÐÕË»§Óà¶îÏìÓ¦############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó?############################################
 class CTORATstpRspInquiryBankAccountFundField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpRspInquiryBankAccountFundField_UserRequestID_get, _traderapi.CTORATstpRspInquiryBankAccountFundField_UserRequestID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpRspInquiryBankAccountFundField_DepartmentID_get, _traderapi.CTORATstpRspInquiryBankAccountFundField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpRspInquiryBankAccountFundField_AccountID_get, _traderapi.CTORATstpRspInquiryBankAccountFundField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpRspInquiryBankAccountFundField_CurrencyID_get, _traderapi.CTORATstpRspInquiryBankAccountFundField_CurrencyID_set)
 
-	# ÒøÐÐ´úÂë
+	# ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½
     BankID = property(_traderapi.CTORATstpRspInquiryBankAccountFundField_BankID_get, _traderapi.CTORATstpRspInquiryBankAccountFundField_BankID_set)
 
-	# Ç©Ô¼ÒøÐÐÕË»§
+	# Ç©Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½
     BankAccountID = property(_traderapi.CTORATstpRspInquiryBankAccountFundField_BankAccountID_get, _traderapi.CTORATstpRspInquiryBankAccountFundField_BankAccountID_set)
 
-	# ÕË»§Óà¶î
+	# ï¿½Ë»ï¿½ï¿½ï¿½ï¿?
     Balance = property(_traderapi.CTORATstpRspInquiryBankAccountFundField_Balance_get, _traderapi.CTORATstpRspInquiryBankAccountFundField_Balance_set)
 
     def __init__(self):
@@ -3051,30 +3051,30 @@ _traderapi.CTORATstpRspInquiryBankAccountFundField_swigregister(CTORATstpRspInqu
 
 
 
-#########################################½»Ò×Í¨Öª############################################
+#########################################ï¿½ï¿½ï¿½ï¿½Í¨Öª############################################
 class CTORATstpTradingNoticeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¨ÖªÁ÷Ë®ºÅ
+	# Í¨Öªï¿½ï¿½Ë®ï¿½ï¿½
     NoticeSerial = property(_traderapi.CTORATstpTradingNoticeField_NoticeSerial_get, _traderapi.CTORATstpTradingNoticeField_NoticeSerial_set)
 
-	# Í¨ÖªÈÕÆÚ
+	# Í¨Öªï¿½ï¿½ï¿½ï¿½
     InsertDate = property(_traderapi.CTORATstpTradingNoticeField_InsertDate_get, _traderapi.CTORATstpTradingNoticeField_InsertDate_set)
 
-	# Í¨ÖªÊ±¼ä
+	# Í¨ÖªÊ±ï¿½ï¿½
     InsertTime = property(_traderapi.CTORATstpTradingNoticeField_InsertTime_get, _traderapi.CTORATstpTradingNoticeField_InsertTime_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpTradingNoticeField_InvestorID_get, _traderapi.CTORATstpTradingNoticeField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpTradingNoticeField_BusinessUnitID_get, _traderapi.CTORATstpTradingNoticeField_BusinessUnitID_set)
 
-	# Í¨ÖªÏûÏ¢ÄÚÈÝ
+	# Í¨Öªï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
     Content = property(_traderapi.CTORATstpTradingNoticeField_Content_get, _traderapi.CTORATstpTradingNoticeField_Content_set)
 
-	# ²Ù×÷Ô±
+	# ï¿½ï¿½ï¿½ï¿½Ô±
     OperatorID = property(_traderapi.CTORATstpTradingNoticeField_OperatorID_get, _traderapi.CTORATstpTradingNoticeField_OperatorID_set)
 
     def __init__(self):
@@ -3087,54 +3087,54 @@ _traderapi.CTORATstpTradingNoticeField_swigregister(CTORATstpTradingNoticeField)
 
 
 
-#########################################²éÑ¯×î´ó±¨µ¥Á¿ÇëÇó############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ó±¨µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?############################################
 class CTORATstpReqInquiryMaxOrderVolumeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_UserRequestID_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_ExchangeID_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_ExchangeID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_SecurityID_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_SecurityID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_InvestorID_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_BusinessUnitID_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_ShareholderID_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_ShareholderID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_Direction_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_Direction_set)
 
-	# ±¨µ¥¼Û¸ñÌõ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderPriceType = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_OrderPriceType_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_OrderPriceType_set)
 
-	# ÓÐÐ§ÆÚÀàÐÍ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TimeCondition = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_TimeCondition_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_TimeCondition_set)
 
-	# ³É½»Á¿ÀàÐÍ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeCondition = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_VolumeCondition_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_VolumeCondition_set)
 
-	# ¼Û¸ñ
+	# ï¿½Û¸ï¿½
     LimitPrice = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_LimitPrice_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_LimitPrice_set)
 
-	# ¸Û¹ÉÍ¨¶©µ¥ÊýÁ¿ÀàÐÍ
+	# ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     LotType = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_LotType_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_LotType_set)
 
-	# ×î´óÎ¯ÍÐÊÖÊý
+	# ï¿½ï¿½ï¿½Î?¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     MaxVolume = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_MaxVolume_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_MaxVolume_set)
 
-	# Ö¸¶¨³¥»¹µÄÐÅÓÃ¸ºÕ®±àºÅ£¨¸Ã×Ö¶ÎÖÃ¿Õ±íÊ¾²»Ö¸¶¨³¥»¹£©£¨Á½ÈÚ×¨ÓÃ£©
+	# Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Õ®ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½Ã¿Õ±ï¿½Ê¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×?¿½Ã£ï¿?
     CreditDebtID = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_CreditDebtID_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_CreditDebtID_set)
 
-	# Í·´çÀàÐÍ£¨Á½ÈÚ×¨ÓÃ£©
+	# Í·ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½×¨ï¿½Ã£ï¿½
     CreditQuotaType = property(_traderapi.CTORATstpReqInquiryMaxOrderVolumeField_CreditQuotaType_get, _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_CreditQuotaType_set)
 
     def __init__(self):
@@ -3147,54 +3147,54 @@ _traderapi.CTORATstpReqInquiryMaxOrderVolumeField_swigregister(CTORATstpReqInqui
 
 
 
-#########################################²éÑ¯×î´ó±¨µ¥Á¿ÏìÓ¦############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ó±¨µï¿½ï¿½ï¿½ï¿½ï¿½Ó?############################################
 class CTORATstpRspInquiryMaxOrderVolumeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_UserRequestID_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_ExchangeID_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_ExchangeID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_SecurityID_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_SecurityID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_InvestorID_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_BusinessUnitID_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_ShareholderID_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_ShareholderID_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_Direction_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_Direction_set)
 
-	# ±¨µ¥¼Û¸ñÌõ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderPriceType = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_OrderPriceType_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_OrderPriceType_set)
 
-	# ÓÐÐ§ÆÚÀàÐÍ
+	# ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TimeCondition = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_TimeCondition_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_TimeCondition_set)
 
-	# ³É½»Á¿ÀàÐÍ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeCondition = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_VolumeCondition_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_VolumeCondition_set)
 
-	# ¼Û¸ñ
+	# ï¿½Û¸ï¿½
     LimitPrice = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_LimitPrice_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_LimitPrice_set)
 
-	# ¸Û¹ÉÍ¨¶©µ¥ÊýÁ¿ÀàÐÍ
+	# ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     LotType = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_LotType_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_LotType_set)
 
-	# ×î´óÎ¯ÍÐÊÖÊý
+	# ï¿½ï¿½ï¿½Î?¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     MaxVolume = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_MaxVolume_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_MaxVolume_set)
 
-	# Ö¸¶¨³¥»¹µÄÐÅÓÃ¸ºÕ®±àºÅ£¨¸Ã×Ö¶ÎÖÃ¿Õ±íÊ¾²»Ö¸¶¨³¥»¹£©£¨Á½ÈÚ×¨ÓÃ£©
+	# Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Õ®ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½Ã¿Õ±ï¿½Ê¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×?¿½Ã£ï¿?
     CreditDebtID = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_CreditDebtID_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_CreditDebtID_set)
 
-	# Í·´çÀàÐÍ£¨Á½ÈÚ×¨ÓÃ£©
+	# Í·ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½×¨ï¿½Ã£ï¿½
     CreditQuotaType = property(_traderapi.CTORATstpRspInquiryMaxOrderVolumeField_CreditQuotaType_get, _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_CreditQuotaType_set)
 
     def __init__(self):
@@ -3207,39 +3207,39 @@ _traderapi.CTORATstpRspInquiryMaxOrderVolumeField_swigregister(CTORATstpRspInqui
 
 
 
-#########################################½»Ò×³É½»¼¯ÖÐ¶È############################################
+#########################################ï¿½ï¿½ï¿½×³É½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½############################################
 class CTORATstpInquiryTradeConcentrationField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInquiryTradeConcentrationField_UserRequestID_get, _traderapi.CTORATstpInquiryTradeConcentrationField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInquiryTradeConcentrationField_ExchangeID_get, _traderapi.CTORATstpInquiryTradeConcentrationField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpInquiryTradeConcentrationField_MarketID_get, _traderapi.CTORATstpInquiryTradeConcentrationField_MarketID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpInquiryTradeConcentrationField_SecurityID_get, _traderapi.CTORATstpInquiryTradeConcentrationField_SecurityID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInquiryTradeConcentrationField_InvestorID_get, _traderapi.CTORATstpInquiryTradeConcentrationField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpInquiryTradeConcentrationField_BusinessUnitID_get, _traderapi.CTORATstpInquiryTradeConcentrationField_BusinessUnitID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpInquiryTradeConcentrationField_AccountID_get, _traderapi.CTORATstpInquiryTradeConcentrationField_AccountID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpInquiryTradeConcentrationField_ShareholderID_get, _traderapi.CTORATstpInquiryTradeConcentrationField_ShareholderID_set)
 
-	# Í¶×ÊÕß³É½»Á¿/³É½»×ÜÁ¿
+	# Í¶ï¿½ï¿½ï¿½ß³É½ï¿½ï¿½ï¿½/ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½
     ConcentrationRatio1 = property(_traderapi.CTORATstpInquiryTradeConcentrationField_ConcentrationRatio1_get, _traderapi.CTORATstpInquiryTradeConcentrationField_ConcentrationRatio1_set)
 
-	# Í¶×ÊÕß³É½»½ð¶î/³É½»×Ü½ð¶î
+	# Í¶ï¿½ï¿½ï¿½ß³É½ï¿½ï¿½ï¿½ï¿?/ï¿½É½ï¿½ï¿½Ü½ï¿½ï¿?
     ConcentrationRatio2 = property(_traderapi.CTORATstpInquiryTradeConcentrationField_ConcentrationRatio2_get, _traderapi.CTORATstpInquiryTradeConcentrationField_ConcentrationRatio2_set)
 
     def __init__(self):
@@ -3252,30 +3252,30 @@ _traderapi.CTORATstpInquiryTradeConcentrationField_swigregister(CTORATstpInquiry
 
 
 
-#########################################ÇëÇóÐÞ¸Ä¿ª²Ö³É±¾############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä¿ï¿½ï¿½Ö³É±ï¿½############################################
 class CTORATstpReqModifyOpenPosCostField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpReqModifyOpenPosCostField_UserRequestID_get, _traderapi.CTORATstpReqModifyOpenPosCostField_UserRequestID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpReqModifyOpenPosCostField_ExchangeID_get, _traderapi.CTORATstpReqModifyOpenPosCostField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpReqModifyOpenPosCostField_InvestorID_get, _traderapi.CTORATstpReqModifyOpenPosCostField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpReqModifyOpenPosCostField_BusinessUnitID_get, _traderapi.CTORATstpReqModifyOpenPosCostField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpReqModifyOpenPosCostField_ShareholderID_get, _traderapi.CTORATstpReqModifyOpenPosCostField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpReqModifyOpenPosCostField_SecurityID_get, _traderapi.CTORATstpReqModifyOpenPosCostField_SecurityID_set)
 
-	# ¿ª²Ö³É±¾
+	# ï¿½ï¿½ï¿½Ö³É±ï¿½
     OpenPosCost = property(_traderapi.CTORATstpReqModifyOpenPosCostField_OpenPosCost_get, _traderapi.CTORATstpReqModifyOpenPosCostField_OpenPosCost_set)
 
     def __init__(self):
@@ -3288,54 +3288,54 @@ _traderapi.CTORATstpReqModifyOpenPosCostField_swigregister(CTORATstpReqModifyOpe
 
 
 
-#########################################Â¼Èë½Úµã×Ê½ð·ÖÅäÐÅÏ¢############################################
+#########################################Â¼ï¿½ï¿½Úµï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpInputNodeFundAssignmentField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpInputNodeFundAssignmentField_UserRequestID_get, _traderapi.CTORATstpInputNodeFundAssignmentField_UserRequestID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpInputNodeFundAssignmentField_DepartmentID_get, _traderapi.CTORATstpInputNodeFundAssignmentField_DepartmentID_set)
 
-	# ×Ê½ðÕËºÅ
+	# ï¿½Ê½ï¿½ï¿½Ëºï¿½
     AccountID = property(_traderapi.CTORATstpInputNodeFundAssignmentField_AccountID_get, _traderapi.CTORATstpInputNodeFundAssignmentField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpInputNodeFundAssignmentField_CurrencyID_get, _traderapi.CTORATstpInputNodeFundAssignmentField_CurrencyID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInputNodeFundAssignmentField_InvestorID_get, _traderapi.CTORATstpInputNodeFundAssignmentField_InvestorID_set)
 
-	# ½Úµã±àºÅ1
+	# ï¿½Úµï¿½ï¿½ï¿½1
     NodeID1 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_NodeID1_get, _traderapi.CTORATstpInputNodeFundAssignmentField_NodeID1_set)
 
-	# ×Ê½ð±ÈÀý1
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?1
     AmtRatio1 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio1_get, _traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio1_set)
 
-	# ½Úµã±àºÅ2
+	# ï¿½Úµï¿½ï¿½ï¿½2
     NodeID2 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_NodeID2_get, _traderapi.CTORATstpInputNodeFundAssignmentField_NodeID2_set)
 
-	# ×Ê½ð±ÈÀý2
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?2
     AmtRatio2 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio2_get, _traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio2_set)
 
-	# ½Úµã±àºÅ3
+	# ï¿½Úµï¿½ï¿½ï¿½3
     NodeID3 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_NodeID3_get, _traderapi.CTORATstpInputNodeFundAssignmentField_NodeID3_set)
 
-	# ×Ê½ð±ÈÀý3
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?3
     AmtRatio3 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio3_get, _traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio3_set)
 
-	# ½Úµã±àºÅ4
+	# ï¿½Úµï¿½ï¿½ï¿½4
     NodeID4 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_NodeID4_get, _traderapi.CTORATstpInputNodeFundAssignmentField_NodeID4_set)
 
-	# ×Ê½ð±ÈÀý4
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?4
     AmtRatio4 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio4_get, _traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio4_set)
 
-	# ½Úµã±àºÅ5
+	# ï¿½Úµï¿½ï¿½ï¿½5
     NodeID5 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_NodeID5_get, _traderapi.CTORATstpInputNodeFundAssignmentField_NodeID5_set)
 
-	# ×Ê½ð±ÈÀý5
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?5
     AmtRatio5 = property(_traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio5_get, _traderapi.CTORATstpInputNodeFundAssignmentField_AmtRatio5_set)
 
     def __init__(self):
@@ -3348,24 +3348,24 @@ _traderapi.CTORATstpInputNodeFundAssignmentField_swigregister(CTORATstpInputNode
 
 
 
-#########################################²éÑ¯½Úµã×Ê½ð·ÖÅä±ÈÀýÇëÇó############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Úµï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpReqInquiryNodeFundAssignmentField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpReqInquiryNodeFundAssignmentField_DepartmentID_get, _traderapi.CTORATstpReqInquiryNodeFundAssignmentField_DepartmentID_set)
 
-	# ×Ê½ðÕËºÅ
+	# ï¿½Ê½ï¿½ï¿½Ëºï¿½
     AccountID = property(_traderapi.CTORATstpReqInquiryNodeFundAssignmentField_AccountID_get, _traderapi.CTORATstpReqInquiryNodeFundAssignmentField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpReqInquiryNodeFundAssignmentField_CurrencyID_get, _traderapi.CTORATstpReqInquiryNodeFundAssignmentField_CurrencyID_set)
 
-	# ½Úµã±àºÅ
+	# ï¿½Úµï¿½ï¿½ï¿½
     NodeID = property(_traderapi.CTORATstpReqInquiryNodeFundAssignmentField_NodeID_get, _traderapi.CTORATstpReqInquiryNodeFundAssignmentField_NodeID_set)
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpReqInquiryNodeFundAssignmentField_UserRequestID_get, _traderapi.CTORATstpReqInquiryNodeFundAssignmentField_UserRequestID_set)
 
     def __init__(self):
@@ -3378,54 +3378,54 @@ _traderapi.CTORATstpReqInquiryNodeFundAssignmentField_swigregister(CTORATstpReqI
 
 
 
-#########################################²éÑ¯½Úµã×Ê½ð·ÖÅä±ÈÀýÏìÓ¦############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Úµï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦############################################
 class CTORATstpRspInquiryNodeFundAssignmentField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_UserRequestID_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_UserRequestID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_DepartmentID_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_DepartmentID_set)
 
-	# ×Ê½ðÕËºÅ
+	# ï¿½Ê½ï¿½ï¿½Ëºï¿½
     AccountID = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AccountID_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_CurrencyID_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_CurrencyID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_InvestorID_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_InvestorID_set)
 
-	# ½Úµã±àºÅ1
+	# ï¿½Úµï¿½ï¿½ï¿½1
     NodeID1 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID1_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID1_set)
 
-	# ×Ê½ð±ÈÀý1
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?1
     AmtRatio1 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio1_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio1_set)
 
-	# ½Úµã±àºÅ2
+	# ï¿½Úµï¿½ï¿½ï¿½2
     NodeID2 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID2_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID2_set)
 
-	# ×Ê½ð±ÈÀý2
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?2
     AmtRatio2 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio2_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio2_set)
 
-	# ½Úµã±àºÅ3
+	# ï¿½Úµï¿½ï¿½ï¿½3
     NodeID3 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID3_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID3_set)
 
-	# ×Ê½ð±ÈÀý3
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?3
     AmtRatio3 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio3_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio3_set)
 
-	# ½Úµã±àºÅ4
+	# ï¿½Úµï¿½ï¿½ï¿½4
     NodeID4 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID4_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID4_set)
 
-	# ×Ê½ð±ÈÀý4
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?4
     AmtRatio4 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio4_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio4_set)
 
-	# ½Úµã±àºÅ5
+	# ï¿½Úµï¿½ï¿½ï¿½5
     NodeID5 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID5_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_NodeID5_set)
 
-	# ×Ê½ð±ÈÀý5
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿?5
     AmtRatio5 = property(_traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio5_get, _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_AmtRatio5_set)
 
     def __init__(self):
@@ -3438,12 +3438,12 @@ _traderapi.CTORATstpRspInquiryNodeFundAssignmentField_swigregister(CTORATstpRspI
 
 
 
-#########################################²éÑ¯½»Ò×Ëù############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpQryExchangeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryExchangeField_ExchangeID_get, _traderapi.CTORATstpQryExchangeField_ExchangeID_set)
 
     def __init__(self):
@@ -3456,21 +3456,21 @@ _traderapi.CTORATstpQryExchangeField_swigregister(CTORATstpQryExchangeField)
 
 
 
-#########################################½»Ò×Ëù############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpExchangeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpExchangeField_ExchangeID_get, _traderapi.CTORATstpExchangeField_ExchangeID_set)
 
-	# ½»Ò×ËùÃû³Æ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeName = property(_traderapi.CTORATstpExchangeField_ExchangeName_get, _traderapi.CTORATstpExchangeField_ExchangeName_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpExchangeField_TradingDay_get, _traderapi.CTORATstpExchangeField_TradingDay_set)
 
-	# Êý¾ÝÍ¬²½×´Ì¬
+	# ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½×´Ì¬
     DataSyncStatus = property(_traderapi.CTORATstpExchangeField_DataSyncStatus_get, _traderapi.CTORATstpExchangeField_DataSyncStatus_set)
 
     def __init__(self):
@@ -3483,18 +3483,18 @@ _traderapi.CTORATstpExchangeField_swigregister(CTORATstpExchangeField)
 
 
 
-#########################################²éÑ¯Ö¤È¯ÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯Ö¤È¯ï¿½ï¿½Ï¢############################################
 class CTORATstpQrySecurityField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQrySecurityField_ExchangeID_get, _traderapi.CTORATstpQrySecurityField_ExchangeID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQrySecurityField_SecurityID_get, _traderapi.CTORATstpQrySecurityField_SecurityID_set)
 
-	# ²úÆ·´úÂë
+	# ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
     ProductID = property(_traderapi.CTORATstpQrySecurityField_ProductID_get, _traderapi.CTORATstpQrySecurityField_ProductID_set)
 
     def __init__(self):
@@ -3507,132 +3507,132 @@ _traderapi.CTORATstpQrySecurityField_swigregister(CTORATstpQrySecurityField)
 
 
 
-#########################################Ö¤È¯ÐÅÏ¢############################################
+#########################################Ö¤È¯ï¿½ï¿½Ï¢############################################
 class CTORATstpSecurityField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpSecurityField_TradingDay_get, _traderapi.CTORATstpSecurityField_TradingDay_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpSecurityField_ExchangeID_get, _traderapi.CTORATstpSecurityField_ExchangeID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpSecurityField_SecurityID_get, _traderapi.CTORATstpSecurityField_SecurityID_set)
 
-	# Ö¤È¯Ãû³Æ
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityName = property(_traderapi.CTORATstpSecurityField_SecurityName_get, _traderapi.CTORATstpSecurityField_SecurityName_set)
 
-	# Ö¤È¯Ãû³Æ(¶Ì)
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½)
     ShortSecurityName = property(_traderapi.CTORATstpSecurityField_ShortSecurityName_get, _traderapi.CTORATstpSecurityField_ShortSecurityName_set)
 
-	# »ù´¡Ö¤È¯´úÂë
+	# ï¿½ï¿½ï¿½ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     UnderlyingSecurityID = property(_traderapi.CTORATstpSecurityField_UnderlyingSecurityID_get, _traderapi.CTORATstpSecurityField_UnderlyingSecurityID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpSecurityField_MarketID_get, _traderapi.CTORATstpSecurityField_MarketID_set)
 
-	# ²úÆ·´úÂë
+	# ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
     ProductID = property(_traderapi.CTORATstpSecurityField_ProductID_get, _traderapi.CTORATstpSecurityField_ProductID_set)
 
-	# Ö¤È¯Àà±ð
+	# Ö¤È¯ï¿½ï¿½ï¿?
     SecurityType = property(_traderapi.CTORATstpSecurityField_SecurityType_get, _traderapi.CTORATstpSecurityField_SecurityType_set)
 
-	# Éê±¨µ¥Î»
+	# ï¿½ê±¨ï¿½ï¿½Î»
     OrderUnit = property(_traderapi.CTORATstpSecurityField_OrderUnit_get, _traderapi.CTORATstpSecurityField_OrderUnit_set)
 
-	# ÏÞ¼ÛÂòÈë½»Ò×µ¥Î»
+	# ï¿½Þ¼ï¿½ï¿½ï¿½ï¿½ë½»ï¿½×µï¿½Î»
     LimitBuyTradingUnit = property(_traderapi.CTORATstpSecurityField_LimitBuyTradingUnit_get, _traderapi.CTORATstpSecurityField_LimitBuyTradingUnit_set)
 
-	# ÏÞ¼Ûµ¥Âò×î´óÏÂµ¥Á¿
+	# ï¿½Þ¼Ûµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿?
     MaxLimitOrderBuyVolume = property(_traderapi.CTORATstpSecurityField_MaxLimitOrderBuyVolume_get, _traderapi.CTORATstpSecurityField_MaxLimitOrderBuyVolume_set)
 
-	# ÏÞ¼Ûµ¥Âò×îÐ¡ÏÂµ¥Á¿
+	# ï¿½Þ¼Ûµï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Âµï¿½ï¿½ï¿½
     MinLimitOrderBuyVolume = property(_traderapi.CTORATstpSecurityField_MinLimitOrderBuyVolume_get, _traderapi.CTORATstpSecurityField_MinLimitOrderBuyVolume_set)
 
-	# ÏÞ¼ÛÂô³ö½»Ò×µ¥Î»
+	# ï¿½Þ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×µï¿½Î»
     LimitSellTradingUnit = property(_traderapi.CTORATstpSecurityField_LimitSellTradingUnit_get, _traderapi.CTORATstpSecurityField_LimitSellTradingUnit_set)
 
-	# ÏÞ¼Ûµ¥Âô×î´óÏÂµ¥Á¿
+	# ï¿½Þ¼Ûµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿?
     MaxLimitOrderSellVolume = property(_traderapi.CTORATstpSecurityField_MaxLimitOrderSellVolume_get, _traderapi.CTORATstpSecurityField_MaxLimitOrderSellVolume_set)
 
-	# ÏÞ¼Ûµ¥Âô×îÐ¡ÏÂµ¥Á¿
+	# ï¿½Þ¼Ûµï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Âµï¿½ï¿½ï¿½
     MinLimitOrderSellVolume = property(_traderapi.CTORATstpSecurityField_MinLimitOrderSellVolume_get, _traderapi.CTORATstpSecurityField_MinLimitOrderSellVolume_set)
 
-	# ÊÐ¼ÛÂòÈë½»Ò×µ¥Î»
+	# ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ë½»ï¿½×µï¿½Î»
     MarketBuyTradingUnit = property(_traderapi.CTORATstpSecurityField_MarketBuyTradingUnit_get, _traderapi.CTORATstpSecurityField_MarketBuyTradingUnit_set)
 
-	# ÊÐ¼Ûµ¥Âò×î´óÏÂµ¥Á¿
+	# ï¿½Ð¼Ûµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿?
     MaxMarketOrderBuyVolume = property(_traderapi.CTORATstpSecurityField_MaxMarketOrderBuyVolume_get, _traderapi.CTORATstpSecurityField_MaxMarketOrderBuyVolume_set)
 
-	# ÊÐ¼Ûµ¥Âò×îÐ¡ÏÂµ¥Á¿
+	# ï¿½Ð¼Ûµï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Âµï¿½ï¿½ï¿½
     MinMarketOrderBuyVolume = property(_traderapi.CTORATstpSecurityField_MinMarketOrderBuyVolume_get, _traderapi.CTORATstpSecurityField_MinMarketOrderBuyVolume_set)
 
-	# ÊÐ¼ÛÂô³ö½»Ò×µ¥Î»
+	# ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×µï¿½Î»
     MarketSellTradingUnit = property(_traderapi.CTORATstpSecurityField_MarketSellTradingUnit_get, _traderapi.CTORATstpSecurityField_MarketSellTradingUnit_set)
 
-	# ÊÐ¼Ûµ¥Âô×î´óÏÂµ¥Á¿
+	# ï¿½Ð¼Ûµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿?
     MaxMarketOrderSellVolume = property(_traderapi.CTORATstpSecurityField_MaxMarketOrderSellVolume_get, _traderapi.CTORATstpSecurityField_MaxMarketOrderSellVolume_set)
 
-	# ÊÐ¼Ûµ¥Âô×îÐ¡ÏÂµ¥Á¿
+	# ï¿½Ð¼Ûµï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Âµï¿½ï¿½ï¿½
     MinMarketOrderSellVolume = property(_traderapi.CTORATstpSecurityField_MinMarketOrderSellVolume_get, _traderapi.CTORATstpSecurityField_MinMarketOrderSellVolume_set)
 
-	# ÅÌºó¶¨¼ÛÂòÈë½»Ò×µ¥Î»
+	# ï¿½Ìºó¶¨¼ï¿½ï¿½ï¿½ï¿½ë½»ï¿½×µï¿½Î»
     FixPriceBuyTradingUnit = property(_traderapi.CTORATstpSecurityField_FixPriceBuyTradingUnit_get, _traderapi.CTORATstpSecurityField_FixPriceBuyTradingUnit_set)
 
-	# ÅÌºó¶¨¼ÛÂò×î´óÏÂµ¥Á¿
+	# ï¿½Ìºó¶¨¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿?
     MaxFixPriceOrderBuyVolume = property(_traderapi.CTORATstpSecurityField_MaxFixPriceOrderBuyVolume_get, _traderapi.CTORATstpSecurityField_MaxFixPriceOrderBuyVolume_set)
 
-	# ÅÌºó¶¨¼ÛÂò×îÐ¡ÏÂµ¥Á¿
+	# ï¿½Ìºó¶¨¼ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Âµï¿½ï¿½ï¿½
     MinFixPriceOrderBuyVolume = property(_traderapi.CTORATstpSecurityField_MinFixPriceOrderBuyVolume_get, _traderapi.CTORATstpSecurityField_MinFixPriceOrderBuyVolume_set)
 
-	# ÅÌºó¶¨¼ÛÂô³ö½»Ò×µ¥Î»
+	# ï¿½Ìºó¶¨¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×µï¿½Î»
     FixPriceSellTradingUnit = property(_traderapi.CTORATstpSecurityField_FixPriceSellTradingUnit_get, _traderapi.CTORATstpSecurityField_FixPriceSellTradingUnit_set)
 
-	# ÅÌºó¶¨¼ÛÂô×î´óÏÂµ¥Á¿
+	# ï¿½Ìºó¶¨¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿?
     MaxFixPriceOrderSellVolume = property(_traderapi.CTORATstpSecurityField_MaxFixPriceOrderSellVolume_get, _traderapi.CTORATstpSecurityField_MaxFixPriceOrderSellVolume_set)
 
-	# ÅÌºó¶¨¼ÛÂô×îÐ¡ÏÂµ¥Á¿
+	# ï¿½Ìºó¶¨¼ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Âµï¿½ï¿½ï¿½
     MinFixPriceOrderSellVolume = property(_traderapi.CTORATstpSecurityField_MinFixPriceOrderSellVolume_get, _traderapi.CTORATstpSecurityField_MinFixPriceOrderSellVolume_set)
 
-	# ÊýÁ¿³ËÊý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeMultiple = property(_traderapi.CTORATstpSecurityField_VolumeMultiple_get, _traderapi.CTORATstpSecurityField_VolumeMultiple_set)
 
-	# ×îÐ¡±ä¶¯¼ÛÎ»
+	# ï¿½ï¿½Ð¡ï¿½ä¶¯ï¿½ï¿½Î»
     PriceTick = property(_traderapi.CTORATstpSecurityField_PriceTick_get, _traderapi.CTORATstpSecurityField_PriceTick_set)
 
-	# ÉÏÊÐÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OpenDate = property(_traderapi.CTORATstpSecurityField_OpenDate_get, _traderapi.CTORATstpSecurityField_OpenDate_set)
 
-	# ÃæÖµ
+	# ï¿½ï¿½Öµ
     ParValue = property(_traderapi.CTORATstpSecurityField_ParValue_get, _traderapi.CTORATstpSecurityField_ParValue_set)
 
 	# Ö¤È¯×´Ì¬
     SecurityStatus = property(_traderapi.CTORATstpSecurityField_SecurityStatus_get, _traderapi.CTORATstpSecurityField_SecurityStatus_set)
 
-	# Õ®È¯Ó¦¼ÆÀûÏ¢
+	# Õ®È¯Ó¦ï¿½ï¿½ï¿½ï¿½Ï¢
     BondInterest = property(_traderapi.CTORATstpSecurityField_BondInterest_get, _traderapi.CTORATstpSecurityField_BondInterest_set)
 
-	# ÕÛËãÂÊ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ConversionRate = property(_traderapi.CTORATstpSecurityField_ConversionRate_get, _traderapi.CTORATstpSecurityField_ConversionRate_set)
 
-	# ×Ü¹É±¾
+	# ï¿½Ü¹É±ï¿½
     TotalEquity = property(_traderapi.CTORATstpSecurityField_TotalEquity_get, _traderapi.CTORATstpSecurityField_TotalEquity_set)
 
-	# Á÷Í¨¹É±¾
+	# ï¿½ï¿½Í¨ï¿½É±ï¿½
     CirculationEquity = property(_traderapi.CTORATstpSecurityField_CirculationEquity_get, _traderapi.CTORATstpSecurityField_CirculationEquity_set)
 
-	# ÊÇ·ñÏÞÖÆÕÇµøÍ£°å¼Û
+	# ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½Í£ï¿½ï¿½ï¿?
     bPriceLimit = property(_traderapi.CTORATstpSecurityField_bPriceLimit_get, _traderapi.CTORATstpSecurityField_bPriceLimit_set)
 
-	# ×òÊÕÅÌ¼Û
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½
     PreClosePrice = property(_traderapi.CTORATstpSecurityField_PreClosePrice_get, _traderapi.CTORATstpSecurityField_PreClosePrice_set)
 
-	# ÕÇÍ£°å¼Û
+	# ï¿½ï¿½Í£ï¿½ï¿½ï¿?
     UpperLimitPrice = property(_traderapi.CTORATstpSecurityField_UpperLimitPrice_get, _traderapi.CTORATstpSecurityField_UpperLimitPrice_set)
 
-	# µøÍ£°å¼Û
+	# ï¿½ï¿½Í£ï¿½ï¿½ï¿?
     LowerLimitPrice = property(_traderapi.CTORATstpSecurityField_LowerLimitPrice_get, _traderapi.CTORATstpSecurityField_LowerLimitPrice_set)
 
     def __init__(self):
@@ -3645,15 +3645,15 @@ _traderapi.CTORATstpSecurityField_swigregister(CTORATstpSecurityField)
 
 
 
-#########################################²éÑ¯ÐÂ¹ÉÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpQryIPOInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryIPOInfoField_ExchangeID_get, _traderapi.CTORATstpQryIPOInfoField_ExchangeID_set)
 
-	# Éê¹º´úÂë
+	# ï¿½ê¹ºï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryIPOInfoField_SecurityID_get, _traderapi.CTORATstpQryIPOInfoField_SecurityID_set)
 
     def __init__(self):
@@ -3666,57 +3666,57 @@ _traderapi.CTORATstpQryIPOInfoField_swigregister(CTORATstpQryIPOInfoField)
 
 
 
-#########################################ÐÂ¹ÉÐÅÏ¢############################################
+#########################################ï¿½Â¹ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpIPOInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpIPOInfoField_ExchangeID_get, _traderapi.CTORATstpIPOInfoField_ExchangeID_set)
 
-	# Éê¹º´úÂë
+	# ï¿½ê¹ºï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpIPOInfoField_SecurityID_get, _traderapi.CTORATstpIPOInfoField_SecurityID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpIPOInfoField_MarketID_get, _traderapi.CTORATstpIPOInfoField_MarketID_set)
 
-	# ²úÆ·´úÂë
+	# ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
     ProductID = property(_traderapi.CTORATstpIPOInfoField_ProductID_get, _traderapi.CTORATstpIPOInfoField_ProductID_set)
 
-	# Ö¤È¯Àà±ð´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SecurityType = property(_traderapi.CTORATstpIPOInfoField_SecurityType_get, _traderapi.CTORATstpIPOInfoField_SecurityType_set)
 
-	# ×îÐ¡Éê¹º¼Û¸ñ
+	# ï¿½ï¿½Ð¡ï¿½ê¹ºï¿½Û¸ï¿½
     MinPrice = property(_traderapi.CTORATstpIPOInfoField_MinPrice_get, _traderapi.CTORATstpIPOInfoField_MinPrice_set)
 
-	# ±ÒÖÖ´úÂë
+	# ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpIPOInfoField_CurrencyID_get, _traderapi.CTORATstpIPOInfoField_CurrencyID_set)
 
-	# Éê¹ºÖ¤È¯Ãû³Æ
+	# ï¿½ê¹ºÖ¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityName = property(_traderapi.CTORATstpIPOInfoField_SecurityName_get, _traderapi.CTORATstpIPOInfoField_SecurityName_set)
 
-	# ÐÂ¹ÉÖ¤È¯´úÂë
+	# ï¿½Â¹ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     UnderlyingSecurityID = property(_traderapi.CTORATstpIPOInfoField_UnderlyingSecurityID_get, _traderapi.CTORATstpIPOInfoField_UnderlyingSecurityID_set)
 
-	# ÐÂ¹ÉÖ¤È¯Ãû³Æ
+	# ï¿½Â¹ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     UnderlyingSecurityName = property(_traderapi.CTORATstpIPOInfoField_UnderlyingSecurityName_get, _traderapi.CTORATstpIPOInfoField_UnderlyingSecurityName_set)
 
-	# ÍøÉÏÉê¹º×îÐ¡ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ê¹ºï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
     MinVolume = property(_traderapi.CTORATstpIPOInfoField_MinVolume_get, _traderapi.CTORATstpIPOInfoField_MinVolume_set)
 
-	# ÍøÉÏÉê¹º×î´óÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ê¹ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     MaxVolume = property(_traderapi.CTORATstpIPOInfoField_MaxVolume_get, _traderapi.CTORATstpIPOInfoField_MaxVolume_set)
 
-	# ÍøÉÏÉê¹ºµ¥Î»ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ê¹ºï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
     VolumeUnit = property(_traderapi.CTORATstpIPOInfoField_VolumeUnit_get, _traderapi.CTORATstpIPOInfoField_VolumeUnit_set)
 
-	# ·¢ÐÐ·½Ê½
+	# ï¿½ï¿½ï¿½Ð·ï¿½Ê½
     IssueMode = property(_traderapi.CTORATstpIPOInfoField_IssueMode_get, _traderapi.CTORATstpIPOInfoField_IssueMode_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpIPOInfoField_TradingDay_get, _traderapi.CTORATstpIPOInfoField_TradingDay_set)
 
-	# ×î´óÉê¹º¼Û¸ñ
+	# ï¿½ï¿½ï¿½ï¿½ê¹ºï¿½Û¸ï¿?
     MaxPrice = property(_traderapi.CTORATstpIPOInfoField_MaxPrice_get, _traderapi.CTORATstpIPOInfoField_MaxPrice_set)
 
     def __init__(self):
@@ -3729,15 +3729,15 @@ _traderapi.CTORATstpIPOInfoField_swigregister(CTORATstpIPOInfoField)
 
 
 
-#########################################²éÑ¯ÓÃ»§############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Ã»ï¿½############################################
 class CTORATstpQryUserField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§´úÂë
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserID = property(_traderapi.CTORATstpQryUserField_UserID_get, _traderapi.CTORATstpQryUserField_UserID_set)
 
-	# ÓÃ»§ÀàÐÍ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserType = property(_traderapi.CTORATstpQryUserField_UserType_get, _traderapi.CTORATstpQryUserField_UserType_set)
 
     def __init__(self):
@@ -3750,39 +3750,39 @@ _traderapi.CTORATstpQryUserField_swigregister(CTORATstpQryUserField)
 
 
 
-#########################################ÓÃ»§############################################
+#########################################ï¿½Ã»ï¿½############################################
 class CTORATstpUserField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§´úÂë
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserID = property(_traderapi.CTORATstpUserField_UserID_get, _traderapi.CTORATstpUserField_UserID_set)
 
-	# ÓÃ»§Ãû³Æ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserName = property(_traderapi.CTORATstpUserField_UserName_get, _traderapi.CTORATstpUserField_UserName_set)
 
-	# ÓÃ»§ÀàÐÍ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserType = property(_traderapi.CTORATstpUserField_UserType_get, _traderapi.CTORATstpUserField_UserType_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpUserField_DepartmentID_get, _traderapi.CTORATstpUserField_DepartmentID_set)
 
-	# µÇÂ¼ÏÞÖÆÊý
+	# ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     LoginLimit = property(_traderapi.CTORATstpUserField_LoginLimit_get, _traderapi.CTORATstpUserField_LoginLimit_set)
 
-	# µÇÂ¼×´Ì¬
+	# ï¿½ï¿½Â¼×´Ì¬
     LoginStatus = property(_traderapi.CTORATstpUserField_LoginStatus_get, _traderapi.CTORATstpUserField_LoginStatus_set)
 
-	# ¿ª»§ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OpenDate = property(_traderapi.CTORATstpUserField_OpenDate_get, _traderapi.CTORATstpUserField_OpenDate_set)
 
-	# Ïú»§ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CloseDate = property(_traderapi.CTORATstpUserField_CloseDate_get, _traderapi.CTORATstpUserField_CloseDate_set)
 
-	# ±¨µ¥Á÷¿Ø
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderInsertCommFlux = property(_traderapi.CTORATstpUserField_OrderInsertCommFlux_get, _traderapi.CTORATstpUserField_OrderInsertCommFlux_set)
 
-	# ³·µ¥Á÷¿Ø
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderActionCommFlux = property(_traderapi.CTORATstpUserField_OrderActionCommFlux_get, _traderapi.CTORATstpUserField_OrderActionCommFlux_set)
 
     def __init__(self):
@@ -3795,12 +3795,12 @@ _traderapi.CTORATstpUserField_swigregister(CTORATstpUserField)
 
 
 
-#########################################²éÑ¯Í¶×ÊÕß############################################
+#########################################ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpQryInvestorField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryInvestorField_InvestorID_get, _traderapi.CTORATstpQryInvestorField_InvestorID_set)
 
     def __init__(self):
@@ -3813,66 +3813,66 @@ _traderapi.CTORATstpQryInvestorField_swigregister(CTORATstpQryInvestorField)
 
 
 
-#########################################Í¶×ÊÕß############################################
+#########################################Í¶ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpInvestorField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInvestorField_InvestorID_get, _traderapi.CTORATstpInvestorField_InvestorID_set)
 
-	# Í¶×ÊÕßÀàÐÍ
+	# Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     InvestorType = property(_traderapi.CTORATstpInvestorField_InvestorType_get, _traderapi.CTORATstpInvestorField_InvestorType_set)
 
-	# Í¶×ÊÕßÃû³Æ
+	# Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     InvestorName = property(_traderapi.CTORATstpInvestorField_InvestorName_get, _traderapi.CTORATstpInvestorField_InvestorName_set)
 
-	# Ö¤¼þÀàÐÍ
+	# Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     IdCardType = property(_traderapi.CTORATstpInvestorField_IdCardType_get, _traderapi.CTORATstpInvestorField_IdCardType_set)
 
-	# Ö¤¼þºÅÂë
+	# Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     IdCardNo = property(_traderapi.CTORATstpInvestorField_IdCardNo_get, _traderapi.CTORATstpInvestorField_IdCardNo_set)
 
-	# ¿ª»§ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OpenDate = property(_traderapi.CTORATstpInvestorField_OpenDate_get, _traderapi.CTORATstpInvestorField_OpenDate_set)
 
-	# Ïú»§ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CloseDate = property(_traderapi.CTORATstpInvestorField_CloseDate_get, _traderapi.CTORATstpInvestorField_CloseDate_set)
 
-	# ½»Ò××´Ì¬
+	# ï¿½ï¿½ï¿½ï¿½×´Ì¬
     TradingStatus = property(_traderapi.CTORATstpInvestorField_TradingStatus_get, _traderapi.CTORATstpInvestorField_TradingStatus_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operways = property(_traderapi.CTORATstpInvestorField_Operways_get, _traderapi.CTORATstpInvestorField_Operways_set)
 
-	# ÊÖ»ú
+	# ï¿½Ö»ï¿½
     Mobile = property(_traderapi.CTORATstpInvestorField_Mobile_get, _traderapi.CTORATstpInvestorField_Mobile_set)
 
-	# ÁªÏµµç»°
+	# ï¿½ï¿½Ïµï¿½ç»°
     Telephone = property(_traderapi.CTORATstpInvestorField_Telephone_get, _traderapi.CTORATstpInvestorField_Telephone_set)
 
-	# µç×ÓÓÊ¼þ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½
     Email = property(_traderapi.CTORATstpInvestorField_Email_get, _traderapi.CTORATstpInvestorField_Email_set)
 
-	# ´«Õæ
+	# ï¿½ï¿½ï¿½ï¿½
     Fax = property(_traderapi.CTORATstpInvestorField_Fax_get, _traderapi.CTORATstpInvestorField_Fax_set)
 
-	# Í¨Ñ¶µØÖ·
+	# Í¨Ñ¶ï¿½ï¿½Ö·
     Address = property(_traderapi.CTORATstpInvestorField_Address_get, _traderapi.CTORATstpInvestorField_Address_set)
 
-	# ÓÊÕþ±àÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ZipCode = property(_traderapi.CTORATstpInvestorField_ZipCode_get, _traderapi.CTORATstpInvestorField_ZipCode_set)
 
-	# ×¨ÒµÍ¶×ÊÕßÀà±ð
+	# ×¨ÒµÍ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     ProfInvestorType = property(_traderapi.CTORATstpInvestorField_ProfInvestorType_get, _traderapi.CTORATstpInvestorField_ProfInvestorType_set)
 
-	# Ì×²ÍÀàÐÍ(Á½ÈÚ×¨ÓÃ)
+	# ï¿½×²ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     PlanType = property(_traderapi.CTORATstpInvestorField_PlanType_get, _traderapi.CTORATstpInvestorField_PlanType_set)
 
-	# ÊÇ·ñÔÊÐíÍ¶×ÊÕß×ÔÇÐÌ×²Í(Á½ÈÚ×¨ÓÃ)
+	# ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×²ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     AllowSelfSwitchPlan = property(_traderapi.CTORATstpInvestorField_AllowSelfSwitchPlan_get, _traderapi.CTORATstpInvestorField_AllowSelfSwitchPlan_set)
 
-	# ±¸×¢
+	# ï¿½ï¿½×¢
     Remark = property(_traderapi.CTORATstpInvestorField_Remark_get, _traderapi.CTORATstpInvestorField_Remark_set)
 
     def __init__(self):
@@ -3885,24 +3885,24 @@ _traderapi.CTORATstpInvestorField_swigregister(CTORATstpInvestorField)
 
 
 
-#########################################²éÑ¯½»Ò×¹É¶«ÕË»§############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½×¹É¶ï¿½ï¿½Ë»ï¿½############################################
 class CTORATstpQryShareholderAccountField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryShareholderAccountField_InvestorID_get, _traderapi.CTORATstpQryShareholderAccountField_InvestorID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryShareholderAccountField_ExchangeID_get, _traderapi.CTORATstpQryShareholderAccountField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpQryShareholderAccountField_MarketID_get, _traderapi.CTORATstpQryShareholderAccountField_MarketID_set)
 
-	# ¹É¶«ÕË»§ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryShareholderAccountField_ShareholderID_get, _traderapi.CTORATstpQryShareholderAccountField_ShareholderID_set)
 
-	# ¹É¶«ÕË»§ÀàÐÍ
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderIDType = property(_traderapi.CTORATstpQryShareholderAccountField_ShareholderIDType_get, _traderapi.CTORATstpQryShareholderAccountField_ShareholderIDType_set)
 
     def __init__(self):
@@ -3915,30 +3915,30 @@ _traderapi.CTORATstpQryShareholderAccountField_swigregister(CTORATstpQrySharehol
 
 
 
-#########################################½»Ò×¹É¶«ÕË»§############################################
+#########################################ï¿½ï¿½ï¿½×¹É¶ï¿½ï¿½Ë»ï¿½############################################
 class CTORATstpShareholderAccountField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpShareholderAccountField_InvestorID_get, _traderapi.CTORATstpShareholderAccountField_InvestorID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpShareholderAccountField_ExchangeID_get, _traderapi.CTORATstpShareholderAccountField_ExchangeID_set)
 
-	# ¿Í»§´úÂë
+	# ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpShareholderAccountField_ShareholderID_get, _traderapi.CTORATstpShareholderAccountField_ShareholderID_set)
 
-	# ¹É¶«ÕË»§ÀàÐÍ
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderIDType = property(_traderapi.CTORATstpShareholderAccountField_ShareholderIDType_get, _traderapi.CTORATstpShareholderAccountField_ShareholderIDType_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpShareholderAccountField_MarketID_get, _traderapi.CTORATstpShareholderAccountField_MarketID_set)
 
-	# ÆÕÍ¨ÂòÂô°×Ãûµ¥¿ØÖÆ±êÖ¾(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ±ï¿½Ö¾(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     BSWhiteListCtl = property(_traderapi.CTORATstpShareholderAccountField_BSWhiteListCtl_get, _traderapi.CTORATstpShareholderAccountField_BSWhiteListCtl_set)
 
-	# Ö÷ÕË»§±êÊ¶
+	# ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½Ê¶
     MainFlag = property(_traderapi.CTORATstpShareholderAccountField_MainFlag_get, _traderapi.CTORATstpShareholderAccountField_MainFlag_set)
 
     def __init__(self):
@@ -3951,15 +3951,15 @@ _traderapi.CTORATstpShareholderAccountField_swigregister(CTORATstpShareholderAcc
 
 
 
-#########################################²éÑ¯Åä¹ÉÅäÕ®ÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½Ï?############################################
 class CTORATstpQryRationalInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryRationalInfoField_ExchangeID_get, _traderapi.CTORATstpQryRationalInfoField_ExchangeID_set)
 
-	# Åä¹ÉÅäÕ®´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½ï¿½ï¿?
     SecurityID = property(_traderapi.CTORATstpQryRationalInfoField_SecurityID_get, _traderapi.CTORATstpQryRationalInfoField_SecurityID_set)
 
     def __init__(self):
@@ -3972,48 +3972,48 @@ _traderapi.CTORATstpQryRationalInfoField_swigregister(CTORATstpQryRationalInfoFi
 
 
 
-#########################################Åä¹ÉÅäÕ®ÐÅÏ¢############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½Ï?############################################
 class CTORATstpRationalInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpRationalInfoField_TradingDay_get, _traderapi.CTORATstpRationalInfoField_TradingDay_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpRationalInfoField_ExchangeID_get, _traderapi.CTORATstpRationalInfoField_ExchangeID_set)
 
-	# Éê¹º´úÂë
+	# ï¿½ê¹ºï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpRationalInfoField_SecurityID_get, _traderapi.CTORATstpRationalInfoField_SecurityID_set)
 
-	# Åä¹ÉÅäÕ®¼Û¸ñ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½Û¸ï¿?
     Price = property(_traderapi.CTORATstpRationalInfoField_Price_get, _traderapi.CTORATstpRationalInfoField_Price_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpRationalInfoField_MarketID_get, _traderapi.CTORATstpRationalInfoField_MarketID_set)
 
-	# Ö¤È¯Æ·ÖÖ´úÂë
+	# Ö¤È¯Æ·ï¿½Ö´ï¿½ï¿½ï¿½
     ProductID = property(_traderapi.CTORATstpRationalInfoField_ProductID_get, _traderapi.CTORATstpRationalInfoField_ProductID_set)
 
-	# Ö¤È¯Àà±ð´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SecurityType = property(_traderapi.CTORATstpRationalInfoField_SecurityType_get, _traderapi.CTORATstpRationalInfoField_SecurityType_set)
 
-	# Åä¹ÉÃû³Æ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     SecurityName = property(_traderapi.CTORATstpRationalInfoField_SecurityName_get, _traderapi.CTORATstpRationalInfoField_SecurityName_set)
 
-	# »ù´¡Ö¤È¯´úÂë
+	# ï¿½ï¿½ï¿½ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     UnderlyingSecurityID = property(_traderapi.CTORATstpRationalInfoField_UnderlyingSecurityID_get, _traderapi.CTORATstpRationalInfoField_UnderlyingSecurityID_set)
 
-	# »ù´¡Ö¤È¯Ãû³Æ
+	# ï¿½ï¿½ï¿½ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     UnderlyingSecurityName = property(_traderapi.CTORATstpRationalInfoField_UnderlyingSecurityName_get, _traderapi.CTORATstpRationalInfoField_UnderlyingSecurityName_set)
 
-	# Åä¹ÉÅäÕ®×îÐ¡ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿?
     MinVolume = property(_traderapi.CTORATstpRationalInfoField_MinVolume_get, _traderapi.CTORATstpRationalInfoField_MinVolume_set)
 
-	# Åä¹ÉÅäÕ®×î´óÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     MaxVolume = property(_traderapi.CTORATstpRationalInfoField_MaxVolume_get, _traderapi.CTORATstpRationalInfoField_MaxVolume_set)
 
-	# Åä¹ÉÅäÕ®µ¥Î»ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿?
     VolumeUnit = property(_traderapi.CTORATstpRationalInfoField_VolumeUnit_get, _traderapi.CTORATstpRationalInfoField_VolumeUnit_set)
 
     def __init__(self):
@@ -4026,27 +4026,27 @@ _traderapi.CTORATstpRationalInfoField_swigregister(CTORATstpRationalInfoField)
 
 
 
-#########################################²éÑ¯±¨µ¥############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpQryOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryOrderField_ExchangeID_get, _traderapi.CTORATstpQryOrderField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryOrderField_InvestorID_get, _traderapi.CTORATstpQryOrderField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryOrderField_BusinessUnitID_get, _traderapi.CTORATstpQryOrderField_BusinessUnitID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryOrderField_SecurityID_get, _traderapi.CTORATstpQryOrderField_SecurityID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryOrderField_ShareholderID_get, _traderapi.CTORATstpQryOrderField_ShareholderID_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpQryOrderField_OrderSysID_get, _traderapi.CTORATstpQryOrderField_OrderSysID_set)
 
 	# Insert Time
@@ -4055,13 +4055,13 @@ class CTORATstpQryOrderField(object):
 	# Insert Time
     InsertTimeEnd = property(_traderapi.CTORATstpQryOrderField_InsertTimeEnd_get, _traderapi.CTORATstpQryOrderField_InsertTimeEnd_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpQryOrderField_SInfo_get, _traderapi.CTORATstpQryOrderField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpQryOrderField_IInfo_get, _traderapi.CTORATstpQryOrderField_IInfo_set)
 
-	# ÊÇ·ñ¿É³·
+	# ï¿½Ç·ï¿½É³ï¿?
     IsCancel = property(_traderapi.CTORATstpQryOrderField_IsCancel_get, _traderapi.CTORATstpQryOrderField_IsCancel_set)
 
     def __init__(self):
@@ -4074,33 +4074,33 @@ _traderapi.CTORATstpQryOrderField_swigregister(CTORATstpQryOrderField)
 
 
 
-#########################################²éÑ¯³·µ¥############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpQryOrderActionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryOrderActionField_ExchangeID_get, _traderapi.CTORATstpQryOrderActionField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryOrderActionField_InvestorID_get, _traderapi.CTORATstpQryOrderActionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryOrderActionField_BusinessUnitID_get, _traderapi.CTORATstpQryOrderActionField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryOrderActionField_ShareholderID_get, _traderapi.CTORATstpQryOrderActionField_ShareholderID_set)
 
-	# ±¾µØ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpQryOrderActionField_OrderLocalID_get, _traderapi.CTORATstpQryOrderActionField_OrderLocalID_set)
 
-	# ±¾µØ³·µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelOrderLocalID = property(_traderapi.CTORATstpQryOrderActionField_CancelOrderLocalID_get, _traderapi.CTORATstpQryOrderActionField_CancelOrderLocalID_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpQryOrderActionField_SInfo_get, _traderapi.CTORATstpQryOrderActionField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpQryOrderActionField_IInfo_get, _traderapi.CTORATstpQryOrderActionField_IInfo_set)
 
     def __init__(self):
@@ -4113,99 +4113,99 @@ _traderapi.CTORATstpQryOrderActionField_swigregister(CTORATstpQryOrderActionFiel
 
 
 
-#########################################³·µ¥############################################
+#########################################ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpOrderActionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpOrderActionField_ExchangeID_get, _traderapi.CTORATstpOrderActionField_ExchangeID_set)
 
-	# ±»³·±¨µ¥Ç°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpOrderActionField_FrontID_get, _traderapi.CTORATstpOrderActionField_FrontID_set)
 
-	# ±»³·±¨µ¥»á»°±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpOrderActionField_SessionID_get, _traderapi.CTORATstpOrderActionField_SessionID_set)
 
-	# ±»³·±¨µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderRef = property(_traderapi.CTORATstpOrderActionField_OrderRef_get, _traderapi.CTORATstpOrderActionField_OrderRef_set)
 
-	# ±»³·±¨µ¥ÏµÍ³±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpOrderActionField_OrderSysID_get, _traderapi.CTORATstpOrderActionField_OrderSysID_set)
 
-	# ²Ù×÷±êÖ¾
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
     ActionFlag = property(_traderapi.CTORATstpOrderActionField_ActionFlag_get, _traderapi.CTORATstpOrderActionField_ActionFlag_set)
 
-	# ±¾µØ³·µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelOrderLocalID = property(_traderapi.CTORATstpOrderActionField_CancelOrderLocalID_get, _traderapi.CTORATstpOrderActionField_CancelOrderLocalID_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpOrderActionField_Operway_get, _traderapi.CTORATstpOrderActionField_Operway_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpOrderActionField_SInfo_get, _traderapi.CTORATstpOrderActionField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpOrderActionField_IInfo_get, _traderapi.CTORATstpOrderActionField_IInfo_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpOrderActionField_DepartmentID_get, _traderapi.CTORATstpOrderActionField_DepartmentID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpOrderActionField_InvestorID_get, _traderapi.CTORATstpOrderActionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpOrderActionField_BusinessUnitID_get, _traderapi.CTORATstpOrderActionField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpOrderActionField_ShareholderID_get, _traderapi.CTORATstpOrderActionField_ShareholderID_set)
 
-	# ±»³·±¨µ¥±¾µØ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpOrderActionField_OrderLocalID_get, _traderapi.CTORATstpOrderActionField_OrderLocalID_set)
 
-	# ²Ù×÷ÓÃ»§
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
     ActionUser = property(_traderapi.CTORATstpOrderActionField_ActionUser_get, _traderapi.CTORATstpOrderActionField_ActionUser_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpOrderActionField_TradingDay_get, _traderapi.CTORATstpOrderActionField_TradingDay_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ActionDate = property(_traderapi.CTORATstpOrderActionField_ActionDate_get, _traderapi.CTORATstpOrderActionField_ActionDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     ActionTime = property(_traderapi.CTORATstpOrderActionField_ActionTime_get, _traderapi.CTORATstpOrderActionField_ActionTime_set)
 
-	# ³·µ¥×´Ì¬
+	# ï¿½ï¿½ï¿½ï¿½×´Ì¬
     CancelOrderStatus = property(_traderapi.CTORATstpOrderActionField_CancelOrderStatus_get, _traderapi.CTORATstpOrderActionField_CancelOrderStatus_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpOrderActionField_StatusMsg_get, _traderapi.CTORATstpOrderActionField_StatusMsg_set)
 
-	# ÇëÇó±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RequestID = property(_traderapi.CTORATstpOrderActionField_RequestID_get, _traderapi.CTORATstpOrderActionField_RequestID_set)
 
-	# ³·µ¥Ç°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿?
     ActionFrontID = property(_traderapi.CTORATstpOrderActionField_ActionFrontID_get, _traderapi.CTORATstpOrderActionField_ActionFrontID_set)
 
-	# ³·µ¥»á»°±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½á»°ï¿½ï¿½ï¿?
     ActionSessionID = property(_traderapi.CTORATstpOrderActionField_ActionSessionID_get, _traderapi.CTORATstpOrderActionField_ActionSessionID_set)
 
-	# ³·µ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderActionRef = property(_traderapi.CTORATstpOrderActionField_OrderActionRef_get, _traderapi.CTORATstpOrderActionField_OrderActionRef_set)
 
-	# ±¾µØ³·µ¥ÏµÍ³±àºÅ
+	# ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿?
     CancelOrderSysID = property(_traderapi.CTORATstpOrderActionField_CancelOrderSysID_get, _traderapi.CTORATstpOrderActionField_CancelOrderSysID_set)
 
-	# ³·µ¥ÀàÐÍ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CancelOrderType = property(_traderapi.CTORATstpOrderActionField_CancelOrderType_get, _traderapi.CTORATstpOrderActionField_CancelOrderType_set)
 
-	# ½»Ò×µ¥Ôª´úÂë
+	# ï¿½ï¿½ï¿½×µï¿½Ôªï¿½ï¿½ï¿½ï¿½
     PbuID = property(_traderapi.CTORATstpOrderActionField_PbuID_get, _traderapi.CTORATstpOrderActionField_PbuID_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpOrderActionField_IPAddress_get, _traderapi.CTORATstpOrderActionField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpOrderActionField_MacAddress_get, _traderapi.CTORATstpOrderActionField_MacAddress_set)
 
     def __init__(self):
@@ -4218,27 +4218,27 @@ _traderapi.CTORATstpOrderActionField_swigregister(CTORATstpOrderActionField)
 
 
 
-#########################################²éÑ¯³É½»############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½É½ï¿½############################################
 class CTORATstpQryTradeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryTradeField_ExchangeID_get, _traderapi.CTORATstpQryTradeField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryTradeField_InvestorID_get, _traderapi.CTORATstpQryTradeField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryTradeField_BusinessUnitID_get, _traderapi.CTORATstpQryTradeField_BusinessUnitID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryTradeField_SecurityID_get, _traderapi.CTORATstpQryTradeField_SecurityID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryTradeField_ShareholderID_get, _traderapi.CTORATstpQryTradeField_ShareholderID_set)
 
-	# ³É½»±àºÅ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿?
     TradeID = property(_traderapi.CTORATstpQryTradeField_TradeID_get, _traderapi.CTORATstpQryTradeField_TradeID_set)
 
 	# Insert Time
@@ -4257,24 +4257,24 @@ _traderapi.CTORATstpQryTradeField_swigregister(CTORATstpQryTradeField)
 
 
 
-#########################################²éÑ¯×Ê½ðÕË»§############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Ê½ï¿½ï¿½Ë»ï¿½############################################
 class CTORATstpQryTradingAccountField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryTradingAccountField_InvestorID_get, _traderapi.CTORATstpQryTradingAccountField_InvestorID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpQryTradingAccountField_CurrencyID_get, _traderapi.CTORATstpQryTradingAccountField_CurrencyID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpQryTradingAccountField_AccountID_get, _traderapi.CTORATstpQryTradingAccountField_AccountID_set)
 
-	# ×Ê½ðÕË»§ÀàÐÍ
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountType = property(_traderapi.CTORATstpQryTradingAccountField_AccountType_get, _traderapi.CTORATstpQryTradingAccountField_AccountType_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpQryTradingAccountField_DepartmentID_get, _traderapi.CTORATstpQryTradingAccountField_DepartmentID_set)
 
     def __init__(self):
@@ -4287,90 +4287,90 @@ _traderapi.CTORATstpQryTradingAccountField_swigregister(CTORATstpQryTradingAccou
 
 
 
-#########################################×Ê½ðÕË»§############################################
+#########################################ï¿½Ê½ï¿½ï¿½Ë»ï¿½############################################
 class CTORATstpTradingAccountField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpTradingAccountField_DepartmentID_get, _traderapi.CTORATstpTradingAccountField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpTradingAccountField_AccountID_get, _traderapi.CTORATstpTradingAccountField_AccountID_set)
 
-	# ±ÒÖÖ´úÂë
+	# ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpTradingAccountField_CurrencyID_get, _traderapi.CTORATstpTradingAccountField_CurrencyID_set)
 
-	# ÉÏÈÕ½á´æ
+	# ï¿½ï¿½ï¿½Õ½ï¿½ï¿?
     PreDeposit = property(_traderapi.CTORATstpTradingAccountField_PreDeposit_get, _traderapi.CTORATstpTradingAccountField_PreDeposit_set)
 
-	# ¿ÉÓÃ×Ê½ð
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½
     UsefulMoney = property(_traderapi.CTORATstpTradingAccountField_UsefulMoney_get, _traderapi.CTORATstpTradingAccountField_UsefulMoney_set)
 
-	# ¿ÉÈ¡×Ê½ð
+	# ï¿½ï¿½È¡ï¿½Ê½ï¿½
     FetchLimit = property(_traderapi.CTORATstpTradingAccountField_FetchLimit_get, _traderapi.CTORATstpTradingAccountField_FetchLimit_set)
 
-	# ÉÏÈÕÎ´½»ÊÕ½ð¶î(¸Û¹ÉÍ¨×¨ÓÃ×Ö¶Î)
+	# ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½Õ½ï¿½ï¿?(ï¿½Û¹ï¿½Í¨×¨ï¿½ï¿½ï¿½Ö¶ï¿½)
     PreUnDeliveredMoney = property(_traderapi.CTORATstpTradingAccountField_PreUnDeliveredMoney_get, _traderapi.CTORATstpTradingAccountField_PreUnDeliveredMoney_set)
 
-	# ¿ÉÓÃÎ´½»ÊÕ½ð¶î(¸Û¹ÉÍ¨×¨ÓÃ×Ö¶Î)
+	# ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½Õ½ï¿½ï¿?(ï¿½Û¹ï¿½Í¨×¨ï¿½ï¿½ï¿½Ö¶ï¿½)
     UnDeliveredMoney = property(_traderapi.CTORATstpTradingAccountField_UnDeliveredMoney_get, _traderapi.CTORATstpTradingAccountField_UnDeliveredMoney_set)
 
-	# µ±ÈÕÈë½ð½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     Deposit = property(_traderapi.CTORATstpTradingAccountField_Deposit_get, _traderapi.CTORATstpTradingAccountField_Deposit_set)
 
-	# µ±ÈÕ³ö½ð½ð¶î
+	# ï¿½ï¿½ï¿½Õ³ï¿½ï¿½ï¿½ï¿½ï¿½
     Withdraw = property(_traderapi.CTORATstpTradingAccountField_Withdraw_get, _traderapi.CTORATstpTradingAccountField_Withdraw_set)
 
-	# ¶³½áµÄ×Ê½ð(¸Û¹ÉÍ¨¸Ã×Ö¶Î²»°üÀ¨Î´½»ÊÕ²¿·Ö¶³½á×Ê½ð)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿?(ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½Ö¶Î²ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½Õ²ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½Ê½ï¿½)
     FrozenCash = property(_traderapi.CTORATstpTradingAccountField_FrozenCash_get, _traderapi.CTORATstpTradingAccountField_FrozenCash_set)
 
-	# ¶³½áÎ´½»ÊÕ½ð¶î(¸Û¹ÉÍ¨×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½Õ½ï¿½ï¿?(ï¿½Û¹ï¿½Í¨×¨ï¿½ï¿½)
     UnDeliveredFrozenCash = property(_traderapi.CTORATstpTradingAccountField_UnDeliveredFrozenCash_get, _traderapi.CTORATstpTradingAccountField_UnDeliveredFrozenCash_set)
 
-	# ¶³½áµÄÊÖÐø·Ñ(¸Û¹ÉÍ¨¸Ã×Ö¶Î²»°üÀ¨Î´½»ÊÕ²¿·Ö¶³½áÊÖÐø·Ñ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½Ö¶Î²ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½Õ²ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
     FrozenCommission = property(_traderapi.CTORATstpTradingAccountField_FrozenCommission_get, _traderapi.CTORATstpTradingAccountField_FrozenCommission_set)
 
-	# ¶³½áÎ´½»ÊÕÊÖÐø·Ñ(¸Û¹ÉÍ¨×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½Í¨×¨ï¿½ï¿½)
     UnDeliveredFrozenCommission = property(_traderapi.CTORATstpTradingAccountField_UnDeliveredFrozenCommission_get, _traderapi.CTORATstpTradingAccountField_UnDeliveredFrozenCommission_set)
 
-	# ÊÖÐø·Ñ(¸Û¹ÉÍ¨¸Ã×Ö¶Î²»°üÀ¨Î´½»ÊÕ²¿·ÖÊÖÐø·Ñ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½Í¨ï¿½ï¿½ï¿½Ö¶Î²ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½Õ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
     Commission = property(_traderapi.CTORATstpTradingAccountField_Commission_get, _traderapi.CTORATstpTradingAccountField_Commission_set)
 
-	# Õ¼ÓÃÎ´½»ÊÕÊÖÐø·Ñ(¸Û¹ÉÍ¨×¨ÓÃ)
+	# Õ¼ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½Í¨×¨ï¿½ï¿½)
     UnDeliveredCommission = property(_traderapi.CTORATstpTradingAccountField_UnDeliveredCommission_get, _traderapi.CTORATstpTradingAccountField_UnDeliveredCommission_set)
 
-	# ×Ê½ðÕË»§ÀàÐÍ
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountType = property(_traderapi.CTORATstpTradingAccountField_AccountType_get, _traderapi.CTORATstpTradingAccountField_AccountType_set)
 
-	# ×Ê½ðÕË»§ËùÊôÍ¶×ÊÕß´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpTradingAccountField_InvestorID_get, _traderapi.CTORATstpTradingAccountField_InvestorID_set)
 
-	# ÒøÐÐ´úÂë
+	# ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½
     BankID = property(_traderapi.CTORATstpTradingAccountField_BankID_get, _traderapi.CTORATstpTradingAccountField_BankID_set)
 
-	# ÒøÐÐÕË»§
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½
     BankAccountID = property(_traderapi.CTORATstpTradingAccountField_BankAccountID_get, _traderapi.CTORATstpTradingAccountField_BankAccountID_set)
 
-	# È¨Àû½ðÊÕÈë(Á½ÈÚ×¨ÓÃ)
+	# È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     RoyaltyIn = property(_traderapi.CTORATstpTradingAccountField_RoyaltyIn_get, _traderapi.CTORATstpTradingAccountField_RoyaltyIn_set)
 
-	# È¨Àû½ðÖ§³ö(Á½ÈÚ×¨ÓÃ)
+	# È¨ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     RoyaltyOut = property(_traderapi.CTORATstpTradingAccountField_RoyaltyOut_get, _traderapi.CTORATstpTradingAccountField_RoyaltyOut_set)
 
-	# ÈÚÈ¯Âô³ö½ð¶î(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellAmount = property(_traderapi.CTORATstpTradingAccountField_CreditSellAmount_get, _traderapi.CTORATstpTradingAccountField_CreditSellAmount_set)
 
-	# ÈÚÈ¯Âô³öÊ¹ÓÃ½ð¶î(ÓÃÓÚ³¥»¹ÈÚ×Ê¸ºÕ®»òÂòÌØÊâÆ·ÖÖµÄ½ð¶î)(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã½ï¿½ï¿?(ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Õ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ÖµÄ½ï¿½ï¿?)(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellUseAmount = property(_traderapi.CTORATstpTradingAccountField_CreditSellUseAmount_get, _traderapi.CTORATstpTradingAccountField_CreditSellUseAmount_set)
 
-	# ÐéÄâ×Ê²ú(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ê²ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     VirtualAssets = property(_traderapi.CTORATstpTradingAccountField_VirtualAssets_get, _traderapi.CTORATstpTradingAccountField_VirtualAssets_set)
 
-	# ÈÚÈ¯Âô³ö½ð¶î¶³½á(ÓÃÓÚ³¥»¹ÈÚ×Ê¸ºÕ®»òÂòÌØÊâÆ·ÖÖµÄÎ´³É½»¶³½á½ð¶î)(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¶³ï¿½ï¿?(ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Õ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½Öµï¿½Î´ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellFrozenAmount = property(_traderapi.CTORATstpTradingAccountField_CreditSellFrozenAmount_get, _traderapi.CTORATstpTradingAccountField_CreditSellFrozenAmount_set)
 
-	# ÊôÖ÷µ¥Ôª
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôª
     OwnerUnit = property(_traderapi.CTORATstpTradingAccountField_OwnerUnit_get, _traderapi.CTORATstpTradingAccountField_OwnerUnit_set)
 
     def __init__(self):
@@ -4383,24 +4383,24 @@ _traderapi.CTORATstpTradingAccountField_swigregister(CTORATstpTradingAccountFiel
 
 
 
-#########################################²éÑ¯Í¶×ÊÕß³Ö²Ö############################################
+#########################################ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ß³Ö²ï¿½############################################
 class CTORATstpQryPositionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryPositionField_ExchangeID_get, _traderapi.CTORATstpQryPositionField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryPositionField_InvestorID_get, _traderapi.CTORATstpQryPositionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryPositionField_BusinessUnitID_get, _traderapi.CTORATstpQryPositionField_BusinessUnitID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryPositionField_SecurityID_get, _traderapi.CTORATstpQryPositionField_SecurityID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryPositionField_ShareholderID_get, _traderapi.CTORATstpQryPositionField_ShareholderID_set)
 
     def __init__(self):
@@ -4413,156 +4413,156 @@ _traderapi.CTORATstpQryPositionField_swigregister(CTORATstpQryPositionField)
 
 
 
-#########################################Í¶×ÊÕß³Ö²Ö############################################
+#########################################Í¶ï¿½ï¿½ï¿½ß³Ö²ï¿½############################################
 class CTORATstpPositionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpPositionField_ExchangeID_get, _traderapi.CTORATstpPositionField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpPositionField_InvestorID_get, _traderapi.CTORATstpPositionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpPositionField_BusinessUnitID_get, _traderapi.CTORATstpPositionField_BusinessUnitID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpPositionField_MarketID_get, _traderapi.CTORATstpPositionField_MarketID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpPositionField_ShareholderID_get, _traderapi.CTORATstpPositionField_ShareholderID_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpPositionField_TradingDay_get, _traderapi.CTORATstpPositionField_TradingDay_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpPositionField_SecurityID_get, _traderapi.CTORATstpPositionField_SecurityID_set)
 
-	# Ö¤È¯Ãû³Æ
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityName = property(_traderapi.CTORATstpPositionField_SecurityName_get, _traderapi.CTORATstpPositionField_SecurityName_set)
 
-	# ×ò²Ö
+	# ï¿½ï¿½ï¿?
     HistoryPos = property(_traderapi.CTORATstpPositionField_HistoryPos_get, _traderapi.CTORATstpPositionField_HistoryPos_set)
 
-	# ×ò²Ö¶³½á
+	# ï¿½ï¿½Ö¶ï¿½ï¿½ï¿?
     HistoryPosFrozen = property(_traderapi.CTORATstpPositionField_HistoryPosFrozen_get, _traderapi.CTORATstpPositionField_HistoryPosFrozen_set)
 
-	# ½ñÂòÂô²Ö
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TodayBSPos = property(_traderapi.CTORATstpPositionField_TodayBSPos_get, _traderapi.CTORATstpPositionField_TodayBSPos_set)
 
-	# ½ñÂòÂô²Ö¶³½á
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½
     TodayBSPosFrozen = property(_traderapi.CTORATstpPositionField_TodayBSPosFrozen_get, _traderapi.CTORATstpPositionField_TodayBSPosFrozen_set)
 
-	# ½ñÈÕÉêÊê³Ö²Ö
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿?
     TodayPRPos = property(_traderapi.CTORATstpPositionField_TodayPRPos_get, _traderapi.CTORATstpPositionField_TodayPRPos_set)
 
-	# ½ñÈÕÉêÊê³Ö²Ö¶³½á
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²Ö¶ï¿½ï¿½ï¿?
     TodayPRPosFrozen = property(_traderapi.CTORATstpPositionField_TodayPRPosFrozen_get, _traderapi.CTORATstpPositionField_TodayPRPosFrozen_set)
 
-	# ½ñ²ð·ÖºÏ²¢³Ö²Ö
+	# ï¿½ï¿½ï¿½ÖºÏ²ï¿½ï¿½Ö²ï¿½
     TodaySMPos = property(_traderapi.CTORATstpPositionField_TodaySMPos_get, _traderapi.CTORATstpPositionField_TodaySMPos_set)
 
-	# ½ñ²ð·ÖºÏ²¢³Ö²Ö¶³½á
+	# ï¿½ï¿½ï¿½ÖºÏ²ï¿½ï¿½Ö²Ö¶ï¿½ï¿½ï¿½
     TodaySMPosFrozen = property(_traderapi.CTORATstpPositionField_TodaySMPosFrozen_get, _traderapi.CTORATstpPositionField_TodaySMPosFrozen_set)
 
-	# ×ò²Ö³É±¾¼Û
+	# ï¿½ï¿½Ö³É±ï¿½ï¿½ï¿?
     HistoryPosPrice = property(_traderapi.CTORATstpPositionField_HistoryPosPrice_get, _traderapi.CTORATstpPositionField_HistoryPosPrice_set)
 
-	# ³Ö²Ö³É±¾
+	# ï¿½Ö²Ö³É±ï¿½
     TotalPosCost = property(_traderapi.CTORATstpPositionField_TotalPosCost_get, _traderapi.CTORATstpPositionField_TotalPosCost_set)
 
-	# ÉÏ´ÎÓà¶î(ÅÌÖÐ²»±ä)
+	# ï¿½Ï´ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½)
     PrePosition = property(_traderapi.CTORATstpPositionField_PrePosition_get, _traderapi.CTORATstpPositionField_PrePosition_set)
 
-	# ¹É·Ý¿ÉÓÃ
+	# ï¿½É·Ý¿ï¿½ï¿½ï¿½
     AvailablePosition = property(_traderapi.CTORATstpPositionField_AvailablePosition_get, _traderapi.CTORATstpPositionField_AvailablePosition_set)
 
-	# ¹É·ÝÓà¶î
+	# ï¿½É·ï¿½ï¿½ï¿½ï¿?
     CurrentPosition = property(_traderapi.CTORATstpPositionField_CurrentPosition_get, _traderapi.CTORATstpPositionField_CurrentPosition_set)
 
-	# ¿ª²Ö³É±¾
+	# ï¿½ï¿½ï¿½Ö³É±ï¿½
     OpenPosCost = property(_traderapi.CTORATstpPositionField_OpenPosCost_get, _traderapi.CTORATstpPositionField_OpenPosCost_set)
 
-	# ÈÚ×Ê²ÖÎ»(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½Ê²ï¿½Î»(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditBuyPos = property(_traderapi.CTORATstpPositionField_CreditBuyPos_get, _traderapi.CTORATstpPositionField_CreditBuyPos_set)
 
-	# ÈÚÈ¯²ÖÎ»(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½Î»(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellPos = property(_traderapi.CTORATstpPositionField_CreditSellPos_get, _traderapi.CTORATstpPositionField_CreditSellPos_set)
 
-	# ½ñÈÕÈÚÈ¯²ÖÎ»(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½Î»(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     TodayCreditSellPos = property(_traderapi.CTORATstpPositionField_TodayCreditSellPos_get, _traderapi.CTORATstpPositionField_TodayCreditSellPos_set)
 
-	# »®³ö²ÖÎ»(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CollateralOutPos = property(_traderapi.CTORATstpPositionField_CollateralOutPos_get, _traderapi.CTORATstpPositionField_CollateralOutPos_set)
 
-	# »¹È¯Î´³É½»ÊýÁ¿(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯Î´ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     RepayUntradeVolume = property(_traderapi.CTORATstpPositionField_RepayUntradeVolume_get, _traderapi.CTORATstpPositionField_RepayUntradeVolume_set)
 
-	# Ö±½Ó»¹È¯Î´³É½»ÊýÁ¿(Á½ÈÚ×¨ÓÃ)
+	# Ö±ï¿½Ó»ï¿½È¯Î´ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     RepayTransferUntradeVolume = property(_traderapi.CTORATstpPositionField_RepayTransferUntradeVolume_get, _traderapi.CTORATstpPositionField_RepayTransferUntradeVolume_set)
 
-	# µ£±£Æ·ÂòÈëÎ´³É½»½ð¶î(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½Î´ï¿½É½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CollateralBuyUntradeAmount = property(_traderapi.CTORATstpPositionField_CollateralBuyUntradeAmount_get, _traderapi.CTORATstpPositionField_CollateralBuyUntradeAmount_set)
 
-	# µ£±£Æ·ÂòÈëÎ´³É½»ÊýÁ¿(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½Î´ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CollateralBuyUntradeVolume = property(_traderapi.CTORATstpPositionField_CollateralBuyUntradeVolume_get, _traderapi.CTORATstpPositionField_CollateralBuyUntradeVolume_set)
 
-	# ÈÚ×ÊÂòÈë½ð¶î(°üº¬½»Ò×·ÑÓÃ)(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½)(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditBuyAmount = property(_traderapi.CTORATstpPositionField_CreditBuyAmount_get, _traderapi.CTORATstpPositionField_CreditBuyAmount_set)
 
-	# ÈÚ×ÊÂòÈëÎ´³É½»½ð¶î(°üº¬½»Ò×·ÑÓÃ)(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½É½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½)(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditBuyUntradeAmount = property(_traderapi.CTORATstpPositionField_CreditBuyUntradeAmount_get, _traderapi.CTORATstpPositionField_CreditBuyUntradeAmount_set)
 
-	# ÈÚ×Ê¶³½á±£Ö¤½ð(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½á±£Ö¤ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditBuyFrozenMargin = property(_traderapi.CTORATstpPositionField_CreditBuyFrozenMargin_get, _traderapi.CTORATstpPositionField_CreditBuyFrozenMargin_set)
 
-	# ÈÚ×ÊÂòÈëÀûÏ¢(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditBuyInterestFee = property(_traderapi.CTORATstpPositionField_CreditBuyInterestFee_get, _traderapi.CTORATstpPositionField_CreditBuyInterestFee_set)
 
-	# ÈÚ×ÊÂòÈëÎ´³É½»ÊýÁ¿(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditBuyUntradeVolume = property(_traderapi.CTORATstpPositionField_CreditBuyUntradeVolume_get, _traderapi.CTORATstpPositionField_CreditBuyUntradeVolume_set)
 
-	# ÈÚÈ¯Âô³ö½ð¶î(ÒÔ³É½»¼Û¼ÆËã)(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½Ô³É½ï¿½ï¿½Û¼ï¿½ï¿½ï¿½)(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellAmount = property(_traderapi.CTORATstpPositionField_CreditSellAmount_get, _traderapi.CTORATstpPositionField_CreditSellAmount_set)
 
-	# ÈÚÈ¯Âô³öÎ´³É½»½ð¶î(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½Î´ï¿½É½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellUntradeAmount = property(_traderapi.CTORATstpPositionField_CreditSellUntradeAmount_get, _traderapi.CTORATstpPositionField_CreditSellUntradeAmount_set)
 
-	# ÈÚÈ¯¶³½á±£Ö¤½ð(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½ï¿½á±£Ö¤ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellFrozenMargin = property(_traderapi.CTORATstpPositionField_CreditSellFrozenMargin_get, _traderapi.CTORATstpPositionField_CreditSellFrozenMargin_set)
 
-	# ÈÚÈ¯Âô³öÏ¢·Ñ(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellInterestFee = property(_traderapi.CTORATstpPositionField_CreditSellInterestFee_get, _traderapi.CTORATstpPositionField_CreditSellInterestFee_set)
 
-	# ÈÚÈ¯Âô³öÎ´³É½»ÊýÁ¿(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½Î´ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellUntradeVolume = property(_traderapi.CTORATstpPositionField_CreditSellUntradeVolume_get, _traderapi.CTORATstpPositionField_CreditSellUntradeVolume_set)
 
-	# »®Èë´ýÊÕ²Ö(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ²ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CollateralInPos = property(_traderapi.CTORATstpPositionField_CollateralInPos_get, _traderapi.CTORATstpPositionField_CollateralInPos_set)
 
-	# ÈÚ×ÊÁ÷¶¯¶³½á±£Ö¤½ð(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á±£Ö¤ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditBuyFrozenCirculateMargin = property(_traderapi.CTORATstpPositionField_CreditBuyFrozenCirculateMargin_get, _traderapi.CTORATstpPositionField_CreditBuyFrozenCirculateMargin_set)
 
-	# ÈÚÈ¯Á÷¶¯¶³½á±£Ö¤½ð(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á±£Ö¤ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditSellFrozenCirculateMargin = property(_traderapi.CTORATstpPositionField_CreditSellFrozenCirculateMargin_get, _traderapi.CTORATstpPositionField_CreditSellFrozenCirculateMargin_set)
 
-	# ÀÛ¼ÆÆ½²ÖÓ¯¿÷(Á½ÈÚ×¨ÓÃ)
+	# ï¿½Û¼ï¿½Æ½ï¿½ï¿½Ó¯ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CloseProfit = property(_traderapi.CTORATstpPositionField_CloseProfit_get, _traderapi.CTORATstpPositionField_CloseProfit_set)
 
-	# µ±ÈÕÀÛ¼Æ¿ª²ÖÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¼Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TodayTotalOpenVolume = property(_traderapi.CTORATstpPositionField_TodayTotalOpenVolume_get, _traderapi.CTORATstpPositionField_TodayTotalOpenVolume_set)
 
-	# ½ñÊÖÐø·Ñ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TodayCommission = property(_traderapi.CTORATstpPositionField_TodayCommission_get, _traderapi.CTORATstpPositionField_TodayCommission_set)
 
-	# µ±ÈÕÀÛ¼ÆÂòÈë½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TodayTotalBuyAmount = property(_traderapi.CTORATstpPositionField_TodayTotalBuyAmount_get, _traderapi.CTORATstpPositionField_TodayTotalBuyAmount_set)
 
-	# µ±ÈÕÀÛ¼ÆÂô³ö½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     TodayTotalSellAmount = property(_traderapi.CTORATstpPositionField_TodayTotalSellAmount_get, _traderapi.CTORATstpPositionField_TodayTotalSellAmount_set)
 
-	# ÉÏÈÕ¶³½á(ÅÌÖÐ²»±ä)
+	# ï¿½ï¿½ï¿½Õ¶ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½)
     PreFrozen = property(_traderapi.CTORATstpPositionField_PreFrozen_get, _traderapi.CTORATstpPositionField_PreFrozen_set)
 
     def __init__(self):
@@ -4575,12 +4575,12 @@ _traderapi.CTORATstpPositionField_swigregister(CTORATstpPositionField)
 
 
 
-#########################################²éÑ¯»ù´¡½»Ò×·ÑÂÊ############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½############################################
 class CTORATstpQryTradingFeeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryTradingFeeField_ExchangeID_get, _traderapi.CTORATstpQryTradingFeeField_ExchangeID_set)
 
     def __init__(self):
@@ -4593,114 +4593,114 @@ _traderapi.CTORATstpQryTradingFeeField_swigregister(CTORATstpQryTradingFeeField)
 
 
 
-#########################################»ù´¡½»Ò×·ÑÂÊ############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½############################################
 class CTORATstpTradingFeeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpTradingFeeField_ExchangeID_get, _traderapi.CTORATstpTradingFeeField_ExchangeID_set)
 
-	# ²úÆ·´úÂë
+	# ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
     ProductID = property(_traderapi.CTORATstpTradingFeeField_ProductID_get, _traderapi.CTORATstpTradingFeeField_ProductID_set)
 
-	# Ö¤È¯Àà±ð´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SecurityType = property(_traderapi.CTORATstpTradingFeeField_SecurityType_get, _traderapi.CTORATstpTradingFeeField_SecurityType_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpTradingFeeField_SecurityID_get, _traderapi.CTORATstpTradingFeeField_SecurityID_set)
 
-	# ÒµÎñÀà±ð
+	# Òµï¿½ï¿½ï¿½ï¿½ï¿?
     BizClass = property(_traderapi.CTORATstpTradingFeeField_BizClass_get, _traderapi.CTORATstpTradingFeeField_BizClass_set)
 
-	# Ó¡»¨Ë°(¸Û¹ÉÓ¡»¨Ë°)°´½ð¶îÊÕÈ¡±ÈÀý
+	# Ó¡ï¿½ï¿½Ë°(ï¿½Û¹ï¿½Ó¡ï¿½ï¿½Ë°)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿?
     StampTaxRatioByAmt = property(_traderapi.CTORATstpTradingFeeField_StampTaxRatioByAmt_get, _traderapi.CTORATstpTradingFeeField_StampTaxRatioByAmt_set)
 
-	# Ó¡»¨Ë°(¸Û¹ÉÓ¡»¨Ë°)°´ÃæÖµÊÕÈ¡±ÈÀý
+	# Ó¡ï¿½ï¿½Ë°(ï¿½Û¹ï¿½Ó¡ï¿½ï¿½Ë°)ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
     StampTaxRatioByPar = property(_traderapi.CTORATstpTradingFeeField_StampTaxRatioByPar_get, _traderapi.CTORATstpTradingFeeField_StampTaxRatioByPar_set)
 
-	# Ó¡»¨Ë°(¸Û¹ÉÓ¡»¨Ë°,µ¥Î»¸Û±Ò)°´±ÊÊÕÈ¡½ð¶î
+	# Ó¡ï¿½ï¿½Ë°(ï¿½Û¹ï¿½Ó¡ï¿½ï¿½Ë°,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     StampTaxFeePerOrder = property(_traderapi.CTORATstpTradingFeeField_StampTaxFeePerOrder_get, _traderapi.CTORATstpTradingFeeField_StampTaxFeePerOrder_set)
 
-	# Ó¡»¨Ë°(¸Û¹ÉÓ¡»¨Ë°,µ¥Î»¸Û±Ò)°´ÊýÁ¿ÊÕÈ¡½ð¶î
+	# Ó¡ï¿½ï¿½Ë°(ï¿½Û¹ï¿½Ó¡ï¿½ï¿½Ë°,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     StampTaxFeeByVolume = property(_traderapi.CTORATstpTradingFeeField_StampTaxFeeByVolume_get, _traderapi.CTORATstpTradingFeeField_StampTaxFeeByVolume_set)
 
-	# Ó¡»¨Ë°(¸Û¹ÉÓ¡»¨Ë°,µ¥Î»¸Û±Ò)×îµÍÊÕÈ¡½ð¶î
+	# Ó¡ï¿½ï¿½Ë°(ï¿½Û¹ï¿½Ó¡ï¿½ï¿½Ë°,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     StampTaxFeeMin = property(_traderapi.CTORATstpTradingFeeField_StampTaxFeeMin_get, _traderapi.CTORATstpTradingFeeField_StampTaxFeeMin_set)
 
-	# Ó¡»¨Ë°(¸Û¹ÉÓ¡»¨Ë°,µ¥Î»¸Û±Ò)×î¸ßÊÕÈ¡½ð¶î
+	# Ó¡ï¿½ï¿½Ë°(ï¿½Û¹ï¿½Ó¡ï¿½ï¿½Ë°,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     StampTaxFeeMax = property(_traderapi.CTORATstpTradingFeeField_StampTaxFeeMax_get, _traderapi.CTORATstpTradingFeeField_StampTaxFeeMax_set)
 
-	# ¹ý»§·Ñ(¸Û¹ÉÖ¤È¯×éºÏ·Ñ)°´½ð¶îÊÕÈ¡±ÈÀý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½Ö¤È¯ï¿½ï¿½Ï·ï¿?)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿?
     TransferRatioByAmt = property(_traderapi.CTORATstpTradingFeeField_TransferRatioByAmt_get, _traderapi.CTORATstpTradingFeeField_TransferRatioByAmt_set)
 
-	# ¹ý»§·Ñ(¸Û¹ÉÖ¤È¯×éºÏ·Ñ)°´ÃæÖµÊÕÈ¡±ÈÀý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½Ö¤È¯ï¿½ï¿½Ï·ï¿?)ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
     TransferRatioByPar = property(_traderapi.CTORATstpTradingFeeField_TransferRatioByPar_get, _traderapi.CTORATstpTradingFeeField_TransferRatioByPar_set)
 
-	# ¹ý»§·Ñ(¸Û¹ÉÖ¤È¯×éºÏ·Ñ,µ¥Î»¸Û±Ò)°´±ÊÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½Ö¤È¯ï¿½ï¿½Ï·ï¿?,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     TransferFeePerOrder = property(_traderapi.CTORATstpTradingFeeField_TransferFeePerOrder_get, _traderapi.CTORATstpTradingFeeField_TransferFeePerOrder_set)
 
-	# ¹ý»§·Ñ(¸Û¹ÉÖ¤È¯×éºÏ·Ñ,µ¥Î»¸Û±Ò)°´ÊýÁ¿ÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½Ö¤È¯ï¿½ï¿½Ï·ï¿?,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     TransferFeeByVolume = property(_traderapi.CTORATstpTradingFeeField_TransferFeeByVolume_get, _traderapi.CTORATstpTradingFeeField_TransferFeeByVolume_set)
 
-	# ¹ý»§·Ñ(¸Û¹ÉÖ¤È¯×éºÏ·Ñ,µ¥Î»¸Û±Ò)×îµÍÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½Ö¤È¯ï¿½ï¿½Ï·ï¿?,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     TransferFeeMin = property(_traderapi.CTORATstpTradingFeeField_TransferFeeMin_get, _traderapi.CTORATstpTradingFeeField_TransferFeeMin_set)
 
-	# ¹ý»§·Ñ(¸Û¹ÉÖ¤È¯×éºÏ·Ñ,µ¥Î»¸Û±Ò)×î¸ßÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½Ö¤È¯ï¿½ï¿½Ï·ï¿?,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     TransferFeeMax = property(_traderapi.CTORATstpTradingFeeField_TransferFeeMax_get, _traderapi.CTORATstpTradingFeeField_TransferFeeMax_set)
 
-	# ¾­ÊÖ·Ñ(¸Û¹É½»Ò×·Ñ)°´½ð¶îÊÕÈ¡±ÈÀý
+	# ï¿½ï¿½ï¿½Ö·ï¿½(ï¿½Û¹É½ï¿½ï¿½×·ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿?
     HandlingRatioByAmt = property(_traderapi.CTORATstpTradingFeeField_HandlingRatioByAmt_get, _traderapi.CTORATstpTradingFeeField_HandlingRatioByAmt_set)
 
-	# ¾­ÊÖ·Ñ(¸Û¹É½»Ò×·Ñ)°´ÃæÖµÊÕÈ¡±ÈÀý
+	# ï¿½ï¿½ï¿½Ö·ï¿½(ï¿½Û¹É½ï¿½ï¿½×·ï¿½)ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
     HandlingRatioByPar = property(_traderapi.CTORATstpTradingFeeField_HandlingRatioByPar_get, _traderapi.CTORATstpTradingFeeField_HandlingRatioByPar_set)
 
-	# ¾­ÊÖ·Ñ(¸Û¹É½»Ò×·Ñ,µ¥Î»¸Û±Ò)°´±ÊÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½Ö·ï¿½(ï¿½Û¹É½ï¿½ï¿½×·ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     HandlingFeePerOrder = property(_traderapi.CTORATstpTradingFeeField_HandlingFeePerOrder_get, _traderapi.CTORATstpTradingFeeField_HandlingFeePerOrder_set)
 
-	# ¾­ÊÖ·Ñ(¸Û¹É½»Ò×·Ñ,µ¥Î»¸Û±Ò)°´ÊýÁ¿ÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½Ö·ï¿½(ï¿½Û¹É½ï¿½ï¿½×·ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     HandlingFeeByVolume = property(_traderapi.CTORATstpTradingFeeField_HandlingFeeByVolume_get, _traderapi.CTORATstpTradingFeeField_HandlingFeeByVolume_set)
 
-	# ¾­ÊÖ·Ñ(¸Û¹É½»Ò×·Ñ,µ¥Î»¸Û±Ò)×îµÍÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½Ö·ï¿½(ï¿½Û¹É½ï¿½ï¿½×·ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     HandlingFeeMin = property(_traderapi.CTORATstpTradingFeeField_HandlingFeeMin_get, _traderapi.CTORATstpTradingFeeField_HandlingFeeMin_set)
 
-	# ¾­ÊÖ·Ñ(¸Û¹É½»Ò×·Ñ,µ¥Î»¸Û±Ò)×î¸ßÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½Ö·ï¿½(ï¿½Û¹É½ï¿½ï¿½×·ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     HandlingFeeMax = property(_traderapi.CTORATstpTradingFeeField_HandlingFeeMax_get, _traderapi.CTORATstpTradingFeeField_HandlingFeeMax_set)
 
-	# Ö¤¹Ü·Ñ(¸Û¹É½»Ò×Õ÷·Ñ)°´½ð¶îÊÕÈ¡±ÈÀý
+	# Ö¤ï¿½Ü·ï¿½(ï¿½Û¹É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿?
     RegulateRatioByAmt = property(_traderapi.CTORATstpTradingFeeField_RegulateRatioByAmt_get, _traderapi.CTORATstpTradingFeeField_RegulateRatioByAmt_set)
 
-	# Ö¤¹Ü·Ñ(¸Û¹É½»Ò×Õ÷·Ñ)°´ÃæÖµÊÕÈ¡±ÈÀý
+	# Ö¤ï¿½Ü·ï¿½(ï¿½Û¹É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
     RegulateRatioByPar = property(_traderapi.CTORATstpTradingFeeField_RegulateRatioByPar_get, _traderapi.CTORATstpTradingFeeField_RegulateRatioByPar_set)
 
-	# Ö¤¹Ü·Ñ(¸Û¹É½»Ò×Õ÷·Ñ,µ¥Î»¸Û±Ò)°´±ÊÊÕÈ¡½ð¶î
+	# Ö¤ï¿½Ü·ï¿½(ï¿½Û¹É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     RegulateFeePerOrder = property(_traderapi.CTORATstpTradingFeeField_RegulateFeePerOrder_get, _traderapi.CTORATstpTradingFeeField_RegulateFeePerOrder_set)
 
-	# Ö¤¹Ü·Ñ(¸Û¹É½»Ò×Õ÷·Ñ,µ¥Î»¸Û±Ò)°´ÊýÁ¿ÊÕÈ¡½ð¶î
+	# Ö¤ï¿½Ü·ï¿½(ï¿½Û¹É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     RegulateFeeByVolume = property(_traderapi.CTORATstpTradingFeeField_RegulateFeeByVolume_get, _traderapi.CTORATstpTradingFeeField_RegulateFeeByVolume_set)
 
-	# Ö¤¹Ü·Ñ(¸Û¹É½»Ò×Õ÷·Ñ,µ¥Î»¸Û±Ò)×îµÍÊÕÈ¡½ð¶î
+	# Ö¤ï¿½Ü·ï¿½(ï¿½Û¹É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     RegulateFeeMin = property(_traderapi.CTORATstpTradingFeeField_RegulateFeeMin_get, _traderapi.CTORATstpTradingFeeField_RegulateFeeMin_set)
 
-	# Ö¤¹Ü·Ñ(¸Û¹É½»Ò×Õ÷·Ñ,µ¥Î»¸Û±Ò)×î¸ßÊÕÈ¡½ð¶î
+	# Ö¤ï¿½Ü·ï¿½(ï¿½Û¹É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     RegulateFeeMax = property(_traderapi.CTORATstpTradingFeeField_RegulateFeeMax_get, _traderapi.CTORATstpTradingFeeField_RegulateFeeMax_set)
 
-	# ½áËã·Ñ(¸Û¹É¹É·Ý½»ÊÕ·Ñ)°´½ð¶îÊÕÈ¡±ÈÀý
+	# ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½Û¹É¹É·Ý½ï¿½ï¿½Õ·ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿?
     SettlementRatioByAmt = property(_traderapi.CTORATstpTradingFeeField_SettlementRatioByAmt_get, _traderapi.CTORATstpTradingFeeField_SettlementRatioByAmt_set)
 
-	# ½áËã·Ñ(¸Û¹É¹É·Ý½»ÊÕ·Ñ)°´ÃæÖµÊÕÈ¡±ÈÀý
+	# ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½Û¹É¹É·Ý½ï¿½ï¿½Õ·ï¿½)ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
     SettlementRatioByPar = property(_traderapi.CTORATstpTradingFeeField_SettlementRatioByPar_get, _traderapi.CTORATstpTradingFeeField_SettlementRatioByPar_set)
 
-	# ½áËã·Ñ(¸Û¹É¹É·Ý½»ÊÕ·Ñ,µ¥Î»¸Û±Ò)°´±ÊÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½Û¹É¹É·Ý½ï¿½ï¿½Õ·ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     SettlementFeePerOrder = property(_traderapi.CTORATstpTradingFeeField_SettlementFeePerOrder_get, _traderapi.CTORATstpTradingFeeField_SettlementFeePerOrder_set)
 
-	# ½áËã·Ñ(¸Û¹É¹É·Ý½»ÊÕ·Ñ,µ¥Î»¸Û±Ò)°´ÊýÁ¿ÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½Û¹É¹É·Ý½ï¿½ï¿½Õ·ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     SettlementFeeByVolume = property(_traderapi.CTORATstpTradingFeeField_SettlementFeeByVolume_get, _traderapi.CTORATstpTradingFeeField_SettlementFeeByVolume_set)
 
-	# ½áËã·Ñ(¸Û¹É¹É·Ý½»ÊÕ·Ñ,µ¥Î»¸Û±Ò)×îµÍÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½Û¹É¹É·Ý½ï¿½ï¿½Õ·ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     SettlementFeeMin = property(_traderapi.CTORATstpTradingFeeField_SettlementFeeMin_get, _traderapi.CTORATstpTradingFeeField_SettlementFeeMin_set)
 
-	# ½áËã·Ñ(¸Û¹É¹É·Ý½»ÊÕ·Ñ,µ¥Î»¸Û±Ò)×î¸ßÊÕÈ¡½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½Û¹É¹É·Ý½ï¿½ï¿½Õ·ï¿½,ï¿½ï¿½Î»ï¿½Û±ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     SettlementFeeMax = property(_traderapi.CTORATstpTradingFeeField_SettlementFeeMax_get, _traderapi.CTORATstpTradingFeeField_SettlementFeeMax_set)
 
     def __init__(self):
@@ -4713,18 +4713,18 @@ _traderapi.CTORATstpTradingFeeField_swigregister(CTORATstpTradingFeeField)
 
 
 
-#########################################²éÑ¯Ó¶½ð·ÑÂÊ############################################
+#########################################ï¿½ï¿½Ñ¯Ó¶ï¿½ï¿½ï¿½ï¿½ï¿?############################################
 class CTORATstpQryInvestorTradingFeeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryInvestorTradingFeeField_InvestorID_get, _traderapi.CTORATstpQryInvestorTradingFeeField_InvestorID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryInvestorTradingFeeField_ExchangeID_get, _traderapi.CTORATstpQryInvestorTradingFeeField_ExchangeID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpQryInvestorTradingFeeField_DepartmentID_get, _traderapi.CTORATstpQryInvestorTradingFeeField_DepartmentID_set)
 
     def __init__(self):
@@ -4737,54 +4737,54 @@ _traderapi.CTORATstpQryInvestorTradingFeeField_swigregister(CTORATstpQryInvestor
 
 
 
-#########################################Ó¶½ð·ÑÂÊ############################################
+#########################################Ó¶ï¿½ï¿½ï¿½ï¿½ï¿?############################################
 class CTORATstpInvestorTradingFeeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInvestorTradingFeeField_InvestorID_get, _traderapi.CTORATstpInvestorTradingFeeField_InvestorID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInvestorTradingFeeField_ExchangeID_get, _traderapi.CTORATstpInvestorTradingFeeField_ExchangeID_set)
 
-	# ²úÆ·´úÂë
+	# ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
     ProductID = property(_traderapi.CTORATstpInvestorTradingFeeField_ProductID_get, _traderapi.CTORATstpInvestorTradingFeeField_ProductID_set)
 
-	# Ö¤È¯Àà±ð´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SecurityType = property(_traderapi.CTORATstpInvestorTradingFeeField_SecurityType_get, _traderapi.CTORATstpInvestorTradingFeeField_SecurityType_set)
 
-	# ºÏÔ¼´úÂë
+	# ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpInvestorTradingFeeField_SecurityID_get, _traderapi.CTORATstpInvestorTradingFeeField_SecurityID_set)
 
-	# ÒµÎñÀà±ð
+	# Òµï¿½ï¿½ï¿½ï¿½ï¿?
     BizClass = property(_traderapi.CTORATstpInvestorTradingFeeField_BizClass_get, _traderapi.CTORATstpInvestorTradingFeeField_BizClass_set)
 
-	# Ó¶½ðÀàÐÍ
+	# Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     BrokerageType = property(_traderapi.CTORATstpInvestorTradingFeeField_BrokerageType_get, _traderapi.CTORATstpInvestorTradingFeeField_BrokerageType_set)
 
-	# Ó¶½ð°´½ð¶îÊÕÈ¡±ÈÀý
+	# Ó¶ï¿½ð°´½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿?
     RatioByAmt = property(_traderapi.CTORATstpInvestorTradingFeeField_RatioByAmt_get, _traderapi.CTORATstpInvestorTradingFeeField_RatioByAmt_set)
 
-	# Ó¶½ð°´ÃæÖµÊÕÈ¡±ÈÀý
+	# Ó¶ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
     RatioByPar = property(_traderapi.CTORATstpInvestorTradingFeeField_RatioByPar_get, _traderapi.CTORATstpInvestorTradingFeeField_RatioByPar_set)
 
-	# Ó¶½ð°´±ÊÊÕÈ¡½ð¶î
+	# Ó¶ï¿½ð°´±ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     FeePerOrder = property(_traderapi.CTORATstpInvestorTradingFeeField_FeePerOrder_get, _traderapi.CTORATstpInvestorTradingFeeField_FeePerOrder_set)
 
-	# Ó¶½ð×îµÍÊÕÈ¡½ð¶î
+	# Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     FeeMin = property(_traderapi.CTORATstpInvestorTradingFeeField_FeeMin_get, _traderapi.CTORATstpInvestorTradingFeeField_FeeMin_set)
 
-	# Ó¶½ð×î¸ßÊÕÈ¡½ð¶î
+	# Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
     FeeMax = property(_traderapi.CTORATstpInvestorTradingFeeField_FeeMax_get, _traderapi.CTORATstpInvestorTradingFeeField_FeeMax_set)
 
-	# Ó¶½ð°´ÊýÁ¿ÊÕÈ¡½ð¶î
+	# Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿?
     FeeByVolume = property(_traderapi.CTORATstpInvestorTradingFeeField_FeeByVolume_get, _traderapi.CTORATstpInvestorTradingFeeField_FeeByVolume_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpInvestorTradingFeeField_DepartmentID_get, _traderapi.CTORATstpInvestorTradingFeeField_DepartmentID_set)
 
-	# ±¨µ¥ÀàÐÍ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderType = property(_traderapi.CTORATstpInvestorTradingFeeField_OrderType_get, _traderapi.CTORATstpInvestorTradingFeeField_OrderType_set)
 
     def __init__(self):
@@ -4797,21 +4797,21 @@ _traderapi.CTORATstpInvestorTradingFeeField_swigregister(CTORATstpInvestorTradin
 
 
 
-#########################################²éÑ¯ÐÂ¹ÉÉê¹º¶î¶È############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½ï¿?############################################
 class CTORATstpQryIPOQuotaField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryIPOQuotaField_InvestorID_get, _traderapi.CTORATstpQryIPOQuotaField_InvestorID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryIPOQuotaField_ExchangeID_get, _traderapi.CTORATstpQryIPOQuotaField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpQryIPOQuotaField_MarketID_get, _traderapi.CTORATstpQryIPOQuotaField_MarketID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryIPOQuotaField_ShareholderID_get, _traderapi.CTORATstpQryIPOQuotaField_ShareholderID_set)
 
     def __init__(self):
@@ -4824,27 +4824,27 @@ _traderapi.CTORATstpQryIPOQuotaField_swigregister(CTORATstpQryIPOQuotaField)
 
 
 
-#########################################ÐÂ¹ÉÉê¹º¶î¶È############################################
+#########################################ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½ï¿?############################################
 class CTORATstpIPOQuotaField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpIPOQuotaField_InvestorID_get, _traderapi.CTORATstpIPOQuotaField_InvestorID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpIPOQuotaField_ExchangeID_get, _traderapi.CTORATstpIPOQuotaField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpIPOQuotaField_MarketID_get, _traderapi.CTORATstpIPOQuotaField_MarketID_set)
 
-	# ¿Í»§´úÂë
+	# ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpIPOQuotaField_ShareholderID_get, _traderapi.CTORATstpIPOQuotaField_ShareholderID_set)
 
-	# ¿ÉÉê¹º¶î¶È
+	# ï¿½ï¿½ï¿½ê¹ºï¿½ï¿½ï¿?
     MaxVolume = property(_traderapi.CTORATstpIPOQuotaField_MaxVolume_get, _traderapi.CTORATstpIPOQuotaField_MaxVolume_set)
 
-	# ¿Æ´´°å¿ÉÉê¹º¶î¶È
+	# ï¿½Æ´ï¿½ï¿½ï¿½ï¿½ï¿½ê¹ºï¿½ï¿½ï¿½
     KCMaxVolume = property(_traderapi.CTORATstpIPOQuotaField_KCMaxVolume_get, _traderapi.CTORATstpIPOQuotaField_KCMaxVolume_set)
 
     def __init__(self):
@@ -4857,24 +4857,24 @@ _traderapi.CTORATstpIPOQuotaField_swigregister(CTORATstpIPOQuotaField)
 
 
 
-#########################################²éÑ¯±¨µ¥Ã÷Ï¸×Ê½ð############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½Ê½ï¿½############################################
 class CTORATstpQryOrderFundDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryOrderFundDetailField_ExchangeID_get, _traderapi.CTORATstpQryOrderFundDetailField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryOrderFundDetailField_InvestorID_get, _traderapi.CTORATstpQryOrderFundDetailField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryOrderFundDetailField_BusinessUnitID_get, _traderapi.CTORATstpQryOrderFundDetailField_BusinessUnitID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryOrderFundDetailField_SecurityID_get, _traderapi.CTORATstpQryOrderFundDetailField_SecurityID_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpQryOrderFundDetailField_OrderSysID_get, _traderapi.CTORATstpQryOrderFundDetailField_OrderSysID_set)
 
     def __init__(self):
@@ -4887,90 +4887,90 @@ _traderapi.CTORATstpQryOrderFundDetailField_swigregister(CTORATstpQryOrderFundDe
 
 
 
-#########################################±¨µ¥Ã÷Ï¸×Ê½ð############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½Ê½ï¿½############################################
 class CTORATstpOrderFundDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpOrderFundDetailField_InvestorID_get, _traderapi.CTORATstpOrderFundDetailField_InvestorID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpOrderFundDetailField_SecurityID_get, _traderapi.CTORATstpOrderFundDetailField_SecurityID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpOrderFundDetailField_ExchangeID_get, _traderapi.CTORATstpOrderFundDetailField_ExchangeID_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpOrderFundDetailField_TradingDay_get, _traderapi.CTORATstpOrderFundDetailField_TradingDay_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpOrderFundDetailField_OrderSysID_get, _traderapi.CTORATstpOrderFundDetailField_OrderSysID_set)
 
-	# ½»Ò×µ¥Ôª´úÂë
+	# ï¿½ï¿½ï¿½×µï¿½Ôªï¿½ï¿½ï¿½ï¿½
     PbuID = property(_traderapi.CTORATstpOrderFundDetailField_PbuID_get, _traderapi.CTORATstpOrderFundDetailField_PbuID_set)
 
-	# ±¾µØ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpOrderFundDetailField_OrderLocalID_get, _traderapi.CTORATstpOrderFundDetailField_OrderLocalID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpOrderFundDetailField_BusinessUnitID_get, _traderapi.CTORATstpOrderFundDetailField_BusinessUnitID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpOrderFundDetailField_AccountID_get, _traderapi.CTORATstpOrderFundDetailField_AccountID_set)
 
-	# ±¨µ¥½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderAmount = property(_traderapi.CTORATstpOrderFundDetailField_OrderAmount_get, _traderapi.CTORATstpOrderFundDetailField_OrderAmount_set)
 
-	# ³É½»½ð¶î
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿?
     Turnover = property(_traderapi.CTORATstpOrderFundDetailField_Turnover_get, _traderapi.CTORATstpOrderFundDetailField_Turnover_set)
 
-	# Ó¡»¨Ë°(¸Û¹ÉÎªÓ¡»¨Ë°)
+	# Ó¡ï¿½ï¿½Ë°(ï¿½Û¹ï¿½ÎªÓ¡ï¿½ï¿½Ë°)
     StampTaxFee = property(_traderapi.CTORATstpOrderFundDetailField_StampTaxFee_get, _traderapi.CTORATstpOrderFundDetailField_StampTaxFee_set)
 
-	# ¾­ÊÖ·Ñ(¸Û¹ÉÎª½»Ò×·Ñ)
+	# ï¿½ï¿½ï¿½Ö·ï¿½(ï¿½Û¹ï¿½Îªï¿½ï¿½ï¿½×·ï¿½)
     HandlingFee = property(_traderapi.CTORATstpOrderFundDetailField_HandlingFee_get, _traderapi.CTORATstpOrderFundDetailField_HandlingFee_set)
 
-	# ¹ý»§·Ñ(¸Û¹ÉÎªÖ¤È¯×éºÏ·Ñ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û¹ï¿½ÎªÖ¤È¯ï¿½ï¿½Ï·ï¿?)
     TransferFee = property(_traderapi.CTORATstpOrderFundDetailField_TransferFee_get, _traderapi.CTORATstpOrderFundDetailField_TransferFee_set)
 
-	# Ö¤¹Ü·Ñ(¸Û¹ÉÎª½»Ò×Õ÷·Ñ)
+	# Ö¤ï¿½Ü·ï¿½(ï¿½Û¹ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
     RegulateFee = property(_traderapi.CTORATstpOrderFundDetailField_RegulateFee_get, _traderapi.CTORATstpOrderFundDetailField_RegulateFee_set)
 
-	# ½áËã·Ñ(¸Û¹ÉÎª¹É·Ý½»ÊÕ·Ñ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½Û¹ï¿½Îªï¿½É·Ý½ï¿½ï¿½Õ·ï¿½)
     SettlementFee = property(_traderapi.CTORATstpOrderFundDetailField_SettlementFee_get, _traderapi.CTORATstpOrderFundDetailField_SettlementFee_set)
 
-	# Ó¶½ð
+	# Ó¶ï¿½ï¿½
     BrokerageFee = property(_traderapi.CTORATstpOrderFundDetailField_BrokerageFee_get, _traderapi.CTORATstpOrderFundDetailField_BrokerageFee_set)
 
-	# ×Ü·ÑÓÃ
+	# ï¿½Ü·ï¿½ï¿½ï¿½
     TotalFee = property(_traderapi.CTORATstpOrderFundDetailField_TotalFee_get, _traderapi.CTORATstpOrderFundDetailField_TotalFee_set)
 
-	# ±¨µ¥³õÊ¼¶³½á½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OrderCashFrozen = property(_traderapi.CTORATstpOrderFundDetailField_OrderCashFrozen_get, _traderapi.CTORATstpOrderFundDetailField_OrderCashFrozen_set)
 
-	# Ô¤¹À¶³½áÏÖ½ð
+	# Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½
     EstimateCashFrozen = property(_traderapi.CTORATstpOrderFundDetailField_EstimateCashFrozen_get, _traderapi.CTORATstpOrderFundDetailField_EstimateCashFrozen_set)
 
-	# ³õÊ¼¶³½á×Ü·ÑÓÃ
+	# ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ü·ï¿½ï¿½ï¿½
     TotalFeeFrozen = property(_traderapi.CTORATstpOrderFundDetailField_TotalFeeFrozen_get, _traderapi.CTORATstpOrderFundDetailField_TotalFeeFrozen_set)
 
-	# ³õÊ¼¶³½á½ð¶îºÏ¼Æ
+	# ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿?
     TotalFrozen = property(_traderapi.CTORATstpOrderFundDetailField_TotalFrozen_get, _traderapi.CTORATstpOrderFundDetailField_TotalFrozen_set)
 
-	# ±£Ö¤½ð(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½Ö¤ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     Margin = property(_traderapi.CTORATstpOrderFundDetailField_Margin_get, _traderapi.CTORATstpOrderFundDetailField_Margin_set)
 
-	# ³¥»¹½ð¶î(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     RepayAmount = property(_traderapi.CTORATstpOrderFundDetailField_RepayAmount_get, _traderapi.CTORATstpOrderFundDetailField_RepayAmount_set)
 
-	# ³¥»¹ÊýÁ¿(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     RepayVolume = property(_traderapi.CTORATstpOrderFundDetailField_RepayVolume_get, _traderapi.CTORATstpOrderFundDetailField_RepayVolume_set)
 
-	# ³õÊ¼¶³½á±£Ö¤½ð(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½á±£Ö¤ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     MarginFrozen = property(_traderapi.CTORATstpOrderFundDetailField_MarginFrozen_get, _traderapi.CTORATstpOrderFundDetailField_MarginFrozen_set)
 
-	# ³õÊ¼¶³½áÁ÷¶¯±£Ö¤½ð(Á½ÈÚ×¨ÓÃ)
+	# ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CirculateMarginFrozen = property(_traderapi.CTORATstpOrderFundDetailField_CirculateMarginFrozen_get, _traderapi.CTORATstpOrderFundDetailField_CirculateMarginFrozen_set)
 
     def __init__(self):
@@ -4983,24 +4983,24 @@ _traderapi.CTORATstpOrderFundDetailField_swigregister(CTORATstpOrderFundDetailFi
 
 
 
-#########################################²éÑ¯×Ê½ð×ªÒÆÁ÷Ë®############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Ê½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®############################################
 class CTORATstpQryFundTransferDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpQryFundTransferDetailField_DepartmentID_get, _traderapi.CTORATstpQryFundTransferDetailField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpQryFundTransferDetailField_AccountID_get, _traderapi.CTORATstpQryFundTransferDetailField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpQryFundTransferDetailField_CurrencyID_get, _traderapi.CTORATstpQryFundTransferDetailField_CurrencyID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryFundTransferDetailField_InvestorID_get, _traderapi.CTORATstpQryFundTransferDetailField_InvestorID_set)
 
-	# ×ªÒÆ·½Ïò
+	# ×ªï¿½Æ·ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpQryFundTransferDetailField_TransferDirection_get, _traderapi.CTORATstpQryFundTransferDetailField_TransferDirection_set)
 
     def __init__(self):
@@ -5013,90 +5013,90 @@ _traderapi.CTORATstpQryFundTransferDetailField_swigregister(CTORATstpQryFundTran
 
 
 
-#########################################×Ê½ð×ªÒÆÁ÷Ë®############################################
+#########################################ï¿½Ê½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®############################################
 class CTORATstpFundTransferDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ×ªÕËÁ÷Ë®ºÅ
+	# ×ªï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     FundSerial = property(_traderapi.CTORATstpFundTransferDetailField_FundSerial_get, _traderapi.CTORATstpFundTransferDetailField_FundSerial_set)
 
-	# ÉêÇëÁ÷Ë®ºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     ApplySerial = property(_traderapi.CTORATstpFundTransferDetailField_ApplySerial_get, _traderapi.CTORATstpFundTransferDetailField_ApplySerial_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpFundTransferDetailField_FrontID_get, _traderapi.CTORATstpFundTransferDetailField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpFundTransferDetailField_SessionID_get, _traderapi.CTORATstpFundTransferDetailField_SessionID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpFundTransferDetailField_AccountID_get, _traderapi.CTORATstpFundTransferDetailField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpFundTransferDetailField_CurrencyID_get, _traderapi.CTORATstpFundTransferDetailField_CurrencyID_set)
 
-	# ×ªÒÆ·½Ïò
+	# ×ªï¿½Æ·ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpFundTransferDetailField_TransferDirection_get, _traderapi.CTORATstpFundTransferDetailField_TransferDirection_set)
 
-	# ³öÈë½ð½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     Amount = property(_traderapi.CTORATstpFundTransferDetailField_Amount_get, _traderapi.CTORATstpFundTransferDetailField_Amount_set)
 
-	# ×ªÒÆ×´Ì¬
+	# ×ªï¿½ï¿½×´Ì¬
     TransferStatus = property(_traderapi.CTORATstpFundTransferDetailField_TransferStatus_get, _traderapi.CTORATstpFundTransferDetailField_TransferStatus_set)
 
-	# ²Ù×÷À´Ô´
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´
     OperateSource = property(_traderapi.CTORATstpFundTransferDetailField_OperateSource_get, _traderapi.CTORATstpFundTransferDetailField_OperateSource_set)
 
-	# ²Ù×÷ÈËÔ±
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±
     OperatorID = property(_traderapi.CTORATstpFundTransferDetailField_OperatorID_get, _traderapi.CTORATstpFundTransferDetailField_OperatorID_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OperateDate = property(_traderapi.CTORATstpFundTransferDetailField_OperateDate_get, _traderapi.CTORATstpFundTransferDetailField_OperateDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     OperateTime = property(_traderapi.CTORATstpFundTransferDetailField_OperateTime_get, _traderapi.CTORATstpFundTransferDetailField_OperateTime_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpFundTransferDetailField_StatusMsg_get, _traderapi.CTORATstpFundTransferDetailField_StatusMsg_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpFundTransferDetailField_DepartmentID_get, _traderapi.CTORATstpFundTransferDetailField_DepartmentID_set)
 
-	# ÒøÐÐ´úÂë
+	# ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½
     BankID = property(_traderapi.CTORATstpFundTransferDetailField_BankID_get, _traderapi.CTORATstpFundTransferDetailField_BankID_set)
 
-	# Ç©Ô¼ÒøÐÐÕË»§
+	# Ç©Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½
     BankAccountID = property(_traderapi.CTORATstpFundTransferDetailField_BankAccountID_get, _traderapi.CTORATstpFundTransferDetailField_BankAccountID_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpFundTransferDetailField_IPAddress_get, _traderapi.CTORATstpFundTransferDetailField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpFundTransferDetailField_MacAddress_get, _traderapi.CTORATstpFundTransferDetailField_MacAddress_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpFundTransferDetailField_InvestorID_get, _traderapi.CTORATstpFundTransferDetailField_InvestorID_set)
 
-	# Íâ²¿Á÷Ë®ºÅ
+	# ï¿½â²¿ï¿½ï¿½Ë®ï¿½ï¿½
     ExternalSerial = property(_traderapi.CTORATstpFundTransferDetailField_ExternalSerial_get, _traderapi.CTORATstpFundTransferDetailField_ExternalSerial_set)
 
-	# Íâ²¿ÏµÍ³½ÚµãºÅ
+	# ï¿½â²¿ÏµÍ³ï¿½Úµï¿½ï¿?
     ExternalNodeID = property(_traderapi.CTORATstpFundTransferDetailField_ExternalNodeID_get, _traderapi.CTORATstpFundTransferDetailField_ExternalNodeID_set)
 
-	# Ç¿Æ½Ô­Òò(Á½ÈÚ×¨ÓÃ)
+	# Ç¿Æ½Ô­ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     ForceCloseReason = property(_traderapi.CTORATstpFundTransferDetailField_ForceCloseReason_get, _traderapi.CTORATstpFundTransferDetailField_ForceCloseReason_set)
 
-	# (Ö±½Ó»¹¿îÓÃ)Ö¸¶¨³¥»¹Ê±µÄ¸ºÕ®±àºÅ(Á½ÈÚ×¨ÓÃ)
+	# (Ö±ï¿½Ó»ï¿½ï¿½ï¿½ï¿½ï¿½)Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ä¸ï¿½Õ®ï¿½ï¿½ï¿?(ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½)
     CreditDebtID = property(_traderapi.CTORATstpFundTransferDetailField_CreditDebtID_get, _traderapi.CTORATstpFundTransferDetailField_CreditDebtID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpFundTransferDetailField_BusinessUnitID_get, _traderapi.CTORATstpFundTransferDetailField_BusinessUnitID_set)
 
-	# ÒµÎñ±àºÅ
+	# Òµï¿½ï¿½ï¿½ï¿½
     BizRef = property(_traderapi.CTORATstpFundTransferDetailField_BizRef_get, _traderapi.CTORATstpFundTransferDetailField_BizRef_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeRef = property(_traderapi.CTORATstpFundTransferDetailField_ExchangeRef_get, _traderapi.CTORATstpFundTransferDetailField_ExchangeRef_set)
 
     def __init__(self):
@@ -5109,27 +5109,27 @@ _traderapi.CTORATstpFundTransferDetailField_swigregister(CTORATstpFundTransferDe
 
 
 
-#########################################²éÑ¯³Ö²Ö×ªÒÆÁ÷Ë®############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Ö²ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®############################################
 class CTORATstpQryPositionTransferDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryPositionTransferDetailField_ExchangeID_get, _traderapi.CTORATstpQryPositionTransferDetailField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryPositionTransferDetailField_InvestorID_get, _traderapi.CTORATstpQryPositionTransferDetailField_InvestorID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryPositionTransferDetailField_ShareholderID_get, _traderapi.CTORATstpQryPositionTransferDetailField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryPositionTransferDetailField_SecurityID_get, _traderapi.CTORATstpQryPositionTransferDetailField_SecurityID_set)
 
-	# ×ªÒÆ·½Ïò
+	# ×ªï¿½Æ·ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpQryPositionTransferDetailField_TransferDirection_get, _traderapi.CTORATstpQryPositionTransferDetailField_TransferDirection_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryPositionTransferDetailField_BusinessUnitID_get, _traderapi.CTORATstpQryPositionTransferDetailField_BusinessUnitID_set)
 
     def __init__(self):
@@ -5142,84 +5142,84 @@ _traderapi.CTORATstpQryPositionTransferDetailField_swigregister(CTORATstpQryPosi
 
 
 
-#########################################³Ö²Ö×ªÒÆÁ÷Ë®############################################
+#########################################ï¿½Ö²ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®############################################
 class CTORATstpPositionTransferDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Á÷Ë®ºÅ
+	# ï¿½ï¿½Ë®ï¿½ï¿½
     PositionSerial = property(_traderapi.CTORATstpPositionTransferDetailField_PositionSerial_get, _traderapi.CTORATstpPositionTransferDetailField_PositionSerial_set)
 
-	# ÉêÇëÁ÷Ë®ºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     ApplySerial = property(_traderapi.CTORATstpPositionTransferDetailField_ApplySerial_get, _traderapi.CTORATstpPositionTransferDetailField_ApplySerial_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpPositionTransferDetailField_FrontID_get, _traderapi.CTORATstpPositionTransferDetailField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpPositionTransferDetailField_SessionID_get, _traderapi.CTORATstpPositionTransferDetailField_SessionID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpPositionTransferDetailField_InvestorID_get, _traderapi.CTORATstpPositionTransferDetailField_InvestorID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpPositionTransferDetailField_ExchangeID_get, _traderapi.CTORATstpPositionTransferDetailField_ExchangeID_set)
 
-	# ½»Ò×ÕË»§´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpPositionTransferDetailField_ShareholderID_get, _traderapi.CTORATstpPositionTransferDetailField_ShareholderID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpPositionTransferDetailField_MarketID_get, _traderapi.CTORATstpPositionTransferDetailField_MarketID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpPositionTransferDetailField_SecurityID_get, _traderapi.CTORATstpPositionTransferDetailField_SecurityID_set)
 
-	# ½»Ò×ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpPositionTransferDetailField_TradingDay_get, _traderapi.CTORATstpPositionTransferDetailField_TradingDay_set)
 
-	# ×ªÒÆ·½Ïò
+	# ×ªï¿½Æ·ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpPositionTransferDetailField_TransferDirection_get, _traderapi.CTORATstpPositionTransferDetailField_TransferDirection_set)
 
-	# ×ªÒÆ³Ö²ÖÀàÐÍ
+	# ×ªï¿½Æ³Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
     TransferPositionType = property(_traderapi.CTORATstpPositionTransferDetailField_TransferPositionType_get, _traderapi.CTORATstpPositionTransferDetailField_TransferPositionType_set)
 
-	# ×ªÒÆ×´Ì¬
+	# ×ªï¿½ï¿½×´Ì¬
     TransferStatus = property(_traderapi.CTORATstpPositionTransferDetailField_TransferStatus_get, _traderapi.CTORATstpPositionTransferDetailField_TransferStatus_set)
 
-	# ×òÈÕ²ÖÎ»ÊýÁ¿
+	# ï¿½ï¿½ï¿½Õ²ï¿½Î»ï¿½ï¿½ï¿½ï¿½
     HistoryVolume = property(_traderapi.CTORATstpPositionTransferDetailField_HistoryVolume_get, _traderapi.CTORATstpPositionTransferDetailField_HistoryVolume_set)
 
-	# ½ñÈÕÂòÂô²ÖÎ»ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
     TodayBSVolume = property(_traderapi.CTORATstpPositionTransferDetailField_TodayBSVolume_get, _traderapi.CTORATstpPositionTransferDetailField_TodayBSVolume_set)
 
-	# ½ñÈÕÉêÊê²ÖÎ»ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿?
     TodayPRVolume = property(_traderapi.CTORATstpPositionTransferDetailField_TodayPRVolume_get, _traderapi.CTORATstpPositionTransferDetailField_TodayPRVolume_set)
 
-	# ½ñÈÕ²ð·ÖºÏ²¢²ÖÎ»ÊýÁ¿
+	# ï¿½ï¿½ï¿½Õ²ï¿½ÖºÏ²ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿?
     TodaySMVolume = property(_traderapi.CTORATstpPositionTransferDetailField_TodaySMVolume_get, _traderapi.CTORATstpPositionTransferDetailField_TodaySMVolume_set)
 
-	# ²Ù×÷ÈËÔ±
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±
     OperatorID = property(_traderapi.CTORATstpPositionTransferDetailField_OperatorID_get, _traderapi.CTORATstpPositionTransferDetailField_OperatorID_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OperateDate = property(_traderapi.CTORATstpPositionTransferDetailField_OperateDate_get, _traderapi.CTORATstpPositionTransferDetailField_OperateDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     OperateTime = property(_traderapi.CTORATstpPositionTransferDetailField_OperateTime_get, _traderapi.CTORATstpPositionTransferDetailField_OperateTime_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpPositionTransferDetailField_BusinessUnitID_get, _traderapi.CTORATstpPositionTransferDetailField_BusinessUnitID_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpPositionTransferDetailField_StatusMsg_get, _traderapi.CTORATstpPositionTransferDetailField_StatusMsg_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpPositionTransferDetailField_IPAddress_get, _traderapi.CTORATstpPositionTransferDetailField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpPositionTransferDetailField_MacAddress_get, _traderapi.CTORATstpPositionTransferDetailField_MacAddress_set)
 
-	# Íâ²¿½Úµã±àºÅ
+	# ï¿½â²¿ï¿½Úµï¿½ï¿½ï¿½
     ExternalNodeID = property(_traderapi.CTORATstpPositionTransferDetailField_ExternalNodeID_get, _traderapi.CTORATstpPositionTransferDetailField_ExternalNodeID_set)
 
     def __init__(self):
@@ -5232,27 +5232,27 @@ _traderapi.CTORATstpPositionTransferDetailField_swigregister(CTORATstpPositionTr
 
 
 
-#########################################²éÑ¯ÍâÎ§ÏµÍ³²ÖÎ»µ÷²¦Á÷Ë®############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½Î§ÏµÍ³ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®############################################
 class CTORATstpQryPeripheryPositionTransferDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryPeripheryPositionTransferDetailField_ExchangeID_get, _traderapi.CTORATstpQryPeripheryPositionTransferDetailField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryPeripheryPositionTransferDetailField_InvestorID_get, _traderapi.CTORATstpQryPeripheryPositionTransferDetailField_InvestorID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryPeripheryPositionTransferDetailField_ShareholderID_get, _traderapi.CTORATstpQryPeripheryPositionTransferDetailField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryPeripheryPositionTransferDetailField_SecurityID_get, _traderapi.CTORATstpQryPeripheryPositionTransferDetailField_SecurityID_set)
 
-	# ²ÖÎ»µ÷²¦·½Ïò
+	# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpQryPeripheryPositionTransferDetailField_TransferDirection_get, _traderapi.CTORATstpQryPeripheryPositionTransferDetailField_TransferDirection_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryPeripheryPositionTransferDetailField_BusinessUnitID_get, _traderapi.CTORATstpQryPeripheryPositionTransferDetailField_BusinessUnitID_set)
 
     def __init__(self):
@@ -5265,81 +5265,81 @@ _traderapi.CTORATstpQryPeripheryPositionTransferDetailField_swigregister(CTORATs
 
 
 
-#########################################ÍâÎ§ÏµÍ³²ÖÎ»µ÷²¦Á÷Ë®############################################
+#########################################ï¿½ï¿½Î§ÏµÍ³ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®############################################
 class CTORATstpPeripheryPositionTransferDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ²ÖÎ»µ÷²¦ÏµÍ³Á÷Ë®ºÅ
+	# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½Ë®ï¿½ï¿½
     PositionSerial = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_PositionSerial_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_PositionSerial_set)
 
-	# ²ÖÎ»µ÷²¦ÇëÇóÁ÷Ë®ºÅ
+	# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     ApplySerial = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_ApplySerial_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_ApplySerial_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_FrontID_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_SessionID_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_SessionID_set)
 
-	# ²ÖÎ»µ÷²¦·½Ïò
+	# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_TransferDirection_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_TransferDirection_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_ExchangeID_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_MarketID_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_MarketID_set)
 
-	# ÏÖ»õÏµÍ³Í¶×ÊÕß´úÂë
+	# ï¿½Ö»ï¿½ÏµÍ³Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_InvestorID_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_InvestorID_set)
 
-	# ÏÖ»õÏµÍ³Í¶×Êµ¥Ôª´úÂë
+	# ï¿½Ö»ï¿½ÏµÍ³Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_BusinessUnitID_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_BusinessUnitID_set)
 
-	# ÏÖ»õÏµÍ³½»Ò×ÕË»§´úÂë
+	# ï¿½Ö»ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_ShareholderID_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_ShareholderID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_SecurityID_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_SecurityID_set)
 
-	# ½ñÈÕÂòÂô²ÖÎ»×ªÈë×ª³öÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»×ªï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TodayBSPos = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_TodayBSPos_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_TodayBSPos_set)
 
-	# ½ñÈÕÉêÊê²ÖÎ»×ªÈëÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»×?¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     TodayPRPos = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_TodayPRPos_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_TodayPRPos_set)
 
-	# ½ñÈÕ²ð·ÖºÏ²¢²ÖÎ»×ªÈëÊýÁ¿
+	# ï¿½ï¿½ï¿½Õ²ï¿½ÖºÏ²ï¿½ï¿½ï¿½Î»×?¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     TodaySMPos = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_TodaySMPos_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_TodaySMPos_set)
 
-	# ×òÈÕ²ÖÎ»×ªÈëÊýÁ¿
+	# ï¿½ï¿½ï¿½Õ²ï¿½Î»×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     HistoryPos = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_HistoryPos_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_HistoryPos_set)
 
-	# ½»Ò×ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_TradingDay_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_TradingDay_set)
 
-	# ²ÖÎ»µ÷²¦Ô­Òò
+	# ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½
     TransferReason = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_TransferReason_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_TransferReason_set)
 
-	# ×ªÒÆ×´Ì¬
+	# ×ªï¿½ï¿½×´Ì¬
     TransferStatus = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_TransferStatus_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_TransferStatus_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OperateDate = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_OperateDate_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_OperateDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     OperateTime = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_OperateTime_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_OperateTime_set)
 
-	# ³åÕýÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RepealDate = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_RepealDate_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_RepealDate_set)
 
-	# ³åÕýÊ±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     RepealTime = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_RepealTime_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_RepealTime_set)
 
-	# ³åÕýÔ­Òò
+	# ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½
     RepealReason = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_RepealReason_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_RepealReason_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpPeripheryPositionTransferDetailField_StatusMsg_get, _traderapi.CTORATstpPeripheryPositionTransferDetailField_StatusMsg_set)
 
     def __init__(self):
@@ -5352,24 +5352,24 @@ _traderapi.CTORATstpPeripheryPositionTransferDetailField_swigregister(CTORATstpP
 
 
 
-#########################################²éÑ¯ÍâÎ§ÏµÍ³×Ê½ð×ªÒÆÁ÷Ë®############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½Î§ÏµÍ³ï¿½Ê½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®############################################
 class CTORATstpQryPeripheryFundTransferDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryPeripheryFundTransferDetailField_InvestorID_get, _traderapi.CTORATstpQryPeripheryFundTransferDetailField_InvestorID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpQryPeripheryFundTransferDetailField_DepartmentID_get, _traderapi.CTORATstpQryPeripheryFundTransferDetailField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpQryPeripheryFundTransferDetailField_AccountID_get, _traderapi.CTORATstpQryPeripheryFundTransferDetailField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpQryPeripheryFundTransferDetailField_CurrencyID_get, _traderapi.CTORATstpQryPeripheryFundTransferDetailField_CurrencyID_set)
 
-	# ×Ê½ðµ÷²¦·½Ïò
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     TransferDirection = property(_traderapi.CTORATstpQryPeripheryFundTransferDetailField_TransferDirection_get, _traderapi.CTORATstpQryPeripheryFundTransferDetailField_TransferDirection_set)
 
     def __init__(self):
@@ -5382,66 +5382,66 @@ _traderapi.CTORATstpQryPeripheryFundTransferDetailField_swigregister(CTORATstpQr
 
 
 
-#########################################ÍâÎ§ÏµÍ³×Ê½ð×ªÒÆÁ÷Ë®############################################
+#########################################ï¿½ï¿½Î§ÏµÍ³ï¿½Ê½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®############################################
 class CTORATstpPeripheryFundTransferDetailField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ×ªÕËÁ÷Ë®ºÅ
+	# ×ªï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     FundSerial = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_FundSerial_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_FundSerial_set)
 
-	# ÉêÇëÁ÷Ë®ºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½
     ApplySerial = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_ApplySerial_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_ApplySerial_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_FrontID_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_FrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_SessionID_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_SessionID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_DepartmentID_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_DepartmentID_set)
 
-	# ×Ê½ðÕË»§´úÂë
+	# ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     AccountID = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_AccountID_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_AccountID_set)
 
-	# ±ÒÖÖ
+	# ï¿½ï¿½ï¿½ï¿½
     CurrencyID = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_CurrencyID_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_CurrencyID_set)
 
-	# ×ªÒÆ·½Ïò
+	# ×ªï¿½Æ·ï¿½ï¿½ï¿½
     TransferDirection = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_TransferDirection_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_TransferDirection_set)
 
-	# ³öÈë½ð½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     Amount = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_Amount_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_Amount_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_InvestorID_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_InvestorID_set)
 
-	# ×ªÒÆ×´Ì¬
+	# ×ªï¿½ï¿½×´Ì¬
     TransferStatus = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_TransferStatus_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_TransferStatus_set)
 
-	# ×Ê½ðµ÷²¦Ô­Òò
+	# ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ô?¿½ï¿?
     TransferReason = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_TransferReason_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_TransferReason_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OperateDate = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_OperateDate_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_OperateDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     OperateTime = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_OperateTime_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_OperateTime_set)
 
-	# ³åÕýÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RepealDate = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_RepealDate_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_RepealDate_set)
 
-	# ³åÕýÊ±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     RepealTime = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_RepealTime_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_RepealTime_set)
 
-	# ³åÕýÔ­Òò
+	# ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½
     RepealReason = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_RepealReason_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_RepealReason_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_StatusMsg_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_StatusMsg_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpPeripheryFundTransferDetailField_BusinessUnitID_get, _traderapi.CTORATstpPeripheryFundTransferDetailField_BusinessUnitID_set)
 
     def __init__(self):
@@ -5454,15 +5454,15 @@ _traderapi.CTORATstpPeripheryFundTransferDetailField_swigregister(CTORATstpPerip
 
 
 
-#########################################²éÑ¯Õ®È¯×ª¹ÉÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯Õ®È¯×ªï¿½ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpQryBondConversionInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryBondConversionInfoField_ExchangeID_get, _traderapi.CTORATstpQryBondConversionInfoField_ExchangeID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryBondConversionInfoField_SecurityID_get, _traderapi.CTORATstpQryBondConversionInfoField_SecurityID_set)
 
     def __init__(self):
@@ -5475,42 +5475,42 @@ _traderapi.CTORATstpQryBondConversionInfoField_swigregister(CTORATstpQryBondConv
 
 
 
-#########################################Õ®È¯×ª¹ÉÐÅÏ¢############################################
+#########################################Õ®È¯×ªï¿½ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpBondConversionInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpBondConversionInfoField_ExchangeID_get, _traderapi.CTORATstpBondConversionInfoField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpBondConversionInfoField_MarketID_get, _traderapi.CTORATstpBondConversionInfoField_MarketID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpBondConversionInfoField_SecurityID_get, _traderapi.CTORATstpBondConversionInfoField_SecurityID_set)
 
-	# ×ª¹ÉÉê±¨´úÂë
+	# ×ªï¿½ï¿½ï¿½ê±¨ï¿½ï¿½ï¿½ï¿½
     ConvertOrderID = property(_traderapi.CTORATstpBondConversionInfoField_ConvertOrderID_get, _traderapi.CTORATstpBondConversionInfoField_ConvertOrderID_set)
 
-	# ×ª¹É¼Û¸ñ
+	# ×ªï¿½É¼Û¸ï¿½
     ConvertPrice = property(_traderapi.CTORATstpBondConversionInfoField_ConvertPrice_get, _traderapi.CTORATstpBondConversionInfoField_ConvertPrice_set)
 
-	# Ã¿´Î¿ÉÒÔ×ª¹É×îÐ¡½»Ò×µ¥Î»
+	# Ã¿ï¿½Î¿ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½×µï¿½Î»
     ConvertVolUnit = property(_traderapi.CTORATstpBondConversionInfoField_ConvertVolUnit_get, _traderapi.CTORATstpBondConversionInfoField_ConvertVolUnit_set)
 
-	# Ö¤È¯¿ÉÒÔ×ª¹ÉµÄ×î´óÊýÁ¿
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½×ªï¿½Éµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     ConvertVolMax = property(_traderapi.CTORATstpBondConversionInfoField_ConvertVolMax_get, _traderapi.CTORATstpBondConversionInfoField_ConvertVolMax_set)
 
-	# Ö¤È¯¿ÉÒÔ×ª¹ÉµÄ×îÐ¡ÊýÁ¿
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½×ªï¿½Éµï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
     ConvertVolMin = property(_traderapi.CTORATstpBondConversionInfoField_ConvertVolMin_get, _traderapi.CTORATstpBondConversionInfoField_ConvertVolMin_set)
 
-	# ×ª¹É¿ªÊ¼ÈÕÆÚ
+	# ×ªï¿½É¿ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
     BeginDate = property(_traderapi.CTORATstpBondConversionInfoField_BeginDate_get, _traderapi.CTORATstpBondConversionInfoField_BeginDate_set)
 
-	# ×ª¹É½ØÖÁÈÕÆÚ
+	# ×ªï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     EndDate = property(_traderapi.CTORATstpBondConversionInfoField_EndDate_get, _traderapi.CTORATstpBondConversionInfoField_EndDate_set)
 
-	# ×ª¹ÉÃû³Æ
+	# ×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ConvertName = property(_traderapi.CTORATstpBondConversionInfoField_ConvertName_get, _traderapi.CTORATstpBondConversionInfoField_ConvertName_set)
 
     def __init__(self):
@@ -5523,15 +5523,15 @@ _traderapi.CTORATstpBondConversionInfoField_swigregister(CTORATstpBondConversion
 
 
 
-#########################################²éÑ¯Õ®È¯»ØÊÛÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯Õ®È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpQryBondPutbackInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryBondPutbackInfoField_ExchangeID_get, _traderapi.CTORATstpQryBondPutbackInfoField_ExchangeID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryBondPutbackInfoField_SecurityID_get, _traderapi.CTORATstpQryBondPutbackInfoField_SecurityID_set)
 
     def __init__(self):
@@ -5544,48 +5544,48 @@ _traderapi.CTORATstpQryBondPutbackInfoField_swigregister(CTORATstpQryBondPutback
 
 
 
-#########################################Õ®È¯»ØÊÛÐÅÏ¢############################################
+#########################################Õ®È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpBondPutbackInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpBondPutbackInfoField_ExchangeID_get, _traderapi.CTORATstpBondPutbackInfoField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpBondPutbackInfoField_MarketID_get, _traderapi.CTORATstpBondPutbackInfoField_MarketID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpBondPutbackInfoField_SecurityID_get, _traderapi.CTORATstpBondPutbackInfoField_SecurityID_set)
 
-	# »ØÊÛÉê±¨´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ê±¨ï¿½ï¿½ï¿½ï¿½
     PutbackOrderID = property(_traderapi.CTORATstpBondPutbackInfoField_PutbackOrderID_get, _traderapi.CTORATstpBondPutbackInfoField_PutbackOrderID_set)
 
-	# »ØÊÛÃû³Æ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     PutbackName = property(_traderapi.CTORATstpBondPutbackInfoField_PutbackName_get, _traderapi.CTORATstpBondPutbackInfoField_PutbackName_set)
 
-	# »ØÊÛ¼Û¸ñ
+	# ï¿½ï¿½ï¿½Û¼Û¸ï¿½
     PutbackPrice = property(_traderapi.CTORATstpBondPutbackInfoField_PutbackPrice_get, _traderapi.CTORATstpBondPutbackInfoField_PutbackPrice_set)
 
-	# Ã¿´Î¿ÉÒÔ»ØÊÛ×îÐ¡½»Ò×µ¥Î»
+	# Ã¿ï¿½Î¿ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½×µï¿½Î»
     PutbackVolUnit = property(_traderapi.CTORATstpBondPutbackInfoField_PutbackVolUnit_get, _traderapi.CTORATstpBondPutbackInfoField_PutbackVolUnit_set)
 
-	# Õ®È¯¿ÉÒÔ»ØÊÛµÄ×î´óÊýÁ¿
+	# Õ®È¯ï¿½ï¿½ï¿½Ô»ï¿½ï¿½Ûµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     PutbackVolMax = property(_traderapi.CTORATstpBondPutbackInfoField_PutbackVolMax_get, _traderapi.CTORATstpBondPutbackInfoField_PutbackVolMax_set)
 
-	# Õ®È¯¿ÉÒÔ»ØÊÛµÄ×îÐ¡ÊýÁ¿
+	# Õ®È¯ï¿½ï¿½ï¿½Ô»ï¿½ï¿½Ûµï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
     PutbackVolMin = property(_traderapi.CTORATstpBondPutbackInfoField_PutbackVolMin_get, _traderapi.CTORATstpBondPutbackInfoField_PutbackVolMin_set)
 
-	# »ØÊÛ¿ªÊ¼ÈÕÆÚ
+	# ï¿½ï¿½ï¿½Û¿ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
     PutbackBeginDate = property(_traderapi.CTORATstpBondPutbackInfoField_PutbackBeginDate_get, _traderapi.CTORATstpBondPutbackInfoField_PutbackBeginDate_set)
 
-	# »ØÊÛ½áÊøÈÕÆÚ
+	# ï¿½ï¿½ï¿½Û½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     PutbackEndDate = property(_traderapi.CTORATstpBondPutbackInfoField_PutbackEndDate_get, _traderapi.CTORATstpBondPutbackInfoField_PutbackEndDate_set)
 
-	# »ØÊÛ³·Ïú¿ªÊ¼ÈÕÆÚ
+	# ï¿½ï¿½ï¿½Û³ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
     RelieveBeginDate = property(_traderapi.CTORATstpBondPutbackInfoField_RelieveBeginDate_get, _traderapi.CTORATstpBondPutbackInfoField_RelieveBeginDate_set)
 
-	# »ØÊÛ³·Ïú½áÊøÈÕÆÚ
+	# ï¿½ï¿½ï¿½Û³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RelieveEndDate = property(_traderapi.CTORATstpBondPutbackInfoField_RelieveEndDate_get, _traderapi.CTORATstpBondPutbackInfoField_RelieveEndDate_set)
 
     def __init__(self):
@@ -5598,12 +5598,12 @@ _traderapi.CTORATstpBondPutbackInfoField_swigregister(CTORATstpBondPutbackInfoFi
 
 
 
-#########################################²éÑ¯Í¶×ÊÕßÌõ¼þµ¥ÏÞÖÆ²ÎÊý############################################
+#########################################ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½############################################
 class CTORATstpQryInvestorCondOrderLimitParamField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryInvestorCondOrderLimitParamField_InvestorID_get, _traderapi.CTORATstpQryInvestorCondOrderLimitParamField_InvestorID_set)
 
     def __init__(self):
@@ -5616,18 +5616,18 @@ _traderapi.CTORATstpQryInvestorCondOrderLimitParamField_swigregister(CTORATstpQr
 
 
 
-#########################################Í¶×ÊÕßÌõ¼þµ¥ÏÞÖÆ²ÎÊý############################################
+#########################################Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½############################################
 class CTORATstpInvestorCondOrderLimitParamField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInvestorCondOrderLimitParamField_InvestorID_get, _traderapi.CTORATstpInvestorCondOrderLimitParamField_InvestorID_set)
 
-	# ×î´óÌõ¼þµ¥Êý
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     MaxCondOrderLimitCnt = property(_traderapi.CTORATstpInvestorCondOrderLimitParamField_MaxCondOrderLimitCnt_get, _traderapi.CTORATstpInvestorCondOrderLimitParamField_MaxCondOrderLimitCnt_set)
 
-	# µ±Ç°Ìõ¼þµ¥Êý
+	# ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CurrCondOrderCnt = property(_traderapi.CTORATstpInvestorCondOrderLimitParamField_CurrCondOrderCnt_get, _traderapi.CTORATstpInvestorCondOrderLimitParamField_CurrCondOrderCnt_set)
 
     def __init__(self):
@@ -5640,27 +5640,27 @@ _traderapi.CTORATstpInvestorCondOrderLimitParamField_swigregister(CTORATstpInves
 
 
 
-#########################################²éÑ¯Ìõ¼þµ¥############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpQryConditionOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryConditionOrderField_ExchangeID_get, _traderapi.CTORATstpQryConditionOrderField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryConditionOrderField_InvestorID_get, _traderapi.CTORATstpQryConditionOrderField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryConditionOrderField_BusinessUnitID_get, _traderapi.CTORATstpQryConditionOrderField_BusinessUnitID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryConditionOrderField_SecurityID_get, _traderapi.CTORATstpQryConditionOrderField_SecurityID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryConditionOrderField_ShareholderID_get, _traderapi.CTORATstpQryConditionOrderField_ShareholderID_set)
 
-	# ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondOrderID = property(_traderapi.CTORATstpQryConditionOrderField_CondOrderID_get, _traderapi.CTORATstpQryConditionOrderField_CondOrderID_set)
 
 	# Insert Time
@@ -5669,10 +5669,10 @@ class CTORATstpQryConditionOrderField(object):
 	# Insert Time
     InsertTimeEnd = property(_traderapi.CTORATstpQryConditionOrderField_InsertTimeEnd_get, _traderapi.CTORATstpQryConditionOrderField_InsertTimeEnd_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpQryConditionOrderField_SInfo_get, _traderapi.CTORATstpQryConditionOrderField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpQryConditionOrderField_IInfo_get, _traderapi.CTORATstpQryConditionOrderField_IInfo_set)
 
     def __init__(self):
@@ -5685,33 +5685,33 @@ _traderapi.CTORATstpQryConditionOrderField_swigregister(CTORATstpQryConditionOrd
 
 
 
-#########################################²éÑ¯Ìõ¼þµ¥³·µ¥############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpQryCondOrderActionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryCondOrderActionField_ExchangeID_get, _traderapi.CTORATstpQryCondOrderActionField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryCondOrderActionField_InvestorID_get, _traderapi.CTORATstpQryCondOrderActionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryCondOrderActionField_BusinessUnitID_get, _traderapi.CTORATstpQryCondOrderActionField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryCondOrderActionField_ShareholderID_get, _traderapi.CTORATstpQryCondOrderActionField_ShareholderID_set)
 
-	# ±»³·Ìõ¼þµ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondOrderID = property(_traderapi.CTORATstpQryCondOrderActionField_CondOrderID_get, _traderapi.CTORATstpQryCondOrderActionField_CondOrderID_set)
 
-	# Ìõ¼þµ¥³·µ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelCondOrderID = property(_traderapi.CTORATstpQryCondOrderActionField_CancelCondOrderID_get, _traderapi.CTORATstpQryCondOrderActionField_CancelCondOrderID_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpQryCondOrderActionField_SInfo_get, _traderapi.CTORATstpQryCondOrderActionField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpQryCondOrderActionField_IInfo_get, _traderapi.CTORATstpQryCondOrderActionField_IInfo_set)
 
     def __init__(self):
@@ -5724,78 +5724,78 @@ _traderapi.CTORATstpQryCondOrderActionField_swigregister(CTORATstpQryCondOrderAc
 
 
 
-#########################################Ìõ¼þµ¥³·µ¥############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½############################################
 class CTORATstpCondOrderActionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpCondOrderActionField_ExchangeID_get, _traderapi.CTORATstpCondOrderActionField_ExchangeID_set)
 
-	# ±»³·Ìõ¼þµ¥Ç°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿?
     FrontID = property(_traderapi.CTORATstpCondOrderActionField_FrontID_get, _traderapi.CTORATstpCondOrderActionField_FrontID_set)
 
-	# ±»³·Ìõ¼þµ¥»á»°±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á»°ï¿½ï¿½ï¿?
     SessionID = property(_traderapi.CTORATstpCondOrderActionField_SessionID_get, _traderapi.CTORATstpCondOrderActionField_SessionID_set)
 
-	# ±»³·Ìõ¼þµ¥ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CondOrderRef = property(_traderapi.CTORATstpCondOrderActionField_CondOrderRef_get, _traderapi.CTORATstpCondOrderActionField_CondOrderRef_set)
 
-	# ±»³·Ìõ¼þµ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CondOrderID = property(_traderapi.CTORATstpCondOrderActionField_CondOrderID_get, _traderapi.CTORATstpCondOrderActionField_CondOrderID_set)
 
-	# ²Ù×÷±êÖ¾
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
     ActionFlag = property(_traderapi.CTORATstpCondOrderActionField_ActionFlag_get, _traderapi.CTORATstpCondOrderActionField_ActionFlag_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpCondOrderActionField_Operway_get, _traderapi.CTORATstpCondOrderActionField_Operway_set)
 
-	# Ìõ¼þµ¥²Ù×÷ÒýÓÃ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CondOrderActionRef = property(_traderapi.CTORATstpCondOrderActionField_CondOrderActionRef_get, _traderapi.CTORATstpCondOrderActionField_CondOrderActionRef_set)
 
-	# Ìõ¼þµ¥³·µ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelCondOrderID = property(_traderapi.CTORATstpCondOrderActionField_CancelCondOrderID_get, _traderapi.CTORATstpCondOrderActionField_CancelCondOrderID_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpCondOrderActionField_SInfo_get, _traderapi.CTORATstpCondOrderActionField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpCondOrderActionField_IInfo_get, _traderapi.CTORATstpCondOrderActionField_IInfo_set)
 
-	# ÇëÇó±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RequestID = property(_traderapi.CTORATstpCondOrderActionField_RequestID_get, _traderapi.CTORATstpCondOrderActionField_RequestID_set)
 
-	# ³·µ¥Ç°ÖÃ±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã±ï¿½ï¿?
     ActionFrontID = property(_traderapi.CTORATstpCondOrderActionField_ActionFrontID_get, _traderapi.CTORATstpCondOrderActionField_ActionFrontID_set)
 
-	# ³·µ¥»á»°±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½á»°ï¿½ï¿½ï¿?
     ActionSessionID = property(_traderapi.CTORATstpCondOrderActionField_ActionSessionID_get, _traderapi.CTORATstpCondOrderActionField_ActionSessionID_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpCondOrderActionField_DepartmentID_get, _traderapi.CTORATstpCondOrderActionField_DepartmentID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpCondOrderActionField_InvestorID_get, _traderapi.CTORATstpCondOrderActionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpCondOrderActionField_BusinessUnitID_get, _traderapi.CTORATstpCondOrderActionField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpCondOrderActionField_ShareholderID_get, _traderapi.CTORATstpCondOrderActionField_ShareholderID_set)
 
-	# ²Ù×÷ÓÃ»§
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
     ActionUser = property(_traderapi.CTORATstpCondOrderActionField_ActionUser_get, _traderapi.CTORATstpCondOrderActionField_ActionUser_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ActionDate = property(_traderapi.CTORATstpCondOrderActionField_ActionDate_get, _traderapi.CTORATstpCondOrderActionField_ActionDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     ActionTime = property(_traderapi.CTORATstpCondOrderActionField_ActionTime_get, _traderapi.CTORATstpCondOrderActionField_ActionTime_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpCondOrderActionField_IPAddress_get, _traderapi.CTORATstpCondOrderActionField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpCondOrderActionField_MacAddress_get, _traderapi.CTORATstpCondOrderActionField_MacAddress_set)
 
     def __init__(self):
@@ -5808,12 +5808,12 @@ _traderapi.CTORATstpCondOrderActionField_swigregister(CTORATstpCondOrderActionFi
 
 
 
-#########################################²éÑ¯½»Ò×Í¨Öª############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Í¨Öª############################################
 class CTORATstpQryTradingNoticeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryTradingNoticeField_InvestorID_get, _traderapi.CTORATstpQryTradingNoticeField_InvestorID_set)
 
 	# Insert Date
@@ -5838,21 +5838,21 @@ _traderapi.CTORATstpQryTradingNoticeField_swigregister(CTORATstpQryTradingNotice
 
 
 
-#########################################²éÑ¯ÐÂ¹ÉÉê¹ºÅäºÅ½á¹û############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½Å½ï¿½ï¿½############################################
 class CTORATstpQryIPONumberResultField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryIPONumberResultField_InvestorID_get, _traderapi.CTORATstpQryIPONumberResultField_InvestorID_set)
 
-	# Éê¹º´úÂë
+	# ï¿½ê¹ºï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryIPONumberResultField_SecurityID_get, _traderapi.CTORATstpQryIPONumberResultField_SecurityID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryIPONumberResultField_ExchangeID_get, _traderapi.CTORATstpQryIPONumberResultField_ExchangeID_set)
 
-	# ¹É¶«´úÂë
+	# ï¿½É¶ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryIPONumberResultField_ShareholderID_get, _traderapi.CTORATstpQryIPONumberResultField_ShareholderID_set)
 
     def __init__(self):
@@ -5865,39 +5865,39 @@ _traderapi.CTORATstpQryIPONumberResultField_swigregister(CTORATstpQryIPONumberRe
 
 
 
-#########################################ÐÂ¹ÉÉê¹ºÅäºÅ½á¹û############################################
+#########################################ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½Å½ï¿½ï¿½############################################
 class CTORATstpIPONumberResultField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpIPONumberResultField_SecurityID_get, _traderapi.CTORATstpIPONumberResultField_SecurityID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpIPONumberResultField_MarketID_get, _traderapi.CTORATstpIPONumberResultField_MarketID_set)
 
-	# ¹É¶«´úÂë
+	# ï¿½É¶ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpIPONumberResultField_ShareholderID_get, _traderapi.CTORATstpIPONumberResultField_ShareholderID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpIPONumberResultField_ExchangeID_get, _traderapi.CTORATstpIPONumberResultField_ExchangeID_set)
 
-	# ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½
     Day = property(_traderapi.CTORATstpIPONumberResultField_Day_get, _traderapi.CTORATstpIPONumberResultField_Day_set)
 
-	# Éê¹ºÖ¤È¯Ãû³Æ
+	# ï¿½ê¹ºÖ¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityName = property(_traderapi.CTORATstpIPONumberResultField_SecurityName_get, _traderapi.CTORATstpIPONumberResultField_SecurityName_set)
 
-	# Ö¤È¯Àà±ð´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SecurityType = property(_traderapi.CTORATstpIPONumberResultField_SecurityType_get, _traderapi.CTORATstpIPONumberResultField_SecurityType_set)
 
-	# ÆðÊ¼ÅäºÅ
+	# ï¿½ï¿½Ê¼ï¿½ï¿½ï¿?
     BeginNumberID = property(_traderapi.CTORATstpIPONumberResultField_BeginNumberID_get, _traderapi.CTORATstpIPONumberResultField_BeginNumberID_set)
 
-	# ÅäºÅÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     Volume = property(_traderapi.CTORATstpIPONumberResultField_Volume_get, _traderapi.CTORATstpIPONumberResultField_Volume_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpIPONumberResultField_InvestorID_get, _traderapi.CTORATstpIPONumberResultField_InvestorID_set)
 
     def __init__(self):
@@ -5910,24 +5910,24 @@ _traderapi.CTORATstpIPONumberResultField_swigregister(CTORATstpIPONumberResultFi
 
 
 
-#########################################²éÑ¯ÐÂ¹ÉÉê¹ºÖÐÇ©½á¹û############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½Ç©ï¿½ï¿½ï¿?############################################
 class CTORATstpQryIPOMatchNumberResultField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryIPOMatchNumberResultField_InvestorID_get, _traderapi.CTORATstpQryIPOMatchNumberResultField_InvestorID_set)
 
-	# Éê¹º´úÂë
+	# ï¿½ê¹ºï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryIPOMatchNumberResultField_SecurityID_get, _traderapi.CTORATstpQryIPOMatchNumberResultField_SecurityID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryIPOMatchNumberResultField_ExchangeID_get, _traderapi.CTORATstpQryIPOMatchNumberResultField_ExchangeID_set)
 
-	# ¹É¶«´úÂë
+	# ï¿½É¶ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryIPOMatchNumberResultField_ShareholderID_get, _traderapi.CTORATstpQryIPOMatchNumberResultField_ShareholderID_set)
 
-	# ÖÐÇ©ÅäºÅ
+	# ï¿½ï¿½Ç©ï¿½ï¿½ï¿?
     MatchNumberID = property(_traderapi.CTORATstpQryIPOMatchNumberResultField_MatchNumberID_get, _traderapi.CTORATstpQryIPOMatchNumberResultField_MatchNumberID_set)
 
     def __init__(self):
@@ -5940,45 +5940,45 @@ _traderapi.CTORATstpQryIPOMatchNumberResultField_swigregister(CTORATstpQryIPOMat
 
 
 
-#########################################ÐÂ¹ÉÉê¹ºÖÐÇ©½á¹û############################################
+#########################################ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½Ç©ï¿½ï¿½ï¿?############################################
 class CTORATstpIPOMatchNumberResultField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpIPOMatchNumberResultField_SecurityID_get, _traderapi.CTORATstpIPOMatchNumberResultField_SecurityID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpIPOMatchNumberResultField_MarketID_get, _traderapi.CTORATstpIPOMatchNumberResultField_MarketID_set)
 
-	# ¹É¶«´úÂë
+	# ï¿½É¶ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpIPOMatchNumberResultField_ShareholderID_get, _traderapi.CTORATstpIPOMatchNumberResultField_ShareholderID_set)
 
-	# ÖÐÇ©ÅäºÅ
+	# ï¿½ï¿½Ç©ï¿½ï¿½ï¿?
     MatchNumberID = property(_traderapi.CTORATstpIPOMatchNumberResultField_MatchNumberID_get, _traderapi.CTORATstpIPOMatchNumberResultField_MatchNumberID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpIPOMatchNumberResultField_ExchangeID_get, _traderapi.CTORATstpIPOMatchNumberResultField_ExchangeID_set)
 
-	# ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½
     Day = property(_traderapi.CTORATstpIPOMatchNumberResultField_Day_get, _traderapi.CTORATstpIPOMatchNumberResultField_Day_set)
 
-	# Éê¹ºÖ¤È¯Ãû³Æ
+	# ï¿½ê¹ºÖ¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityName = property(_traderapi.CTORATstpIPOMatchNumberResultField_SecurityName_get, _traderapi.CTORATstpIPOMatchNumberResultField_SecurityName_set)
 
-	# Ö¤È¯Àà±ð´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SecurityType = property(_traderapi.CTORATstpIPOMatchNumberResultField_SecurityType_get, _traderapi.CTORATstpIPOMatchNumberResultField_SecurityType_set)
 
-	# ´ËÖÐÇ©ºÅÓµÓÐµÄÖ¤È¯ÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½Ç©ï¿½ï¿½Óµï¿½Ðµï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     Volume = property(_traderapi.CTORATstpIPOMatchNumberResultField_Volume_get, _traderapi.CTORATstpIPOMatchNumberResultField_Volume_set)
 
-	# Éê¹º¼Û¸ñ
+	# ï¿½ê¹ºï¿½Û¸ï¿½
     Price = property(_traderapi.CTORATstpIPOMatchNumberResultField_Price_get, _traderapi.CTORATstpIPOMatchNumberResultField_Price_set)
 
-	# Éê¹º½ð¶î
+	# ï¿½ê¹ºï¿½ï¿½ï¿?
     Amout = property(_traderapi.CTORATstpIPOMatchNumberResultField_Amout_get, _traderapi.CTORATstpIPOMatchNumberResultField_Amout_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpIPOMatchNumberResultField_InvestorID_get, _traderapi.CTORATstpIPOMatchNumberResultField_InvestorID_set)
 
     def __init__(self):
@@ -5991,27 +5991,27 @@ _traderapi.CTORATstpIPOMatchNumberResultField_swigregister(CTORATstpIPOMatchNumb
 
 
 
-#########################################²éÑ¯½»Ò×Ð­Òé############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Ð­ï¿½ï¿½############################################
 class CTORATstpQryShareholderSpecPrivilegeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryShareholderSpecPrivilegeField_InvestorID_get, _traderapi.CTORATstpQryShareholderSpecPrivilegeField_InvestorID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryShareholderSpecPrivilegeField_ExchangeID_get, _traderapi.CTORATstpQryShareholderSpecPrivilegeField_ExchangeID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryShareholderSpecPrivilegeField_ShareholderID_get, _traderapi.CTORATstpQryShareholderSpecPrivilegeField_ShareholderID_set)
 
-	# ÌØÊâÈ¨ÏÞÀà±ð
+	# ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½ï¿?
     SpecPrivilegeType = property(_traderapi.CTORATstpQryShareholderSpecPrivilegeField_SpecPrivilegeType_get, _traderapi.CTORATstpQryShareholderSpecPrivilegeField_SpecPrivilegeType_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpQryShareholderSpecPrivilegeField_Direction_get, _traderapi.CTORATstpQryShareholderSpecPrivilegeField_Direction_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpQryShareholderSpecPrivilegeField_MarketID_get, _traderapi.CTORATstpQryShareholderSpecPrivilegeField_MarketID_set)
 
     def __init__(self):
@@ -6024,30 +6024,30 @@ _traderapi.CTORATstpQryShareholderSpecPrivilegeField_swigregister(CTORATstpQrySh
 
 
 
-#########################################½»Ò×Ð­Òé############################################
+#########################################ï¿½ï¿½ï¿½ï¿½Ð­ï¿½ï¿½############################################
 class CTORATstpShareholderSpecPrivilegeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpShareholderSpecPrivilegeField_ExchangeID_get, _traderapi.CTORATstpShareholderSpecPrivilegeField_ExchangeID_set)
 
-	# ½»Ò×ÕË»§´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpShareholderSpecPrivilegeField_ShareholderID_get, _traderapi.CTORATstpShareholderSpecPrivilegeField_ShareholderID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpShareholderSpecPrivilegeField_MarketID_get, _traderapi.CTORATstpShareholderSpecPrivilegeField_MarketID_set)
 
-	# ÌØÊâÈ¨ÏÞÀà±ð
+	# ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½ï¿?
     SpecPrivilegeType = property(_traderapi.CTORATstpShareholderSpecPrivilegeField_SpecPrivilegeType_get, _traderapi.CTORATstpShareholderSpecPrivilegeField_SpecPrivilegeType_set)
 
-	# ±¨µ¥Àà±ð
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     Direction = property(_traderapi.CTORATstpShareholderSpecPrivilegeField_Direction_get, _traderapi.CTORATstpShareholderSpecPrivilegeField_Direction_set)
 
-	# ÊÇ·ñ½ûÖ¹
+	# ï¿½Ç·ï¿½ï¿½Ö?
     bForbidden = property(_traderapi.CTORATstpShareholderSpecPrivilegeField_bForbidden_get, _traderapi.CTORATstpShareholderSpecPrivilegeField_bForbidden_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpShareholderSpecPrivilegeField_InvestorID_get, _traderapi.CTORATstpShareholderSpecPrivilegeField_InvestorID_set)
 
     def __init__(self):
@@ -6060,15 +6060,15 @@ _traderapi.CTORATstpShareholderSpecPrivilegeField_swigregister(CTORATstpSharehol
 
 
 
-#########################################²éÑ¯ÊÐ³¡############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½Ð³ï¿½############################################
 class CTORATstpQryMarketField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryMarketField_ExchangeID_get, _traderapi.CTORATstpQryMarketField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpQryMarketField_MarketID_get, _traderapi.CTORATstpQryMarketField_MarketID_set)
 
     def __init__(self):
@@ -6081,21 +6081,21 @@ _traderapi.CTORATstpQryMarketField_swigregister(CTORATstpQryMarketField)
 
 
 
-#########################################ÊÐ³¡############################################
+#########################################ï¿½Ð³ï¿½############################################
 class CTORATstpMarketField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpMarketField_MarketID_get, _traderapi.CTORATstpMarketField_MarketID_set)
 
-	# ÊÐ³¡Ãû³Æ
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketName = property(_traderapi.CTORATstpMarketField_MarketName_get, _traderapi.CTORATstpMarketField_MarketName_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpMarketField_ExchangeID_get, _traderapi.CTORATstpMarketField_ExchangeID_set)
 
-	# ÊÐ³¡×´Ì¬
+	# ï¿½Ð³ï¿½×´Ì¬
     MarketStatus = property(_traderapi.CTORATstpMarketField_MarketStatus_get, _traderapi.CTORATstpMarketField_MarketStatus_set)
 
     def __init__(self):
@@ -6108,18 +6108,18 @@ _traderapi.CTORATstpMarketField_swigregister(CTORATstpMarketField)
 
 
 
-#########################################²éÑ¯ETFÇåµ¥ÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯ETFï¿½åµ¥ï¿½ï¿½Ï¢############################################
 class CTORATstpQryETFFileField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryETFFileField_ExchangeID_get, _traderapi.CTORATstpQryETFFileField_ExchangeID_set)
 
-	# ETF¶þ¼¶ÊÐ³¡½»Ò×´úÂë
+	# ETFï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½×´ï¿½ï¿½ï¿½
     ETFSecurityID = property(_traderapi.CTORATstpQryETFFileField_ETFSecurityID_get, _traderapi.CTORATstpQryETFFileField_ETFSecurityID_set)
 
-	# ETFÒ»¼¶ÊÐ³¡ÉêÊê´úÂë
+	# ETFÒ»ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     ETFCreRedSecurityID = property(_traderapi.CTORATstpQryETFFileField_ETFCreRedSecurityID_get, _traderapi.CTORATstpQryETFFileField_ETFCreRedSecurityID_set)
 
     def __init__(self):
@@ -6132,48 +6132,48 @@ _traderapi.CTORATstpQryETFFileField_swigregister(CTORATstpQryETFFileField)
 
 
 
-#########################################ETFÇåµ¥ÐÅÏ¢############################################
+#########################################ETFï¿½åµ¥ï¿½ï¿½Ï¢############################################
 class CTORATstpETFFileField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpETFFileField_TradingDay_get, _traderapi.CTORATstpETFFileField_TradingDay_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpETFFileField_ExchangeID_get, _traderapi.CTORATstpETFFileField_ExchangeID_set)
 
-	# ETF½»Ò×´úÂë
+	# ETFï¿½ï¿½ï¿½×´ï¿½ï¿½ï¿½
     ETFSecurityID = property(_traderapi.CTORATstpETFFileField_ETFSecurityID_get, _traderapi.CTORATstpETFFileField_ETFSecurityID_set)
 
-	# ETFÉêÊê´úÂë
+	# ETFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     ETFCreRedSecurityID = property(_traderapi.CTORATstpETFFileField_ETFCreRedSecurityID_get, _traderapi.CTORATstpETFFileField_ETFCreRedSecurityID_set)
 
-	# ×îÐ¡Éê¹ºÊê»Øµ¥Î»·ÝÊý
+	# ï¿½ï¿½Ð¡ï¿½ê¹ºï¿½ï¿½Øµï¿½Î»ï¿½ï¿½ï¿½ï¿?
     CreationRedemptionUnit = property(_traderapi.CTORATstpETFFileField_CreationRedemptionUnit_get, _traderapi.CTORATstpETFFileField_CreationRedemptionUnit_set)
 
-	# ×î´óÏÖ½ðÌæ´ú±ÈÀý
+	# ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Maxcashratio = property(_traderapi.CTORATstpETFFileField_Maxcashratio_get, _traderapi.CTORATstpETFFileField_Maxcashratio_set)
 
-	# Ô¤¹ÀÏÖ½ð²î¶î
+	# Ô¤ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½
     EstimateCashComponent = property(_traderapi.CTORATstpETFFileField_EstimateCashComponent_get, _traderapi.CTORATstpETFFileField_EstimateCashComponent_set)
 
-	# Ç°Ò»½»Ò×ÈÕÏÖ½ð²î¶î
+	# Ç°Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½
     CashComponent = property(_traderapi.CTORATstpETFFileField_CashComponent_get, _traderapi.CTORATstpETFFileField_CashComponent_set)
 
-	# Ç°Ò»½»Ò×ÈÕ»ù½ðµ¥Î»¾»Öµ
+	# Ç°Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½Î»ï¿½ï¿½Öµ
     NAV = property(_traderapi.CTORATstpETFFileField_NAV_get, _traderapi.CTORATstpETFFileField_NAV_set)
 
-	# Ç°Ò»½»Ò×ÈÕÉêÊê»ù×¼µ¥Î»¾»Öµ
+	# Ç°Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½Î»ï¿½ï¿½Ö?
     NAVperCU = property(_traderapi.CTORATstpETFFileField_NAVperCU_get, _traderapi.CTORATstpETFFileField_NAVperCU_set)
 
-	# µ±ÈÕÉê¹ºÊê»Ø»ù×¼µ¥Î»µÄºìÀû½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ê¹ºï¿½ï¿½Ø»ï¿½×¼ï¿½ï¿½Î»ï¿½Äºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     DividendPerCU = property(_traderapi.CTORATstpETFFileField_DividendPerCU_get, _traderapi.CTORATstpETFFileField_DividendPerCU_set)
 
-	# ETFÉêÊêÀàÐÍ
+	# ETFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ETFCreRedType = property(_traderapi.CTORATstpETFFileField_ETFCreRedType_get, _traderapi.CTORATstpETFFileField_ETFCreRedType_set)
 
-	# ETFÖ¤È¯Ãû³Æ
+	# ETFÖ¤È¯ï¿½ï¿½ï¿½ï¿½
     ETFSecurityName = property(_traderapi.CTORATstpETFFileField_ETFSecurityName_get, _traderapi.CTORATstpETFFileField_ETFSecurityName_set)
 
     def __init__(self):
@@ -6186,18 +6186,18 @@ _traderapi.CTORATstpETFFileField_swigregister(CTORATstpETFFileField)
 
 
 
-#########################################²éÑ¯ETF³É·ÝÖ¤È¯ÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯ETFï¿½É·ï¿½Ö¤È¯ï¿½ï¿½Ï¢############################################
 class CTORATstpQryETFBasketField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryETFBasketField_ExchangeID_get, _traderapi.CTORATstpQryETFBasketField_ExchangeID_set)
 
-	# ETF¶þ¼¶ÊÐ³¡½»Ò×´úÂë
+	# ETFï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½×´ï¿½ï¿½ï¿½
     ETFSecurityID = property(_traderapi.CTORATstpQryETFBasketField_ETFSecurityID_get, _traderapi.CTORATstpQryETFBasketField_ETFSecurityID_set)
 
-	# ETF³É·ÝÖ¤È¯´úÂë
+	# ETFï¿½É·ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryETFBasketField_SecurityID_get, _traderapi.CTORATstpQryETFBasketField_SecurityID_set)
 
     def __init__(self):
@@ -6210,45 +6210,45 @@ _traderapi.CTORATstpQryETFBasketField_swigregister(CTORATstpQryETFBasketField)
 
 
 
-#########################################ETF³É·ÝÖ¤È¯ÐÅÏ¢############################################
+#########################################ETFï¿½É·ï¿½Ö¤È¯ï¿½ï¿½Ï¢############################################
 class CTORATstpETFBasketField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpETFBasketField_TradingDay_get, _traderapi.CTORATstpETFBasketField_TradingDay_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpETFBasketField_ExchangeID_get, _traderapi.CTORATstpETFBasketField_ExchangeID_set)
 
-	# ETF½»Ò×´úÂë
+	# ETFï¿½ï¿½ï¿½×´ï¿½ï¿½ï¿½
     ETFSecurityID = property(_traderapi.CTORATstpETFBasketField_ETFSecurityID_get, _traderapi.CTORATstpETFBasketField_ETFSecurityID_set)
 
-	# ETF³É·ÝÖ¤È¯´úÂë
+	# ETFï¿½É·ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpETFBasketField_SecurityID_get, _traderapi.CTORATstpETFBasketField_SecurityID_set)
 
-	# ³É·ÖÖ¤È¯Ãû³Æ
+	# ï¿½É·ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityName = property(_traderapi.CTORATstpETFBasketField_SecurityName_get, _traderapi.CTORATstpETFBasketField_SecurityName_set)
 
-	# ³É·ÖÖ¤È¯ÊýÁ¿
+	# ï¿½É·ï¿½Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     Volume = property(_traderapi.CTORATstpETFBasketField_Volume_get, _traderapi.CTORATstpETFBasketField_Volume_set)
 
-	# ÏÖ½ðÌæ´ú±êÖ¾
+	# ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö?
     ETFCurrenceReplaceStatus = property(_traderapi.CTORATstpETFBasketField_ETFCurrenceReplaceStatus_get, _traderapi.CTORATstpETFBasketField_ETFCurrenceReplaceStatus_set)
 
-	# Òç¼Û±ÈÀý
+	# ï¿½ï¿½Û±ï¿½ï¿½ï¿?
     Premium = property(_traderapi.CTORATstpETFBasketField_Premium_get, _traderapi.CTORATstpETFBasketField_Premium_set)
 
-	# Éê¹ºÌæ´ú½ð¶î
+	# ï¿½ê¹ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     CreationReplaceAmount = property(_traderapi.CTORATstpETFBasketField_CreationReplaceAmount_get, _traderapi.CTORATstpETFBasketField_CreationReplaceAmount_set)
 
-	# Êê»ØÌæ´ú½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     RedemptionReplaceAmount = property(_traderapi.CTORATstpETFBasketField_RedemptionReplaceAmount_get, _traderapi.CTORATstpETFBasketField_RedemptionReplaceAmount_set)
 
-	# ¹ÒÅÆÊÐ³¡
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½
     MarketID = property(_traderapi.CTORATstpETFBasketField_MarketID_get, _traderapi.CTORATstpETFBasketField_MarketID_set)
 
-	# ETFÉêÊêÀàÐÍ
+	# ETFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ETFCreRedType = property(_traderapi.CTORATstpETFBasketField_ETFCreRedType_get, _traderapi.CTORATstpETFBasketField_ETFCreRedType_set)
 
     def __init__(self):
@@ -6261,18 +6261,18 @@ _traderapi.CTORATstpETFBasketField_swigregister(CTORATstpETFBasketField)
 
 
 
-#########################################²éÑ¯Í¶×ÊÕßÏÞ²ÖÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½Þ²ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpQryInvestorPositionLimitField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryInvestorPositionLimitField_ExchangeID_get, _traderapi.CTORATstpQryInvestorPositionLimitField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryInvestorPositionLimitField_InvestorID_get, _traderapi.CTORATstpQryInvestorPositionLimitField_InvestorID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryInvestorPositionLimitField_SecurityID_get, _traderapi.CTORATstpQryInvestorPositionLimitField_SecurityID_set)
 
     def __init__(self):
@@ -6285,93 +6285,93 @@ _traderapi.CTORATstpQryInvestorPositionLimitField_swigregister(CTORATstpQryInves
 
 
 
-#########################################Í¶×ÊÕßÏÞ²ÖÐÅÏ¢############################################
+#########################################Í¶ï¿½ï¿½ï¿½ï¿½ï¿½Þ²ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpInvestorPositionLimitField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpInvestorPositionLimitField_ExchangeID_get, _traderapi.CTORATstpInvestorPositionLimitField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpInvestorPositionLimitField_InvestorID_get, _traderapi.CTORATstpInvestorPositionLimitField_InvestorID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpInvestorPositionLimitField_SecurityID_get, _traderapi.CTORATstpInvestorPositionLimitField_SecurityID_set)
 
-	# µ±ÈÕÂòÈë¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     BuyLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_BuyLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_BuyLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕÂòÈë¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     BuyFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_BuyFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_BuyFrozen_set)
 
-	# µ±ÈÕÂô³ö¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     SellLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_SellLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_SellLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕÂô³ö¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     SellFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_SellFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_SellFrozen_set)
 
-	# µ±ÈÕÉê¹º¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ê¹ºï¿½ï¿½ï¿?
     PurchaseLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_PurchaseLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_PurchaseLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕÉê¹º¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ê¹ºï¿½ï¿½ï¿?
     PurchaseFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_PurchaseFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_PurchaseFrozen_set)
 
-	# µ±ÈÕÊê»Ø¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½
     RedeemLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_RedeemLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_RedeemLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕÊê»Ø¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½
     RedeemFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_RedeemFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_RedeemFrozen_set)
 
-	# µ±ÈÕÖÊÑºÈë¿â¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½ï¿?
     PledgeInLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_PledgeInLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_PledgeInLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕÖÊÑºÈë¿â¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½ï¿?
     PledgeInFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_PledgeInFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_PledgeInFrozen_set)
 
-	# µ±ÈÕÖÊÑº³ö¿â¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     PledgeOutLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_PledgeOutLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_PledgeOutLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕÖÊÑº³ö¿â¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     PledgeOutFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_PledgeOutFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_PledgeOutFrozen_set)
 
-	# µ±ÈÕÕ®×ª¹É¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½Õ®×ªï¿½É¶ï¿½ï¿?
     ConvertLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_ConvertLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_ConvertLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕÕ®×ª¹É¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½Õ®×ªï¿½É¶ï¿½ï¿?
     ConvertFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_ConvertFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_ConvertFrozen_set)
 
-	# µ±ÈÕÕ®È¯»ØÊÛ¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½Õ®È¯ï¿½ï¿½ï¿½Û¶ï¿½ï¿?
     PutbackLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_PutbackLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_PutbackLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕÕ®È¯»ØÊÛ¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½Õ®È¯ï¿½ï¿½ï¿½Û¶ï¿½ï¿?
     PutbackFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_PutbackFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_PutbackFrozen_set)
 
-	# µ±ÈÕÅä¹ÉÅäÕ®¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½ï¿½
     RationalLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_RationalLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_RationalLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕÅä¹ÉÅäÕ®¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½ï¿½
     RationalFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_RationalFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_RationalFrozen_set)
 
-	# ×Ü³Ö²Ö¶î¶È
+	# ï¿½Ü³Ö²Ö¶ï¿½ï¿?
     TotalPositionLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_TotalPositionLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_TotalPositionLimit_set)
 
-	# ÒÑÊ¹ÓÃ×Ü³Ö²Ö¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ü³Ö²Ö¶ï¿½ï¿?
     TotalPositionFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_TotalPositionFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_TotalPositionFrozen_set)
 
-	# µ±ÈÕ²ð·Ö¶î¶È
+	# ï¿½ï¿½ï¿½Õ²ï¿½Ö¶ï¿½ï¿½
     SplitLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_SplitLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_SplitLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕ²ð·Ö¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½Õ²ï¿½Ö¶ï¿½ï¿½
     SplitFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_SplitFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_SplitFrozen_set)
 
-	# µ±ÈÕºÏ²¢¶î¶È
+	# ï¿½ï¿½ï¿½ÕºÏ²ï¿½ï¿½ï¿½ï¿?
     MergeLimit = property(_traderapi.CTORATstpInvestorPositionLimitField_MergeLimit_get, _traderapi.CTORATstpInvestorPositionLimitField_MergeLimit_set)
 
-	# ÒÑÊ¹ÓÃµ±ÈÕºÏ²¢¶î¶È
+	# ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ÕºÏ²ï¿½ï¿½ï¿½ï¿?
     MergeFrozen = property(_traderapi.CTORATstpInvestorPositionLimitField_MergeFrozen_get, _traderapi.CTORATstpInvestorPositionLimitField_MergeFrozen_set)
 
-	# Í¨ÓÃÍ³Ò»¸öÈËÊ¶±ðÂë
+	# Í¨ï¿½ï¿½Í³Ò»ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½
     UUPIC = property(_traderapi.CTORATstpInvestorPositionLimitField_UUPIC_get, _traderapi.CTORATstpInvestorPositionLimitField_UUPIC_set)
 
     def __init__(self):
@@ -6384,12 +6384,12 @@ _traderapi.CTORATstpInvestorPositionLimitField_swigregister(CTORATstpInvestorPos
 
 
 
-#########################################²éÑ¯Éî¸ÛÍ¨¹ú¼ÊÊÐ³¡»¥Áª×´Ì¬ÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Í?¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì?¿½ï¿½Ï?############################################
 class CTORATstpQrySZSEImcParamsField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpQrySZSEImcParamsField_MarketID_get, _traderapi.CTORATstpQrySZSEImcParamsField_MarketID_set)
 
     def __init__(self):
@@ -6402,24 +6402,24 @@ _traderapi.CTORATstpQrySZSEImcParamsField_swigregister(CTORATstpQrySZSEImcParams
 
 
 
-#########################################Éî¸ÛÍ¨¹ú¼ÊÊÐ³¡»¥Áª×´Ì¬ÐÅÏ¢############################################
+#########################################ï¿½ï¿½ï¿½Í?¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì?¿½ï¿½Ï?############################################
 class CTORATstpSZSEImcParamsField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpSZSEImcParamsField_MarketID_get, _traderapi.CTORATstpSZSEImcParamsField_MarketID_set)
 
-	# ÊÇ·ñ¿ª·Å
+	# ï¿½Ç·ñ¿ª·ï¿½
     OpenFlag = property(_traderapi.CTORATstpSZSEImcParamsField_OpenFlag_get, _traderapi.CTORATstpSZSEImcParamsField_OpenFlag_set)
 
-	# ³õÊ¼¶î¶È
+	# ï¿½ï¿½Ê¼ï¿½ï¿½ï¿?
     ThresholdAmount = property(_traderapi.CTORATstpSZSEImcParamsField_ThresholdAmount_get, _traderapi.CTORATstpSZSEImcParamsField_ThresholdAmount_set)
 
-	# ÈÕÖÐÊ£Óà¶î¶È
+	# ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½ï¿½ï¿½
     PosAmt = property(_traderapi.CTORATstpSZSEImcParamsField_PosAmt_get, _traderapi.CTORATstpSZSEImcParamsField_PosAmt_set)
 
-	# ¶î¶ÈÊÇ·ñ¿ÉÓÃ
+	# ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
     AmountStatus = property(_traderapi.CTORATstpSZSEImcParamsField_AmountStatus_get, _traderapi.CTORATstpSZSEImcParamsField_AmountStatus_set)
 
     def __init__(self):
@@ -6432,15 +6432,15 @@ _traderapi.CTORATstpSZSEImcParamsField_swigregister(CTORATstpSZSEImcParamsField)
 
 
 
-#########################################²éÑ¯Éî¸ÛÍ¨¹ú¼ÊÊÐ³¡»¥Áª»ãÂÊÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Í?¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï?############################################
 class CTORATstpQrySZSEImcExchangeRateField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Ô´»õ±Ò±ÒÖÖ
+	# Ô´ï¿½ï¿½ï¿½Ò±ï¿½ï¿½ï¿½
     FromCurrency = property(_traderapi.CTORATstpQrySZSEImcExchangeRateField_FromCurrency_get, _traderapi.CTORATstpQrySZSEImcExchangeRateField_FromCurrency_set)
 
-	# Ä¿±ê»õ±Ò±ÒÖÖ
+	# Ä¿ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ï¿½ï¿?
     ToCurrency = property(_traderapi.CTORATstpQrySZSEImcExchangeRateField_ToCurrency_get, _traderapi.CTORATstpQrySZSEImcExchangeRateField_ToCurrency_set)
 
     def __init__(self):
@@ -6453,24 +6453,24 @@ _traderapi.CTORATstpQrySZSEImcExchangeRateField_swigregister(CTORATstpQrySZSEImc
 
 
 
-#########################################Éî¸ÛÍ¨¹ú¼ÊÊÐ³¡»¥Áª»ãÂÊÐÅÏ¢############################################
+#########################################ï¿½ï¿½ï¿½Í?¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï?############################################
 class CTORATstpSZSEImcExchangeRateField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Ô´»õ±Ò±ÒÖÖ
+	# Ô´ï¿½ï¿½ï¿½Ò±ï¿½ï¿½ï¿½
     FromCurrency = property(_traderapi.CTORATstpSZSEImcExchangeRateField_FromCurrency_get, _traderapi.CTORATstpSZSEImcExchangeRateField_FromCurrency_set)
 
-	# Ä¿±ê»õ±Ò±ÒÖÖ
+	# Ä¿ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ï¿½ï¿?
     ToCurrency = property(_traderapi.CTORATstpSZSEImcExchangeRateField_ToCurrency_get, _traderapi.CTORATstpSZSEImcExchangeRateField_ToCurrency_set)
 
-	# ²Î¿¼»ãÂÊÂòÈë¼Û
+	# ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     BidRate = property(_traderapi.CTORATstpSZSEImcExchangeRateField_BidRate_get, _traderapi.CTORATstpSZSEImcExchangeRateField_BidRate_set)
 
-	# ²Î¿¼»ãÂÊÂô³ö¼Û
+	# ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     OfferRate = property(_traderapi.CTORATstpSZSEImcExchangeRateField_OfferRate_get, _traderapi.CTORATstpSZSEImcExchangeRateField_OfferRate_set)
 
-	# ²Î¿¼»ãÂÊÖÐ¼ä¼Û
+	# ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿?
     MidPointRate = property(_traderapi.CTORATstpSZSEImcExchangeRateField_MidPointRate_get, _traderapi.CTORATstpSZSEImcExchangeRateField_MidPointRate_set)
 
     def __init__(self):
@@ -6483,12 +6483,12 @@ _traderapi.CTORATstpSZSEImcExchangeRateField_swigregister(CTORATstpSZSEImcExchan
 
 
 
-#########################################²éÑ¯Éî¸ÛÍ¨×îÐ¡¼Û²îÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Í?¿½ï¿½Ð¡ï¿½Û²ï¿½ï¿½ï¿½Ï?############################################
 class CTORATstpQrySZSEHKPriceTickInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ¼Û²îÆ·ÖÖ
+	# ï¿½Û²ï¿½Æ·ï¿½ï¿½
     PriceTickID = property(_traderapi.CTORATstpQrySZSEHKPriceTickInfoField_PriceTickID_get, _traderapi.CTORATstpQrySZSEHKPriceTickInfoField_PriceTickID_set)
 
     def __init__(self):
@@ -6501,27 +6501,27 @@ _traderapi.CTORATstpQrySZSEHKPriceTickInfoField_swigregister(CTORATstpQrySZSEHKP
 
 
 
-#########################################Éî¸ÛÍ¨×îÐ¡¼Û²îÐÅÏ¢############################################
+#########################################ï¿½ï¿½ï¿½Í?¿½ï¿½Ð¡ï¿½Û²ï¿½ï¿½ï¿½Ï?############################################
 class CTORATstpSZSEHKPriceTickInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ¼Û²îÆ·ÖÖ
+	# ï¿½Û²ï¿½Æ·ï¿½ï¿½
     PriceTickID = property(_traderapi.CTORATstpSZSEHKPriceTickInfoField_PriceTickID_get, _traderapi.CTORATstpSZSEHKPriceTickInfoField_PriceTickID_set)
 
-	# ¼Û²î×éºÅ
+	# ï¿½Û²ï¿½ï¿½ï¿½ï¿?
     PriceTickGroupID = property(_traderapi.CTORATstpSZSEHKPriceTickInfoField_PriceTickGroupID_get, _traderapi.CTORATstpSZSEHKPriceTickInfoField_PriceTickGroupID_set)
 
-	# ¼Û²îÀà±ð
+	# ï¿½Û²ï¿½ï¿½ï¿½ï¿?
     PriceTickType = property(_traderapi.CTORATstpSZSEHKPriceTickInfoField_PriceTickType_get, _traderapi.CTORATstpSZSEHKPriceTickInfoField_PriceTickType_set)
 
-	# ¼Û²î×éÆðÊ¼¼Û¸ñ
+	# ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½Û¸ï¿½
     BeginPrice = property(_traderapi.CTORATstpSZSEHKPriceTickInfoField_BeginPrice_get, _traderapi.CTORATstpSZSEHKPriceTickInfoField_BeginPrice_set)
 
-	# ¼Û²î×é½áÊø¼Û¸ñ
+	# ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿?
     EndPrice = property(_traderapi.CTORATstpSZSEHKPriceTickInfoField_EndPrice_get, _traderapi.CTORATstpSZSEHKPriceTickInfoField_EndPrice_set)
 
-	# ¼Û²îÖµ
+	# ï¿½Û²ï¿½Öµ
     PriceTick = property(_traderapi.CTORATstpSZSEHKPriceTickInfoField_PriceTick_get, _traderapi.CTORATstpSZSEHKPriceTickInfoField_PriceTick_set)
 
     def __init__(self):
@@ -6534,18 +6534,18 @@ _traderapi.CTORATstpSZSEHKPriceTickInfoField_swigregister(CTORATstpSZSEHKPriceTi
 
 
 
-#########################################²éÑ¯LOF»ù½ðÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯LOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpQryLofFundInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryLofFundInfoField_ExchangeID_get, _traderapi.CTORATstpQryLofFundInfoField_ExchangeID_set)
 
-	# »ù½ð´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     FundID = property(_traderapi.CTORATstpQryLofFundInfoField_FundID_get, _traderapi.CTORATstpQryLofFundInfoField_FundID_set)
 
-	# Ö÷»ù½ð´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     MainFundID = property(_traderapi.CTORATstpQryLofFundInfoField_MainFundID_get, _traderapi.CTORATstpQryLofFundInfoField_MainFundID_set)
 
     def __init__(self):
@@ -6558,36 +6558,36 @@ _traderapi.CTORATstpQryLofFundInfoField_swigregister(CTORATstpQryLofFundInfoFiel
 
 
 
-#########################################LOF»ù½ðÐÅÏ¢############################################
+#########################################LOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpLofFundInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpLofFundInfoField_ExchangeID_get, _traderapi.CTORATstpLofFundInfoField_ExchangeID_set)
 
-	# »ù½ð´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     FundID = property(_traderapi.CTORATstpLofFundInfoField_FundID_get, _traderapi.CTORATstpLofFundInfoField_FundID_set)
 
-	# Ö÷»ù½ð´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     MainFundID = property(_traderapi.CTORATstpLofFundInfoField_MainFundID_get, _traderapi.CTORATstpLofFundInfoField_MainFundID_set)
 
-	# »ù½ðÀàÐÍ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     FundType = property(_traderapi.CTORATstpLofFundInfoField_FundType_get, _traderapi.CTORATstpLofFundInfoField_FundType_set)
 
-	# ²ð·ÖÊýÁ¿µ¥Î»
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î?
     SplitUnit = property(_traderapi.CTORATstpLofFundInfoField_SplitUnit_get, _traderapi.CTORATstpLofFundInfoField_SplitUnit_set)
 
-	# ×îÐ¡²ð·ÖÊýÁ¿
+	# ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     SplitMinVol = property(_traderapi.CTORATstpLofFundInfoField_SplitMinVol_get, _traderapi.CTORATstpLofFundInfoField_SplitMinVol_set)
 
-	# ºÏ²¢ÊýÁ¿µ¥Î»
+	# ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»
     MergeUnit = property(_traderapi.CTORATstpLofFundInfoField_MergeUnit_get, _traderapi.CTORATstpLofFundInfoField_MergeUnit_set)
 
-	# ×îÐ¡ºÏ²¢ÊýÁ¿
+	# ï¿½ï¿½Ð¡ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½
     MergeMinVol = property(_traderapi.CTORATstpLofFundInfoField_MergeMinVol_get, _traderapi.CTORATstpLofFundInfoField_MergeMinVol_set)
 
-	# »ù½ð×ª»»ÏµÊý
+	# ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ïµï¿½ï¿½
     FundRatio = property(_traderapi.CTORATstpLofFundInfoField_FundRatio_get, _traderapi.CTORATstpLofFundInfoField_FundRatio_set)
 
     def __init__(self):
@@ -6600,27 +6600,27 @@ _traderapi.CTORATstpLofFundInfoField_swigregister(CTORATstpLofFundInfoField)
 
 
 
-#########################################²éÑ¯Í¶×ÊÕßÖÊÑº³Ö²Ö############################################
+#########################################ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½Ö²ï¿½############################################
 class CTORATstpQryPledgePositionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryPledgePositionField_InvestorID_get, _traderapi.CTORATstpQryPledgePositionField_InvestorID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryPledgePositionField_SecurityID_get, _traderapi.CTORATstpQryPledgePositionField_SecurityID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryPledgePositionField_ExchangeID_get, _traderapi.CTORATstpQryPledgePositionField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpQryPledgePositionField_MarketID_get, _traderapi.CTORATstpQryPledgePositionField_MarketID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryPledgePositionField_ShareholderID_get, _traderapi.CTORATstpQryPledgePositionField_ShareholderID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryPledgePositionField_BusinessUnitID_get, _traderapi.CTORATstpQryPledgePositionField_BusinessUnitID_set)
 
     def __init__(self):
@@ -6633,48 +6633,48 @@ _traderapi.CTORATstpQryPledgePositionField_swigregister(CTORATstpQryPledgePositi
 
 
 
-#########################################Í¶×ÊÕßÖÊÑº³Ö²Ö############################################
+#########################################Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½Ö²ï¿½############################################
 class CTORATstpPledgePositionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpPledgePositionField_SecurityID_get, _traderapi.CTORATstpPledgePositionField_SecurityID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpPledgePositionField_InvestorID_get, _traderapi.CTORATstpPledgePositionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpPledgePositionField_BusinessUnitID_get, _traderapi.CTORATstpPledgePositionField_BusinessUnitID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpPledgePositionField_ExchangeID_get, _traderapi.CTORATstpPledgePositionField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpPledgePositionField_MarketID_get, _traderapi.CTORATstpPledgePositionField_MarketID_set)
 
-	# ¿Í»§´úÂë
+	# ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpPledgePositionField_ShareholderID_get, _traderapi.CTORATstpPledgePositionField_ShareholderID_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpPledgePositionField_TradingDay_get, _traderapi.CTORATstpPledgePositionField_TradingDay_set)
 
-	# ×òÈÕÖÊÑº³Ö²Ö
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½Ö²ï¿½
     HisPledgePos = property(_traderapi.CTORATstpPledgePositionField_HisPledgePos_get, _traderapi.CTORATstpPledgePositionField_HisPledgePos_set)
 
-	# ×òÈÕÖÊÑº³Ö²Ö¶³½á
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½Ö²Ö¶ï¿½ï¿½ï¿½
     HisPledgePosFrozen = property(_traderapi.CTORATstpPledgePositionField_HisPledgePosFrozen_get, _traderapi.CTORATstpPledgePositionField_HisPledgePosFrozen_set)
 
-	# ½ñÈÕÈë¿âµÄÖÊÑº³Ö²Ö
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½Ö²ï¿½
     TodayPledgePos = property(_traderapi.CTORATstpPledgePositionField_TodayPledgePos_get, _traderapi.CTORATstpPledgePositionField_TodayPledgePos_set)
 
-	# ½ñÈÕÈë¿âµÄÖÊÑº³Ö²Ö¶³½á
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½Ö²Ö¶ï¿½ï¿½ï¿½
     TodayPledgePosFrozen = property(_traderapi.CTORATstpPledgePositionField_TodayPledgePosFrozen_get, _traderapi.CTORATstpPledgePositionField_TodayPledgePosFrozen_set)
 
-	# ×òÈÕÖÊÑºÈë¿âµÄÏÖÈ¯×ÜÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½
     PreTotalPledgePos = property(_traderapi.CTORATstpPledgePositionField_PreTotalPledgePos_get, _traderapi.CTORATstpPledgePositionField_PreTotalPledgePos_set)
 
-	# ×òÈÕÖÊÑºÈë¿âµÄÏÖÈ¯¿ÉÓÃÊýÁ¿
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     PreAvailablePledgePos = property(_traderapi.CTORATstpPledgePositionField_PreAvailablePledgePos_get, _traderapi.CTORATstpPledgePositionField_PreAvailablePledgePos_set)
 
     def __init__(self):
@@ -6687,15 +6687,15 @@ _traderapi.CTORATstpPledgePositionField_swigregister(CTORATstpPledgePositionFiel
 
 
 
-#########################################²éÑ¯Ö¤È¯ÖÊÑºÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯Ö¤È¯ï¿½ï¿½Ñºï¿½ï¿½Ï¢############################################
 class CTORATstpQryPledgeInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryPledgeInfoField_ExchangeID_get, _traderapi.CTORATstpQryPledgeInfoField_ExchangeID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryPledgeInfoField_SecurityID_get, _traderapi.CTORATstpQryPledgeInfoField_SecurityID_set)
 
     def __init__(self):
@@ -6708,48 +6708,48 @@ _traderapi.CTORATstpQryPledgeInfoField_swigregister(CTORATstpQryPledgeInfoField)
 
 
 
-#########################################Ö¤È¯ÖÊÑºÐÅÏ¢############################################
+#########################################Ö¤È¯ï¿½ï¿½Ñºï¿½ï¿½Ï¢############################################
 class CTORATstpPledgeInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpPledgeInfoField_ExchangeID_get, _traderapi.CTORATstpPledgeInfoField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpPledgeInfoField_MarketID_get, _traderapi.CTORATstpPledgeInfoField_MarketID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpPledgeInfoField_SecurityID_get, _traderapi.CTORATstpPledgeInfoField_SecurityID_set)
 
-	# ÖÊÑºÉê±¨´úÂë
+	# ï¿½ï¿½Ñºï¿½ê±¨ï¿½ï¿½ï¿½ï¿½
     PledgeOrderID = property(_traderapi.CTORATstpPledgeInfoField_PledgeOrderID_get, _traderapi.CTORATstpPledgeInfoField_PledgeOrderID_set)
 
-	# ÖÊÑºÃû³Æ
+	# ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½
     PledgeName = property(_traderapi.CTORATstpPledgeInfoField_PledgeName_get, _traderapi.CTORATstpPledgeInfoField_PledgeName_set)
 
-	# ±ê×¼È¯´úÂë
+	# ï¿½ï¿½×¼È¯ï¿½ï¿½ï¿½ï¿½
     StandardBondID = property(_traderapi.CTORATstpPledgeInfoField_StandardBondID_get, _traderapi.CTORATstpPledgeInfoField_StandardBondID_set)
 
-	# ±ê×¼È¯ÕÛËãÂÊ/ÕÛËãÖµ
+	# ï¿½ï¿½×¼È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½Öµ
     ConversionRate = property(_traderapi.CTORATstpPledgeInfoField_ConversionRate_get, _traderapi.CTORATstpPledgeInfoField_ConversionRate_set)
 
-	# Ã¿´Î¿ÉÒÔÈë¿âµÄ×îÐ¡½»Ò×µ¥Î»
+	# Ã¿ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½×µï¿½Î»
     PledgeInTradingUnit = property(_traderapi.CTORATstpPledgeInfoField_PledgeInTradingUnit_get, _traderapi.CTORATstpPledgeInfoField_PledgeInTradingUnit_set)
 
-	# Ã¿´Î¿ÉÒÔ³ö¿âµÄ×îÐ¡½»Ò×µ¥Î»
+	# Ã¿ï¿½Î¿ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½×µï¿½Î?
     PledgeOutTradingUnit = property(_traderapi.CTORATstpPledgeInfoField_PledgeOutTradingUnit_get, _traderapi.CTORATstpPledgeInfoField_PledgeOutTradingUnit_set)
 
-	# Ö¤È¯¿ÉÒÔÈë¿âµÄ×î´óÊýÁ¿
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     PledgeInVolMax = property(_traderapi.CTORATstpPledgeInfoField_PledgeInVolMax_get, _traderapi.CTORATstpPledgeInfoField_PledgeInVolMax_set)
 
-	# Ö¤È¯¿ÉÒÔÈë¿âµÄ×îÐ¡ÊýÁ¿
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
     PledgeInVolMin = property(_traderapi.CTORATstpPledgeInfoField_PledgeInVolMin_get, _traderapi.CTORATstpPledgeInfoField_PledgeInVolMin_set)
 
-	# Ö¤È¯¿ÉÒÔ³ö¿âµÄ×î´óÊýÁ¿
+	# Ö¤È¯ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     PledgeOutVolMax = property(_traderapi.CTORATstpPledgeInfoField_PledgeOutVolMax_get, _traderapi.CTORATstpPledgeInfoField_PledgeOutVolMax_set)
 
-	# Ö¤È¯¿ÉÒÔ³ö¿âµÄ×îÐ¡ÊýÁ¿
+	# Ö¤È¯ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿?
     PledgeOutVolMin = property(_traderapi.CTORATstpPledgeInfoField_PledgeOutVolMin_get, _traderapi.CTORATstpPledgeInfoField_PledgeOutVolMin_set)
 
     def __init__(self):
@@ -6762,12 +6762,12 @@ _traderapi.CTORATstpPledgeInfoField_swigregister(CTORATstpPledgeInfoField)
 
 
 
-#########################################²éÑ¯ÏµÍ³½ÚµãÐÅÏ¢############################################
+#########################################ï¿½ï¿½Ñ¯ÏµÍ³ï¿½Úµï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpQrySystemNodeInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½Úµã±àºÅ
+	# ï¿½Úµï¿½ï¿½ï¿½
     NodeID = property(_traderapi.CTORATstpQrySystemNodeInfoField_NodeID_get, _traderapi.CTORATstpQrySystemNodeInfoField_NodeID_set)
 
     def __init__(self):
@@ -6780,18 +6780,18 @@ _traderapi.CTORATstpQrySystemNodeInfoField_swigregister(CTORATstpQrySystemNodeIn
 
 
 
-#########################################ÏµÍ³½ÚµãÐÅÏ¢############################################
+#########################################ÏµÍ³ï¿½Úµï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpSystemNodeInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½Úµã±àºÅ
+	# ï¿½Úµï¿½ï¿½ï¿½
     NodeID = property(_traderapi.CTORATstpSystemNodeInfoField_NodeID_get, _traderapi.CTORATstpSystemNodeInfoField_NodeID_set)
 
-	# ½ÚµãÐÅÏ¢
+	# ï¿½Úµï¿½ï¿½ï¿½Ï¢
     NodeInfo = property(_traderapi.CTORATstpSystemNodeInfoField_NodeInfo_get, _traderapi.CTORATstpSystemNodeInfoField_NodeInfo_set)
 
-	# ÊÇ·ñµ±Ç°½Úµã
+	# ï¿½Ç·ï¿½Ç°ï¿½Úµï¿½
     bCurrent = property(_traderapi.CTORATstpSystemNodeInfoField_bCurrent_get, _traderapi.CTORATstpSystemNodeInfoField_bCurrent_set)
 
     def __init__(self):
@@ -6804,27 +6804,27 @@ _traderapi.CTORATstpSystemNodeInfoField_swigregister(CTORATstpSystemNodeInfoFiel
 
 
 
-#########################################²éÑ¯Í¶×ÊÕß±ê×¼È¯¶î¶È############################################
+#########################################ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ß±ï¿½×¼È¯ï¿½ï¿½ï¿?############################################
 class CTORATstpQryStandardBondPositionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryStandardBondPositionField_InvestorID_get, _traderapi.CTORATstpQryStandardBondPositionField_InvestorID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryStandardBondPositionField_SecurityID_get, _traderapi.CTORATstpQryStandardBondPositionField_SecurityID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryStandardBondPositionField_ExchangeID_get, _traderapi.CTORATstpQryStandardBondPositionField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpQryStandardBondPositionField_MarketID_get, _traderapi.CTORATstpQryStandardBondPositionField_MarketID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryStandardBondPositionField_ShareholderID_get, _traderapi.CTORATstpQryStandardBondPositionField_ShareholderID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryStandardBondPositionField_BusinessUnitID_get, _traderapi.CTORATstpQryStandardBondPositionField_BusinessUnitID_set)
 
     def __init__(self):
@@ -6837,39 +6837,39 @@ _traderapi.CTORATstpQryStandardBondPositionField_swigregister(CTORATstpQryStanda
 
 
 
-#########################################Í¶×ÊÕß±ê×¼È¯¶î¶È############################################
+#########################################Í¶ï¿½ï¿½ï¿½ß±ï¿½×¼È¯ï¿½ï¿½ï¿?############################################
 class CTORATstpStandardBondPositionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpStandardBondPositionField_SecurityID_get, _traderapi.CTORATstpStandardBondPositionField_SecurityID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpStandardBondPositionField_InvestorID_get, _traderapi.CTORATstpStandardBondPositionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpStandardBondPositionField_BusinessUnitID_get, _traderapi.CTORATstpStandardBondPositionField_BusinessUnitID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpStandardBondPositionField_ExchangeID_get, _traderapi.CTORATstpStandardBondPositionField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpStandardBondPositionField_MarketID_get, _traderapi.CTORATstpStandardBondPositionField_MarketID_set)
 
-	# ¿Í»§´úÂë
+	# ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpStandardBondPositionField_ShareholderID_get, _traderapi.CTORATstpStandardBondPositionField_ShareholderID_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpStandardBondPositionField_TradingDay_get, _traderapi.CTORATstpStandardBondPositionField_TradingDay_set)
 
-	# ±ê×¼È¯¿ÉÓÃ¶î¶È
+	# ï¿½ï¿½×¼È¯ï¿½ï¿½ï¿½Ã¶ï¿½ï¿?
     AvailablePosition = property(_traderapi.CTORATstpStandardBondPositionField_AvailablePosition_get, _traderapi.CTORATstpStandardBondPositionField_AvailablePosition_set)
 
-	# ±ê×¼È¯¿ÉÓÃ¶î¶È¶³½á
+	# ï¿½ï¿½×¼È¯ï¿½ï¿½ï¿½Ã¶ï¿½È¶ï¿½ï¿½ï¿?
     AvailablePosFrozen = property(_traderapi.CTORATstpStandardBondPositionField_AvailablePosFrozen_get, _traderapi.CTORATstpStandardBondPositionField_AvailablePosFrozen_set)
 
-	# ±ê×¼È¯¶î¶È×ÜÁ¿
+	# ï¿½ï¿½×¼È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     TotalPosition = property(_traderapi.CTORATstpStandardBondPositionField_TotalPosition_get, _traderapi.CTORATstpStandardBondPositionField_TotalPosition_set)
 
     def __init__(self):
@@ -6882,42 +6882,42 @@ _traderapi.CTORATstpStandardBondPositionField_swigregister(CTORATstpStandardBond
 
 
 
-#########################################²éÑ¯Î´µ½ÆÚÕ®È¯ÖÊÑº»Ø¹ºÎ¯ÍÐ############################################
+#########################################ï¿½ï¿½Ñ¯Î´ï¿½ï¿½ï¿½ï¿½Õ®È¯ï¿½ï¿½Ñºï¿½Ø¹ï¿½Î¯ï¿½ï¿½############################################
 class CTORATstpQryPrematurityRepoOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_InvestorID_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_InvestorID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_SecurityID_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_SecurityID_set)
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_ExchangeID_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_MarketID_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_MarketID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_ShareholderID_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_ShareholderID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_BusinessUnitID_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_BusinessUnitID_set)
 
-	# ±¾µØ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_OrderLocalID_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_OrderLocalID_set)
 
-	# Ö¤È¯Æ·ÖÖ´úÂë
+	# Ö¤È¯Æ·ï¿½Ö´ï¿½ï¿½ï¿½
     ProductID = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_ProductID_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_ProductID_set)
 
-	# Ö¤È¯Àà±ð´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SecurityType = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_SecurityType_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_SecurityType_set)
 
-	# ÂòÂô·½Ïò
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     Direction = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_Direction_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_Direction_set)
 
-	# ³É½»±àºÅ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿?
     TradeID = property(_traderapi.CTORATstpQryPrematurityRepoOrderField_TradeID_get, _traderapi.CTORATstpQryPrematurityRepoOrderField_TradeID_set)
 
     def __init__(self):
@@ -6930,66 +6930,66 @@ _traderapi.CTORATstpQryPrematurityRepoOrderField_swigregister(CTORATstpQryPremat
 
 
 
-#########################################Î´µ½ÆÚÕ®È¯ÖÊÑº»Ø¹ºÎ¯ÍÐ############################################
+#########################################Î´ï¿½ï¿½ï¿½ï¿½Õ®È¯ï¿½ï¿½Ñºï¿½Ø¹ï¿½Î¯ï¿½ï¿½############################################
 class CTORATstpPrematurityRepoOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpPrematurityRepoOrderField_ExchangeID_get, _traderapi.CTORATstpPrematurityRepoOrderField_ExchangeID_set)
 
-	# ÊÐ³¡´úÂë
+	# ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½
     MarketID = property(_traderapi.CTORATstpPrematurityRepoOrderField_MarketID_get, _traderapi.CTORATstpPrematurityRepoOrderField_MarketID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpPrematurityRepoOrderField_InvestorID_get, _traderapi.CTORATstpPrematurityRepoOrderField_InvestorID_set)
 
-	# ½»Ò×ÕË»§´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpPrematurityRepoOrderField_ShareholderID_get, _traderapi.CTORATstpPrematurityRepoOrderField_ShareholderID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpPrematurityRepoOrderField_BusinessUnitID_get, _traderapi.CTORATstpPrematurityRepoOrderField_BusinessUnitID_set)
 
-	# ³É½»ÈÕÆÚ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradeDay = property(_traderapi.CTORATstpPrematurityRepoOrderField_TradeDay_get, _traderapi.CTORATstpPrematurityRepoOrderField_TradeDay_set)
 
-	# µ½ÆÚÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExpireDay = property(_traderapi.CTORATstpPrematurityRepoOrderField_ExpireDay_get, _traderapi.CTORATstpPrematurityRepoOrderField_ExpireDay_set)
 
-	# ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpPrematurityRepoOrderField_OrderLocalID_get, _traderapi.CTORATstpPrematurityRepoOrderField_OrderLocalID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpPrematurityRepoOrderField_SecurityID_get, _traderapi.CTORATstpPrematurityRepoOrderField_SecurityID_set)
 
-	# Ö¤È¯Ãû³Æ
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityName = property(_traderapi.CTORATstpPrematurityRepoOrderField_SecurityName_get, _traderapi.CTORATstpPrematurityRepoOrderField_SecurityName_set)
 
-	# Ö¤È¯Æ·ÖÖ´úÂë
+	# Ö¤È¯Æ·ï¿½Ö´ï¿½ï¿½ï¿½
     ProductID = property(_traderapi.CTORATstpPrematurityRepoOrderField_ProductID_get, _traderapi.CTORATstpPrematurityRepoOrderField_ProductID_set)
 
-	# Ö¤È¯Àà±ð´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     SecurityType = property(_traderapi.CTORATstpPrematurityRepoOrderField_SecurityType_get, _traderapi.CTORATstpPrematurityRepoOrderField_SecurityType_set)
 
-	# ±¨µ¥Àà±ð
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     Direction = property(_traderapi.CTORATstpPrematurityRepoOrderField_Direction_get, _traderapi.CTORATstpPrematurityRepoOrderField_Direction_set)
 
-	# ³É½»ÊýÁ¿
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½
     VolumeTraded = property(_traderapi.CTORATstpPrematurityRepoOrderField_VolumeTraded_get, _traderapi.CTORATstpPrematurityRepoOrderField_VolumeTraded_set)
 
-	# ³É½»¼Û¸ñ
+	# ï¿½É½ï¿½ï¿½Û¸ï¿½
     Price = property(_traderapi.CTORATstpPrematurityRepoOrderField_Price_get, _traderapi.CTORATstpPrematurityRepoOrderField_Price_set)
 
-	# ³É½»½ð¶î
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿?
     Turnover = property(_traderapi.CTORATstpPrematurityRepoOrderField_Turnover_get, _traderapi.CTORATstpPrematurityRepoOrderField_Turnover_set)
 
-	# ³É½»±àºÅ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿?
     TradeID = property(_traderapi.CTORATstpPrematurityRepoOrderField_TradeID_get, _traderapi.CTORATstpPrematurityRepoOrderField_TradeID_set)
 
-	# ¹º»ØÓ¦ÊÕ½ð¶î
+	# ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Õ½ï¿½ï¿?
     RepoTotalMoney = property(_traderapi.CTORATstpPrematurityRepoOrderField_RepoTotalMoney_get, _traderapi.CTORATstpPrematurityRepoOrderField_RepoTotalMoney_set)
 
-	# ÀûÏ¢½ð¶î
+	# ï¿½ï¿½Ï¢ï¿½ï¿½ï¿?
     InterestAmount = property(_traderapi.CTORATstpPrematurityRepoOrderField_InterestAmount_get, _traderapi.CTORATstpPrematurityRepoOrderField_InterestAmount_set)
 
     def __init__(self):
@@ -7002,27 +7002,27 @@ _traderapi.CTORATstpPrematurityRepoOrderField_swigregister(CTORATstpPrematurityR
 
 
 
-#########################################²éÑ¯Ð­Òé½»Ò×±¨µ¥############################################
+#########################################ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½############################################
 class CTORATstpQryNegoOrderField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryNegoOrderField_ExchangeID_get, _traderapi.CTORATstpQryNegoOrderField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryNegoOrderField_InvestorID_get, _traderapi.CTORATstpQryNegoOrderField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryNegoOrderField_BusinessUnitID_get, _traderapi.CTORATstpQryNegoOrderField_BusinessUnitID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryNegoOrderField_SecurityID_get, _traderapi.CTORATstpQryNegoOrderField_SecurityID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryNegoOrderField_ShareholderID_get, _traderapi.CTORATstpQryNegoOrderField_ShareholderID_set)
 
-	# ÏµÍ³±¨µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpQryNegoOrderField_OrderSysID_get, _traderapi.CTORATstpQryNegoOrderField_OrderSysID_set)
 
 	# Insert Time
@@ -7031,10 +7031,10 @@ class CTORATstpQryNegoOrderField(object):
 	# Insert Time
     InsertTimeEnd = property(_traderapi.CTORATstpQryNegoOrderField_InsertTimeEnd_get, _traderapi.CTORATstpQryNegoOrderField_InsertTimeEnd_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpQryNegoOrderField_SInfo_get, _traderapi.CTORATstpQryNegoOrderField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpQryNegoOrderField_IInfo_get, _traderapi.CTORATstpQryNegoOrderField_IInfo_set)
 
     def __init__(self):
@@ -7047,33 +7047,33 @@ _traderapi.CTORATstpQryNegoOrderField_swigregister(CTORATstpQryNegoOrderField)
 
 
 
-#########################################²éÑ¯Ð­Òé½»Ò×³·µ¥############################################
+#########################################ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×³ï¿½ï¿½ï¿½############################################
 class CTORATstpQryNegoOrderActionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryNegoOrderActionField_ExchangeID_get, _traderapi.CTORATstpQryNegoOrderActionField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryNegoOrderActionField_InvestorID_get, _traderapi.CTORATstpQryNegoOrderActionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryNegoOrderActionField_BusinessUnitID_get, _traderapi.CTORATstpQryNegoOrderActionField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryNegoOrderActionField_ShareholderID_get, _traderapi.CTORATstpQryNegoOrderActionField_ShareholderID_set)
 
-	# ±¾µØ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpQryNegoOrderActionField_OrderLocalID_get, _traderapi.CTORATstpQryNegoOrderActionField_OrderLocalID_set)
 
-	# ±¾µØ³·µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelOrderLocalID = property(_traderapi.CTORATstpQryNegoOrderActionField_CancelOrderLocalID_get, _traderapi.CTORATstpQryNegoOrderActionField_CancelOrderLocalID_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpQryNegoOrderActionField_SInfo_get, _traderapi.CTORATstpQryNegoOrderActionField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpQryNegoOrderActionField_IInfo_get, _traderapi.CTORATstpQryNegoOrderActionField_IInfo_set)
 
     def __init__(self):
@@ -7086,84 +7086,84 @@ _traderapi.CTORATstpQryNegoOrderActionField_swigregister(CTORATstpQryNegoOrderAc
 
 
 
-#########################################Ð­Òé½»Ò×³·µ¥############################################
+#########################################Ð­ï¿½é½»ï¿½×³ï¿½ï¿½ï¿½############################################
 class CTORATstpNegoOrderActionField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpNegoOrderActionField_ExchangeID_get, _traderapi.CTORATstpNegoOrderActionField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpNegoOrderActionField_InvestorID_get, _traderapi.CTORATstpNegoOrderActionField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpNegoOrderActionField_BusinessUnitID_get, _traderapi.CTORATstpNegoOrderActionField_BusinessUnitID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpNegoOrderActionField_ShareholderID_get, _traderapi.CTORATstpNegoOrderActionField_ShareholderID_set)
 
-	# ²Ù×÷±êÖ¾
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
     ActionFlag = property(_traderapi.CTORATstpNegoOrderActionField_ActionFlag_get, _traderapi.CTORATstpNegoOrderActionField_ActionFlag_set)
 
-	# ±¾µØ³·µ¥±àºÅ
+	# ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelOrderLocalID = property(_traderapi.CTORATstpNegoOrderActionField_CancelOrderLocalID_get, _traderapi.CTORATstpNegoOrderActionField_CancelOrderLocalID_set)
 
-	# ÏµÍ³³·µ¥±àºÅ
+	# ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     CancelOrderSysID = property(_traderapi.CTORATstpNegoOrderActionField_CancelOrderSysID_get, _traderapi.CTORATstpNegoOrderActionField_CancelOrderSysID_set)
 
-	# ±»³·±¨µ¥ÏµÍ³±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderSysID = property(_traderapi.CTORATstpNegoOrderActionField_OrderSysID_get, _traderapi.CTORATstpNegoOrderActionField_OrderSysID_set)
 
-	# ±»³·±¨µ¥±¾µØ±¨µ¥±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     OrderLocalID = property(_traderapi.CTORATstpNegoOrderActionField_OrderLocalID_get, _traderapi.CTORATstpNegoOrderActionField_OrderLocalID_set)
 
-	# Î¯ÍÐ·½Ê½
+	# Î¯ï¿½Ð·ï¿½Ê½
     Operway = property(_traderapi.CTORATstpNegoOrderActionField_Operway_get, _traderapi.CTORATstpNegoOrderActionField_Operway_set)
 
-	# ×Ö·û´®¸½¼ÓÐÅÏ¢
+	# ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     SInfo = property(_traderapi.CTORATstpNegoOrderActionField_SInfo_get, _traderapi.CTORATstpNegoOrderActionField_SInfo_set)
 
-	# ÕûÐÎ¸½¼ÓÐÅÏ¢
+	# ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     IInfo = property(_traderapi.CTORATstpNegoOrderActionField_IInfo_get, _traderapi.CTORATstpNegoOrderActionField_IInfo_set)
 
-	# ¾­¼Í¹«Ë¾²¿ÃÅ´úÂë
+	# ï¿½ï¿½ï¿½Í¹ï¿½Ë¾ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿½
     DepartmentID = property(_traderapi.CTORATstpNegoOrderActionField_DepartmentID_get, _traderapi.CTORATstpNegoOrderActionField_DepartmentID_set)
 
-	# ²Ù×÷ÓÃ»§
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
     ActionUser = property(_traderapi.CTORATstpNegoOrderActionField_ActionUser_get, _traderapi.CTORATstpNegoOrderActionField_ActionUser_set)
 
-	# ½»Ò×ÈÕ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     TradingDay = property(_traderapi.CTORATstpNegoOrderActionField_TradingDay_get, _traderapi.CTORATstpNegoOrderActionField_TradingDay_set)
 
-	# ²Ù×÷ÈÕÆÚ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ActionDate = property(_traderapi.CTORATstpNegoOrderActionField_ActionDate_get, _traderapi.CTORATstpNegoOrderActionField_ActionDate_set)
 
-	# ²Ù×÷Ê±¼ä
+	# ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     ActionTime = property(_traderapi.CTORATstpNegoOrderActionField_ActionTime_get, _traderapi.CTORATstpNegoOrderActionField_ActionTime_set)
 
-	# ³·µ¥×´Ì¬
+	# ï¿½ï¿½ï¿½ï¿½×´Ì¬
     CancelOrderStatus = property(_traderapi.CTORATstpNegoOrderActionField_CancelOrderStatus_get, _traderapi.CTORATstpNegoOrderActionField_CancelOrderStatus_set)
 
-	# ×´Ì¬ÐÅÏ¢
+	# ×´Ì¬ï¿½ï¿½Ï¢
     StatusMsg = property(_traderapi.CTORATstpNegoOrderActionField_StatusMsg_get, _traderapi.CTORATstpNegoOrderActionField_StatusMsg_set)
 
-	# ÇëÇó±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     RequestID = property(_traderapi.CTORATstpNegoOrderActionField_RequestID_get, _traderapi.CTORATstpNegoOrderActionField_RequestID_set)
 
-	# Ç°ÖÃ±àºÅ
+	# Ç°ï¿½Ã±ï¿½ï¿?
     ActionFrontID = property(_traderapi.CTORATstpNegoOrderActionField_ActionFrontID_get, _traderapi.CTORATstpNegoOrderActionField_ActionFrontID_set)
 
-	# »á»°±àºÅ
+	# ï¿½á»°ï¿½ï¿½ï¿?
     ActionSessionID = property(_traderapi.CTORATstpNegoOrderActionField_ActionSessionID_get, _traderapi.CTORATstpNegoOrderActionField_ActionSessionID_set)
 
-	# ½»Ò×µ¥Ôª´úÂë
+	# ï¿½ï¿½ï¿½×µï¿½Ôªï¿½ï¿½ï¿½ï¿½
     PbuID = property(_traderapi.CTORATstpNegoOrderActionField_PbuID_get, _traderapi.CTORATstpNegoOrderActionField_PbuID_set)
 
-	# IPµØÖ·
+	# IPï¿½ï¿½Ö·
     IPAddress = property(_traderapi.CTORATstpNegoOrderActionField_IPAddress_get, _traderapi.CTORATstpNegoOrderActionField_IPAddress_set)
 
-	# MacµØÖ·
+	# Macï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpNegoOrderActionField_MacAddress_get, _traderapi.CTORATstpNegoOrderActionField_MacAddress_set)
 
     def __init__(self):
@@ -7176,27 +7176,27 @@ _traderapi.CTORATstpNegoOrderActionField_swigregister(CTORATstpNegoOrderActionFi
 
 
 
-#########################################²éÑ¯Ð­Òé½»Ò×³É½»############################################
+#########################################ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×³É½ï¿½############################################
 class CTORATstpQryNegoTradeField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryNegoTradeField_ExchangeID_get, _traderapi.CTORATstpQryNegoTradeField_ExchangeID_set)
 
-	# Í¶×ÊÕß´úÂë
+	# Í¶ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½
     InvestorID = property(_traderapi.CTORATstpQryNegoTradeField_InvestorID_get, _traderapi.CTORATstpQryNegoTradeField_InvestorID_set)
 
-	# Í¶×Êµ¥Ôª´úÂë
+	# Í¶ï¿½Êµï¿½Ôªï¿½ï¿½ï¿½ï¿½
     BusinessUnitID = property(_traderapi.CTORATstpQryNegoTradeField_BusinessUnitID_get, _traderapi.CTORATstpQryNegoTradeField_BusinessUnitID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryNegoTradeField_SecurityID_get, _traderapi.CTORATstpQryNegoTradeField_SecurityID_set)
 
-	# ¹É¶«ÕË»§´úÂë
+	# ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½
     ShareholderID = property(_traderapi.CTORATstpQryNegoTradeField_ShareholderID_get, _traderapi.CTORATstpQryNegoTradeField_ShareholderID_set)
 
-	# ³É½»±àºÅ
+	# ï¿½É½ï¿½ï¿½ï¿½ï¿?
     TradeID = property(_traderapi.CTORATstpQryNegoTradeField_TradeID_get, _traderapi.CTORATstpQryNegoTradeField_TradeID_set)
 
 	# Insert Time
@@ -7215,15 +7215,15 @@ _traderapi.CTORATstpQryNegoTradeField_swigregister(CTORATstpQryNegoTradeField)
 
 
 
-#########################################²éÑ¯Ð­Òé½»Ò×²ÎÊý############################################
+#########################################ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×²ï¿½ï¿½ï¿½############################################
 class CTORATstpQryNegotiationParamField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpQryNegotiationParamField_ExchangeID_get, _traderapi.CTORATstpQryNegotiationParamField_ExchangeID_set)
 
-	# Ö¤È¯´úÂë
+	# Ö¤È¯ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpQryNegotiationParamField_SecurityID_get, _traderapi.CTORATstpQryNegotiationParamField_SecurityID_set)
 
     def __init__(self):
@@ -7236,39 +7236,39 @@ _traderapi.CTORATstpQryNegotiationParamField_swigregister(CTORATstpQryNegotiatio
 
 
 
-#########################################Ð­Òé½»Ò×²ÎÊý############################################
+#########################################Ð­ï¿½é½»ï¿½×²ï¿½ï¿½ï¿½############################################
 class CTORATstpNegotiationParamField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ½»Ò×Ëù´úÂë
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ExchangeID = property(_traderapi.CTORATstpNegotiationParamField_ExchangeID_get, _traderapi.CTORATstpNegotiationParamField_ExchangeID_set)
 
-	# ºÏÔ¼´úÂë
+	# ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½
     SecurityID = property(_traderapi.CTORATstpNegotiationParamField_SecurityID_get, _traderapi.CTORATstpNegotiationParamField_SecurityID_set)
 
-	# ÂòÈë½»Ò×µ¥Î»
+	# ï¿½ï¿½ï¿½ë½»ï¿½×µï¿½Î»
     BuyTradingUnit = property(_traderapi.CTORATstpNegotiationParamField_BuyTradingUnit_get, _traderapi.CTORATstpNegotiationParamField_BuyTradingUnit_set)
 
-	# Âô³ö½»Ò×µ¥Î»
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×µï¿½Î»
     SellTradingUnit = property(_traderapi.CTORATstpNegotiationParamField_SellTradingUnit_get, _traderapi.CTORATstpNegotiationParamField_SellTradingUnit_set)
 
-	# ÊýÁ¿ÃÅ¼÷
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Å¼ï¿½
     MinOrderVolume = property(_traderapi.CTORATstpNegotiationParamField_MinOrderVolume_get, _traderapi.CTORATstpNegotiationParamField_MinOrderVolume_set)
 
-	# ½ð¶îÃÅ¼÷
+	# ï¿½ï¿½ï¿½ï¿½Å¼ï¿?
     MinOrderAmt = property(_traderapi.CTORATstpNegotiationParamField_MinOrderAmt_get, _traderapi.CTORATstpNegotiationParamField_MinOrderAmt_set)
 
-	# ×îÐ¡±ä¶¯¼ÛÎ»
+	# ï¿½ï¿½Ð¡ï¿½ä¶¯ï¿½ï¿½Î»
     PriceTick = property(_traderapi.CTORATstpNegotiationParamField_PriceTick_get, _traderapi.CTORATstpNegotiationParamField_PriceTick_set)
 
-	# ÕÇÍ£°å¼Û
+	# ï¿½ï¿½Í£ï¿½ï¿½ï¿?
     UpperLimitPrice = property(_traderapi.CTORATstpNegotiationParamField_UpperLimitPrice_get, _traderapi.CTORATstpNegotiationParamField_UpperLimitPrice_set)
 
-	# µøÍ£°å¼Û
+	# ï¿½ï¿½Í£ï¿½ï¿½ï¿?
     LowerLimitPrice = property(_traderapi.CTORATstpNegotiationParamField_LowerLimitPrice_get, _traderapi.CTORATstpNegotiationParamField_LowerLimitPrice_set)
 
-	# ÊÇ·ñÓÐ×öÊÐÉÌ
+	# ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     bMarketMaker = property(_traderapi.CTORATstpNegotiationParamField_bMarketMaker_get, _traderapi.CTORATstpNegotiationParamField_bMarketMaker_set)
 
     def __init__(self):
@@ -7281,27 +7281,27 @@ _traderapi.CTORATstpNegotiationParamField_swigregister(CTORATstpNegotiationParam
 
 
 
-#########################################fensÓÃ»§ÐÅÏ¢############################################
+#########################################fensï¿½Ã»ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpFensUserInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# °æ±¾ÐÅÏ¢
+	# ï¿½æ±¾ï¿½ï¿½Ï¢
     FensVer = property(_traderapi.CTORATstpFensUserInfoField_FensVer_get, _traderapi.CTORATstpFensUserInfoField_FensVer_set)
 
-	# »·¾³±àºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
     FensEnvID = property(_traderapi.CTORATstpFensUserInfoField_FensEnvID_get, _traderapi.CTORATstpFensUserInfoField_FensEnvID_set)
 
-	# ½Úµã±àºÅ
+	# ï¿½Úµï¿½ï¿½ï¿½
     FensNodeID = property(_traderapi.CTORATstpFensUserInfoField_FensNodeID_get, _traderapi.CTORATstpFensUserInfoField_FensNodeID_set)
 
-	# FensÓÃ»§´úÂë
+	# Fensï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     FensUserID = property(_traderapi.CTORATstpFensUserInfoField_FensUserID_get, _traderapi.CTORATstpFensUserInfoField_FensUserID_set)
 
-	# ÓÃ»§´úÂë
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     UserID = property(_traderapi.CTORATstpFensUserInfoField_UserID_get, _traderapi.CTORATstpFensUserInfoField_UserID_set)
 
-	# ÖÕ¶ËÐÅÏ¢
+	# ï¿½Õ¶ï¿½ï¿½ï¿½Ï¢
     ClientInfo = property(_traderapi.CTORATstpFensUserInfoField_ClientInfo_get, _traderapi.CTORATstpFensUserInfoField_ClientInfo_set)
 
     def __init__(self):
@@ -7314,27 +7314,27 @@ _traderapi.CTORATstpFensUserInfoField_swigregister(CTORATstpFensUserInfoField)
 
 
 
-#########################################Á¬½ÓÐÅÏ¢############################################
+#########################################ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢############################################
 class CTORATstpConnectionInfoField(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	# ÓÃ»§ÇëÇó±àºÅ
+	# ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     UserRequestID = property(_traderapi.CTORATstpConnectionInfoField_UserRequestID_get, _traderapi.CTORATstpConnectionInfoField_UserRequestID_set)
 
-	# ÄÚÍøIPµØÖ·
+	# ï¿½ï¿½ï¿½ï¿½IPï¿½ï¿½Ö·
     InnerIPAddress = property(_traderapi.CTORATstpConnectionInfoField_InnerIPAddress_get, _traderapi.CTORATstpConnectionInfoField_InnerIPAddress_set)
 
-	# ÄÚÍø¶Ë¿ÚºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ë¿Úºï¿½
     InnerPort = property(_traderapi.CTORATstpConnectionInfoField_InnerPort_get, _traderapi.CTORATstpConnectionInfoField_InnerPort_set)
 
-	# ÍâÍøIPµØÖ·
+	# ï¿½ï¿½ï¿½ï¿½IPï¿½ï¿½Ö·
     OuterIPAddress = property(_traderapi.CTORATstpConnectionInfoField_OuterIPAddress_get, _traderapi.CTORATstpConnectionInfoField_OuterIPAddress_set)
 
-	# ÍâÍø¶Ë¿ÚºÅ
+	# ï¿½ï¿½ï¿½ï¿½ï¿½Ë¿Úºï¿½
     OuterPort = property(_traderapi.CTORATstpConnectionInfoField_OuterPort_get, _traderapi.CTORATstpConnectionInfoField_OuterPort_set)
 
-	# MACµØÖ·
+	# MACï¿½ï¿½Ö·
     MacAddress = property(_traderapi.CTORATstpConnectionInfoField_MacAddress_get, _traderapi.CTORATstpConnectionInfoField_MacAddress_set)
 
     def __init__(self):
@@ -7348,363 +7348,363 @@ class CTORATstpTraderSpi(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-	#µ±¿Í»§¶ËÓë½»Ò×ºóÌ¨½¨Á¢ÆðÍ¨ÐÅÁ¬½ÓÊ±(»¹Î´µÇÂ¼Ç°),¸Ã·½·¨±»µ÷ÓÃ
+	#ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½ë½»ï¿½×ºï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±(ï¿½ï¿½Î´ï¿½ï¿½Â¼Ç°),ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     def OnFrontConnected(self) -> "void":
         return _traderapi.CTORATstpTraderSpi_OnFrontConnected(self)
 
-	#µ±¿Í»§¶ËÓë½»Ò×ºóÌ¨Í¨ÐÅÁ¬½Ó¶Ï¿ªÊ±,¸Ã·½·¨±»µ÷ÓÃ,µ±·¢ÉúÕâ¸öÇé¿öºó,API»á×Ô¶¯ÖØÐÂÁ¬½Ó,¿Í»§¶Ë¿É²»×ö´¦Àí¡£nReasonÎª¶Ï¿ªÔ­Òò,-3 Á¬½ÓÒÑ¶Ï¿ª,-4 ÍøÂç¶ÁÊ§°Ü,-5 ÍøÂçÐ´Ê§°Ü,-6 ¶©ÔÄÁ÷´íÎó,-7 Á÷ÐòºÅ´íÎó,-8 ´íÎóµÄÐÄÌø±¨ÎÄ,-9 ´íÎóµÄ±¨ÎÄ,-15ÍøÂç¶ÁÊ§°Ü,-16ÍøÂçÐ´Ê§°Ü
+	#ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½ë½»ï¿½×ºï¿½Ì¨Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶Ï¿ï¿½Ê±,ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,APIï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½Í»ï¿½ï¿½Ë¿É²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½nReasonÎªï¿½Ï¿ï¿½Ô­ï¿½ï¿½,-3 ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¶Ï¿ï¿½,-4 ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿?,-5 ï¿½ï¿½ï¿½ï¿½Ð´Ê§ï¿½ï¿½,-6 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,-7 ï¿½ï¿½ï¿½ï¿½Å´ï¿½ï¿½ï¿?,-8 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?,-9 ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿?,-15ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿?,-16ï¿½ï¿½ï¿½ï¿½Ð´Ê§ï¿½ï¿½
     def OnFrontDisconnected(self, nReason: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnFrontDisconnected(self, nReason)
 
-	#´íÎóÓ¦´ð
+	#ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½
     def OnRspError(self, pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspError(self, pRspInfoField, nRequestID, bIsLast)
 
-	#»ñÈ¡Á¬½ÓÐÅÏ¢Ó¦´ð,²ÎÊýpConnectionInfoFieldÊÇÒ»¸öCTORATstpConnectionInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢Ó¦ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pConnectionInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpConnectionInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspGetConnectionInfo(self, pConnectionInfoField: "CTORATstpConnectionInfoField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspGetConnectionInfo(self, pConnectionInfoField, pRspInfoField, nRequestID)
 
-	#µÇÂ¼ÏìÓ¦,²ÎÊýpRspUserLoginFieldÊÇÒ»¸öCTORATstpRspUserLoginFieldÀà¶ÔÏó
+	#ï¿½ï¿½Â¼ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pRspUserLoginFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpRspUserLoginFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspUserLogin(self, pRspUserLoginField: "CTORATstpRspUserLoginField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspUserLogin(self, pRspUserLoginField, pRspInfoField, nRequestID)
 
-	#µÇ³öÏìÓ¦,²ÎÊýpUserLogoutFieldÊÇÒ»¸öCTORATstpUserLogoutFieldÀà¶ÔÏó
+	#ï¿½Ç³ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pUserLogoutFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpUserLogoutFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspUserLogout(self, pUserLogoutField: "CTORATstpUserLogoutField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspUserLogout(self, pUserLogoutField, pRspInfoField, nRequestID)
 
-	#ÐÞ¸ÄÃÜÂëÏìÓ¦,²ÎÊýpUserPasswordUpdateFieldÊÇÒ»¸öCTORATstpUserPasswordUpdateFieldÀà¶ÔÏó
+	#ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pUserPasswordUpdateFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpUserPasswordUpdateFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspUserPasswordUpdate(self, pUserPasswordUpdateField: "CTORATstpUserPasswordUpdateField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspUserPasswordUpdate(self, pUserPasswordUpdateField, pRspInfoField, nRequestID)
 
-	#Â¼ÈëÉè±¸ÐòÁÐÏìÓ¦,²ÎÊýpRspInputDeviceSerialFieldÊÇÒ»¸öCTORATstpRspInputDeviceSerialFieldÀà¶ÔÏó
+	#Â¼ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pRspInputDeviceSerialFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpRspInputDeviceSerialFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspInputDeviceSerial(self, pRspInputDeviceSerialField: "CTORATstpRspInputDeviceSerialField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspInputDeviceSerial(self, pRspInputDeviceSerialField, pRspInfoField, nRequestID)
 
-	#±¨µ¥Â¼ÈëÏìÓ¦,²ÎÊýpInputOrderFieldÊÇÒ»¸öCTORATstpInputOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInputOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspOrderInsert(self, pInputOrderField: "CTORATstpInputOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspOrderInsert(self, pInputOrderField, pRspInfoField, nRequestID)
 
-	#±¨µ¥»Ø±¨,²ÎÊýpOrderFieldÊÇÒ»¸öCTORATstpOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnOrder(self, pOrderField: "CTORATstpOrderField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnOrder(self, pOrderField)
 
-	#±¨µ¥´íÎó»Ø±¨,²ÎÊýpInputOrderFieldÊÇÒ»¸öCTORATstpInputOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿?,ï¿½ï¿½ï¿½ï¿½pInputOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnErrRtnOrderInsert(self, pInputOrderField: "CTORATstpInputOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnErrRtnOrderInsert(self, pInputOrderField, pRspInfoField, nRequestID)
 
-	#³É½»»Ø±¨,²ÎÊýpTradeFieldÊÇÒ»¸öCTORATstpTradeFieldÀà¶ÔÏó
+	#ï¿½É½ï¿½ï¿½Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pTradeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpTradeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnTrade(self, pTradeField: "CTORATstpTradeField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnTrade(self, pTradeField)
 
-	#³·µ¥ÏìÓ¦,²ÎÊýpInputOrderActionFieldÊÇÒ»¸öCTORATstpInputOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInputOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspOrderAction(self, pInputOrderActionField: "CTORATstpInputOrderActionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspOrderAction(self, pInputOrderActionField, pRspInfoField, nRequestID)
 
-	#³·µ¥´íÎó»Ø±¨,²ÎÊýpInputOrderActionFieldÊÇÒ»¸öCTORATstpInputOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿?,ï¿½ï¿½ï¿½ï¿½pInputOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnErrRtnOrderAction(self, pInputOrderActionField: "CTORATstpInputOrderActionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnErrRtnOrderAction(self, pInputOrderActionField, pRspInfoField, nRequestID)
 
-	#Ìõ¼þµ¥Â¼ÈëÏìÓ¦,²ÎÊýpInputCondOrderFieldÊÇÒ»¸öCTORATstpInputCondOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInputCondOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputCondOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspCondOrderInsert(self, pInputCondOrderField: "CTORATstpInputCondOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspCondOrderInsert(self, pInputCondOrderField, pRspInfoField, nRequestID)
 
-	#Ìõ¼þµ¥»Ø±¨,²ÎÊýpConditionOrderFieldÊÇÒ»¸öCTORATstpConditionOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pConditionOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpConditionOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnCondOrder(self, pConditionOrderField: "CTORATstpConditionOrderField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnCondOrder(self, pConditionOrderField)
 
-	#Ìõ¼þµ¥Â¼Èë´íÎó»Ø±¨,²ÎÊýpInputCondOrderFieldÊÇÒ»¸öCTORATstpInputCondOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pInputCondOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputCondOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnErrRtnCondOrderInsert(self, pInputCondOrderField: "CTORATstpInputCondOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnErrRtnCondOrderInsert(self, pInputCondOrderField, pRspInfoField, nRequestID)
 
-	#Ìõ¼þµ¥³·µ¥ÏìÓ¦,²ÎÊýpInputCondOrderActionFieldÊÇÒ»¸öCTORATstpInputCondOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInputCondOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputCondOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspCondOrderAction(self, pInputCondOrderActionField: "CTORATstpInputCondOrderActionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspCondOrderAction(self, pInputCondOrderActionField, pRspInfoField, nRequestID)
 
-	#Ìõ¼þµ¥³·µ¥´íÎó»Ø±¨,²ÎÊýpInputCondOrderActionFieldÊÇÒ»¸öCTORATstpInputCondOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿?,ï¿½ï¿½ï¿½ï¿½pInputCondOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputCondOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnErrRtnCondOrderAction(self, pInputCondOrderActionField: "CTORATstpInputCondOrderActionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnErrRtnCondOrderAction(self, pInputCondOrderActionField, pRspInfoField, nRequestID)
 
-	#Ð­Òé½»Ò×±¨µ¥Â¼ÈëÏìÓ¦,²ÎÊýpInputNegoOrderFieldÊÇÒ»¸öCTORATstpInputNegoOrderFieldÀà¶ÔÏó
+	#Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInputNegoOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputNegoOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspNegoOrderInsert(self, pInputNegoOrderField: "CTORATstpInputNegoOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspNegoOrderInsert(self, pInputNegoOrderField, pRspInfoField, nRequestID)
 
-	#Ð­Òé½»Ò×±¨µ¥»Ø±¨,²ÎÊýpNegoOrderFieldÊÇÒ»¸öCTORATstpNegoOrderFieldÀà¶ÔÏó
+	#Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½ï¿½Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pNegoOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpNegoOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnNegoOrder(self, pNegoOrderField: "CTORATstpNegoOrderField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnNegoOrder(self, pNegoOrderField)
 
-	#Ð­Òé½»Ò×±¨µ¥´íÎó»Ø±¨,²ÎÊýpInputNegoOrderFieldÊÇÒ»¸öCTORATstpInputNegoOrderFieldÀà¶ÔÏó
+	#Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿?,ï¿½ï¿½ï¿½ï¿½pInputNegoOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputNegoOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnErrRtnNegoOrderInsert(self, pInputNegoOrderField: "CTORATstpInputNegoOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnErrRtnNegoOrderInsert(self, pInputNegoOrderField, pRspInfoField, nRequestID)
 
-	#Ð­Òé½»Ò×³É½»»Ø±¨,²ÎÊýpNegoTradeFieldÊÇÒ»¸öCTORATstpNegoTradeFieldÀà¶ÔÏó
+	#Ð­ï¿½é½»ï¿½×³É½ï¿½ï¿½Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pNegoTradeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpNegoTradeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnNegoTrade(self, pNegoTradeField: "CTORATstpNegoTradeField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnNegoTrade(self, pNegoTradeField)
 
-	#Ð­Òé½»Ò×±¨µ¥²Ù×÷Â¼ÈëÏìÓ¦,²ÎÊýpInputNegoOrderActionFieldÊÇÒ»¸öCTORATstpInputNegoOrderActionFieldÀà¶ÔÏó
+	#Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInputNegoOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputNegoOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspNegoOrderAction(self, pInputNegoOrderActionField: "CTORATstpInputNegoOrderActionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspNegoOrderAction(self, pInputNegoOrderActionField, pRspInfoField, nRequestID)
 
-	#Ð­Òé½»Ò×±¨µ¥²Ù×÷´íÎó»Ø±¨,²ÎÊýpInputNegoOrderActionFieldÊÇÒ»¸öCTORATstpInputNegoOrderActionFieldÀà¶ÔÏó
+	#Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿?,ï¿½ï¿½ï¿½ï¿½pInputNegoOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputNegoOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnErrRtnNegoOrderAction(self, pInputNegoOrderActionField: "CTORATstpInputNegoOrderActionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnErrRtnNegoOrderAction(self, pInputNegoOrderActionField, pRspInfoField, nRequestID)
 
-	#±¨µ¥Â¼ÈëÏìÓ¦£¨À©Õ¹£©,²ÎÊýpInputOrderExFieldÊÇÒ»¸öCTORATstpInputOrderExFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputOrderExFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderExFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspOrderInsertEx(self, pInputOrderExField: "CTORATstpInputOrderExField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspOrderInsertEx(self, pInputOrderExField, pRspInfoField, nRequestID)
 
-	#±¨µ¥²Ù×÷ÏìÓ¦£¨À©Õ¹£©,²ÎÊýpInputOrderActionExFieldÊÇÒ»¸öCTORATstpInputOrderActionExFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputOrderActionExFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderActionExFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspOrderActionEx(self, pInputOrderActionExField: "CTORATstpInputOrderActionExField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspOrderActionEx(self, pInputOrderActionExField, pRspInfoField, nRequestID)
 
-	#ÊÐ³¡×´Ì¬»Ø±¨,²ÎÊýpMarketStatusFieldÊÇÒ»¸öCTORATstpMarketStatusFieldÀà¶ÔÏó
+	#ï¿½Ð³ï¿½×´Ì¬ï¿½Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pMarketStatusFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpMarketStatusFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnMarketStatus(self, pMarketStatusField: "CTORATstpMarketStatusField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnMarketStatus(self, pMarketStatusField)
 
-	#×Ê½ð×ªÒÆÏìÓ¦,²ÎÊýpInputTransferFundFieldÊÇÒ»¸öCTORATstpInputTransferFundFieldÀà¶ÔÏó
+	#ï¿½Ê½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInputTransferFundFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputTransferFundFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspTransferFund(self, pInputTransferFundField: "CTORATstpInputTransferFundField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspTransferFund(self, pInputTransferFundField, pRspInfoField, nRequestID)
 
-	#×Ê½ð×ªÒÆ´íÎó»Ø±¨,²ÎÊýpInputTransferFundFieldÊÇÒ»¸öCTORATstpInputTransferFundFieldÀà¶ÔÏó
+	#ï¿½Ê½ï¿½×ªï¿½Æ´ï¿½ï¿½ï¿½Ø±ï¿?,ï¿½ï¿½ï¿½ï¿½pInputTransferFundFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputTransferFundFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnErrRtnTransferFund(self, pInputTransferFundField: "CTORATstpInputTransferFundField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnErrRtnTransferFund(self, pInputTransferFundField, pRspInfoField, nRequestID)
 
-	#×Ê½ð×ªÒÆ»Ø±¨,²ÎÊýpTransferFundFieldÊÇÒ»¸öCTORATstpTransferFundFieldÀà¶ÔÏó
+	#ï¿½Ê½ï¿½×ªï¿½Æ»Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pTransferFundFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpTransferFundFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnTransferFund(self, pTransferFundField: "CTORATstpTransferFundField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnTransferFund(self, pTransferFundField)
 
-	#²ÖÎ»×ªÒÆÏìÓ¦,²ÎÊýpInputTransferPositionFieldÊÇÒ»¸öCTORATstpInputTransferPositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Î»×ªï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInputTransferPositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputTransferPositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspTransferPosition(self, pInputTransferPositionField: "CTORATstpInputTransferPositionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspTransferPosition(self, pInputTransferPositionField, pRspInfoField, nRequestID)
 
-	#²ÖÎ»×ªÒÆ´íÎó»Ø±¨,²ÎÊýpInputTransferPositionFieldÊÇÒ»¸öCTORATstpInputTransferPositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Î»×ªï¿½Æ´ï¿½ï¿½ï¿½Ø±ï¿?,ï¿½ï¿½ï¿½ï¿½pInputTransferPositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputTransferPositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnErrRtnTransferPosition(self, pInputTransferPositionField: "CTORATstpInputTransferPositionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnErrRtnTransferPosition(self, pInputTransferPositionField, pRspInfoField, nRequestID)
 
-	#²ÖÎ»×ªÒÆ»Ø±¨,²ÎÊýpTransferPositionFieldÊÇÒ»¸öCTORATstpTransferPositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Î»×ªï¿½Æ»Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pTransferPositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpTransferPositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnTransferPosition(self, pTransferPositionField: "CTORATstpTransferPositionField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnTransferPosition(self, pTransferPositionField)
 
-	#ÍâÎ§ÏµÍ³²ÖÎ»×ªÒÆ»Ø±¨,²ÎÊýpPeripheryTransferPositionFieldÊÇÒ»¸öCTORATstpPeripheryTransferPositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Î§ÏµÍ³ï¿½ï¿½Î»×ªï¿½Æ»Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pPeripheryTransferPositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpPeripheryTransferPositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnPeripheryTransferPosition(self, pPeripheryTransferPositionField: "CTORATstpPeripheryTransferPositionField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnPeripheryTransferPosition(self, pPeripheryTransferPositionField)
 
-	#ÍâÎ§ÏµÍ³×Ê½ð×ªÒÆ»Ø±¨,²ÎÊýpPeripheryTransferFundFieldÊÇÒ»¸öCTORATstpPeripheryTransferFundFieldÀà¶ÔÏó
+	#ï¿½ï¿½Î§ÏµÍ³ï¿½Ê½ï¿½×ªï¿½Æ»Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pPeripheryTransferFundFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpPeripheryTransferFundFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnPeripheryTransferFund(self, pPeripheryTransferFundField: "CTORATstpPeripheryTransferFundField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnPeripheryTransferFund(self, pPeripheryTransferFundField)
 
-	#²éÑ¯¼¯ÖÐ½»Ò×ÏµÍ³×Ê½ðÏìÓ¦,²ÎÊýpRspInquiryJZFundFieldÊÇÒ»¸öCTORATstpRspInquiryJZFundFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½ÏµÍ³ï¿½Ê½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pRspInquiryJZFundFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpRspInquiryJZFundFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspInquiryJZFund(self, pRspInquiryJZFundField: "CTORATstpRspInquiryJZFundField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspInquiryJZFund(self, pRspInquiryJZFundField, pRspInfoField, nRequestID)
 
-	#²éÑ¯ÒøÐÐÕË»§Óà¶îÏìÓ¦,²ÎÊýpRspInquiryBankAccountFundFieldÊÇÒ»¸öCTORATstpRspInquiryBankAccountFundFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pRspInquiryBankAccountFundFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpRspInquiryBankAccountFundFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspInquiryBankAccountFund(self, pRspInquiryBankAccountFundField: "CTORATstpRspInquiryBankAccountFundField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspInquiryBankAccountFund(self, pRspInquiryBankAccountFundField, pRspInfoField, nRequestID)
 
-	#½»Ò×Í¨Öª»Ø±¨,²ÎÊýpTradingNoticeFieldÊÇÒ»¸öCTORATstpTradingNoticeFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½Í¨Öªï¿½Ø±ï¿½,ï¿½ï¿½ï¿½ï¿½pTradingNoticeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpTradingNoticeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRtnTradingNotice(self, pTradingNoticeField: "CTORATstpTradingNoticeField") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRtnTradingNotice(self, pTradingNoticeField)
 
-	#²éÑ¯×î´ó±¨µ¥Á¿ÏìÓ¦,²ÎÊýpRspInquiryMaxOrderVolumeFieldÊÇÒ»¸öCTORATstpRspInquiryMaxOrderVolumeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ó±¨µï¿½ï¿½ï¿½ï¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pRspInquiryMaxOrderVolumeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpRspInquiryMaxOrderVolumeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspInquiryMaxOrderVolume(self, pRspInquiryMaxOrderVolumeField: "CTORATstpRspInquiryMaxOrderVolumeField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspInquiryMaxOrderVolume(self, pRspInquiryMaxOrderVolumeField, pRspInfoField, nRequestID)
 
-	#½»Ò×³É½»¼¯ÖÐ¶È²éÑ¯ÏìÓ¦,²ÎÊýpInquiryTradeConcentrationFieldÊÇÒ»¸öCTORATstpInquiryTradeConcentrationFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½×³É½ï¿½ï¿½ï¿½ï¿½Ð¶È²ï¿½Ñ¯ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInquiryTradeConcentrationFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInquiryTradeConcentrationFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspInquiryTradeConcentration(self, pInquiryTradeConcentrationField: "CTORATstpInquiryTradeConcentrationField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspInquiryTradeConcentration(self, pInquiryTradeConcentrationField, pRspInfoField, nRequestID)
 
-	#ÇëÇóÐÞ¸Ä¿ª²Ö³É±¾ÏìÓ¦,²ÎÊýpReqModifyOpenPosCostFieldÊÇÒ»¸öCTORATstpReqModifyOpenPosCostFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä¿ï¿½ï¿½Ö³É±ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pReqModifyOpenPosCostFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpReqModifyOpenPosCostFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspModifyOpenPosCost(self, pReqModifyOpenPosCostField: "CTORATstpReqModifyOpenPosCostField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspModifyOpenPosCost(self, pReqModifyOpenPosCostField, pRspInfoField, nRequestID)
 
-	#Â¼Èë½Úµã×Ê½ð·ÖÅäÐÅÏ¢ÏìÓ¦,²ÎÊýpInputNodeFundAssignmentFieldÊÇÒ»¸öCTORATstpInputNodeFundAssignmentFieldÀà¶ÔÏó
+	#Â¼ï¿½ï¿½Úµï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInputNodeFundAssignmentFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputNodeFundAssignmentFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspInputNodeFundAssignment(self, pInputNodeFundAssignmentField: "CTORATstpInputNodeFundAssignmentField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspInputNodeFundAssignment(self, pInputNodeFundAssignmentField, pRspInfoField, nRequestID)
 
-	#²éÑ¯½Úµã×Ê½ð·ÖÅä±ÈÀýÏìÓ¦,²ÎÊýpRspInquiryNodeFundAssignmentFieldÊÇÒ»¸öCTORATstpRspInquiryNodeFundAssignmentFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Úµï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pRspInquiryNodeFundAssignmentFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpRspInquiryNodeFundAssignmentFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspInquiryNodeFundAssignment(self, pRspInquiryNodeFundAssignmentField: "CTORATstpRspInquiryNodeFundAssignmentField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspInquiryNodeFundAssignment(self, pRspInquiryNodeFundAssignmentField, pRspInfoField, nRequestID)
 
-	#²éÑ¯½»Ò×ËùÏìÓ¦,²ÎÊýpExchangeFieldÊÇÒ»¸öCTORATstpExchangeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pExchangeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpExchangeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryExchange(self, pExchangeField: "CTORATstpExchangeField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryExchange(self, pExchangeField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Ö¤È¯ÐÅÏ¢ÏìÓ¦,²ÎÊýpSecurityFieldÊÇÒ»¸öCTORATstpSecurityFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ö¤È¯ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pSecurityFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpSecurityFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQrySecurity(self, pSecurityField: "CTORATstpSecurityField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQrySecurity(self, pSecurityField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ÐÂ¹ÉÐÅÏ¢ÏìÓ¦,²ÎÊýpIPOInfoFieldÊÇÒ»¸öCTORATstpIPOInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pIPOInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpIPOInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryIPOInfo(self, pIPOInfoField: "CTORATstpIPOInfoField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryIPOInfo(self, pIPOInfoField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ÓÃ»§ÏìÓ¦,²ÎÊýpUserFieldÊÇÒ»¸öCTORATstpUserFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ã»ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pUserFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpUserFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryUser(self, pUserField: "CTORATstpUserField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryUser(self, pUserField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Í¶×ÊÕßÏìÓ¦,²ÎÊýpInvestorFieldÊÇÒ»¸öCTORATstpInvestorFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInvestorFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInvestorFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryInvestor(self, pInvestorField: "CTORATstpInvestorField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryInvestor(self, pInvestorField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯¹É¶«ÕË»§ÏìÓ¦,²ÎÊýpShareholderAccountFieldÊÇÒ»¸öCTORATstpShareholderAccountFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pShareholderAccountFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpShareholderAccountFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryShareholderAccount(self, pShareholderAccountField: "CTORATstpShareholderAccountField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryShareholderAccount(self, pShareholderAccountField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Åä¹ÉÅäÕ®ÐÅÏ¢ÏìÓ¦,²ÎÊýpRationalInfoFieldÊÇÒ»¸öCTORATstpRationalInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½Ï?¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pRationalInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpRationalInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryRationalInfo(self, pRationalInfoField: "CTORATstpRationalInfoField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryRationalInfo(self, pRationalInfoField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯±¨µ¥ÏìÓ¦,²ÎÊýpOrderFieldÊÇÒ»¸öCTORATstpOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryOrder(self, pOrderField: "CTORATstpOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryOrder(self, pOrderField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯³·µ¥ÇëÇó,²ÎÊýpOrderActionFieldÊÇÒ»¸öCTORATstpOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryOrderAction(self, pOrderActionField: "CTORATstpOrderActionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryOrderAction(self, pOrderActionField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯³É½»ÏìÓ¦,²ÎÊýpTradeFieldÊÇÒ»¸öCTORATstpTradeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½É½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pTradeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpTradeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryTrade(self, pTradeField: "CTORATstpTradeField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryTrade(self, pTradeField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯×Ê½ðÕË»§ÏìÓ¦,²ÎÊýpTradingAccountFieldÊÇÒ»¸öCTORATstpTradingAccountFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pTradingAccountFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpTradingAccountFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryTradingAccount(self, pTradingAccountField: "CTORATstpTradingAccountField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryTradingAccount(self, pTradingAccountField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Í¶×ÊÕß³Ö²ÖÏìÓ¦,²ÎÊýpPositionFieldÊÇÒ»¸öCTORATstpPositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ß³Ö²ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pPositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpPositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryPosition(self, pPositionField: "CTORATstpPositionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryPosition(self, pPositionField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯»ù´¡½»Ò×·ÑÂÊÏìÓ¦,²ÎÊýpTradingFeeFieldÊÇÒ»¸öCTORATstpTradingFeeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pTradingFeeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpTradingFeeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryTradingFee(self, pTradingFeeField: "CTORATstpTradingFeeField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryTradingFee(self, pTradingFeeField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Ó¶½ð·ÑÂÊÏìÓ¦,²ÎÊýpInvestorTradingFeeFieldÊÇÒ»¸öCTORATstpInvestorTradingFeeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pInvestorTradingFeeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInvestorTradingFeeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryInvestorTradingFee(self, pInvestorTradingFeeField: "CTORATstpInvestorTradingFeeField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryInvestorTradingFee(self, pInvestorTradingFeeField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ÐÂ¹ÉÉê¹º¶î¶ÈÏìÓ¦,²ÎÊýpIPOQuotaFieldÊÇÒ»¸öCTORATstpIPOQuotaFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½ï¿½ï¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pIPOQuotaFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpIPOQuotaFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryIPOQuota(self, pIPOQuotaField: "CTORATstpIPOQuotaField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryIPOQuota(self, pIPOQuotaField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯±¨µ¥Ã÷Ï¸×Ê½ðÏìÓ¦,²ÎÊýpOrderFundDetailFieldÊÇÒ»¸öCTORATstpOrderFundDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½Ê½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pOrderFundDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpOrderFundDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryOrderFundDetail(self, pOrderFundDetailField: "CTORATstpOrderFundDetailField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryOrderFundDetail(self, pOrderFundDetailField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯×Ê½ð×ªÒÆÁ÷Ë®ÏìÓ¦,²ÎÊýpFundTransferDetailFieldÊÇÒ»¸öCTORATstpFundTransferDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ê½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pFundTransferDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpFundTransferDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryFundTransferDetail(self, pFundTransferDetailField: "CTORATstpFundTransferDetailField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryFundTransferDetail(self, pFundTransferDetailField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯³Ö²Ö×ªÒÆÁ÷Ë®ÏìÓ¦,²ÎÊýpPositionTransferDetailFieldÊÇÒ»¸öCTORATstpPositionTransferDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ö²ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pPositionTransferDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpPositionTransferDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryPositionTransferDetail(self, pPositionTransferDetailField: "CTORATstpPositionTransferDetailField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryPositionTransferDetail(self, pPositionTransferDetailField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ÍâÎ§ÏµÍ³²ÖÎ»µ÷²¦Á÷Ë®ÏìÓ¦,²ÎÊýpPeripheryPositionTransferDetailFieldÊÇÒ»¸öCTORATstpPeripheryPositionTransferDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½Î§ÏµÍ³ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pPeripheryPositionTransferDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpPeripheryPositionTransferDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryPeripheryPositionTransferDetail(self, pPeripheryPositionTransferDetailField: "CTORATstpPeripheryPositionTransferDetailField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryPeripheryPositionTransferDetail(self, pPeripheryPositionTransferDetailField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ÍâÎ§ÏµÍ³×Ê½ðµ÷²¦Á÷Ë®ÏìÓ¦,²ÎÊýpPeripheryFundTransferDetailFieldÊÇÒ»¸öCTORATstpPeripheryFundTransferDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½Î§ÏµÍ³ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë?¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pPeripheryFundTransferDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpPeripheryFundTransferDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryPeripheryFundTransferDetail(self, pPeripheryFundTransferDetailField: "CTORATstpPeripheryFundTransferDetailField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryPeripheryFundTransferDetail(self, pPeripheryFundTransferDetailField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Õ®È¯×ª¹ÉÐÅÏ¢ÏìÓ¦,²ÎÊýpBondConversionInfoFieldÊÇÒ»¸öCTORATstpBondConversionInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Õ®È¯×ªï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pBondConversionInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpBondConversionInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryBondConversionInfo(self, pBondConversionInfoField: "CTORATstpBondConversionInfoField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryBondConversionInfo(self, pBondConversionInfoField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Õ®È¯»ØÊÛÐÅÏ¢ÏìÓ¦,²ÎÊýpBondPutbackInfoFieldÊÇÒ»¸öCTORATstpBondPutbackInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Õ®È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pBondPutbackInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpBondPutbackInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryBondPutbackInfo(self, pBondPutbackInfoField: "CTORATstpBondPutbackInfoField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryBondPutbackInfo(self, pBondPutbackInfoField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Í¶×ÊÕßÌõ¼þµ¥ÏÞÖÆ²ÎÊýÏìÓ¦,²ÎÊýpInvestorCondOrderLimitParamFieldÊÇÒ»¸öCTORATstpInvestorCondOrderLimitParamFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInvestorCondOrderLimitParamFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInvestorCondOrderLimitParamFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryInvestorCondOrderLimitParam(self, pInvestorCondOrderLimitParamField: "CTORATstpInvestorCondOrderLimitParamField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryInvestorCondOrderLimitParam(self, pInvestorCondOrderLimitParamField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Ìõ¼þµ¥ÏìÓ¦,²ÎÊýpConditionOrderFieldÊÇÒ»¸öCTORATstpConditionOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pConditionOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpConditionOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryConditionOrder(self, pConditionOrderField: "CTORATstpConditionOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryConditionOrder(self, pConditionOrderField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Ìõ¼þµ¥³·µ¥ÏìÓ¦,²ÎÊýpCondOrderActionFieldÊÇÒ»¸öCTORATstpCondOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pCondOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpCondOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryCondOrderAction(self, pCondOrderActionField: "CTORATstpCondOrderActionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryCondOrderAction(self, pCondOrderActionField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯½»Ò×Í¨ÖªÏìÓ¦,²ÎÊýpTradingNoticeFieldÊÇÒ»¸öCTORATstpTradingNoticeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Í¨Öªï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pTradingNoticeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpTradingNoticeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryTradingNotice(self, pTradingNoticeField: "CTORATstpTradingNoticeField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryTradingNotice(self, pTradingNoticeField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ÐÂ¹ÉÉê¹ºÅäºÅ½á¹ûÏìÓ¦,²ÎÊýpIPONumberResultFieldÊÇÒ»¸öCTORATstpIPONumberResultFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½Å½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pIPONumberResultFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpIPONumberResultFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryIPONumberResult(self, pIPONumberResultField: "CTORATstpIPONumberResultField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryIPONumberResult(self, pIPONumberResultField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ÐÂ¹ÉÉê¹ºÖÐÇ©½á¹ûÏìÓ¦,²ÎÊýpIPOMatchNumberResultFieldÊÇÒ»¸öCTORATstpIPOMatchNumberResultFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pIPOMatchNumberResultFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpIPOMatchNumberResultFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryIPOMatchNumberResult(self, pIPOMatchNumberResultField: "CTORATstpIPOMatchNumberResultField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryIPOMatchNumberResult(self, pIPOMatchNumberResultField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯½»Ò×Ð­ÒéÏìÓ¦,²ÎÊýpShareholderSpecPrivilegeFieldÊÇÒ»¸öCTORATstpShareholderSpecPrivilegeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Ð­ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pShareholderSpecPrivilegeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpShareholderSpecPrivilegeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryShareholderSpecPrivilege(self, pShareholderSpecPrivilegeField: "CTORATstpShareholderSpecPrivilegeField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryShareholderSpecPrivilege(self, pShareholderSpecPrivilegeField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ÊÐ³¡ÏìÓ¦,²ÎÊýpMarketFieldÊÇÒ»¸öCTORATstpMarketFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ð³ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pMarketFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpMarketFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryMarket(self, pMarketField: "CTORATstpMarketField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryMarket(self, pMarketField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ETFÇåµ¥ÐÅÏ¢ÏìÓ¦,²ÎÊýpETFFileFieldÊÇÒ»¸öCTORATstpETFFileFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ETFï¿½åµ¥ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pETFFileFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpETFFileFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryETFFile(self, pETFFileField: "CTORATstpETFFileField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryETFFile(self, pETFFileField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ETF³É·ÝÖ¤È¯ÐÅÏ¢ÏìÓ¦,²ÎÊýpETFBasketFieldÊÇÒ»¸öCTORATstpETFBasketFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ETFï¿½É·ï¿½Ö¤È¯ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pETFBasketFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpETFBasketFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryETFBasket(self, pETFBasketField: "CTORATstpETFBasketField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryETFBasket(self, pETFBasketField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Í¶×ÊÕßÏÞ²ÖÐÅÏ¢ÏìÓ¦,²ÎÊýpInvestorPositionLimitFieldÊÇÒ»¸öCTORATstpInvestorPositionLimitFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½Þ²ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pInvestorPositionLimitFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInvestorPositionLimitFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryInvestorPositionLimit(self, pInvestorPositionLimitField: "CTORATstpInvestorPositionLimitField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryInvestorPositionLimit(self, pInvestorPositionLimitField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Éî¸ÛÍ¨¹ú¼ÊÊÐ³¡»¥Áª×´Ì¬ÐÅÏ¢ÏìÓ¦,²ÎÊýpSZSEImcParamsFieldÊÇÒ»¸öCTORATstpSZSEImcParamsFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Í?¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì?¿½ï¿½Ï?¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pSZSEImcParamsFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpSZSEImcParamsFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQrySZSEImcParams(self, pSZSEImcParamsField: "CTORATstpSZSEImcParamsField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQrySZSEImcParams(self, pSZSEImcParamsField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Éî¸ÛÍ¨¹ú¼ÊÊÐ³¡»¥Áª»ãÂÊÐÅÏ¢ÏìÓ¦,²ÎÊýpSZSEImcExchangeRateFieldÊÇÒ»¸öCTORATstpSZSEImcExchangeRateFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Í?¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï?¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pSZSEImcExchangeRateFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpSZSEImcExchangeRateFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQrySZSEImcExchangeRate(self, pSZSEImcExchangeRateField: "CTORATstpSZSEImcExchangeRateField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQrySZSEImcExchangeRate(self, pSZSEImcExchangeRateField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Éî¸ÛÍ¨×îÐ¡¼Û²îÐÅÏ¢ÏìÓ¦,²ÎÊýpSZSEHKPriceTickInfoFieldÊÇÒ»¸öCTORATstpSZSEHKPriceTickInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Í?¿½ï¿½Ð¡ï¿½Û²ï¿½ï¿½ï¿½Ï?¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pSZSEHKPriceTickInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpSZSEHKPriceTickInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQrySZSEHKPriceTickInfo(self, pSZSEHKPriceTickInfoField: "CTORATstpSZSEHKPriceTickInfoField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQrySZSEHKPriceTickInfo(self, pSZSEHKPriceTickInfoField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯LOF»ù½ðÐÅÏ¢ÏìÓ¦,²ÎÊýpLofFundInfoFieldÊÇÒ»¸öCTORATstpLofFundInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯LOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pLofFundInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpLofFundInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryLofFundInfo(self, pLofFundInfoField: "CTORATstpLofFundInfoField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryLofFundInfo(self, pLofFundInfoField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Í¶×ÊÕßÖÊÑº³Ö²ÖÏìÓ¦,²ÎÊýpPledgePositionFieldÊÇÒ»¸öCTORATstpPledgePositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½Ö²ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pPledgePositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpPledgePositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryPledgePosition(self, pPledgePositionField: "CTORATstpPledgePositionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryPledgePosition(self, pPledgePositionField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Ö¤È¯ÖÊÑºÐÅÏ¢ÏìÓ¦,²ÎÊýpPledgeInfoFieldÊÇÒ»¸öCTORATstpPledgeInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ö¤È¯ï¿½ï¿½Ñºï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pPledgeInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpPledgeInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryPledgeInfo(self, pPledgeInfoField: "CTORATstpPledgeInfoField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryPledgeInfo(self, pPledgeInfoField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯ÏµÍ³½ÚµãÐÅÏ¢ÏìÓ¦,²ÎÊýpSystemNodeInfoFieldÊÇÒ»¸öCTORATstpSystemNodeInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ÏµÍ³ï¿½Úµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pSystemNodeInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpSystemNodeInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQrySystemNodeInfo(self, pSystemNodeInfoField: "CTORATstpSystemNodeInfoField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQrySystemNodeInfo(self, pSystemNodeInfoField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯±ê×¼È¯¶î¶ÈÏìÓ¦,²ÎÊýpStandardBondPositionFieldÊÇÒ»¸öCTORATstpStandardBondPositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½×¼È¯ï¿½ï¿½ï¿½ï¿½ï¿½Ó?,ï¿½ï¿½ï¿½ï¿½pStandardBondPositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpStandardBondPositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryStandardBondPosition(self, pStandardBondPositionField: "CTORATstpStandardBondPositionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryStandardBondPosition(self, pStandardBondPositionField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Î´µ½ÆÚÕ®È¯ÖÊÑº»Ø¹ºÎ¯ÍÐÏìÓ¦,²ÎÊýpPrematurityRepoOrderFieldÊÇÒ»¸öCTORATstpPrematurityRepoOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Î´ï¿½ï¿½ï¿½ï¿½Õ®È¯ï¿½ï¿½Ñºï¿½Ø¹ï¿½Î¯ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pPrematurityRepoOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpPrematurityRepoOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryPrematurityRepoOrder(self, pPrematurityRepoOrderField: "CTORATstpPrematurityRepoOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryPrematurityRepoOrder(self, pPrematurityRepoOrderField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Ð­Òé½»Ò×±¨µ¥ÏìÓ¦,²ÎÊýpNegoOrderFieldÊÇÒ»¸öCTORATstpNegoOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pNegoOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpNegoOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryNegoOrder(self, pNegoOrderField: "CTORATstpNegoOrderField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryNegoOrder(self, pNegoOrderField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Ð­Òé½»Ò×³·µ¥ÏìÓ¦,²ÎÊýpNegoOrderActionFieldÊÇÒ»¸öCTORATstpNegoOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×³ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pNegoOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpNegoOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryNegoOrderAction(self, pNegoOrderActionField: "CTORATstpNegoOrderActionField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryNegoOrderAction(self, pNegoOrderActionField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Ð­Òé½»Ò×³É½»ÏìÓ¦,²ÎÊýpNegoTradeFieldÊÇÒ»¸öCTORATstpNegoTradeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×³É½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pNegoTradeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpNegoTradeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryNegoTrade(self, pNegoTradeField: "CTORATstpNegoTradeField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryNegoTrade(self, pNegoTradeField, pRspInfoField, nRequestID, bIsLast)
 
-	#²éÑ¯Ð­Òé½»Ò×²ÎÊýÏìÓ¦,²ÎÊýpNegotiationParamFieldÊÇÒ»¸öCTORATstpNegotiationParamFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×²ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦,ï¿½ï¿½ï¿½ï¿½pNegotiationParamFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpNegotiationParamFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def OnRspQryNegotiationParam(self, pNegotiationParamField: "CTORATstpNegotiationParamField", pRspInfoField: "CTORATstpRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
         return _traderapi.CTORATstpTraderSpi_OnRspQryNegotiationParam(self, pNegotiationParamField, pRspInfoField, nRequestID, bIsLast)
 
@@ -7731,331 +7731,331 @@ class CTORATstpTraderApi(object):
     __repr__ = _swig_repr
 
     @staticmethod
-	#´´½¨½Ó¿Ú¶ÔÏó,²ÎÊý1ÎªÁ÷ÎÄ¼þ´æ·ÅÄ¿Â¼,²ÎÊý2ÎªÍøÂçÊý¾ÝÊÇ·ñ¼ÓÃÜ´«Êä
+	#ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿Ú¶ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½1Îªï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ä¿Â?,ï¿½ï¿½ï¿½ï¿½2Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ü´ï¿½ï¿½ï¿?
     def CreateTstpTraderApi(*args) -> "TORASTOCKAPI::CTORATstpTraderApi *":
         return _traderapi.CTORATstpTraderApi_CreateTstpTraderApi(*args)
 
     @staticmethod
-	#»ñÈ¡½Ó¿Ú°æ±¾ºÅ
+	#ï¿½ï¿½È¡ï¿½Ó¿Ú°æ±¾ï¿½ï¿½
     def GetApiVersion() -> "char const *":
         return _traderapi.CTORATstpTraderApi_GetApiVersion()
 
-	#É¾³ý½Ó¿Ú¶ÔÏó,²»ÔÙÊ¹ÓÃ±¾½Ó¿Ú¶ÔÏóÊ±,µ÷ÓÃ¸Ãº¯ÊýÉ¾³ý½Ó¿Ú¶ÔÏó
+	#É¾ï¿½ï¿½ï¿½Ó¿Ú¶ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã±ï¿½ï¿½Ó¿Ú¶ï¿½ï¿½ï¿½Ê±,ï¿½ï¿½ï¿½Ã¸Ãºï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½Ó¿Ú¶ï¿½ï¿½ï¿½
     def Release(self) -> "void":
         return _traderapi.CTORATstpTraderApi_Release(self)
 
-	#³õÊ¼»¯½Ó¿Ú¶ÔÏó,³õÊ¼»¯ÔËÐÐ»·¾³,Ö»ÓÐµ÷ÓÃºó,½Ó¿Ú²Å¿ªÊ¼¹¤×÷
+	#ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ó¿Ú¶ï¿½ï¿½ï¿½,ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½,Ö»ï¿½Ðµï¿½ï¿½Ãºï¿½,ï¿½Ó¿Ú²Å¿ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
     def Init(self) -> "void":
         return _traderapi.CTORATstpTraderApi_Init(self)
 
-	#µÈ´ý½Ó¿ÚÏß³Ì½áÊøÔËÐÐ
+	#ï¿½È´ï¿½ï¿½Ó¿ï¿½ï¿½ß³Ì½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     def Join(self) -> "int":
         return _traderapi.CTORATstpTraderApi_Join(self)
 
-	#×¢²áÇ°ÖÃ»úÍøÂçµØÖ·,pszFrontAddressÎªÇ°ÖÃ»úÍøÂçµØÖ·,¸ñÊ½tcp://127.0.0.1:17001
+	#×¢ï¿½ï¿½Ç°ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö?,pszFrontAddressÎªÇ°ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö?,ï¿½ï¿½Ê½tcp://127.0.0.1:17001
     def RegisterFront(self, pszFrontAddress: "char *") -> "void":
         return _traderapi.CTORATstpTraderApi_RegisterFront(self, pszFrontAddress)
 
-	#×¢²áÃû×Ö·þÎñÆ÷ÍøÂçµØÖ·,pszNsAddressÎªÃû×Ö·þÎñÆ÷ÍøÂçµØÖ·,¸ñÊ½tcp://127.0.0.1:12001
+	#×¢ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö?,pszNsAddressÎªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö?,ï¿½ï¿½Ê½tcp://127.0.0.1:12001
     def RegisterNameServer(self, pszNsAddress: "char *") -> "void":
         return _traderapi.CTORATstpTraderApi_RegisterNameServer(self, pszNsAddress)
 
-	#@param pFensUserInfoField£ºÓÃ»§ÐÅÏ¢¡£,²ÎÊýpFensUserInfoFieldÊÇÒ»¸öCTORATstpFensUserInfoFieldÀà¶ÔÏó
+	#@param pFensUserInfoFieldï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pFensUserInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpFensUserInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def RegisterFensUserInfo(self, pFensUserInfoField: "CTORATstpFensUserInfoField") -> "void":
         return _traderapi.CTORATstpTraderApi_RegisterFensUserInfo(self, pFensUserInfoField)
 
-	#×¢²á»Øµ÷½Ó¿Ú,pSpiÎªÅÉÉú×Ô»Øµ÷½Ó¿ÚÀàµÄÊµÀý
+	#×¢ï¿½ï¿½Øµï¿½ï¿½Ó¿ï¿?,pSpiÎªï¿½ï¿½ï¿½ï¿½ï¿½Ô»Øµï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿?
     def RegisterSpi(self, pSpi: "CTORATstpTraderSpi") -> "void":
         return _traderapi.CTORATstpTraderApi_RegisterSpi(self, pSpi)
 
-	#¶©ÔÄË½ÓÐÁ÷,nResumeTypeÎªË½ÓÐÁ÷ÖØ´«·½Ê½,TORA_TERT_RESTART±íÊ¾´Ó±¾½»Ò×ÈÕ¿ªÊ¼ÖØ´«,TORA_TERT_RESUME±íÊ¾´ÓÉÏ´ÎÊÕµ½µÄÐø´«,TORA_TERT_QUICK±íÊ¾Ö»´«ËÍµÇÂ¼ºóË½ÓÐÁ÷µÄÄÚÈÝ
+	#ï¿½ï¿½ï¿½ï¿½Ë½ï¿½ï¿½ï¿½ï¿½,nResumeTypeÎªË½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½Ê½,TORA_TERT_RESTARTï¿½ï¿½Ê¾ï¿½Ó±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¿ï¿½Ê¼ï¿½Ø´ï¿½,TORA_TERT_RESUMEï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ï´ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,TORA_TERT_QUICKï¿½ï¿½Ê¾Ö»ï¿½ï¿½ï¿½Íµï¿½Â¼ï¿½ï¿½Ë½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     def SubscribePrivateTopic(self, nResumeType: "TORASTOCKAPI::TORA_TE_RESUME_TYPE") -> "void":
         return _traderapi.CTORATstpTraderApi_SubscribePrivateTopic(self, nResumeType)
 
-	#¶©ÔÄ¹«¹²Á÷,nResumeTypeÎª¹«ÓÐÁ÷ÖØ´«·½Ê½,TORA_TERT_RESTART±íÊ¾´Ó±¾½»Ò×ÈÕ¿ªÊ¼ÖØ´«,TORA_TERT_RESUME±íÊ¾´ÓÉÏ´ÎÊÕµ½µÄÐø´«,TORA_TERT_QUICK±íÊ¾Ö»´«ËÍµÇÂ¼ºó¹«¹²Á÷µÄÄÚÈÝ
+	#ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½,nResumeTypeÎªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½Ê½,TORA_TERT_RESTARTï¿½ï¿½Ê¾ï¿½Ó±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¿ï¿½Ê¼ï¿½Ø´ï¿½,TORA_TERT_RESUMEï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ï´ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,TORA_TERT_QUICKï¿½ï¿½Ê¾Ö»ï¿½ï¿½ï¿½Íµï¿½Â¼ï¿½ó¹«¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     def SubscribePublicTopic(self, nResumeType: "TORASTOCKAPI::TORA_TE_RESUME_TYPE") -> "void":
         return _traderapi.CTORATstpTraderApi_SubscribePublicTopic(self, nResumeType)
 
-	#»ñÈ¡Á¬½ÓÐÅÏ¢
+	#ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
     def ReqGetConnectionInfo(self, nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqGetConnectionInfo(self, nRequestID)
 
-	#µÇÂ¼ÇëÇó,²ÎÊýpReqUserLoginFieldÊÇÒ»¸öCTORATstpReqUserLoginFieldÀà¶ÔÏó
+	#ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pReqUserLoginFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpReqUserLoginFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqUserLogin(self, pReqUserLoginField: "CTORATstpReqUserLoginField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqUserLogin(self, pReqUserLoginField, nRequestID)
 
-	#µÇ³öÇëÇó,²ÎÊýpUserLogoutFieldÊÇÒ»¸öCTORATstpUserLogoutFieldÀà¶ÔÏó
+	#ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pUserLogoutFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpUserLogoutFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqUserLogout(self, pUserLogoutField: "CTORATstpUserLogoutField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqUserLogout(self, pUserLogoutField, nRequestID)
 
-	#ÐÞ¸ÄÃÜÂëÇëÇó,²ÎÊýpUserPasswordUpdateFieldÊÇÒ»¸öCTORATstpUserPasswordUpdateFieldÀà¶ÔÏó
+	#ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pUserPasswordUpdateFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpUserPasswordUpdateFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqUserPasswordUpdate(self, pUserPasswordUpdateField: "CTORATstpUserPasswordUpdateField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqUserPasswordUpdate(self, pUserPasswordUpdateField, nRequestID)
 
-	#Â¼ÈëÉè±¸ÐòÁÐÇëÇó,²ÎÊýpReqInputDeviceSerialFieldÊÇÒ»¸öCTORATstpReqInputDeviceSerialFieldÀà¶ÔÏó
+	#Â¼ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pReqInputDeviceSerialFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpReqInputDeviceSerialFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqInputDeviceSerial(self, pReqInputDeviceSerialField: "CTORATstpReqInputDeviceSerialField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqInputDeviceSerial(self, pReqInputDeviceSerialField, nRequestID)
 
-	#±¨µ¥Â¼ÈëÇëÇó,²ÎÊýpInputOrderFieldÊÇÒ»¸öCTORATstpInputOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqOrderInsert(self, pInputOrderField: "CTORATstpInputOrderField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqOrderInsert(self, pInputOrderField, nRequestID)
 
-	#³·µ¥ÇëÇó,²ÎÊýpInputOrderActionFieldÊÇÒ»¸öCTORATstpInputOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqOrderAction(self, pInputOrderActionField: "CTORATstpInputOrderActionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqOrderAction(self, pInputOrderActionField, nRequestID)
 
-	#Ìõ¼þµ¥Â¼ÈëÇëÇó,²ÎÊýpInputCondOrderFieldÊÇÒ»¸öCTORATstpInputCondOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputCondOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputCondOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqCondOrderInsert(self, pInputCondOrderField: "CTORATstpInputCondOrderField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqCondOrderInsert(self, pInputCondOrderField, nRequestID)
 
-	#Ìõ¼þµ¥³·µ¥ÇëÇó,²ÎÊýpInputCondOrderActionFieldÊÇÒ»¸öCTORATstpInputCondOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputCondOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputCondOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqCondOrderAction(self, pInputCondOrderActionField: "CTORATstpInputCondOrderActionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqCondOrderAction(self, pInputCondOrderActionField, nRequestID)
 
-	#Ð­Òé½»Ò×±¨µ¥Â¼ÈëÇëÇó,²ÎÊýpInputNegoOrderFieldÊÇÒ»¸öCTORATstpInputNegoOrderFieldÀà¶ÔÏó
+	#Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputNegoOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputNegoOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqNegoOrderInsert(self, pInputNegoOrderField: "CTORATstpInputNegoOrderField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqNegoOrderInsert(self, pInputNegoOrderField, nRequestID)
 
-	#Ð­Òé½»Ò×±¨µ¥²Ù×÷Â¼ÈëÇëÇó,²ÎÊýpInputNegoOrderActionFieldÊÇÒ»¸öCTORATstpInputNegoOrderActionFieldÀà¶ÔÏó
+	#Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputNegoOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputNegoOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqNegoOrderAction(self, pInputNegoOrderActionField: "CTORATstpInputNegoOrderActionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqNegoOrderAction(self, pInputNegoOrderActionField, nRequestID)
 
-	#±¨µ¥Â¼ÈëÇëÇó£¨À©Õ¹£©,²ÎÊýpInputOrderExFieldÊÇÒ»¸öCTORATstpInputOrderExFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputOrderExFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderExFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqOrderInsertEx(self, pInputOrderExField: "CTORATstpInputOrderExField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqOrderInsertEx(self, pInputOrderExField, nRequestID)
 
-	#±¨µ¥²Ù×÷ÇëÇó£¨À©Õ¹£©,²ÎÊýpInputOrderActionExFieldÊÇÒ»¸öCTORATstpInputOrderActionExFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputOrderActionExFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputOrderActionExFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqOrderActionEx(self, pInputOrderActionExField: "CTORATstpInputOrderActionExField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqOrderActionEx(self, pInputOrderActionExField, nRequestID)
 
-	#×Ê½ð×ªÒÆÇëÇó,²ÎÊýpInputTransferFundFieldÊÇÒ»¸öCTORATstpInputTransferFundFieldÀà¶ÔÏó
+	#ï¿½Ê½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputTransferFundFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputTransferFundFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqTransferFund(self, pInputTransferFundField: "CTORATstpInputTransferFundField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqTransferFund(self, pInputTransferFundField, nRequestID)
 
-	#²ÖÎ»×ªÒÆÇëÇó,²ÎÊýpInputTransferPositionFieldÊÇÒ»¸öCTORATstpInputTransferPositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Î»×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputTransferPositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputTransferPositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqTransferPosition(self, pInputTransferPositionField: "CTORATstpInputTransferPositionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqTransferPosition(self, pInputTransferPositionField, nRequestID)
 
-	#²éÑ¯¼¯ÖÐ½»Ò×ÏµÍ³×Ê½ðÇëÇó,²ÎÊýpReqInquiryJZFundFieldÊÇÒ»¸öCTORATstpReqInquiryJZFundFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½ÏµÍ³ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pReqInquiryJZFundFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpReqInquiryJZFundFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqInquiryJZFund(self, pReqInquiryJZFundField: "CTORATstpReqInquiryJZFundField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqInquiryJZFund(self, pReqInquiryJZFundField, nRequestID)
 
-	#²éÑ¯ÒøÐÐÕË»§Óà¶îÇëÇó,²ÎÊýpReqInquiryBankAccountFundFieldÊÇÒ»¸öCTORATstpReqInquiryBankAccountFundFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pReqInquiryBankAccountFundFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpReqInquiryBankAccountFundFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqInquiryBankAccountFund(self, pReqInquiryBankAccountFundField: "CTORATstpReqInquiryBankAccountFundField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqInquiryBankAccountFund(self, pReqInquiryBankAccountFundField, nRequestID)
 
-	#²éÑ¯×î´ó±¨µ¥Á¿ÇëÇó,²ÎÊýpReqInquiryMaxOrderVolumeFieldÊÇÒ»¸öCTORATstpReqInquiryMaxOrderVolumeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ó±¨µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pReqInquiryMaxOrderVolumeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpReqInquiryMaxOrderVolumeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqInquiryMaxOrderVolume(self, pReqInquiryMaxOrderVolumeField: "CTORATstpReqInquiryMaxOrderVolumeField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqInquiryMaxOrderVolume(self, pReqInquiryMaxOrderVolumeField, nRequestID)
 
-	#²éÑ¯½»Ò×³É½»¼¯ÖÐ¶ÈÇëÇó,²ÎÊýpInquiryTradeConcentrationFieldÊÇÒ»¸öCTORATstpInquiryTradeConcentrationFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½×³É½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInquiryTradeConcentrationFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInquiryTradeConcentrationFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqInquiryTradeConcentration(self, pInquiryTradeConcentrationField: "CTORATstpInquiryTradeConcentrationField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqInquiryTradeConcentration(self, pInquiryTradeConcentrationField, nRequestID)
 
-	#ÇëÇóÐÞ¸Ä¿ª²Ö³É±¾ÇëÇó,²ÎÊýpReqModifyOpenPosCostFieldÊÇÒ»¸öCTORATstpReqModifyOpenPosCostFieldÀà¶ÔÏó
+	#ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä¿ï¿½ï¿½Ö³É±ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pReqModifyOpenPosCostFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpReqModifyOpenPosCostFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqModifyOpenPosCost(self, pReqModifyOpenPosCostField: "CTORATstpReqModifyOpenPosCostField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqModifyOpenPosCost(self, pReqModifyOpenPosCostField, nRequestID)
 
-	#Â¼Èë½Úµã×Ê½ð·ÖÅäÐÅÏ¢ÇëÇó,²ÎÊýpInputNodeFundAssignmentFieldÊÇÒ»¸öCTORATstpInputNodeFundAssignmentFieldÀà¶ÔÏó
+	#Â¼ï¿½ï¿½Úµï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pInputNodeFundAssignmentFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpInputNodeFundAssignmentFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqInputNodeFundAssignment(self, pInputNodeFundAssignmentField: "CTORATstpInputNodeFundAssignmentField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqInputNodeFundAssignment(self, pInputNodeFundAssignmentField, nRequestID)
 
-	#²éÑ¯½Úµã×Ê½ð·ÖÅä±ÈÀýÇëÇó,²ÎÊýpReqInquiryNodeFundAssignmentFieldÊÇÒ»¸öCTORATstpReqInquiryNodeFundAssignmentFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Úµï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pReqInquiryNodeFundAssignmentFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpReqInquiryNodeFundAssignmentFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqInquiryNodeFundAssignment(self, pReqInquiryNodeFundAssignmentField: "CTORATstpReqInquiryNodeFundAssignmentField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqInquiryNodeFundAssignment(self, pReqInquiryNodeFundAssignmentField, nRequestID)
 
-	#²éÑ¯½»Ò×ËùÇëÇó,²ÎÊýpQryExchangeFieldÊÇÒ»¸öCTORATstpQryExchangeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryExchangeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryExchangeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryExchange(self, pQryExchangeField: "CTORATstpQryExchangeField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryExchange(self, pQryExchangeField, nRequestID)
 
-	#²éÑ¯Ö¤È¯ÐÅÏ¢ÇëÇó,²ÎÊýpQrySecurityFieldÊÇÒ»¸öCTORATstpQrySecurityFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ö¤È¯ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQrySecurityFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQrySecurityFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQrySecurity(self, pQrySecurityField: "CTORATstpQrySecurityField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQrySecurity(self, pQrySecurityField, nRequestID)
 
-	#²éÑ¯ÐÂ¹ÉÐÅÏ¢ÇëÇó,²ÎÊýpQryIPOInfoFieldÊÇÒ»¸öCTORATstpQryIPOInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryIPOInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryIPOInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryIPOInfo(self, pQryIPOInfoField: "CTORATstpQryIPOInfoField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryIPOInfo(self, pQryIPOInfoField, nRequestID)
 
-	#²éÑ¯ÓÃ»§ÇëÇó,²ÎÊýpQryUserFieldÊÇÒ»¸öCTORATstpQryUserFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryUserFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryUserFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryUser(self, pQryUserField: "CTORATstpQryUserField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryUser(self, pQryUserField, nRequestID)
 
-	#²éÑ¯Í¶×ÊÕßÇëÇó,²ÎÊýpQryInvestorFieldÊÇÒ»¸öCTORATstpQryInvestorFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryInvestorFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryInvestorFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryInvestor(self, pQryInvestorField: "CTORATstpQryInvestorField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryInvestor(self, pQryInvestorField, nRequestID)
 
-	#²éÑ¯¹É¶«ÕË»§ÇëÇó,²ÎÊýpQryShareholderAccountFieldÊÇÒ»¸öCTORATstpQryShareholderAccountFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½É¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryShareholderAccountFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryShareholderAccountFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryShareholderAccount(self, pQryShareholderAccountField: "CTORATstpQryShareholderAccountField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryShareholderAccount(self, pQryShareholderAccountField, nRequestID)
 
-	#²éÑ¯Åä¹ÉÅäÕ®ÐÅÏ¢ÇëÇó,²ÎÊýpQryRationalInfoFieldÊÇÒ»¸öCTORATstpQryRationalInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½Õ?¿½ï¿½Ï?¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pQryRationalInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryRationalInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryRationalInfo(self, pQryRationalInfoField: "CTORATstpQryRationalInfoField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryRationalInfo(self, pQryRationalInfoField, nRequestID)
 
-	#²éÑ¯±¨µ¥ÇëÇó,²ÎÊýpQryOrderFieldÊÇÒ»¸öCTORATstpQryOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryOrder(self, pQryOrderField: "CTORATstpQryOrderField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryOrder(self, pQryOrderField, nRequestID)
 
-	#²éÑ¯³·µ¥ÇëÇó,²ÎÊýpQryOrderActionFieldÊÇÒ»¸öCTORATstpQryOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryOrderAction(self, pQryOrderActionField: "CTORATstpQryOrderActionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryOrderAction(self, pQryOrderActionField, nRequestID)
 
-	#²éÑ¯³É½»ÇëÇó,²ÎÊýpQryTradeFieldÊÇÒ»¸öCTORATstpQryTradeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryTradeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryTradeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryTrade(self, pQryTradeField: "CTORATstpQryTradeField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryTrade(self, pQryTradeField, nRequestID)
 
-	#²éÑ¯×Ê½ðÕË»§ÇëÇó,²ÎÊýpQryTradingAccountFieldÊÇÒ»¸öCTORATstpQryTradingAccountFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ê½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryTradingAccountFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryTradingAccountFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryTradingAccount(self, pQryTradingAccountField: "CTORATstpQryTradingAccountField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryTradingAccount(self, pQryTradingAccountField, nRequestID)
 
-	#²éÑ¯Í¶×ÊÕß³Ö²ÖÇëÇó,²ÎÊýpQryPositionFieldÊÇÒ»¸öCTORATstpQryPositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ß³Ö²ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryPositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryPositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryPosition(self, pQryPositionField: "CTORATstpQryPositionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryPosition(self, pQryPositionField, nRequestID)
 
-	#²éÑ¯»ù´¡½»Ò×·ÑÂÊÇëÇó,²ÎÊýpQryTradingFeeFieldÊÇÒ»¸öCTORATstpQryTradingFeeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryTradingFeeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryTradingFeeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryTradingFee(self, pQryTradingFeeField: "CTORATstpQryTradingFeeField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryTradingFee(self, pQryTradingFeeField, nRequestID)
 
-	#²éÑ¯Ó¶½ð·ÑÂÊÇëÇó,²ÎÊýpQryInvestorTradingFeeFieldÊÇÒ»¸öCTORATstpQryInvestorTradingFeeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pQryInvestorTradingFeeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryInvestorTradingFeeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryInvestorTradingFee(self, pQryInvestorTradingFeeField: "CTORATstpQryInvestorTradingFeeField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryInvestorTradingFee(self, pQryInvestorTradingFeeField, nRequestID)
 
-	#²éÑ¯ÐÂ¹ÉÉê¹º¶î¶ÈÇëÇó,²ÎÊýpQryIPOQuotaFieldÊÇÒ»¸öCTORATstpQryIPOQuotaFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pQryIPOQuotaFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryIPOQuotaFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryIPOQuota(self, pQryIPOQuotaField: "CTORATstpQryIPOQuotaField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryIPOQuota(self, pQryIPOQuotaField, nRequestID)
 
-	#²éÑ¯±¨µ¥Ã÷Ï¸×Ê½ðÇëÇó,²ÎÊýpQryOrderFundDetailFieldÊÇÒ»¸öCTORATstpQryOrderFundDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryOrderFundDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryOrderFundDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryOrderFundDetail(self, pQryOrderFundDetailField: "CTORATstpQryOrderFundDetailField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryOrderFundDetail(self, pQryOrderFundDetailField, nRequestID)
 
-	#²éÑ¯×Ê½ð×ªÒÆÁ÷Ë®ÇëÇó,²ÎÊýpQryFundTransferDetailFieldÊÇÒ»¸öCTORATstpQryFundTransferDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ê½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryFundTransferDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryFundTransferDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryFundTransferDetail(self, pQryFundTransferDetailField: "CTORATstpQryFundTransferDetailField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryFundTransferDetail(self, pQryFundTransferDetailField, nRequestID)
 
-	#²éÑ¯³Ö²Ö×ªÒÆÁ÷Ë®ÇëÇó,²ÎÊýpQryPositionTransferDetailFieldÊÇÒ»¸öCTORATstpQryPositionTransferDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ö²ï¿½×ªï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryPositionTransferDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryPositionTransferDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryPositionTransferDetail(self, pQryPositionTransferDetailField: "CTORATstpQryPositionTransferDetailField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryPositionTransferDetail(self, pQryPositionTransferDetailField, nRequestID)
 
-	#²éÑ¯ÍâÎ§ÏµÍ³²ÖÎ»µ÷²¦Á÷Ë®ÇëÇó,²ÎÊýpQryPeripheryPositionTransferDetailFieldÊÇÒ»¸öCTORATstpQryPeripheryPositionTransferDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½Î§ÏµÍ³ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryPeripheryPositionTransferDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryPeripheryPositionTransferDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryPeripheryPositionTransferDetail(self, pQryPeripheryPositionTransferDetailField: "CTORATstpQryPeripheryPositionTransferDetailField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryPeripheryPositionTransferDetail(self, pQryPeripheryPositionTransferDetailField, nRequestID)
 
-	#²éÑ¯ÍâÎ§ÏµÍ³×Ê½ðµ÷²¦Á÷Ë®ÇëÇó,²ÎÊýpQryPeripheryFundTransferDetailFieldÊÇÒ»¸öCTORATstpQryPeripheryFundTransferDetailFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½Î§ÏµÍ³ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë?¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pQryPeripheryFundTransferDetailFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryPeripheryFundTransferDetailFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryPeripheryFundTransferDetail(self, pQryPeripheryFundTransferDetailField: "CTORATstpQryPeripheryFundTransferDetailField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryPeripheryFundTransferDetail(self, pQryPeripheryFundTransferDetailField, nRequestID)
 
-	#²éÑ¯Õ®È¯×ª¹ÉÐÅÏ¢ÇëÇó,²ÎÊýpQryBondConversionInfoFieldÊÇÒ»¸öCTORATstpQryBondConversionInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Õ®È¯×ªï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryBondConversionInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryBondConversionInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryBondConversionInfo(self, pQryBondConversionInfoField: "CTORATstpQryBondConversionInfoField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryBondConversionInfo(self, pQryBondConversionInfoField, nRequestID)
 
-	#²éÑ¯Õ®È¯»ØÊÛÐÅÏ¢ÇëÇó,²ÎÊýpQryBondPutbackInfoFieldÊÇÒ»¸öCTORATstpQryBondPutbackInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Õ®È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryBondPutbackInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryBondPutbackInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryBondPutbackInfo(self, pQryBondPutbackInfoField: "CTORATstpQryBondPutbackInfoField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryBondPutbackInfo(self, pQryBondPutbackInfoField, nRequestID)
 
-	#²éÑ¯Í¶×ÊÕßÌõ¼þµ¥ÏÞÖÆ²ÎÊýÇëÇó,²ÎÊýpQryInvestorCondOrderLimitParamFieldÊÇÒ»¸öCTORATstpQryInvestorCondOrderLimitParamFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryInvestorCondOrderLimitParamFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryInvestorCondOrderLimitParamFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryInvestorCondOrderLimitParam(self, pQryInvestorCondOrderLimitParamField: "CTORATstpQryInvestorCondOrderLimitParamField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryInvestorCondOrderLimitParam(self, pQryInvestorCondOrderLimitParamField, nRequestID)
 
-	#²éÑ¯Ìõ¼þµ¥ÇëÇó,²ÎÊýpQryConditionOrderFieldÊÇÒ»¸öCTORATstpQryConditionOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryConditionOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryConditionOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryConditionOrder(self, pQryConditionOrderField: "CTORATstpQryConditionOrderField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryConditionOrder(self, pQryConditionOrderField, nRequestID)
 
-	#²éÑ¯Ìõ¼þµ¥³·µ¥ÇëÇó,²ÎÊýpQryCondOrderActionFieldÊÇÒ»¸öCTORATstpQryCondOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryCondOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryCondOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryCondOrderAction(self, pQryCondOrderActionField: "CTORATstpQryCondOrderActionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryCondOrderAction(self, pQryCondOrderActionField, nRequestID)
 
-	#²éÑ¯½»Ò×Í¨ÖªÇëÇó,²ÎÊýpQryTradingNoticeFieldÊÇÒ»¸öCTORATstpQryTradingNoticeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Í¨Öªï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryTradingNoticeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryTradingNoticeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryTradingNotice(self, pQryTradingNoticeField: "CTORATstpQryTradingNoticeField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryTradingNotice(self, pQryTradingNoticeField, nRequestID)
 
-	#²éÑ¯ÐÂ¹ÉÉê¹ºÅäºÅ½á¹ûÇëÇó,²ÎÊýpQryIPONumberResultFieldÊÇÒ»¸öCTORATstpQryIPONumberResultFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½Å½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryIPONumberResultFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryIPONumberResultFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryIPONumberResult(self, pQryIPONumberResultField: "CTORATstpQryIPONumberResultField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryIPONumberResult(self, pQryIPONumberResultField, nRequestID)
 
-	#²éÑ¯ÐÂ¹ÉÉê¹ºÖÐÇ©½á¹ûÇëÇó,²ÎÊýpQryIPOMatchNumberResultFieldÊÇÒ»¸öCTORATstpQryIPOMatchNumberResultFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Â¹ï¿½ï¿½ê¹ºï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pQryIPOMatchNumberResultFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryIPOMatchNumberResultFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryIPOMatchNumberResult(self, pQryIPOMatchNumberResultField: "CTORATstpQryIPOMatchNumberResultField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryIPOMatchNumberResult(self, pQryIPOMatchNumberResultField, nRequestID)
 
-	#²éÑ¯½»Ò×Ð­ÒéÇëÇó,²ÎÊýpQryShareholderSpecPrivilegeFieldÊÇÒ»¸öCTORATstpQryShareholderSpecPrivilegeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Ð­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryShareholderSpecPrivilegeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryShareholderSpecPrivilegeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryShareholderSpecPrivilege(self, pQryShareholderSpecPrivilegeField: "CTORATstpQryShareholderSpecPrivilegeField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryShareholderSpecPrivilege(self, pQryShareholderSpecPrivilegeField, nRequestID)
 
-	#²éÑ¯ÊÐ³¡ÇëÇó,²ÎÊýpQryMarketFieldÊÇÒ»¸öCTORATstpQryMarketFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryMarketFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryMarketFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryMarket(self, pQryMarketField: "CTORATstpQryMarketField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryMarket(self, pQryMarketField, nRequestID)
 
-	#²éÑ¯ETFÇåµ¥ÐÅÏ¢ÇëÇó,²ÎÊýpQryETFFileFieldÊÇÒ»¸öCTORATstpQryETFFileFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ETFï¿½åµ¥ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryETFFileFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryETFFileFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryETFFile(self, pQryETFFileField: "CTORATstpQryETFFileField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryETFFile(self, pQryETFFileField, nRequestID)
 
-	#²éÑ¯ETF³É·ÝÖ¤È¯ÐÅÏ¢ÇëÇó,²ÎÊýpQryETFBasketFieldÊÇÒ»¸öCTORATstpQryETFBasketFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ETFï¿½É·ï¿½Ö¤È¯ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryETFBasketFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryETFBasketFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryETFBasket(self, pQryETFBasketField: "CTORATstpQryETFBasketField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryETFBasket(self, pQryETFBasketField, nRequestID)
 
-	#²éÑ¯Í¶×ÊÕßÏÞ²ÖÐÅÏ¢ÇëÇó,²ÎÊýpQryInvestorPositionLimitFieldÊÇÒ»¸öCTORATstpQryInvestorPositionLimitFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½Þ²ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryInvestorPositionLimitFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryInvestorPositionLimitFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryInvestorPositionLimit(self, pQryInvestorPositionLimitField: "CTORATstpQryInvestorPositionLimitField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryInvestorPositionLimit(self, pQryInvestorPositionLimitField, nRequestID)
 
-	#²éÑ¯Éî¸ÛÍ¨¹ú¼ÊÊÐ³¡»¥Áª×´Ì¬ÐÅÏ¢ÇëÇó,²ÎÊýpQrySZSEImcParamsFieldÊÇÒ»¸öCTORATstpQrySZSEImcParamsFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Í?¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì?¿½ï¿½Ï?¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pQrySZSEImcParamsFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQrySZSEImcParamsFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQrySZSEImcParams(self, pQrySZSEImcParamsField: "CTORATstpQrySZSEImcParamsField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQrySZSEImcParams(self, pQrySZSEImcParamsField, nRequestID)
 
-	#²éÑ¯Éî¸ÛÍ¨¹ú¼ÊÊÐ³¡»¥Áª»ãÂÊÐÅÏ¢ÇëÇó,²ÎÊýpQrySZSEImcExchangeRateFieldÊÇÒ»¸öCTORATstpQrySZSEImcExchangeRateFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Í?¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï?¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pQrySZSEImcExchangeRateFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQrySZSEImcExchangeRateFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQrySZSEImcExchangeRate(self, pQrySZSEImcExchangeRateField: "CTORATstpQrySZSEImcExchangeRateField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQrySZSEImcExchangeRate(self, pQrySZSEImcExchangeRateField, nRequestID)
 
-	#²éÑ¯Éî¸ÛÍ¨×îÐ¡¼Û²îÐÅÏ¢ÇëÇó,²ÎÊýpQrySZSEHKPriceTickInfoFieldÊÇÒ»¸öCTORATstpQrySZSEHKPriceTickInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Í?¿½ï¿½Ð¡ï¿½Û²ï¿½ï¿½ï¿½Ï?¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pQrySZSEHKPriceTickInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQrySZSEHKPriceTickInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQrySZSEHKPriceTickInfo(self, pQrySZSEHKPriceTickInfoField: "CTORATstpQrySZSEHKPriceTickInfoField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQrySZSEHKPriceTickInfo(self, pQrySZSEHKPriceTickInfoField, nRequestID)
 
-	#²éÑ¯LOF»ù½ðÐÅÏ¢ÇëÇó,²ÎÊýpQryLofFundInfoFieldÊÇÒ»¸öCTORATstpQryLofFundInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯LOFï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryLofFundInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryLofFundInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryLofFundInfo(self, pQryLofFundInfoField: "CTORATstpQryLofFundInfoField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryLofFundInfo(self, pQryLofFundInfoField, nRequestID)
 
-	#²éÑ¯Í¶×ÊÕßÖÊÑº³Ö²ÖÇëÇó,²ÎÊýpQryPledgePositionFieldÊÇÒ»¸öCTORATstpQryPledgePositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñºï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryPledgePositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryPledgePositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryPledgePosition(self, pQryPledgePositionField: "CTORATstpQryPledgePositionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryPledgePosition(self, pQryPledgePositionField, nRequestID)
 
-	#²éÑ¯Ö¤È¯ÖÊÑºÐÅÏ¢ÇëÇó,²ÎÊýpQryPledgeInfoFieldÊÇÒ»¸öCTORATstpQryPledgeInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ö¤È¯ï¿½ï¿½Ñºï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryPledgeInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryPledgeInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryPledgeInfo(self, pQryPledgeInfoField: "CTORATstpQryPledgeInfoField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryPledgeInfo(self, pQryPledgeInfoField, nRequestID)
 
-	#²éÑ¯ÏµÍ³½ÚµãÐÅÏ¢ÇëÇó,²ÎÊýpQrySystemNodeInfoFieldÊÇÒ»¸öCTORATstpQrySystemNodeInfoFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ÏµÍ³ï¿½Úµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQrySystemNodeInfoFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQrySystemNodeInfoFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQrySystemNodeInfo(self, pQrySystemNodeInfoField: "CTORATstpQrySystemNodeInfoField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQrySystemNodeInfo(self, pQrySystemNodeInfoField, nRequestID)
 
-	#²éÑ¯±ê×¼È¯¶î¶ÈÇëÇó,²ÎÊýpQryStandardBondPositionFieldÊÇÒ»¸öCTORATstpQryStandardBondPositionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯ï¿½ï¿½×¼È¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?,ï¿½ï¿½ï¿½ï¿½pQryStandardBondPositionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryStandardBondPositionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryStandardBondPosition(self, pQryStandardBondPositionField: "CTORATstpQryStandardBondPositionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryStandardBondPosition(self, pQryStandardBondPositionField, nRequestID)
 
-	#²éÑ¯Î´µ½ÆÚÕ®È¯ÖÊÑº»Ø¹ºÎ¯ÍÐÇëÇó,²ÎÊýpQryPrematurityRepoOrderFieldÊÇÒ»¸öCTORATstpQryPrematurityRepoOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Î´ï¿½ï¿½ï¿½ï¿½Õ®È¯ï¿½ï¿½Ñºï¿½Ø¹ï¿½Î¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryPrematurityRepoOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryPrematurityRepoOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryPrematurityRepoOrder(self, pQryPrematurityRepoOrderField: "CTORATstpQryPrematurityRepoOrderField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryPrematurityRepoOrder(self, pQryPrematurityRepoOrderField, nRequestID)
 
-	#²éÑ¯Ð­Òé½»Ò×±¨µ¥ÇëÇó,²ÎÊýpQryNegoOrderFieldÊÇÒ»¸öCTORATstpQryNegoOrderFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryNegoOrderFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryNegoOrderFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryNegoOrder(self, pQryNegoOrderField: "CTORATstpQryNegoOrderField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryNegoOrder(self, pQryNegoOrderField, nRequestID)
 
-	#²éÑ¯Ð­Òé½»Ò×³·µ¥ÇëÇó,²ÎÊýpQryNegoOrderActionFieldÊÇÒ»¸öCTORATstpQryNegoOrderActionFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryNegoOrderActionFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryNegoOrderActionFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryNegoOrderAction(self, pQryNegoOrderActionField: "CTORATstpQryNegoOrderActionField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryNegoOrderAction(self, pQryNegoOrderActionField, nRequestID)
 
-	#²éÑ¯Ð­Òé½»Ò×³É½»ÇëÇó,²ÎÊýpQryNegoTradeFieldÊÇÒ»¸öCTORATstpQryNegoTradeFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×³É½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryNegoTradeFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryNegoTradeFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryNegoTrade(self, pQryNegoTradeField: "CTORATstpQryNegoTradeField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryNegoTrade(self, pQryNegoTradeField, nRequestID)
 
-	#²éÑ¯Ð­Òé½»Ò×²ÎÊýÇëÇó,²ÎÊýpQryNegotiationParamFieldÊÇÒ»¸öCTORATstpQryNegotiationParamFieldÀà¶ÔÏó
+	#ï¿½ï¿½Ñ¯Ð­ï¿½é½»ï¿½×²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½pQryNegotiationParamFieldï¿½ï¿½Ò»ï¿½ï¿½CTORATstpQryNegotiationParamFieldï¿½ï¿½ï¿½ï¿½ï¿?
     def ReqQryNegotiationParam(self, pQryNegotiationParamField: "CTORATstpQryNegotiationParamField", nRequestID: "int") -> "int":
         return _traderapi.CTORATstpTraderApi_ReqQryNegotiationParam(self, pQryNegotiationParamField, nRequestID)
 
 # Register CTORATstpTraderApi in _traderapi:
 _traderapi.CTORATstpTraderApi_swigregister(CTORATstpTraderApi)
 
-	#´´½¨½Ó¿Ú¶ÔÏó,²ÎÊý1ÎªÁ÷ÎÄ¼þ´æ·ÅÄ¿Â¼,²ÎÊý2ÎªÍøÂçÊý¾ÝÊÇ·ñ¼ÓÃÜ´«Êä
+	#ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿Ú¶ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½1Îªï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ä¿Â?,ï¿½ï¿½ï¿½ï¿½2Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ü´ï¿½ï¿½ï¿?
 def CTORATstpTraderApi_CreateTstpTraderApi(*args) -> "TORASTOCKAPI::CTORATstpTraderApi *":
     return _traderapi.CTORATstpTraderApi_CreateTstpTraderApi(*args)
 
-	#»ñÈ¡½Ó¿Ú°æ±¾ºÅ
+	#ï¿½ï¿½È¡ï¿½Ó¿Ú°æ±¾ï¿½ï¿½
 def CTORATstpTraderApi_GetApiVersion() -> "char const *":
     return _traderapi.CTORATstpTraderApi_GetApiVersion()
 

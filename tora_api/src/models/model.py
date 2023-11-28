@@ -1,6 +1,8 @@
 from pydantic import BaseModel
 
 
+
+
 class SecurityFieldModel(BaseModel):
     TradingDay: str = ""
     ExchangeID: str = ""
@@ -8,6 +10,7 @@ class SecurityFieldModel(BaseModel):
     SecurityName: str = ""
     UpperLimitPrice: float = 0.0
     LowerLimitPrice: float = 0.0
+
 
 
 class TickModel(BaseModel):
@@ -175,6 +178,9 @@ class OrderModel(BaseModel):
     OrderStatus: int = 0
     StatusMsg: str = ""
     OrderSysID: str = ""
+    SInfo: str = ""
+    IInfo: int = 0
+    Status: str = ""
 
 
 class TradeModel(BaseModel):
@@ -183,7 +189,10 @@ class TradeModel(BaseModel):
     '''
     SecurityID: str = ""
     ExchangeID: str = ""
+    OrderSysID: str = ""
     OrderID: str = ""
+    TradeTime: str = ""
+    TradeDate: str = ""
     TradeID: str = ""
     Direction: str = ""
     Price: float = 0.0

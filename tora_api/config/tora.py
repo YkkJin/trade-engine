@@ -1,16 +1,12 @@
 
-UserID = "00032129"
-Password = "19359120"
+UserID = "320000077997"
+Password = "298500"
 
 FrontAddress = {
-    "level1_xmd": "tcp://210.14.72.21:4402",
-    "level1_trade": "tcp://210.14.72.21:4400",
-    "level1_xmd_24A": "tcp://210.14.72.16:9402",
-    "level1_trade_24A": "tcp://210.14.72.15:4400",
-    "level2_xmd_SH_test": "tcp://210.14.72.17:16900",
-    "level2_xmd_SZ_test": "tcp://210.14.72.17:6900",
-
+    "level1_xmd_server": "tcp://172.16.212.68:7780", # 服务器TCP行情地址
+    "level1_trade_server": "tcp://10.224.78.106:6500"
 }
+
 
 
 ACCOUNT_USERID: str = "用户代码"
